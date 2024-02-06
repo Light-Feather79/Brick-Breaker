@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638427201019832465
-    m_Hash: 1400533675
+      ticks: 638427228525720807
+    m_Hash: 3673157093
   m_LockFileStatus:
     m_FilePath: C:/Users/pavel/source/Repos/Brick Breaker/Brick Breaker/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638427201020082329
-    m_Hash: 113625844
+      ticks: 638427228525770763
+    m_Hash: 1419209056
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
