@@ -8,7 +8,7 @@ public class Ball : MonoBehaviour
     [SerializeField] private float _speed = 10f;
 
     private float _modifiedPush = 1f;
-    private float _borderToModify = .5f;
+    private float _borderToModify = .3f;
 
     private Vector3 _paddleToBallVector;
     private Transform _transform;
@@ -46,6 +46,12 @@ public class Ball : MonoBehaviour
     {
         _audioSource.PlayDelayed(0f);
 
+        if (collision.gameObject.TryGetComponent<Paddle>(out Paddle paddle) == false)
+            CorrectEndlessLoop();
+    }
+
+    private void CorrectEndlessLoop()
+    {
         int[] randomOnes = new int[2] { 1, -1 };
         int randomOne = randomOnes[UnityEngine.Random.Range(0, randomOnes.Length)];
         _modifiedPush *= randomOne;
