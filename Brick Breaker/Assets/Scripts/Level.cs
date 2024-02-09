@@ -10,6 +10,8 @@ public class Level : MonoBehaviour
 
     private SceneLoader _sceneLoader;
 
+    public int BreakableBricks { get => _breakableBricks; }
+
     private void OnEnable()
     {
         Brick.BrickDestroyed += DeductDestroyedBrick;

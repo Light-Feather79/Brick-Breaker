@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Timeline.Actions;
 using UnityEngine;
 using System;
 
@@ -10,9 +7,10 @@ public class Brick : MonoBehaviour
     public static event Action<int> BrickDestroyed;
     public static event Action BrickCreated;
 
-    [SerializeField] AudioClip _breakSound;
-    [SerializeField] GameObject _blockSparklesVFX;
+    [SerializeField] private AudioClip _breakSound;
+    [SerializeField] private GameObject _blockSparklesVFX;
     [SerializeField] private Sprite[] _hitSprites;
+    [SerializeField] private GameObject[] _bonusesPrefabs;
     
     private SpriteRenderer _spriteRenderer;
     private int _currentHits;
@@ -44,6 +42,7 @@ public class Brick : MonoBehaviour
         AudioSource.PlayClipAtPoint(_breakSound, Camera.main.transform.position);
         BrickDestroyed?.Invoke(GetPointsForBrick());
         TriggerBlow();
+        CreateRandomBonus();
         Destroy(gameObject);
     }
 
@@ -60,4 +59,18 @@ public class Brick : MonoBehaviour
     }
 
     private void TriggerBlow() => Destroy(Instantiate(_blockSparklesVFX, transform.position, Quaternion.identity).gameObject, 1f);
+
+    private void CreateRandomBonus()
+    {
+        if (_bonusesPrefabs.Length != 0)
+        {
+            int random = UnityEngine.Random.Range(0, 100);
+
+            if (random < 65)
+            {
+                int randomBonus = UnityEngine.Random.Range(0, _bonusesPrefabs.Length);
+                Instantiate(_bonusesPrefabs[randomBonus], transform.position, Quaternion.identity);
+            }
+        }
+    }
 }
