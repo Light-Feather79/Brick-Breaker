@@ -103,9 +103,9 @@ MonoBehaviour:
   _hitSprites:
   - {fileID: 21300000, guid: 439359a247f0f644fbdc389a48678d58, type: 3}
   _bonusesPrefabs:
-  - {fileID: 7357096912538780955, guid: 7ea9b08741ac46b4e88a5674cf97d6f9, type: 3}
   - {fileID: 8770002520568450316, guid: 8f3eb83ddba86954ebb3355be2c37894, type: 3}
   - {fileID: 5889116847645741603, guid: d8281d2d1d4631348985f3a1e2c3265c, type: 3}
+  _coinPrefab: {fileID: -614946700766548578, guid: 7ea9b08741ac46b4e88a5674cf97d6f9, type: 3}
 --- !u!61 &2087888214772165064
 BoxCollider2D:
   m_ObjectHideFlags: 0

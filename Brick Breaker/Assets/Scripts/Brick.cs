@@ -10,9 +10,11 @@ public class Brick : MonoBehaviour
     [SerializeField] private GameObject _blockSparklesVFX;
     [SerializeField] private Sprite[] _hitSprites;
     [SerializeField] private GameObject[] _bonusesPrefabs;
+    [SerializeField] private BonusCoin _coinPrefab;
     
     private SpriteRenderer _spriteRenderer;
     private int _currentHits;
+    private bool _coinBonus;
 
     private void Start()
     {
@@ -35,6 +37,8 @@ public class Brick : MonoBehaviour
             DestroyBrick();
         }
     }
+
+    public void SetCoin() => _coinBonus = true;
 
     private void DestroyBrick()
     {
@@ -61,15 +65,19 @@ public class Brick : MonoBehaviour
 
     private void CreateRandomBonus()
     {
-        if (_bonusesPrefabs.Length != 0)
+        if (_bonusesPrefabs.Length != 0 && _coinBonus == false)
         {
             int random = UnityEngine.Random.Range(0, 100);
 
-            if (random < 45)
+            if (random < 65)
             {
                 int randomBonus = UnityEngine.Random.Range(0, _bonusesPrefabs.Length);
                 Instantiate(_bonusesPrefabs[randomBonus], transform.position, Quaternion.identity);
             }
         }
+        
+        else if (_coinBonus == true)
+            Instantiate(_coinPrefab, transform.position, Quaternion.identity);
+
     }
 }

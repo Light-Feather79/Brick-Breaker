@@ -102,9 +102,9 @@ MonoBehaviour:
   _blockSparklesVFX: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
   _hitSprites: []
   _bonusesPrefabs:
-  - {fileID: 7357096912538780955, guid: 7ea9b08741ac46b4e88a5674cf97d6f9, type: 3}
   - {fileID: 8770002520568450316, guid: 8f3eb83ddba86954ebb3355be2c37894, type: 3}
   - {fileID: 5889116847645741603, guid: d8281d2d1d4631348985f3a1e2c3265c, type: 3}
+  _coinPrefab: {fileID: -614946700766548578, guid: 7ea9b08741ac46b4e88a5674cf97d6f9, type: 3}
 --- !u!61 &2539682919209598325
 BoxCollider2D:
   m_ObjectHideFlags: 0

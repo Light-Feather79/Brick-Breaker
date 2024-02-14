@@ -6,19 +6,23 @@ using UnityEngine.UI;
 
 public class AreaSetter : MonoBehaviour
 {
-    [SerializeField] private Sprite[] _amountOfStars;
+    [SerializeField] private Sprite[] _imageOfStars;
     [SerializeField] private GameObject _buttonLevels;
-    private Button[] _levels;
+
+    private LevelLoader[] _levels;
+    private int _spaceBeforeNumerEng = 5;
 
     private void Start()
     {
         Enum.TryParse(gameObject.tag, out Area areaNumber);
-        GameData.Data.GetAreaInfo(areaNumber);
-        _levels = _buttonLevels.GetComponentsInChildren<Button>();
+        _levels = _buttonLevels.GetComponentsInChildren<LevelLoader>();
 
         for (int i = 0; i < _levels.Length; i++)
         {
-            _levels[i].GetComponent<Image>().sprite = _amountOfStars[i];
+            int stars = GameData.Instance.GetAreaInfo(_levels[i].Level);
+            _levels[i].GetComponent<Image>().sprite = _imageOfStars[stars];
+            _levels[i].GetComponentInChildren<TextMeshProUGUI>().text = _levels[i].Level.ToString().Insert(_spaceBeforeNumerEng, " ");
+
         }
 
     }

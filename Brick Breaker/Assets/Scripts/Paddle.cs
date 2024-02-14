@@ -57,7 +57,7 @@ public class Paddle : MonoBehaviour
     {
         if (collision.gameObject.TryGetComponent<Ball>(out Ball ball))
         {
-            _randomPaddleOffset = UnityEngine.Random.Range(-1f, 1f);
+            _randomPaddleOffset = UnityEngine.Random.Range(-0.5f, 0.5f);
             CorrectBallBounce(ball.GetComponent<Rigidbody2D>(), ball.transform.position, ball.Speed);
         }
     }

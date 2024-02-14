@@ -6,23 +6,24 @@ using UnityEngine.SceneManagement;
 
 public class GameData : MonoBehaviour
 {
-    public static GameData Data;
+    public static GameData Instance;
+    public static event Action<int> DataChanged;
 
-    [SerializeField] private TextMeshProUGUI _scoreText;
-    [SerializeField] private TextMeshProUGUI _coinText;
-    [SerializeField] private TextMeshProUGUI _storyProgressText;
+    private Dictionary<Level, int> _areaProgress;
 
-    private int _score;
-    private int _coins;
-    private float _storyProgress;
-    
+    public int Score { get; private set; }
+    public int Coins { get; private set; }
+    public float StoryProgress { get; private set; }
+
     private void Awake()
     {
-        if (Data != null)
+        if (Instance != null)
             Destroy(gameObject);
         else
-            Data = this;
+            Instance = this;
 
+        _areaProgress = new Dictionary<Level, int>();
+ 
         DontDestroyOnLoad(gameObject);
     }
 
@@ -38,27 +39,30 @@ public class GameData : MonoBehaviour
         BonusCoin.CoinGained -= OnGetCoin;
     }
 
-    private void Start()
-    {
-        // _scoreText.text = "Score: " + _score;
-    }
-
-
     private void OnGetBrick(int points)
     {
-        _score += points;
-        _scoreText.text = "Score: " + _score;
+        Score += points;
+        DataChanged?.Invoke(points);
     }
 
     private void OnGetCoin()
     {
-        _coins++;
-        _coinText.text = "Score: " + _coins;
+        Coins++;
+        DataChanged?.Invoke(1);
     }
 
-    public void GetAreaInfo(Area area)
+    public int GetAreaInfo(Level level)
     {
+        if (_areaProgress.ContainsKey(level) == false)
+            _areaProgress[level] = 0;
+        
+        return _areaProgress[level];
+    }
 
+    public void ResetLevelData(int levelProgress, Level level)
+    {
+        if (_areaProgress.ContainsKey(level) == false || _areaProgress[level] < levelProgress)
+            _areaProgress[level] = levelProgress;
     }
 }
 
@@ -69,4 +73,24 @@ public enum Area
     Area3,
     Area4,
     Area5,
+}
+
+public enum Level
+{
+    Level1,
+    Level2,
+    Level3,
+    Level4,
+    Level5,
+    Level6,
+    Level7,
+    Level8,
+    Level9,
+    Level10,
+    Level11,
+    Level12,
+    Level13,
+    Level14,
+    Level15,
+    StartMenu,
 }
