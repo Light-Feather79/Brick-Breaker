@@ -1,15 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(CircleCollider2D))]
 public class BonusCoin : MonoBehaviour
 {
+    public static event Action CoinGained;
+
     private float _speed = 150;
     
-    private int _points = 200;
-
     private void Awake()
     {
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
@@ -24,7 +25,7 @@ public class BonusCoin : MonoBehaviour
     {
         if (collision.gameObject.TryGetComponent<Paddle>(out Paddle paddle))
         {
-            FindObjectOfType<GameSession>().OnGetCoin(_points);
+            CoinGained?.Invoke();
             Destroy(gameObject);
         }
     }

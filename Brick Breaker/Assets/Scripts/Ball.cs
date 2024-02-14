@@ -6,7 +6,7 @@ using Unity.Mathematics;
 [RequireComponent(typeof(AudioSource))]
 public class Ball : MonoBehaviour
 {
-    public static event Action<bool, Ball> BallLifeCycle;
+    public static event Action<bool> BallLifeCycle;
 
     [SerializeField] private float _speed = 6f;
 
@@ -20,7 +20,7 @@ public class Ball : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody2D>();
         _audioSource = GetComponent<AudioSource>();
-        BallLifeCycle?.Invoke(true, this);
+        BallLifeCycle?.Invoke(true);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -31,7 +31,7 @@ public class Ball : MonoBehaviour
             CorrectEndlessLoop();
     }
 
-    private void OnDisable() => BallLifeCycle?.Invoke(false, this);
+    private void OnDisable() => BallLifeCycle?.Invoke(false);
 
     private void CorrectEndlessLoop()
     {

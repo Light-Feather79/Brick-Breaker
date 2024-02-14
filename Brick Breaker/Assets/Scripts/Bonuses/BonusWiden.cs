@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(CircleCollider2D))]
 public class BonusWiden : MonoBehaviour
 {
+    public static event Action Widen;
+
     private float _speed = 150;
     
     private void Awake()
@@ -22,7 +25,7 @@ public class BonusWiden : MonoBehaviour
     {
         if (collision.gameObject.TryGetComponent<Paddle>(out Paddle paddle))
         {
-            paddle.WidenY();
+            Widen?.Invoke();
             Destroy(gameObject);
         }
     }

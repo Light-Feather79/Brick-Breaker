@@ -4,8 +4,7 @@ using System;
 [RequireComponent(typeof(SpriteRenderer))]
 public class Brick : MonoBehaviour
 {
-    public static event Action<int> BrickDestroyed;
-    public static event Action BrickCreated;
+    public static event Action<int> BrickLifeCycle;
 
     [SerializeField] private AudioClip _breakSound;
     [SerializeField] private GameObject _blockSparklesVFX;
@@ -17,7 +16,7 @@ public class Brick : MonoBehaviour
 
     private void Start()
     {
-        BrickCreated?.Invoke();
+        BrickLifeCycle?.Invoke(0);
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
@@ -37,10 +36,10 @@ public class Brick : MonoBehaviour
         }
     }
 
-    protected void DestroyBrick()
+    private void DestroyBrick()
     {
         AudioSource.PlayClipAtPoint(_breakSound, Camera.main.transform.position);
-        BrickDestroyed?.Invoke(GetPointsForBrick());
+        BrickLifeCycle?.Invoke(GetPointsForBrick());
         TriggerBlow();
         CreateRandomBonus();
         Destroy(gameObject);
@@ -66,7 +65,7 @@ public class Brick : MonoBehaviour
         {
             int random = UnityEngine.Random.Range(0, 100);
 
-            if (random < 65)
+            if (random < 45)
             {
                 int randomBonus = UnityEngine.Random.Range(0, _bonusesPrefabs.Length);
                 Instantiate(_bonusesPrefabs[randomBonus], transform.position, Quaternion.identity);

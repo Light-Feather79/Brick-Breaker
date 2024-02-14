@@ -8,29 +8,49 @@ using UnityEngine;
 [RequireComponent(typeof(CapsuleCollider2D))]
 public class Paddle : MonoBehaviour
 {
-    [SerializeField] private float _screenWidthInUnits = 16;
     [SerializeField] private float _speed = 15f;
+    [SerializeField, Range(0.1f, 5f)] private float _gameSpeed = 1f;
+    [SerializeField] private bool _isAutoPlay;
     
-    private float _minX = 1f;
-    private float _maxX = 15f;
-    private float _ballVelocity = 10;
+    private float _minX;
+    private float _maxX;
     private float _startingYPos;
     private Vector2 _startingScale;
     private float _randomPaddleOffset;
     private Transform _transform;
     private Transform _ballTransform;
     private CapsuleCollider2D _collider;
-    private GameSession _gameSession;
     private Coroutine _wideningCoroutine;
+
+    private void OnEnable()
+    {
+        BonusWiden.Widen += WidenY;
+    }
+
+    private void OnDisable()
+    {
+        BonusWiden.Widen -= WidenY;
+    }
 
     private void Start()
     {
         _transform = transform;
         _startingYPos = _transform.position.y;
         _startingScale = _transform.localScale;
+
         _collider = GetComponent<CapsuleCollider2D>();
-        _gameSession = FindObjectOfType<GameSession>();
-        _ballTransform = FindObjectOfType<Ball>().transform;
+
+        GetMinAndMaxX();
+    }
+
+    private void GetMinAndMaxX()
+    {
+        Camera camera = Camera.main;
+        float halfHeight = camera.orthographicSize;
+        float halfWidth = camera.aspect * halfHeight;
+
+        _minX = -halfWidth;
+        _maxX =  halfWidth;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -38,16 +58,27 @@ public class Paddle : MonoBehaviour
         if (collision.gameObject.TryGetComponent<Ball>(out Ball ball))
         {
             _randomPaddleOffset = UnityEngine.Random.Range(-1f, 1f);
-            CorrectBallBounce(ball.GetComponent<Rigidbody2D>(), ball.transform.position, ball);
+            CorrectBallBounce(ball.GetComponent<Rigidbody2D>(), ball.transform.position, ball.Speed);
         }
     }
 
     void Update()
     {
-        if (_gameSession.IsAutoPlay == false)
+        Time.timeScale = _gameSpeed;
+
+        if (_ballTransform == null)
+            _ballTransform = FindObjectOfType<Ball>().transform;
+            
+        if (_isAutoPlay == false)
             Move();
         else
             MoveAutomatically();
+    }
+
+    private void Move()
+    {
+        float clampedMousePos = Mathf.Clamp(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, _minX, _maxX);
+        _transform.position = new Vector2(clampedMousePos, _startingYPos);
     }
 
     private void MoveAutomatically()
@@ -56,30 +87,19 @@ public class Paddle : MonoBehaviour
         _transform.position = Vector2.Lerp(_transform.position, ballPos, _speed * Time.deltaTime);
     }
 
-    private void Move()
-    {
-        float clampedMousePos = Mathf.Clamp(Input.mousePosition.x / Screen.width * _screenWidthInUnits, _minX, _maxX);
-        _transform.position = new Vector2(clampedMousePos, _startingYPos);
-    }
-
-
-    private void CorrectBallBounce(Rigidbody2D ballRb, Vector3 ballPosition, Ball ball)
+    private void CorrectBallBounce(Rigidbody2D ballRb, Vector3 ballPosition, float ballVelocity)
     {
         float ballOffsetToPaddleCenter = _collider.ClosestPoint(ballPosition).x - _collider.bounds.center.x;
         float paddleHalfSize = _collider.bounds.size.x / 2;
         float velocityPercentX = ballOffsetToPaddleCenter / paddleHalfSize;
 
-        if (ballOffsetToPaddleCenter >= 0)
-            ballRb.velocity = new Vector2(_ballVelocity * velocityPercentX, Mathf.Abs(ballRb.velocity.y));
-        else
-            ballRb.velocity = new Vector2(_ballVelocity * velocityPercentX, Mathf.Abs(ballRb.velocity.y));
-
-        ballRb.velocity = ballRb.velocity.normalized * ball.Speed;
+        ballRb.velocity = new Vector2(ballVelocity * velocityPercentX, Mathf.Abs(ballRb.velocity.y));
+        ballRb.velocity = ballRb.velocity.normalized * ballVelocity;
     }
 
-    public void WidenY()
+    private void WidenY()
     {
-        float widenedMultiplier = 2f;
+        float widenedMultiplier = 1.5f;
         Vector2 widenedPaddle = Vector2.up * _startingScale *  widenedMultiplier + Vector2.right * _startingScale;
 
 
