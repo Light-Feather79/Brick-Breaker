@@ -23,6 +23,11 @@ public class Ball : MonoBehaviour
         BallLifeCycle?.Invoke(true);
     }
 
+    private void OnDisable()
+    {
+        BallLifeCycle?.Invoke(false);
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         _audioSource.PlayDelayed(0f);
@@ -30,8 +35,6 @@ public class Ball : MonoBehaviour
         if (collision.gameObject.TryGetComponent<Paddle>(out Paddle paddle) == false)
             CorrectEndlessLoop();
     }
-
-    private void OnDisable() => BallLifeCycle?.Invoke(false);
 
     private void CorrectEndlessLoop()
     {

@@ -14,7 +14,7 @@ public class ProgressBar : MonoBehaviour
     private void Start()
     {
         _bar.fillAmount = _currentStarsForArea / _maxStarsForArea;
-        _text.text = "Progress: " + Math.Round((double)(_currentStarsForArea / _maxStarsForArea), 3) * 100f + "%";
+        _text.text = "Progress: " + Math.Round((float)(_currentStarsForArea / _maxStarsForArea), 3) * 100f + "%";
     }
 
 }

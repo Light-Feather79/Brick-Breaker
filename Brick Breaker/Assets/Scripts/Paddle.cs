@@ -22,6 +22,8 @@ public class Paddle : MonoBehaviour
     private CapsuleCollider2D _collider;
     private Coroutine _wideningCoroutine;
 
+    private float PaddleHalfSize => _collider.bounds.size.x / 2;
+
     private void OnEnable()
     {
         BonusWiden.Widen += WidenY;
@@ -40,17 +42,17 @@ public class Paddle : MonoBehaviour
 
         _collider = GetComponent<CapsuleCollider2D>();
 
-        GetMinAndMaxX();
+        SetMinAndMaxX();
     }
 
-    private void GetMinAndMaxX()
+    private void SetMinAndMaxX()
     {
         Camera camera = Camera.main;
         float halfHeight = camera.orthographicSize;
         float halfWidth = camera.aspect * halfHeight;
 
-        _minX = -halfWidth;
-        _maxX =  halfWidth;
+        _minX = -halfWidth + PaddleHalfSize;
+        _maxX =  halfWidth - PaddleHalfSize;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -64,7 +66,7 @@ public class Paddle : MonoBehaviour
 
     void Update()
     {
-        Time.timeScale = _gameSpeed;
+        // Time.timeScale = _gameSpeed;
 
         if (_ballTransform == null)
             _ballTransform = FindObjectOfType<Ball>().transform;
@@ -77,7 +79,7 @@ public class Paddle : MonoBehaviour
 
     private void Move()
     {
-        float clampedMousePos = Mathf.Clamp(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, _minX, _maxX);
+        float clampedMousePos = Mathf.Clamp(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, _minX, _maxX );
         _transform.position = new Vector2(clampedMousePos, _startingYPos);
     }
 
@@ -90,8 +92,7 @@ public class Paddle : MonoBehaviour
     private void CorrectBallBounce(Rigidbody2D ballRb, Vector3 ballPosition, float ballVelocity)
     {
         float ballOffsetToPaddleCenter = _collider.ClosestPoint(ballPosition).x - _collider.bounds.center.x;
-        float paddleHalfSize = _collider.bounds.size.x / 2;
-        float velocityPercentX = ballOffsetToPaddleCenter / paddleHalfSize;
+        float velocityPercentX = ballOffsetToPaddleCenter / PaddleHalfSize;
 
         ballRb.velocity = new Vector2(ballVelocity * velocityPercentX, Mathf.Abs(ballRb.velocity.y));
         ballRb.velocity = ballRb.velocity.normalized * ballVelocity;

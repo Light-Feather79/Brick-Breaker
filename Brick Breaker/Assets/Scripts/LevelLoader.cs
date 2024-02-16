@@ -7,9 +7,7 @@ using UnityEngine.UI;
 
 public class LevelLoader : MonoBehaviour
 {
-    [SerializeField] private Level _level;
-
-    public Level Level { get => _level;}
+    public Level Level;
 
     public void LoadLevel()
     {

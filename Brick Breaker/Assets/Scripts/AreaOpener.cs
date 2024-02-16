@@ -6,21 +6,22 @@ using UnityEngine.UI;
 
 public class AreaOpener : MonoBehaviour
 {
-    [SerializeField] private Area _areaTag;
-    [SerializeField] private AreaSetter _area;
+    [SerializeField] private Area _area;
+    [SerializeField] private AreaSetter _levelsOfArea;
     [SerializeField] private TextMeshProUGUI _text;
+
+    private int _spaceBeforeNumиerEng = 4;
 
     private void Start()
     {
-        gameObject.tag = _areaTag.ToString(); 
-        _text.text = _areaTag.ToString(); 
+        _text.text = _area.ToString().Insert(_spaceBeforeNumиerEng, " "); 
     }
 
     public void OpenArea()
     {
-        Transform area = Instantiate(_area).transform;
-        area.tag = _areaTag.ToString();
-        area.transform.SetParent(GameObject.Find("Canvas").transform, false);
+        AreaSetter area = Instantiate(_levelsOfArea).GetComponent<AreaSetter>();
+        area.Area = _area;
+        area.transform.SetParent(GameObject.Find("CanvasMenu").transform, false);
     }
 
 }

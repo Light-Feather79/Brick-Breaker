@@ -9,6 +9,7 @@ TagManager:
   - Area3
   - Area4
   - Area5
+  - Area15
   layers:
   - Default
   - TransparentFX
