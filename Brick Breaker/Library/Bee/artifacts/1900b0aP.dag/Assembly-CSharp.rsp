@@ -339,8 +339,6 @@
 "Assets/Scripts/ProgressBar.cs"
 "Assets/Scripts/SettingsButton.cs"
 "Assets/Scripts/SoundSettings.cs"
-"Assets/ThirdParty/PyroParticles/Demo/DemoScript.cs"
-"Assets/ThirdParty/PyroParticles/Demo/DemoScriptEditor.cs"
 "Assets/ThirdParty/PyroParticles/Prefab/Script/FireBaseScript.cs"
 "Assets/ThirdParty/PyroParticles/Prefab/Script/FireCollisionForwardScript.cs"
 "Assets/ThirdParty/PyroParticles/Prefab/Script/FireConstantBaseScript.cs"

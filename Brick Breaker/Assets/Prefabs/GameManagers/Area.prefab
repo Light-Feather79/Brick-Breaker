@@ -280,6 +280,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f9c17e2a0d4fab448c7927a8c995f78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _area: 0
+  _area: 1
   _levelsOfArea: {fileID: 9016161029977026808, guid: bc042960bfbfdbb4f8a8afc72939692e, type: 3}
   _text: {fileID: 1100225905314397596}
