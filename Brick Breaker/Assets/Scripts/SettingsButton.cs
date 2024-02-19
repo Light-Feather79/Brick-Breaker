@@ -11,13 +11,17 @@ public class SettingsButton : MonoBehaviour
     public void OpenSettings()
     {
         _soundSettings.gameObject.SetActive(true);
-        Time.timeScale = 0f;
+
+        if (SceneManager.GetActiveScene().name != Level.StartMenu.ToString())
+            Time.timeScale = 0f;
     }
 
     public void CloseSettings()
     {
         _soundSettings.gameObject.SetActive(false);
-        Time.timeScale = 1f;
+
+        if (SceneManager.GetActiveScene().name != Level.StartMenu.ToString())
+            Time.timeScale = 1f;
     }
 
     public void GoToMainMenu()
@@ -28,6 +32,13 @@ public class SettingsButton : MonoBehaviour
     public void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void ContinueAfterAd()
+    {
+        FindObjectOfType<LevelManager>().ResetPuddle();
+        GameData.Instance.AddBonusCoins();
+        FindObjectOfType<LevelGameOverScreen>().gameObject.SetActive(false);
     }
 }
 

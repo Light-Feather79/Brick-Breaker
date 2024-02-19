@@ -20,8 +20,7 @@ public class AreaOpener : MonoBehaviour
     public void OpenArea()
     {
         AreaSetter area = Instantiate(_levelsOfArea).GetComponent<AreaSetter>();
-        area.Area = _area;
         area.transform.SetParent(GameObject.Find("CanvasMenu").transform, false);
+        area.Area = _area;
     }
-
 }

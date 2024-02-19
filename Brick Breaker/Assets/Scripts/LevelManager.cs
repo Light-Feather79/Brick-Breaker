@@ -10,10 +10,13 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private int _ballCount;
     [SerializeField] private int _breakableBricks;
     [SerializeField] private int _coins;
+    [SerializeField] private LevelGameOverScreen _levelGameOverScreen;
+    [SerializeField] private Paddle _paddlePrefab;
 
     private bool _death;
     private bool _blackStar;
     private bool _isPaused;
+    private Paddle _paddle;
 
     private void OnEnable()
     {
@@ -32,6 +35,7 @@ public class LevelManager : MonoBehaviour
     private void Start()
     {
         GiveCoinsToRandomBricks();
+        _paddle = Instantiate(_paddlePrefab);
         Time.timeScale = 1;
     }
 
@@ -110,23 +114,17 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-
-
     public void LoseGame()
     {
+        Time.timeScale = 0f;
+        _death = true;
+        _levelGameOverScreen.gameObject.SetActive(true);
+    }
 
-
-
-        SceneManager.LoadScene(0);
-        // int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-
-        // if (currentSceneIndex == SceneManager.sceneCountInBuildSettings - 1)
-        // {
-        //     SceneManager.LoadScene(0);
-        // }
-        // else
-        // {
-        //     SceneManager.LoadScene(currentSceneIndex + 1);
-        // }
+    public void ResetPuddle()
+    {
+        Destroy(_paddle.gameObject);
+        _paddle = Instantiate(_paddlePrefab);
+        Time.timeScale = 1f;
     }
 }

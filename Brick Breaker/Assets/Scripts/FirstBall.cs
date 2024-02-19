@@ -4,15 +4,14 @@ using Unity.Mathematics;
 
 public class FirstBall : MonoBehaviour
 {
-    [SerializeField] private Ball _ballPrefab;
-
     private Transform _transformBall;
     private Rigidbody2D _rbBall;
     private float _speedBall;
 
     private void Awake()
     {
-        _transformBall = Instantiate(_ballPrefab).transform;
+
+        _transformBall = Instantiate(GameData.Instance._ballPrefab).transform;
         _rbBall = _transformBall.GetComponent<Rigidbody2D>();
         _speedBall = _transformBall.GetComponent<Ball>().Speed;
     }

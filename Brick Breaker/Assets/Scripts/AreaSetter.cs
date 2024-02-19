@@ -27,7 +27,7 @@ public class AreaSetter : MonoBehaviour
         for (int i = 0; i < _levels.Length; i++, levelInArea++)
         {
             _levels[i].Level = (Level)levelInArea;
-            int stars = GameData.Instance.GetAreaInfo(_levels[i].Level);
+            int stars = GameData.Instance.GetStarAmountOfLevel(_levels[i].Level);
             _levels[i].GetComponent<Image>().sprite = _imageOfStars[stars];
             _levels[i].GetComponentInChildren<TextMeshProUGUI>().text = _levels[i].Level.ToString().Insert(_spaceBeforeNumerEng, " ");
         }

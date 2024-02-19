@@ -3,14 +3,16 @@ using System.Collections.Generic;
 
 public class BallPooler : MonoBehaviour
 {
-    [SerializeField] private Ball _ballPrefab;
     [SerializeField] private int _poolSize = 20;
     [SerializeField] private int _currentPoolSize = 20;
 
-    private static Queue<Ball> s_ballPool;
+    private Queue<Ball> s_ballPool;
+    private Ball _ballPrefab;
 
     void Awake()
     {
+        _ballPrefab = GameData.Instance._ballPrefab;
+
         s_ballPool = new Queue<Ball>();
         Queue<Ball> ballPool = new Queue<Ball>();
 

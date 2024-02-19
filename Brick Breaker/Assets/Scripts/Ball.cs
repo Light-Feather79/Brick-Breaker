@@ -9,15 +9,18 @@ public class Ball : MonoBehaviour
     public static event Action<bool> BallLifeCycle;
 
     [SerializeField] private float _speed = 6f;
+    [SerializeField] private float _rotation = 10f;
 
     private float _borderToModify = .3f;
     private Rigidbody2D _rb;
     private AudioSource _audioSource;
+    private Transform _transform;
 
     public float Speed { get => _speed;}
 
     private void OnEnable()
     {
+        _transform = transform;
         _rb = GetComponent<Rigidbody2D>();
         _audioSource = GetComponent<AudioSource>();
         BallLifeCycle?.Invoke(true);
@@ -26,6 +29,15 @@ public class Ball : MonoBehaviour
     private void OnDisable()
     {
         BallLifeCycle?.Invoke(false);
+    }
+
+    private void Update()
+    {
+        if (_rb.velocity.x > 0)
+            _transform.Rotate(Vector3.forward * -_rotation);
+        else
+            _transform.Rotate(Vector3.forward * _rotation);
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

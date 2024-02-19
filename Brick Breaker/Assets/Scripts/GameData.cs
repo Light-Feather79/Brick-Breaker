@@ -9,11 +9,13 @@ public class GameData : MonoBehaviour
 {
     public const int MaxStars = 4;
     public const int Maxlevels = 6;
-    public const int MaxCoinsForLevel = 5;
+    public const int MaxCoinsForLevel = 7;
 
     public static GameData Instance;
     
     public event Action DataChanged;
+
+    public Ball _ballPrefab;
 
     private Dictionary<Level, int> _areaProgress;
 
@@ -49,19 +51,15 @@ public class GameData : MonoBehaviour
         SoundSettings.SoundSettingsChanged -= SetSoundSettings;
     }
 
-    private void OnGetBrick(int points)
+    public void AddBonusCoins()
     {
-        Score += points;
+        Coins += 2;
         DataChanged?.Invoke();
     }
 
-    private void OnGetCoin()
-    {
-        Coins++;
-        DataChanged?.Invoke();
-    }
+    public void SetBallSprite(Sprite sprite) => _ballPrefab.GetComponent<SpriteRenderer>().sprite = sprite;
 
-    public int GetAreaInfo(Level level)
+    public int GetStarAmountOfLevel(Level level)
     {
         if (_areaProgress.ContainsKey(level) == false)
             _areaProgress[level] = 0;
@@ -77,6 +75,18 @@ public class GameData : MonoBehaviour
             UpdateProgress();
             DataChanged?.Invoke();
         }
+    }
+
+    private void OnGetBrick(int points)
+    {
+        Score += points;
+        DataChanged?.Invoke();
+    }
+
+    private void OnGetCoin()
+    {
+        Coins++;
+        DataChanged?.Invoke();
     }
 
     private void UpdateProgress()

@@ -38,7 +38,7 @@ public class BonusBalls : MonoBehaviour
             Ball pulledBall = _ballPooler.Pull();
             pulledBall.transform.position = ball.transform.position;
             pulledBall.gameObject.GetComponent<Rigidbody2D>().velocity =
-            new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized * pulledBall.Speed;
+                new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized * pulledBall.Speed;
         }
     }
 }

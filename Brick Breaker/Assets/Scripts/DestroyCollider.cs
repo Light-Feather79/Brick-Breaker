@@ -7,10 +7,7 @@ public class DestroyCollider : MonoBehaviour
 {
     private BallPooler _ballPooler;
 
-    private void Awake()
-    {
-        _ballPooler = FindObjectOfType<BallPooler>();
-    }
+    private void Awake() => _ballPooler = FindObjectOfType<BallPooler>();
 
     private void OnTriggerEnter2D(Collider2D other)
     {
