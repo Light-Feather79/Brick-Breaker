@@ -9,17 +9,24 @@ public class LevelLoader : MonoBehaviour
 {
     public Level Level;
 
-    [SerializeField] private GameObject _levelNotComplitedWarning;
+    [SerializeField] private Image _lockImage;
+
+    private bool _levelIsOpen;
+
+    private void Start()
+    {
+        int previousLevel = (int)Level - 1;
+
+        if (Level == Level.Level1 || GameData.Instance.GetStarAmountOfLevel((Level)previousLevel) > 0)
+            _levelIsOpen = true;
+        else
+            _lockImage.gameObject.SetActive(true);
+    }
 
     public void LoadLevel()
     {
-        int previousLevel = (int)Level;
-        previousLevel--;
-
-        if (GameData.Instance.GetStarAmountOfLevel((Level)previousLevel) > 0 || Level == Level.Level1)
+        if (_levelIsOpen)
             SceneManager.LoadScene(Level.ToString());
-        else
-            _levelNotComplitedWarning.SetActive(true);
-            
     }
 }
+

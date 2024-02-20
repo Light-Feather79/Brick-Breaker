@@ -18,6 +18,7 @@ public class GameData : MonoBehaviour
     public Ball _ballPrefab;
 
     private Dictionary<Level, int> _areaProgress;
+    private Dictionary<Sprite, bool> _boughtBalls;
 
     public int Score { get; private set; }
     public int Coins { get; private set; }
@@ -33,6 +34,7 @@ public class GameData : MonoBehaviour
             Instance = this;
 
         _areaProgress = new Dictionary<Level, int>();
+        _boughtBalls = new Dictionary<Sprite, bool>();
  
         DontDestroyOnLoad(gameObject);
     }
@@ -57,7 +59,17 @@ public class GameData : MonoBehaviour
         DataChanged?.Invoke();
     }
 
+    public void BuyBall(int coins)
+    {
+        Coins = coins;
+        DataChanged?.Invoke();
+    }
+
     public void SetBallSprite(Sprite sprite) => _ballPrefab.GetComponent<SpriteRenderer>().sprite = sprite;
+
+    public bool GetBallInfo(Sprite sprite) => _boughtBalls[sprite] = _boughtBalls.ContainsKey(sprite) ? _boughtBalls[sprite] : false;
+
+    public void ResetBallInfo(Sprite sprite, bool isBought) => _boughtBalls[sprite] = isBought;
 
     public int GetStarAmountOfLevel(Level level)
     {

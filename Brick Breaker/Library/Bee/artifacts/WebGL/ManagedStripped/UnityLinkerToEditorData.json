@@ -9,7 +9,8 @@
             "scenes": [
               "Assets/Scenes/Area 1/Level1.unity",
               "Assets/Scenes/Area 1/Level2.unity",
-              "Assets/Scenes/Area 1/Level3.unity"
+              "Assets/Scenes/Area 1/Level3.unity",
+              "Assets/Scenes/StartMenu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -19,7 +20,8 @@
             "scenes": [
               "Assets/Scenes/Area 1/Level1.unity",
               "Assets/Scenes/Area 1/Level2.unity",
-              "Assets/Scenes/Area 1/Level3.unity"
+              "Assets/Scenes/Area 1/Level3.unity",
+              "Assets/Scenes/StartMenu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -29,7 +31,8 @@
             "scenes": [
               "Assets/Scenes/Area 1/Level1.unity",
               "Assets/Scenes/Area 1/Level2.unity",
-              "Assets/Scenes/Area 1/Level3.unity"
+              "Assets/Scenes/Area 1/Level3.unity",
+              "Assets/Scenes/StartMenu.unity"
             ],
             "dependencyType": 1,
             "icon": null

@@ -10,6 +10,8 @@ ScriptsOnlyBuild:
     - BonusCoin
     - BonusWiden
     - Brick
+    - Comic
+    - ComicSO
     - DestroyCollider
     - FirstBall
     - GameData
@@ -23,7 +25,6 @@ ScriptsOnlyBuild:
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Animation.Runtime.dll:
-    - UnityEngine.U2D.Animation.BufferManager
     - UnityEngine.U2D.Animation.SpriteSkinComposite
     - UnityEngine.U2D.Animation.SpriteSkinUpdateHelper
     Unity.2D.IK.Editor.dll:
@@ -61,15 +62,11 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
-    Unity.Timeline.Editor.dll:
-    - TimelinePreferences
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -124,14 +121,8 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
-    fullTypeName: AreaOpener
-    methodName: OpenArea
-  - assembly: Assembly-CSharp
     fullTypeName: BallPicker
     methodName: PickBall
-  - assembly: Assembly-CSharp
-    fullTypeName: AreaOpener
-    methodName: OpenArea
   - assembly: Assembly-CSharp
     fullTypeName: BallPicker
     methodName: PickBall
@@ -139,8 +130,8 @@ ScriptsOnlyBuild:
     fullTypeName: AreaOpener
     methodName: OpenArea
   - assembly: Assembly-CSharp
-    fullTypeName: BallPicker
-    methodName: PickBall
+    fullTypeName: AreaOpener
+    methodName: OpenArea
   - assembly: Assembly-CSharp
     fullTypeName: BallPicker
     methodName: PickBall
@@ -153,6 +144,18 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: BallPicker
     methodName: PickBall
+  - assembly: Assembly-CSharp
+    fullTypeName: BallPicker
+    methodName: PickBall
+  - assembly: Assembly-CSharp
+    fullTypeName: AreaOpener
+    methodName: OpenArea
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelLoader
+    methodName: LoadLevel
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelLoader
+    methodName: LoadLevel
   - assembly: Assembly-CSharp
     fullTypeName: LevelLoader
     methodName: LoadLevel
@@ -162,21 +165,36 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: AreaSetter
     methodName: DestroyArea
-  - assembly: Assembly-CSharp
-    fullTypeName: LevelLoader
-    methodName: LoadLevel
-  - assembly: Assembly-CSharp
-    fullTypeName: LevelLoader
-    methodName: LoadLevel
-  - assembly: Assembly-CSharp
-    fullTypeName: LevelLoader
-    methodName: LoadLevel
-  - assembly: Assembly-CSharp
-    fullTypeName: LevelLoader
-    methodName: LoadLevel
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelLoader
+    methodName: LoadLevel
+  - assembly: Assembly-CSharp
+    fullTypeName: Comic
+    methodName: OpenComic
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelLoader
+    methodName: LoadLevel
+  - assembly: Assembly-CSharp
+    fullTypeName: Comic
+    methodName: GoToNextPage
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: Comic
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: Comic
+    methodName: GoToPreviousPage
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: Comic
+    methodName: GoToPreviousPage
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -329,39 +347,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3122}
     - Class: 114
-      Script: {instanceID: 3236}
+      Script: {instanceID: 3234}
     - Class: 114
-      Script: {instanceID: 3880}
+      Script: {instanceID: 3878}
     - Class: 114
-      Script: {instanceID: 4558}
+      Script: {instanceID: 4556}
     - Class: 114
-      Script: {instanceID: 4974}
+      Script: {instanceID: 4972}
     - Class: 114
-      Script: {instanceID: 5674}
+      Script: {instanceID: 5520}
     - Class: 114
-      Script: {instanceID: 5902}
+      Script: {instanceID: 5676}
     - Class: 114
-      Script: {instanceID: 5994}
+      Script: {instanceID: 5904}
     - Class: 114
-      Script: {instanceID: 6024}
+      Script: {instanceID: 5996}
     - Class: 114
-      Script: {instanceID: 6372}
+      Script: {instanceID: 6026}
     - Class: 114
-      Script: {instanceID: 6702}
+      Script: {instanceID: 6374}
     - Class: 114
-      Script: {instanceID: 6916}
+      Script: {instanceID: 6704}
     - Class: 114
-      Script: {instanceID: 7012}
+      Script: {instanceID: 6918}
     - Class: 114
-      Script: {instanceID: 7320}
+      Script: {instanceID: 7014}
     - Class: 114
-      Script: {instanceID: 7968}
+      Script: {instanceID: 7322}
     - Class: 114
-      Script: {instanceID: 8176}
+      Script: {instanceID: 7972}
     - Class: 114
-      Script: {instanceID: 8744}
+      Script: {instanceID: 8180}
     - Class: 114
-      Script: {instanceID: 35260}
+      Script: {instanceID: 8746}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -442,39 +460,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3122}
     - Class: 114
-      Script: {instanceID: 3236}
+      Script: {instanceID: 3234}
     - Class: 114
-      Script: {instanceID: 3880}
+      Script: {instanceID: 3878}
     - Class: 114
-      Script: {instanceID: 4558}
+      Script: {instanceID: 4556}
     - Class: 114
-      Script: {instanceID: 4974}
+      Script: {instanceID: 4972}
     - Class: 114
-      Script: {instanceID: 5674}
+      Script: {instanceID: 5520}
     - Class: 114
-      Script: {instanceID: 5902}
+      Script: {instanceID: 5676}
     - Class: 114
-      Script: {instanceID: 5994}
+      Script: {instanceID: 5904}
     - Class: 114
-      Script: {instanceID: 6024}
+      Script: {instanceID: 5996}
     - Class: 114
-      Script: {instanceID: 6372}
+      Script: {instanceID: 6026}
     - Class: 114
-      Script: {instanceID: 6702}
+      Script: {instanceID: 6374}
     - Class: 114
-      Script: {instanceID: 6916}
+      Script: {instanceID: 6704}
     - Class: 114
-      Script: {instanceID: 7012}
+      Script: {instanceID: 6918}
     - Class: 114
-      Script: {instanceID: 7320}
+      Script: {instanceID: 7014}
     - Class: 114
-      Script: {instanceID: 7968}
+      Script: {instanceID: 7322}
     - Class: 114
-      Script: {instanceID: 8176}
+      Script: {instanceID: 7972}
     - Class: 114
-      Script: {instanceID: 8744}
+      Script: {instanceID: 8180}
     - Class: 114
-      Script: {instanceID: 35260}
+      Script: {instanceID: 8746}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -555,39 +573,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3122}
     - Class: 114
-      Script: {instanceID: 3236}
+      Script: {instanceID: 3234}
     - Class: 114
-      Script: {instanceID: 3880}
+      Script: {instanceID: 3878}
     - Class: 114
-      Script: {instanceID: 4558}
+      Script: {instanceID: 4556}
     - Class: 114
-      Script: {instanceID: 4974}
+      Script: {instanceID: 4972}
     - Class: 114
-      Script: {instanceID: 5674}
+      Script: {instanceID: 5520}
     - Class: 114
-      Script: {instanceID: 5902}
+      Script: {instanceID: 5676}
     - Class: 114
-      Script: {instanceID: 5994}
+      Script: {instanceID: 5904}
     - Class: 114
-      Script: {instanceID: 6024}
+      Script: {instanceID: 5996}
     - Class: 114
-      Script: {instanceID: 6372}
+      Script: {instanceID: 6026}
     - Class: 114
-      Script: {instanceID: 6702}
+      Script: {instanceID: 6374}
     - Class: 114
-      Script: {instanceID: 6916}
+      Script: {instanceID: 6704}
     - Class: 114
-      Script: {instanceID: 7012}
+      Script: {instanceID: 6918}
     - Class: 114
-      Script: {instanceID: 7320}
+      Script: {instanceID: 7014}
     - Class: 114
-      Script: {instanceID: 7968}
+      Script: {instanceID: 7322}
     - Class: 114
-      Script: {instanceID: 8176}
+      Script: {instanceID: 7972}
     - Class: 114
-      Script: {instanceID: 8744}
+      Script: {instanceID: 8180}
     - Class: 114
-      Script: {instanceID: 35260}
+      Script: {instanceID: 8746}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -643,11 +661,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 62
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -668,39 +692,45 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3122}
     - Class: 114
-      Script: {instanceID: 3684}
+      Script: {instanceID: 3682}
     - Class: 114
-      Script: {instanceID: 3742}
+      Script: {instanceID: 3740}
     - Class: 114
-      Script: {instanceID: 4442}
+      Script: {instanceID: 4440}
     - Class: 114
-      Script: {instanceID: 4558}
+      Script: {instanceID: 4556}
     - Class: 114
-      Script: {instanceID: 4760}
+      Script: {instanceID: 4758}
     - Class: 114
-      Script: {instanceID: 5082}
+      Script: {instanceID: 5080}
     - Class: 114
       Script: {instanceID: 5564}
     - Class: 114
-      Script: {instanceID: 5902}
+      Script: {instanceID: 5618}
     - Class: 114
-      Script: {instanceID: 5994}
+      Script: {instanceID: 5904}
     - Class: 114
-      Script: {instanceID: 6702}
+      Script: {instanceID: 5996}
     - Class: 114
-      Script: {instanceID: 6916}
+      Script: {instanceID: 6704}
     - Class: 114
-      Script: {instanceID: 7320}
+      Script: {instanceID: 6918}
     - Class: 114
-      Script: {instanceID: 8176}
+      Script: {instanceID: 7322}
     - Class: 114
-      Script: {instanceID: 8340}
+      Script: {instanceID: 7330}
     - Class: 114
-      Script: {instanceID: 8612}
+      Script: {instanceID: 7972}
     - Class: 114
-      Script: {instanceID: 8674}
+      Script: {instanceID: 8180}
     - Class: 114
-      Script: {instanceID: 55266}
+      Script: {instanceID: 8344}
+    - Class: 114
+      Script: {instanceID: 8614}
+    - Class: 114
+      Script: {instanceID: 8676}
+    - Class: 114
+      Script: {instanceID: 9688}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1281,6 +1311,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: LevelGameOverScreen
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: ActivationPlayableAsset
@@ -1302,6 +1338,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 6d72e49998183128785693197f596ce2
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: BallPicker
   - hash:
       serializedVersion: 2
       Hash: 89671975356940067ec32f40bcaefcd0
@@ -1508,6 +1550,12 @@ ScriptsOnlyBuild:
     className: StandaloneInputModule
   - hash:
       serializedVersion: 2
+      Hash: 8486fdaa42abb5335d8271775e3d9d59
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ComicSO
+  - hash:
+      serializedVersion: 2
       Hash: e021fae07b7c73933e18725f76623e21
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -1712,7 +1760,7 @@ ScriptsOnlyBuild:
     className: UnityOnMoveMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 4bc891157e8e2dc17cb1a51d4b657528
+      Hash: 31d20184cae0e78fefbf97f016c61106
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: LevelLoader
@@ -1862,16 +1910,10 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
+      Hash: e58f5fd22ea584363a24f2490785108b
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: LevelGameOverScreen
-  - hash:
-      serializedVersion: 2
-      Hash: 36149c9f38d5bc35bfb9106468425896
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: BallPicker
+    className: Comic
   platform: 20
   scenePathNames:
   - Assets/Scenes/StartMenu.unity
