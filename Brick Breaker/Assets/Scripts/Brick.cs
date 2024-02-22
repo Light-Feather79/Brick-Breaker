@@ -10,8 +10,11 @@ public class Brick : MonoBehaviour
     [SerializeField] private GameObject _blockSparklesVFX;
     [SerializeField] private Sprite[] _hitSprites;
     [SerializeField] private GameObject[] _bonusesPrefabs;
+    [SerializeField] private BonusBlackStar _bonusBlackStar;
     [SerializeField] private BonusCoin _coinPrefab;
     
+    public bool BlackStarBonus;
+
     private SpriteRenderer _spriteRenderer;
     private AudioSource _audioSource;
     private int _currentHits;
@@ -59,11 +62,11 @@ public class Brick : MonoBehaviour
     private int GetPointsForBrick()
     {
         if(_hitSprites.Length == 0)
-            return 67;
+            return 31;
         if(_hitSprites.Length == 1)
-            return 91;
+            return 64;
         if(_hitSprites.Length == 2)
-            return 119;
+            return 99;
         else
             return 144;
     }
@@ -72,7 +75,18 @@ public class Brick : MonoBehaviour
 
     private void CreateBonus()
     {
-        if (_bonusesPrefabs.Length != 0 && _coinBonus == false)
+        if (BlackStarBonus)
+        {
+            BlackStarBonus = false;
+            Instantiate(_bonusBlackStar, transform.position, Quaternion.identity);
+            return;
+        }
+        else if (_coinBonus)
+        {
+            Instantiate(_coinPrefab, transform.position, Quaternion.identity);
+            return;
+        }
+        else if (_bonusesPrefabs.Length != 0 && _coinBonus == false)
         {
             int random = UnityEngine.Random.Range(0, 100);
 
@@ -82,8 +96,5 @@ public class Brick : MonoBehaviour
                 Instantiate(_bonusesPrefabs[randomBonus], transform.position, Quaternion.identity);
             }
         }
-        
-        else if (_coinBonus == true)
-            Instantiate(_coinPrefab, transform.position, Quaternion.identity);
     }
 }

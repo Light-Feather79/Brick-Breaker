@@ -9,7 +9,7 @@ public class Ball : MonoBehaviour
     public static event Action<bool> BallLifeCycle;
 
     [SerializeField] private float _speed = 6f;
-    [SerializeField] private float _rotation = 10f;
+    [SerializeField] private float _rotation = 5f;
 
     private float _borderToModify = .3f;
     private Rigidbody2D _rb;
@@ -37,7 +37,6 @@ public class Ball : MonoBehaviour
             _transform.Rotate(Vector3.forward * -_rotation);
         else
             _transform.Rotate(Vector3.forward * _rotation);
-
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

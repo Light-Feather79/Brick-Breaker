@@ -1,9 +1,6 @@
 using System;
 using System.Collections.Generic;
-using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameData : MonoBehaviour
 {
@@ -22,9 +19,11 @@ public class GameData : MonoBehaviour
 
     public int Score { get; private set; }
     public int Coins { get; private set; }
+    public int BlackStars { get; private set; }
     public float StoryProgress { get; private set; }
     public float MusicValue { get; private set; }
     public float SFXValue { get; private set; }
+    public bool IsGameComplited { get; private set; }
 
     private void Awake()
     {
@@ -43,6 +42,7 @@ public class GameData : MonoBehaviour
     {
         Brick.BrickLifeCycle += OnGetBrick;
         BonusCoin.CoinGained += OnGetCoin;
+        BonusBlackStar.BlackStarGained += OnGetBlackStar;
         SoundSettings.SoundSettingsChanged += SetSoundSettings;
     }
 
@@ -50,6 +50,7 @@ public class GameData : MonoBehaviour
     {
         Brick.BrickLifeCycle -= OnGetBrick;
         BonusCoin.CoinGained -= OnGetCoin;
+        BonusBlackStar.BlackStarGained -= OnGetBlackStar;
         SoundSettings.SoundSettingsChanged -= SetSoundSettings;
     }
 
@@ -59,9 +60,15 @@ public class GameData : MonoBehaviour
         DataChanged?.Invoke();
     }
 
-    public void BuyBall(int coins)
+    public void BuyBallByCoins(int coins)
     {
         Coins = coins;
+        DataChanged?.Invoke();
+    }
+
+    public void BuyBallByStars(int coins)
+    {
+        BlackStars = coins;
         DataChanged?.Invoke();
     }
 
@@ -86,6 +93,9 @@ public class GameData : MonoBehaviour
             _areaProgress[level] = levelProgress;
             UpdateProgress();
             DataChanged?.Invoke();
+        
+            if ((int)level == Enum.GetNames(typeof(Level)).Length - 1)
+                IsGameComplited = true;
         }
     }
 
@@ -98,6 +108,12 @@ public class GameData : MonoBehaviour
     private void OnGetCoin()
     {
         Coins++;
+        DataChanged?.Invoke();
+    }
+
+    private void OnGetBlackStar()
+    {
+        BlackStars++;
         DataChanged?.Invoke();
     }
 
@@ -149,14 +165,14 @@ public enum Level
     Level4,
     Level5,
     Level6,
-    Level7,
-    Level8,
-    Level9,
-    Level10,
-    Level11,
-    Level12,
-    Level13,
-    Level14,
-    Level15,
+    // Level7,
+    // Level8,
+    // Level9,
+    // Level10,
+    // Level11,
+    // Level12,
+    // Level13,
+    // Level14,
+    // Level15,
     StartMenu,
 }

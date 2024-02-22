@@ -9,8 +9,9 @@ public class HeaderInfo : MonoBehaviour
 {
     private static HeaderInfo s_instance;
 
-    [SerializeField] private TextMeshProUGUI _scoreText;
+    [SerializeField] private TextMeshProUGUI _blackStarText;
     [SerializeField] private TextMeshProUGUI _coinText;
+    [SerializeField] private TextMeshProUGUI _scoreText;
     [SerializeField] private TextMeshProUGUI _storyProgressText;
     [SerializeField] private Image _progressBarFilled;
 
@@ -37,8 +38,9 @@ public class HeaderInfo : MonoBehaviour
 
     private void UpdateUI()
     {
-        _scoreText.text = "Score: " + GameData.Instance.Score;
-        _coinText.text = "Coins: " + GameData.Instance.Coins;
+        _blackStarText.text = GameData.Instance.BlackStars.ToString();
+        _coinText.text = GameData.Instance.Coins.ToString();
+        _scoreText.text = "Score\n" + GameData.Instance.Score;
         _storyProgressText.text = "Story progress: " + GameData.Instance.StoryProgress + "%";
         _progressBarFilled.fillAmount = GameData.Instance.StoryProgress / 100f;
     }

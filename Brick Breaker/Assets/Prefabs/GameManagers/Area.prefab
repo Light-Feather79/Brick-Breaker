@@ -282,4 +282,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _area: 1
   _levelsOfArea: {fileID: 9016161029977026808, guid: bc042960bfbfdbb4f8a8afc72939692e, type: 3}
+  _comic: {fileID: 9057635847515512013, guid: 0850250e0ec683243871fa882c2559f0, type: 3}
   _text: {fileID: 1100225905314397596}

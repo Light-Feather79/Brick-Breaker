@@ -8,19 +8,21 @@ using UnityEngine.UI;
 [CreateAssetMenu(menuName = "Comic")]
 public class ComicSO : ScriptableObject
 {
-    [SerializeField] private string _part;
+    [SerializeField] private int _part;
     [SerializeField] private Sprite[] _pages;
 
-    public bool IsOpen;
+    public bool FirstTimeOpened;
     private int _currentPage = 0;
+
+    public int Part => _part;
 
     public Sprite GetFirstPage() => _pages[0];
 
     public Sprite NextPage(int nextPage)
     {
-        if (IsOpen == false)
+        if (FirstTimeOpened == false)
         {
-            IsOpen = true;
+            FirstTimeOpened = true;
             _currentPage = 0;
         }
 

@@ -11,6 +11,7 @@ public class BallPicker : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _textPrice;
     [SerializeField] private Image _imageToBuy;
     [SerializeField] private bool _toWatch;
+    [SerializeField] private bool _toBuyByBlackStars;
 
     [SerializeField] private TextMeshProUGUI _textWatch;
     [SerializeField] private Image _imageToWatch;
@@ -42,6 +43,11 @@ public class BallPicker : MonoBehaviour
                 {
                     _textWatch.text = $"{_amountToWatch}/{_maxAmountToWatch}";
                     _imageToWatch.gameObject.SetActive(true);
+                }
+                else if(_toBuyByBlackStars)
+                {
+                    _textPrice.text = _price.ToString();
+                    _imageToBuy.gameObject.SetActive(true);
                 }
                 else
                 {
@@ -81,12 +87,25 @@ public class BallPicker : MonoBehaviour
             }
         }
 
-        if (_isBought == false && _price <= GameData.Instance.Coins)
+        if (_toBuyByBlackStars)
         {
-            _isBought = true;
-            _imageToBuy.gameObject.SetActive(false);
-            GameData.Instance.BuyBall(GameData.Instance.Coins - _price);
-            GameData.Instance.ResetBallInfo(_ballImage.sprite, _isBought);
+            if (_isBought == false && _price <= GameData.Instance.BlackStars)
+            {
+                _isBought = true;
+                _imageToBuy.gameObject.SetActive(false);
+                GameData.Instance.BuyBallByStars(GameData.Instance.BlackStars - _price);
+                GameData.Instance.ResetBallInfo(_ballImage.sprite, _isBought);
+            }
+        }
+        else
+        {
+            if (_isBought == false && _price <= GameData.Instance.Coins)
+            {
+                _isBought = true;
+                _imageToBuy.gameObject.SetActive(false);
+                GameData.Instance.BuyBallByCoins(GameData.Instance.Coins - _price);
+                GameData.Instance.ResetBallInfo(_ballImage.sprite, _isBought);
+            }
         }
 
         if (_isBought)

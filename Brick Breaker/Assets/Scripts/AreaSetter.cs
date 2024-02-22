@@ -8,6 +8,8 @@ using UnityEngine.UI;
 public class AreaSetter : MonoBehaviour
 {
     public Area Area;
+
+    [SerializeField] public ComicSO[] _allComicParts;
     
     [SerializeField] private Sprite[] _imageOfStars;
     [SerializeField] private GameObject _buttonLevels;
@@ -15,12 +17,11 @@ public class AreaSetter : MonoBehaviour
     private LevelLoader[] _levels;
     private int _spaceBeforeNumerEng = 5;
 
+    public Level LastLevel {get; private set;}
 
     private void Start()
     {
-        int areaNumber = (int)Area;
-        int maxLevels = GameData.Maxlevels;
-        int levelInArea = areaNumber * maxLevels - maxLevels + 1;
+        int levelInArea = FindFirstLevelInArea();
 
         _levels = _buttonLevels.GetComponentsInChildren<LevelLoader>();
 
@@ -31,10 +32,21 @@ public class AreaSetter : MonoBehaviour
             _levels[i].GetComponent<Image>().sprite = _imageOfStars[stars];
             _levels[i].GetComponentInChildren<TextMeshProUGUI>().text = _levels[i].Level.ToString().Insert(_spaceBeforeNumerEng, " ");
         }
+
+        LastLevel = (Level)(levelInArea - 1);
+        Comic.FirstPartIsLoaded = false;
     }
 
     public void DestroyArea()
     {
         Destroy(gameObject);
     }
+
+    public int FindFirstLevelInArea()
+    {
+        int areaNumber = (int)Area;
+        int maxLevels = GameData.Maxlevels;
+        return areaNumber * maxLevels - maxLevels + 1;
+    }
+    
 }

@@ -11,6 +11,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private int _breakableBricks;
     [SerializeField] private int _coins;
     [SerializeField] private LevelGameOverScreen _levelGameOverScreen;
+    [SerializeField] private LevelWinScreen _levelWinScreen;
     [SerializeField] private Paddle _paddlePrefab;
 
     private bool _death;
@@ -23,6 +24,7 @@ public class LevelManager : MonoBehaviour
         Ball.BallLifeCycle += TrackBallCount;
         Brick.BrickLifeCycle += TrackBricks;
         BonusCoin.CoinGained += OnCoinGained;
+        BonusBlackStar.BlackStarGained += OnBlackStarGained;
     }
 
     private void OnDisable()
@@ -30,6 +32,7 @@ public class LevelManager : MonoBehaviour
         Ball.BallLifeCycle -= TrackBallCount;
         Brick.BrickLifeCycle -= TrackBricks;
         BonusCoin.CoinGained -= OnCoinGained;
+        BonusBlackStar.BlackStarGained -= OnBlackStarGained;
     }
 
     private void Start()
@@ -46,16 +49,26 @@ public class LevelManager : MonoBehaviour
 
     private void OnCoinGained() => _coins++;
 
+    private void OnBlackStarGained() => _blackStar = true;
+
     private void GiveCoinsToRandomBricks()
     {
         List<Brick> bricks = FindObjectsOfType<Brick>().ToList();
         int setCoins = 0;
+        bool blackStartIsSet = false;
 
         while(setCoins < GameData.MaxCoinsForLevel)
         {
             for (int i = bricks.Count - 1; i >= 0; i--)
             {
                 int coinChance = UnityEngine.Random.Range(0, 100);
+
+                if (GameData.Instance.IsGameComplited && blackStartIsSet == false)
+                {
+                    bricks[i].BlackStarBonus = true;
+                    blackStartIsSet = true;
+                    continue;
+                }
 
                 if (coinChance < 50)
                 {
@@ -97,7 +110,7 @@ public class LevelManager : MonoBehaviour
 
     private IEnumerator EndLevel()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(2.5f);
         WinGame();
     }
 
@@ -111,7 +124,7 @@ public class LevelManager : MonoBehaviour
         starsEarned = _blackStar == true ? starsEarned + 1 : starsEarned;
 
         GameData.Instance.ResetLevelData(starsEarned, level);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        _levelWinScreen.gameObject.SetActive(true);
     }
 
     public void LoseGame()

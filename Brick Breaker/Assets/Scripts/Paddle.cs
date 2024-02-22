@@ -9,7 +9,7 @@ using UnityEngine;
 public class Paddle : MonoBehaviour
 {
     [SerializeField] private float _speed = 15f;
-    [SerializeField, Range(0.1f, 5f)] private float _gameSpeed = 1f;
+    [SerializeField, Range(0.1f, 5f)] private float _gameSpeed;
     [SerializeField] private bool _isAutoPlay;
     
     private float _minX;
@@ -36,6 +36,19 @@ public class Paddle : MonoBehaviour
 
     private void Start()
     {
+        // _isAutoPlay = true;
+        // _gameSpeed = 5f;
+        // Time.timeScale = _gameSpeed;
+
+
+
+
+
+
+
+
+
+
         _transform = transform;
         _startingYPos = _transform.position.y;
         _startingScale = _transform.localScale;
@@ -66,8 +79,6 @@ public class Paddle : MonoBehaviour
 
     void Update()
     {
-        // Time.timeScale = _gameSpeed;
-
         if (_ballTransform == null)
             _ballTransform = FindObjectOfType<Ball>().transform;
             
