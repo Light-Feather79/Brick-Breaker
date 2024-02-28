@@ -95,6 +95,7 @@ IL_000d:
 	{
 		String_t* L_1 = ___0_s;
 		int32_t L_2 = V_1;
+		NullCheck(L_1);
 		Il2CppChar L_3;
 		L_3 = String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3(L_1, L_2, NULL);
 		uint32_t L_4 = V_0;
@@ -107,6 +108,7 @@ IL_0021:
 	{
 		int32_t L_6 = V_1;
 		String_t* L_7 = ___0_s;
+		NullCheck(L_7);
 		int32_t L_8;
 		L_8 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_7, NULL);
 		if ((((int32_t)L_6) >= ((int32_t)L_8)))

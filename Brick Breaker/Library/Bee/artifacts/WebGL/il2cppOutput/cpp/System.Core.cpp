@@ -393,9 +393,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_RangeIterator_mAD9E
 		U3CRangeIteratorU3Ed__115__ctor_m28402F68F863084357F710F6546910CC4417800C(L_0, ((int32_t)-2), NULL);
 		U3CRangeIteratorU3Ed__115_tDB1D987AE1C673965E7ABCDA1D189AD36358F14D* L_1 = L_0;
 		int32_t L_2 = ___0_start;
+		NullCheck(L_1);
 		L_1->___U3CU3E3__start = L_2;
 		U3CRangeIteratorU3Ed__115_tDB1D987AE1C673965E7ABCDA1D189AD36358F14D* L_3 = L_1;
 		int32_t L_4 = ___1_count;
+		NullCheck(L_3);
 		L_3->___U3CU3E3__count = L_4;
 		return L_3;
 	}
@@ -433,6 +435,7 @@ IL_000e:
 		V_0 = 0;
 		V_1 = (bool)0;
 		RuntimeObject* L_2 = ___0_source;
+		NullCheck(L_2);
 		RuntimeObject* L_3;
 		L_3 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0, IEnumerable_1_tCE758D940790D6D0D56B457E522C195F8C413AF2_il2cpp_TypeInfo_var, L_2);
 		V_2 = L_3;
@@ -452,6 +455,7 @@ FINALLY_003b:
 				}
 				{
 					RuntimeObject* L_5 = V_2;
+					NullCheck(L_5);
 					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_5);
 				}
 
@@ -470,6 +474,7 @@ IL_0044:
 IL_001b_1:
 			{
 				RuntimeObject* L_6 = V_2;
+				NullCheck(L_6);
 				int32_t L_7;
 				L_7 = InterfaceFuncInvoker0< int32_t >::Invoke(0, IEnumerator_1_tD6A90A7446DA8E6CF865EDFBBF18C1200BB6D452_il2cpp_TypeInfo_var, L_6);
 				V_3 = L_7;
@@ -503,6 +508,7 @@ IL_002d_1:
 IL_0031_1:
 			{
 				RuntimeObject* L_13 = V_2;
+				NullCheck(L_13);
 				bool L_14;
 				L_14 = InterfaceFuncInvoker0< bool >::Invoke(0, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_13);
 				if (L_14)
@@ -573,6 +579,7 @@ IL_000e:
 		V_0 = 0;
 		V_1 = (bool)0;
 		RuntimeObject* L_2 = ___0_source;
+		NullCheck(L_2);
 		RuntimeObject* L_3;
 		L_3 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0, IEnumerable_1_tCE758D940790D6D0D56B457E522C195F8C413AF2_il2cpp_TypeInfo_var, L_2);
 		V_2 = L_3;
@@ -592,6 +599,7 @@ FINALLY_003b:
 				}
 				{
 					RuntimeObject* L_5 = V_2;
+					NullCheck(L_5);
 					InterfaceActionInvoker0::Invoke(0, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_5);
 				}
 
@@ -610,6 +618,7 @@ IL_0044:
 IL_001b_1:
 			{
 				RuntimeObject* L_6 = V_2;
+				NullCheck(L_6);
 				int32_t L_7;
 				L_7 = InterfaceFuncInvoker0< int32_t >::Invoke(0, IEnumerator_1_tD6A90A7446DA8E6CF865EDFBBF18C1200BB6D452_il2cpp_TypeInfo_var, L_6);
 				V_3 = L_7;
@@ -643,6 +652,7 @@ IL_002d_1:
 IL_0031_1:
 			{
 				RuntimeObject* L_13 = V_2;
+				NullCheck(L_13);
 				bool L_14;
 				L_14 = InterfaceFuncInvoker0< bool >::Invoke(0, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_13);
 				if (L_14)
@@ -840,9 +850,11 @@ IL_0029:
 	{
 		U3CRangeIteratorU3Ed__115_tDB1D987AE1C673965E7ABCDA1D189AD36358F14D* L_4 = V_0;
 		int32_t L_5 = __this->___U3CU3E3__start;
+		NullCheck(L_4);
 		L_4->___start = L_5;
 		U3CRangeIteratorU3Ed__115_tDB1D987AE1C673965E7ABCDA1D189AD36358F14D* L_6 = V_0;
 		int32_t L_7 = __this->___U3CU3E3__count;
+		NullCheck(L_6);
 		L_6->___count = L_7;
 		U3CRangeIteratorU3Ed__115_tDB1D987AE1C673965E7ABCDA1D189AD36358F14D* L_8 = V_0;
 		return L_8;

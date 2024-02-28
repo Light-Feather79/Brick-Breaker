@@ -3285,6 +3285,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextGenerator_GenerateTextMesh_mAB70FC29
 	TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* G_B1261_1 = NULL;
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_0 = ___0_generationSettings;
+		NullCheck(L_0);
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_1 = L_0->___fontAsset;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_2;
@@ -3296,7 +3297,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextGenerator_GenerateTextMesh_mAB70FC29
 	}
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_3 = ___0_generationSettings;
+		NullCheck(L_3);
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_4 = L_3->___fontAsset;
+		NullCheck(L_4);
 		Dictionary_2_t93CDF0F4011A5A3024EB73A492F9512E3046EACB* L_5;
 		L_5 = FontAsset_get_characterLookupTable_m7E76D6C706C5CEB04A9541C68AE6D9E5C75F0FFC(L_4, NULL);
 		G_B3_0 = ((((RuntimeObject*)(Dictionary_2_t93CDF0F4011A5A3024EB73A492F9512E3046EACB*)L_5) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
@@ -3336,6 +3339,7 @@ IL_003e:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_9 = ___1_textInfo;
+		NullCheck(L_9);
 		TextInfo_Clear_m60412774208F9D920707448E71E89C99233D9128(L_9, NULL);
 	}
 
@@ -3349,6 +3353,7 @@ IL_004f:
 	}
 	{
 		TextProcessingElementU5BU5D_t24A1E4C8745577D794FE856B4236875595E7FD22* L_11 = __this->___m_TextProcessingArray;
+		NullCheck(L_11);
 		if (!(((RuntimeArray*)L_11)->max_length))
 		{
 			goto IL_0076;
@@ -3356,7 +3361,8 @@ IL_004f:
 	}
 	{
 		TextProcessingElementU5BU5D_t24A1E4C8745577D794FE856B4236875595E7FD22* L_12 = __this->___m_TextProcessingArray;
-		uint32_t L_13 = ((L_12)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(0)))->___unicode;
+		NullCheck(L_12);
+		uint32_t L_13 = ((L_12)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))->___unicode;
 		G_B11_0 = ((((int32_t)L_13) == ((int32_t)0))? 1 : 0);
 		goto IL_0077;
 	}
@@ -3387,10 +3393,12 @@ IL_0077:
 IL_00a8:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_16 = ___0_generationSettings;
+		NullCheck(L_16);
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_17 = L_16->___fontAsset;
 		__this->___m_CurrentFontAsset = L_17;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_CurrentFontAsset), (void*)L_17);
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_18 = ___0_generationSettings;
+		NullCheck(L_18);
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_19 = L_18->___material;
 		__this->___m_CurrentMaterial = L_19;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_CurrentMaterial), (void*)L_19);
@@ -3405,6 +3413,7 @@ IL_00a8:
 		MaterialReference__ctor_m044AAA2C1079EB25A5534A6E0FA2314F033DB15A((&L_25), L_21, L_22, (SpriteAsset_t1D3CF1D9DC350A4690CB09DE228A8B59F2F02313*)NULL, L_23, L_24, NULL);
 		TextProcessingStack_1_SetDefault_mDAFD4911B5A8BEE57351A37415ADF348F0A6B54C(L_20, L_25, TextProcessingStack_1_SetDefault_mDAFD4911B5A8BEE57351A37415ADF348F0A6B54C_RuntimeMethod_var);
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_26 = ___0_generationSettings;
+		NullCheck(L_26);
 		SpriteAsset_t1D3CF1D9DC350A4690CB09DE228A8B59F2F02313* L_27 = L_26->___spriteAsset;
 		__this->___m_CurrentSpriteAsset = L_27;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_CurrentSpriteAsset), (void*)L_27);
@@ -3412,16 +3421,21 @@ IL_00a8:
 		V_0 = L_28;
 		float L_29 = __this->___m_FontSize;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_30 = ___0_generationSettings;
+		NullCheck(L_30);
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_31 = L_30->___fontAsset;
+		NullCheck(L_31);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_32 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_31->___m_FaceInfo);
 		int32_t L_33;
 		L_33 = FaceInfo_get_pointSize_m7EF7429A4725AB715931A220F6BB498C3D6BF7CB(L_32, NULL);
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_34 = ___0_generationSettings;
+		NullCheck(L_34);
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_35 = L_34->___fontAsset;
+		NullCheck(L_35);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_36 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_35->___m_FaceInfo);
 		float L_37;
 		L_37 = FaceInfo_get_scale_mC475A572AD4956B47D8B9F8D90DC69BBBB102FCD(L_36, NULL);
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_38 = ___0_generationSettings;
+		NullCheck(L_38);
 		bool L_39 = L_38->___isOrthographic;
 		if (L_39)
 		{
@@ -3449,6 +3463,7 @@ IL_0141:
 		V_2 = L_40;
 		float L_41 = __this->___m_FontSize;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_42 = ___0_generationSettings;
+		NullCheck(L_42);
 		bool L_43 = L_42->___isOrthographic;
 		if (L_43)
 		{
@@ -3481,6 +3496,7 @@ IL_0165:
 		V_4 = (0.0f);
 		V_5 = 0;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_47 = ___0_generationSettings;
+		NullCheck(L_47);
 		int32_t L_48 = L_47->___fontStyle;
 		__this->___m_FontStyleInternal = L_48;
 		int32_t L_49 = __this->___m_FontStyleInternal;
@@ -3493,6 +3509,7 @@ IL_0165:
 	}
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_50 = ___0_generationSettings;
+		NullCheck(L_50);
 		int32_t L_51 = L_50->___fontWeight;
 		G_B22_0 = ((int32_t)(L_51));
 		G_B22_1 = G_B20_0;
@@ -3507,6 +3524,7 @@ IL_01ba:
 
 IL_01bf:
 	{
+		NullCheck(G_B22_1);
 		G_B22_1->___m_FontWeightInternal = G_B22_0;
 		TextProcessingStack_1_t698B87CDD968C2046F57134BB3AB807EBFFD7790* L_52 = (TextProcessingStack_1_t698B87CDD968C2046F57134BB3AB807EBFFD7790*)(&__this->___m_FontWeightStack);
 		int32_t L_53 = __this->___m_FontWeightInternal;
@@ -3514,6 +3532,7 @@ IL_01bf:
 		FontStyleStack_t63C77495F068E6DF762D6AF063A817E3709659A7* L_54 = (FontStyleStack_t63C77495F068E6DF762D6AF063A817E3709659A7*)(&__this->___m_FontStyleStack);
 		FontStyleStack_Clear_m989659363648B27540168E46F23E1EF9877C06E0(L_54, NULL);
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_55 = ___0_generationSettings;
+		NullCheck(L_55);
 		int32_t L_56 = L_55->___textAlignment;
 		__this->___m_LineJustification = L_56;
 		TextProcessingStack_1_tE63296B08A4C34E38D7EF3FFFA3470076B9E3A0F* L_57 = (TextProcessingStack_1_tE63296B08A4C34E38D7EF3FFFA3470076B9E3A0F*)(&__this->___m_LineJustificationStack);
@@ -3545,6 +3564,7 @@ IL_01bf:
 		L_65 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		V_15 = L_65;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_66 = ___0_generationSettings;
+		NullCheck(L_66);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_67 = L_66->___color;
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_68;
 		L_68 = Color32_op_Implicit_m79AF5E0BDE9CE041CAC4D89CBFA66E71C6DD1B70_inline(L_67, NULL);
@@ -3578,6 +3598,7 @@ IL_01bf:
 		TextProcessingStack_1_t0F39F088E8F8F6E18C3C463B2998ADC5B7A0513E* L_82 = (TextProcessingStack_1_t0F39F088E8F8F6E18C3C463B2998ADC5B7A0513E*)(&__this->___m_ColorGradientStack);
 		TextProcessingStack_1_SetDefault_mDD0BF36ABFBF0DBA2D289C08F9862374CE18A0F9(L_82, (TextColorGradient_t22D94E441E8E8CD772B966C167E5C0AEB0919D70*)NULL, TextProcessingStack_1_SetDefault_mDD0BF36ABFBF0DBA2D289C08F9862374CE18A0F9_RuntimeMethod_var);
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_83 = __this->___m_CurrentFontAsset;
+		NullCheck(L_83);
 		uint8_t L_84;
 		L_84 = FontAsset_get_italicStyleSlant_m69E70060C6E7940B4ACE61F2B7CB8965F86DA96B(L_83, NULL);
 		__this->___m_ItalicAngle = L_84;
@@ -3595,16 +3616,19 @@ IL_01bf:
 		__this->___m_LineOffset = (0.0f);
 		__this->___m_LineHeight = (-32767.0f);
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_90 = __this->___m_CurrentFontAsset;
+		NullCheck(L_90);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756 L_91;
 		L_91 = FontAsset_get_faceInfo_mF020EC579E3C18A6279D55D86AF1C585031B49A9(L_90, NULL);
 		V_61 = L_91;
 		float L_92;
 		L_92 = FaceInfo_get_lineHeight_m528B4A822181FCECF3D4FF1045DF288E5872AB9D((&V_61), NULL);
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_93 = __this->___m_CurrentFontAsset;
+		NullCheck(L_93);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_94 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_93->___m_FaceInfo);
 		float L_95;
 		L_95 = FaceInfo_get_ascentLine_m193755D649428EC24A7E433A1728F11DA7547ABD(L_94, NULL);
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_96 = __this->___m_CurrentFontAsset;
+		NullCheck(L_96);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_97 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_96->___m_FaceInfo);
 		float L_98;
 		L_98 = FaceInfo_get_descentLine_m811A243C9B328B0C546BF9927A010A05DF172BD3(L_97, NULL);
@@ -3634,15 +3658,20 @@ IL_01bf:
 		__this->___m_LastBaseGlyphIndex = ((int32_t)-2147483648LL);
 		__this->___m_PageNumber = 0;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_100 = ___0_generationSettings;
+		NullCheck(L_100);
 		int32_t L_101 = L_100->___pageToDisplay;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_102 = ___1_textInfo;
+		NullCheck(L_102);
 		PageInfoU5BU5D_tFEA2CF88695491CFC2F2A2EF6BDCC56E52B0A6D4* L_103 = L_102->___pageInfo;
+		NullCheck(L_103);
 		int32_t L_104;
 		L_104 = Mathf_Clamp_m4DC36EEFDBE5F07C16249DA568023C5ECCFF0E7B_inline(((int32_t)il2cpp_codegen_subtract(L_101, 1)), 0, ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_103)->max_length)), 1)), NULL);
 		V_18 = L_104;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_105 = ___1_textInfo;
+		NullCheck(L_105);
 		TextInfo_ClearPageInfo_m57DE207346C5245799E50F8A57B56B65665B7430(L_105, NULL);
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_106 = ___0_generationSettings;
+		NullCheck(L_106);
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_107 = L_106->___margins;
 		V_19 = L_107;
 		float L_108 = __this->___m_MarginWidth;
@@ -3700,6 +3729,7 @@ IL_04a9:
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_118 = ((TextGeneratorUtilities_tAD0F329B1A5C7CC27CF63086C11FE092B43FED53_StaticFields*)il2cpp_codegen_static_fields_for(TextGeneratorUtilities_tAD0F329B1A5C7CC27CF63086C11FE092B43FED53_il2cpp_TypeInfo_var))->___largeNegativeVector2;
 		L_117->___max = L_118;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_119 = ___1_textInfo;
+		NullCheck(L_119);
 		TextInfo_ClearLineInfo_m986C886D34A324C8C4D30F9D8EF24AC242A10AD7(L_119, NULL);
 		__this->___m_MaxCapHeight = (0.0f);
 		__this->___m_MaxAscender = (0.0f);
@@ -3715,6 +3745,7 @@ IL_04a9:
 		CharacterSubstitution__ctor_mBB5C3EA59D985711FE3DF1F266D648201E18CE29((&V_28), (-1), 0, NULL);
 		V_29 = (bool)0;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_120 = ___0_generationSettings;
+		NullCheck(L_120);
 		bool L_121 = L_120->___wordWrap;
 		if (L_121)
 		{
@@ -3753,6 +3784,7 @@ IL_0570:
 		TextProcessingStack_1_Clear_m78D739A4A3B093B4CA2AD9D95578D2B4BB9909C3(L_132, TextProcessingStack_1_Clear_m78D739A4A3B093B4CA2AD9D95578D2B4BB9909C3_RuntimeMethod_var);
 		((TextGenerator_t6B84DC798596D3A9944DC346DD453C075EE62366_StaticFields*)il2cpp_codegen_static_fields_for(TextGenerator_t6B84DC798596D3A9944DC346DD453C075EE62366_il2cpp_TypeInfo_var))->___m_IsTextTruncated = (bool)0;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_133 = ___0_generationSettings;
+		NullCheck(L_133);
 		TextSettings_tB7F55685AFFD4A96F714427BCACFD6958E357D64* L_134 = L_133->___textSettings;
 		V_31 = L_134;
 		V_32 = 0;
@@ -3764,7 +3796,8 @@ IL_05e7:
 	{
 		TextProcessingElementU5BU5D_t24A1E4C8745577D794FE856B4236875595E7FD22* L_135 = __this->___m_TextProcessingArray;
 		int32_t L_136 = V_62;
-		uint32_t L_137 = ((L_135)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_136)))->___unicode;
+		NullCheck(L_135);
+		uint32_t L_137 = ((L_135)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_136)))->___unicode;
 		V_5 = L_137;
 		int32_t L_138 = V_32;
 		V_90 = (bool)((((int32_t)L_138) > ((int32_t)5))? 1 : 0);
@@ -3805,6 +3838,7 @@ IL_0641:
 IL_0652:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_146 = ___0_generationSettings;
+		NullCheck(L_146);
 		bool L_147 = L_146->___richText;
 		if (!L_147)
 		{
@@ -3874,19 +3908,25 @@ IL_06ad:
 IL_06b0:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_159 = ___1_textInfo;
+		NullCheck(L_159);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_160 = L_159->___textElementInfo;
 		int32_t L_161 = __this->___m_CharacterCount;
-		uint8_t L_162 = ((L_160)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_161)))->___elementType;
+		NullCheck(L_160);
+		uint8_t L_162 = ((L_160)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_161)))->___elementType;
 		__this->___m_TextElementType = L_162;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_163 = ___1_textInfo;
+		NullCheck(L_163);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_164 = L_163->___textElementInfo;
 		int32_t L_165 = __this->___m_CharacterCount;
-		int32_t L_166 = ((L_164)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_165)))->___materialReferenceIndex;
+		NullCheck(L_164);
+		int32_t L_166 = ((L_164)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_165)))->___materialReferenceIndex;
 		__this->___m_CurrentMaterialIndex = L_166;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_167 = ___1_textInfo;
+		NullCheck(L_167);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_168 = L_167->___textElementInfo;
 		int32_t L_169 = __this->___m_CharacterCount;
-		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_170 = ((L_168)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_169)))->___fontAsset;
+		NullCheck(L_168);
+		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_170 = ((L_168)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_169)))->___fontAsset;
 		__this->___m_CurrentFontAsset = L_170;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_CurrentFontAsset), (void*)L_170);
 	}
@@ -3896,9 +3936,11 @@ IL_0706:
 		int32_t L_171 = __this->___m_CurrentMaterialIndex;
 		V_63 = L_171;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_172 = ___1_textInfo;
+		NullCheck(L_172);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_173 = L_172->___textElementInfo;
 		int32_t L_174 = __this->___m_CharacterCount;
-		bool L_175 = ((L_173)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_174)))->___isUsingAlternateTypeface;
+		NullCheck(L_173);
+		bool L_175 = ((L_173)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_174)))->___isUsingAlternateTypeface;
 		V_64 = L_175;
 		__this->___m_isTextLayoutPhase = (bool)0;
 		V_65 = (bool)0;
@@ -3959,15 +4001,19 @@ IL_0773:
 IL_0781:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_187 = ___1_textInfo;
+		NullCheck(L_187);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_188 = L_187->___textElementInfo;
 		int32_t L_189 = __this->___m_CharacterCount;
+		NullCheck(L_188);
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_190 = __this->___m_CurrentFontAsset;
+		NullCheck(L_190);
 		Dictionary_2_t93CDF0F4011A5A3024EB73A492F9512E3046EACB* L_191;
 		L_191 = FontAsset_get_characterLookupTable_m7E76D6C706C5CEB04A9541C68AE6D9E5C75F0FFC(L_190, NULL);
+		NullCheck(L_191);
 		Character_t9B671B493FAC8D43638C69AF6AE92CBD103D80EC* L_192;
 		L_192 = Dictionary_2_get_Item_mFA05B9BB2D2D3E43B23F6C859A051759E7C1C75D(L_191, 3, Dictionary_2_get_Item_mFA05B9BB2D2D3E43B23F6C859A051759E7C1C75D_RuntimeMethod_var);
-		((L_188)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_189)))->___textElement = L_192;
-		Il2CppCodeGenWriteBarrier((void**)(&((L_188)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_189)))->___textElement), (void*)L_192);
+		((L_188)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_189)))->___textElement = L_192;
+		Il2CppCodeGenWriteBarrier((void**)(&((L_188)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_189)))->___textElement), (void*)L_192);
 		((TextGenerator_t6B84DC798596D3A9944DC346DD453C075EE62366_StaticFields*)il2cpp_codegen_static_fields_for(TextGenerator_t6B84DC798596D3A9944DC346DD453C075EE62366_il2cpp_TypeInfo_var))->___m_IsTextTruncated = (bool)1;
 		goto IL_0872;
 	}
@@ -3980,36 +4026,46 @@ IL_07b3:
 IL_07b8:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_193 = ___1_textInfo;
+		NullCheck(L_193);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_194 = L_193->___textElementInfo;
 		int32_t L_195 = __this->___m_CharacterCount;
+		NullCheck(L_194);
 		SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD* L_196 = (SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD*)(&__this->___m_Ellipsis);
 		Character_t9B671B493FAC8D43638C69AF6AE92CBD103D80EC* L_197 = L_196->___character;
-		((L_194)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_195)))->___textElement = L_197;
-		Il2CppCodeGenWriteBarrier((void**)(&((L_194)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_195)))->___textElement), (void*)L_197);
+		((L_194)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_195)))->___textElement = L_197;
+		Il2CppCodeGenWriteBarrier((void**)(&((L_194)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_195)))->___textElement), (void*)L_197);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_198 = ___1_textInfo;
+		NullCheck(L_198);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_199 = L_198->___textElementInfo;
 		int32_t L_200 = __this->___m_CharacterCount;
-		((L_199)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_200)))->___elementType = 1;
+		NullCheck(L_199);
+		((L_199)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_200)))->___elementType = 1;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_201 = ___1_textInfo;
+		NullCheck(L_201);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_202 = L_201->___textElementInfo;
 		int32_t L_203 = __this->___m_CharacterCount;
+		NullCheck(L_202);
 		SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD* L_204 = (SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD*)(&__this->___m_Ellipsis);
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_205 = L_204->___fontAsset;
-		((L_202)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_203)))->___fontAsset = L_205;
-		Il2CppCodeGenWriteBarrier((void**)(&((L_202)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_203)))->___fontAsset), (void*)L_205);
+		((L_202)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_203)))->___fontAsset = L_205;
+		Il2CppCodeGenWriteBarrier((void**)(&((L_202)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_203)))->___fontAsset), (void*)L_205);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_206 = ___1_textInfo;
+		NullCheck(L_206);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_207 = L_206->___textElementInfo;
 		int32_t L_208 = __this->___m_CharacterCount;
+		NullCheck(L_207);
 		SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD* L_209 = (SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD*)(&__this->___m_Ellipsis);
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_210 = L_209->___material;
-		((L_207)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_208)))->___material = L_210;
-		Il2CppCodeGenWriteBarrier((void**)(&((L_207)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_208)))->___material), (void*)L_210);
+		((L_207)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_208)))->___material = L_210;
+		Il2CppCodeGenWriteBarrier((void**)(&((L_207)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_208)))->___material), (void*)L_210);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_211 = ___1_textInfo;
+		NullCheck(L_211);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_212 = L_211->___textElementInfo;
 		int32_t L_213 = __this->___m_CharacterCount;
+		NullCheck(L_212);
 		SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD* L_214 = (SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD*)(&__this->___m_Ellipsis);
 		int32_t L_215 = L_214->___materialIndex;
-		((L_212)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_213)))->___materialReferenceIndex = L_215;
+		((L_212)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_213)))->___materialReferenceIndex = L_215;
 		((TextGenerator_t6B84DC798596D3A9944DC346DD453C075EE62366_StaticFields*)il2cpp_codegen_static_fields_for(TextGenerator_t6B84DC798596D3A9944DC346DD453C075EE62366_il2cpp_TypeInfo_var))->___m_IsTextTruncated = (bool)1;
 		int32_t L_216 = __this->___m_CharacterCount;
 		(&V_28)->___index = ((int32_t)il2cpp_codegen_add(L_216, 1));
@@ -4025,6 +4081,7 @@ IL_0873:
 	{
 		int32_t L_217 = __this->___m_CharacterCount;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_218 = ___0_generationSettings;
+		NullCheck(L_218);
 		int32_t L_219 = L_218->___firstVisibleCharacter;
 		if ((((int32_t)L_217) >= ((int32_t)L_219)))
 		{
@@ -4053,17 +4110,23 @@ IL_088c:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_222 = ___1_textInfo;
+		NullCheck(L_222);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_223 = L_222->___textElementInfo;
 		int32_t L_224 = __this->___m_CharacterCount;
-		((L_223)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_224)))->___isVisible = (bool)0;
+		NullCheck(L_223);
+		((L_223)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_224)))->___isVisible = (bool)0;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_225 = ___1_textInfo;
+		NullCheck(L_225);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_226 = L_225->___textElementInfo;
 		int32_t L_227 = __this->___m_CharacterCount;
-		((L_226)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_227)))->___character = ((int32_t)8203);
+		NullCheck(L_226);
+		((L_226)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_227)))->___character = ((int32_t)8203);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_228 = ___1_textInfo;
+		NullCheck(L_228);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_229 = L_228->___textElementInfo;
 		int32_t L_230 = __this->___m_CharacterCount;
-		((L_229)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_230)))->___lineNumber = 0;
+		NullCheck(L_229);
+		((L_229)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_230)))->___lineNumber = 0;
 		int32_t L_231 = __this->___m_CharacterCount;
 		__this->___m_CharacterCount = ((int32_t)il2cpp_codegen_add(L_231, 1));
 		goto IL_43d7;
@@ -4203,16 +4266,20 @@ IL_099c:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_257 = ___1_textInfo;
+		NullCheck(L_257);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_258 = L_257->___textElementInfo;
 		int32_t L_259 = __this->___m_CharacterCount;
-		TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA* L_260 = ((L_258)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_259)))->___textElement;
+		NullCheck(L_258);
+		TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA* L_260 = ((L_258)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_259)))->___textElement;
 		V_108 = ((SpriteCharacter_tB3516A25DBFA0AD68DD8E1432752D503FD1F40F5*)CastclassClass((RuntimeObject*)L_260, SpriteCharacter_tB3516A25DBFA0AD68DD8E1432752D503FD1F40F5_il2cpp_TypeInfo_var));
 		SpriteCharacter_tB3516A25DBFA0AD68DD8E1432752D503FD1F40F5* L_261 = V_108;
+		NullCheck(L_261);
 		TextAsset_tB28F1843A877CCA74B89DC4F63EA532618B049B8* L_262;
 		L_262 = TextElement_get_textAsset_m52383A3758AABF5BEA013155765BD1141479685A(L_261, NULL);
 		__this->___m_CurrentSpriteAsset = ((SpriteAsset_t1D3CF1D9DC350A4690CB09DE228A8B59F2F02313*)IsInstClass((RuntimeObject*)L_262, SpriteAsset_t1D3CF1D9DC350A4690CB09DE228A8B59F2F02313_il2cpp_TypeInfo_var));
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_CurrentSpriteAsset), (void*)((SpriteAsset_t1D3CF1D9DC350A4690CB09DE228A8B59F2F02313*)IsInstClass((RuntimeObject*)L_262, SpriteAsset_t1D3CF1D9DC350A4690CB09DE228A8B59F2F02313_il2cpp_TypeInfo_var)));
 		SpriteCharacter_tB3516A25DBFA0AD68DD8E1432752D503FD1F40F5* L_263 = V_108;
+		NullCheck(L_263);
 		uint32_t L_264;
 		L_264 = TextElement_get_glyphIndex_m43F82F2F998D640DEDBE6860EBE7B171DDF4FE56(L_263, NULL);
 		__this->___m_SpriteIndex = L_264;
@@ -4257,18 +4324,21 @@ IL_0a3c:
 	{
 		float L_272 = __this->___m_CurrentFontSize;
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_273 = __this->___m_CurrentFontAsset;
+		NullCheck(L_273);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756 L_274;
 		L_274 = FontAsset_get_faceInfo_mF020EC579E3C18A6279D55D86AF1C585031B49A9(L_273, NULL);
 		V_61 = L_274;
 		int32_t L_275;
 		L_275 = FaceInfo_get_pointSize_m7EF7429A4725AB715931A220F6BB498C3D6BF7CB((&V_61), NULL);
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_276 = __this->___m_CurrentFontAsset;
+		NullCheck(L_276);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756 L_277;
 		L_277 = FontAsset_get_faceInfo_mF020EC579E3C18A6279D55D86AF1C585031B49A9(L_276, NULL);
 		V_61 = L_277;
 		float L_278;
 		L_278 = FaceInfo_get_scale_mC475A572AD4956B47D8B9F8D90DC69BBBB102FCD((&V_61), NULL);
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_279 = ___0_generationSettings;
+		NullCheck(L_279);
 		bool L_280 = L_279->___isOrthographic;
 		if (L_280)
 		{
@@ -4293,6 +4363,7 @@ IL_0a81:
 	{
 		V_109 = ((float)il2cpp_codegen_multiply(G_B85_1, G_B85_0));
 		SpriteAsset_t1D3CF1D9DC350A4690CB09DE228A8B59F2F02313* L_281 = __this->___m_CurrentSpriteAsset;
+		NullCheck(L_281);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_282 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_281->___m_FaceInfo);
 		int32_t L_283;
 		L_283 = FaceInfo_get_pointSize_m7EF7429A4725AB715931A220F6BB498C3D6BF7CB(L_282, NULL);
@@ -4306,14 +4377,17 @@ IL_0a81:
 	{
 		float L_285 = __this->___m_CurrentFontSize;
 		SpriteAsset_t1D3CF1D9DC350A4690CB09DE228A8B59F2F02313* L_286 = __this->___m_CurrentSpriteAsset;
+		NullCheck(L_286);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_287 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_286->___m_FaceInfo);
 		int32_t L_288;
 		L_288 = FaceInfo_get_pointSize_m7EF7429A4725AB715931A220F6BB498C3D6BF7CB(L_287, NULL);
 		SpriteAsset_t1D3CF1D9DC350A4690CB09DE228A8B59F2F02313* L_289 = __this->___m_CurrentSpriteAsset;
+		NullCheck(L_289);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_290 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_289->___m_FaceInfo);
 		float L_291;
 		L_291 = FaceInfo_get_scale_mC475A572AD4956B47D8B9F8D90DC69BBBB102FCD(L_290, NULL);
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_292 = ___0_generationSettings;
+		NullCheck(L_292);
 		bool L_293 = L_292->___isOrthographic;
 		if (L_293)
 		{
@@ -4338,30 +4412,37 @@ IL_0ade:
 	{
 		V_113 = ((float)il2cpp_codegen_multiply(G_B89_1, G_B89_0));
 		SpriteCharacter_tB3516A25DBFA0AD68DD8E1432752D503FD1F40F5* L_294 = V_108;
+		NullCheck(L_294);
 		float L_295 = ((TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA*)L_294)->___m_Scale;
 		SpriteCharacter_tB3516A25DBFA0AD68DD8E1432752D503FD1F40F5* L_296 = V_108;
+		NullCheck(L_296);
 		Glyph_t700CF8EBE04ED4AEAB520885AAA1B309E02A103F* L_297 = ((TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA*)L_296)->___m_Glyph;
+		NullCheck(L_297);
 		float L_298;
 		L_298 = Glyph_get_scale_m3ED738CBB032247526DB38161E180759B2D06F29(L_297, NULL);
 		float L_299 = V_113;
 		V_2 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_295, L_298)), L_299));
 		SpriteAsset_t1D3CF1D9DC350A4690CB09DE228A8B59F2F02313* L_300 = __this->___m_CurrentSpriteAsset;
+		NullCheck(L_300);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_301 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_300->___m_FaceInfo);
 		float L_302;
 		L_302 = FaceInfo_get_ascentLine_m193755D649428EC24A7E433A1728F11DA7547ABD(L_301, NULL);
 		V_68 = L_302;
 		SpriteAsset_t1D3CF1D9DC350A4690CB09DE228A8B59F2F02313* L_303 = __this->___m_CurrentSpriteAsset;
+		NullCheck(L_303);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_304 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_303->___m_FaceInfo);
 		float L_305;
 		L_305 = FaceInfo_get_baseline_m934B597D3E0080FEF98CBDD091C457B497179C3A(L_304, NULL);
 		float L_306 = V_109;
 		float L_307 = __this->___m_FontScaleMultiplier;
 		SpriteAsset_t1D3CF1D9DC350A4690CB09DE228A8B59F2F02313* L_308 = __this->___m_CurrentSpriteAsset;
+		NullCheck(L_308);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_309 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_308->___m_FaceInfo);
 		float L_310;
 		L_310 = FaceInfo_get_scale_mC475A572AD4956B47D8B9F8D90DC69BBBB102FCD(L_309, NULL);
 		V_67 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_305, L_306)), L_307)), L_310));
 		SpriteAsset_t1D3CF1D9DC350A4690CB09DE228A8B59F2F02313* L_311 = __this->___m_CurrentSpriteAsset;
+		NullCheck(L_311);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_312 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_311->___m_FaceInfo);
 		float L_313;
 		L_313 = FaceInfo_get_descentLine_m811A243C9B328B0C546BF9927A010A05DF172BD3(L_312, NULL);
@@ -4373,14 +4454,17 @@ IL_0b50:
 	{
 		float L_314 = __this->___m_CurrentFontSize;
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_315 = __this->___m_CurrentFontAsset;
+		NullCheck(L_315);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_316 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_315->___m_FaceInfo);
 		int32_t L_317;
 		L_317 = FaceInfo_get_pointSize_m7EF7429A4725AB715931A220F6BB498C3D6BF7CB(L_316, NULL);
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_318 = __this->___m_CurrentFontAsset;
+		NullCheck(L_318);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_319 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_318->___m_FaceInfo);
 		float L_320;
 		L_320 = FaceInfo_get_scale_mC475A572AD4956B47D8B9F8D90DC69BBBB102FCD(L_319, NULL);
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_321 = ___0_generationSettings;
+		NullCheck(L_321);
 		bool L_322 = L_321->___isOrthographic;
 		if (L_322)
 		{
@@ -4405,20 +4489,26 @@ IL_0b8e:
 	{
 		V_114 = ((float)il2cpp_codegen_multiply(G_B93_1, G_B93_0));
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_323 = __this->___m_CurrentFontAsset;
+		NullCheck(L_323);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_324 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_323->___m_FaceInfo);
 		float L_325;
 		L_325 = FaceInfo_get_ascentLine_m193755D649428EC24A7E433A1728F11DA7547ABD(L_324, NULL);
 		SpriteCharacter_tB3516A25DBFA0AD68DD8E1432752D503FD1F40F5* L_326 = V_108;
+		NullCheck(L_326);
 		Glyph_t700CF8EBE04ED4AEAB520885AAA1B309E02A103F* L_327 = ((TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA*)L_326)->___m_Glyph;
+		NullCheck(L_327);
 		GlyphMetrics_t6C1C65A891A6279A0EE807C436436B1E44F7AF1A L_328;
 		L_328 = Glyph_get_metrics_mB6E9D3D1899E35BA257638F6F58B7D260170B6FA(L_327, NULL);
 		V_116 = L_328;
 		float L_329;
 		L_329 = GlyphMetrics_get_height_mE0872B23CE1A20BF78DEACDBD53BAF789D84AD5C((&V_116), NULL);
 		SpriteCharacter_tB3516A25DBFA0AD68DD8E1432752D503FD1F40F5* L_330 = V_108;
+		NullCheck(L_330);
 		float L_331 = ((TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA*)L_330)->___m_Scale;
 		SpriteCharacter_tB3516A25DBFA0AD68DD8E1432752D503FD1F40F5* L_332 = V_108;
+		NullCheck(L_332);
 		Glyph_t700CF8EBE04ED4AEAB520885AAA1B309E02A103F* L_333 = ((TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA*)L_332)->___m_Glyph;
+		NullCheck(L_333);
 		float L_334;
 		L_334 = Glyph_get_scale_m3ED738CBB032247526DB38161E180759B2D06F29(L_333, NULL);
 		float L_335 = V_114;
@@ -4427,23 +4517,27 @@ IL_0b8e:
 		float L_337 = V_2;
 		V_115 = ((float)(L_336/L_337));
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_338 = __this->___m_CurrentFontAsset;
+		NullCheck(L_338);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_339 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_338->___m_FaceInfo);
 		float L_340;
 		L_340 = FaceInfo_get_ascentLine_m193755D649428EC24A7E433A1728F11DA7547ABD(L_339, NULL);
 		float L_341 = V_115;
 		V_68 = ((float)il2cpp_codegen_multiply(L_340, L_341));
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_342 = __this->___m_CurrentFontAsset;
+		NullCheck(L_342);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_343 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_342->___m_FaceInfo);
 		float L_344;
 		L_344 = FaceInfo_get_baseline_m934B597D3E0080FEF98CBDD091C457B497179C3A(L_343, NULL);
 		float L_345 = V_109;
 		float L_346 = __this->___m_FontScaleMultiplier;
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_347 = __this->___m_CurrentFontAsset;
+		NullCheck(L_347);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_348 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_347->___m_FaceInfo);
 		float L_349;
 		L_349 = FaceInfo_get_scale_mC475A572AD4956B47D8B9F8D90DC69BBBB102FCD(L_348, NULL);
 		V_67 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_344, L_345)), L_346)), L_349));
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_350 = __this->___m_CurrentFontAsset;
+		NullCheck(L_350);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_351 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_350->___m_FaceInfo);
 		float L_352;
 		L_352 = FaceInfo_get_descentLine_m811A243C9B328B0C546BF9927A010A05DF172BD3(L_351, NULL);
@@ -4457,31 +4551,41 @@ IL_0c2e:
 		__this->___m_CachedTextElement = L_354;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_CachedTextElement), (void*)L_354);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_355 = ___1_textInfo;
+		NullCheck(L_355);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_356 = L_355->___textElementInfo;
 		int32_t L_357 = __this->___m_CharacterCount;
-		((L_356)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_357)))->___elementType = 2;
+		NullCheck(L_356);
+		((L_356)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_357)))->___elementType = 2;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_358 = ___1_textInfo;
+		NullCheck(L_358);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_359 = L_358->___textElementInfo;
 		int32_t L_360 = __this->___m_CharacterCount;
+		NullCheck(L_359);
 		float L_361 = V_2;
-		((L_359)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_360)))->___scale = L_361;
+		((L_359)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_360)))->___scale = L_361;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_362 = ___1_textInfo;
+		NullCheck(L_362);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_363 = L_362->___textElementInfo;
 		int32_t L_364 = __this->___m_CharacterCount;
+		NullCheck(L_363);
 		SpriteAsset_t1D3CF1D9DC350A4690CB09DE228A8B59F2F02313* L_365 = __this->___m_CurrentSpriteAsset;
-		((L_363)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_364)))->___spriteAsset = L_365;
-		Il2CppCodeGenWriteBarrier((void**)(&((L_363)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_364)))->___spriteAsset), (void*)L_365);
+		((L_363)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_364)))->___spriteAsset = L_365;
+		Il2CppCodeGenWriteBarrier((void**)(&((L_363)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_364)))->___spriteAsset), (void*)L_365);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_366 = ___1_textInfo;
+		NullCheck(L_366);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_367 = L_366->___textElementInfo;
 		int32_t L_368 = __this->___m_CharacterCount;
+		NullCheck(L_367);
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_369 = __this->___m_CurrentFontAsset;
-		((L_367)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_368)))->___fontAsset = L_369;
-		Il2CppCodeGenWriteBarrier((void**)(&((L_367)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_368)))->___fontAsset), (void*)L_369);
+		((L_367)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_368)))->___fontAsset = L_369;
+		Il2CppCodeGenWriteBarrier((void**)(&((L_367)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_368)))->___fontAsset), (void*)L_369);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_370 = ___1_textInfo;
+		NullCheck(L_370);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_371 = L_370->___textElementInfo;
 		int32_t L_372 = __this->___m_CharacterCount;
+		NullCheck(L_371);
 		int32_t L_373 = __this->___m_CurrentMaterialIndex;
-		((L_371)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_372)))->___materialReferenceIndex = L_373;
+		((L_371)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_372)))->___materialReferenceIndex = L_373;
 		int32_t L_374 = V_63;
 		__this->___m_CurrentMaterialIndex = L_374;
 		V_6 = (0.0f);
@@ -4500,9 +4604,11 @@ IL_0ccd:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_377 = ___1_textInfo;
+		NullCheck(L_377);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_378 = L_377->___textElementInfo;
 		int32_t L_379 = __this->___m_CharacterCount;
-		TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA* L_380 = ((L_378)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_379)))->___textElement;
+		NullCheck(L_378);
+		TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA* L_380 = ((L_378)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_379)))->___textElement;
 		__this->___m_CachedTextElement = L_380;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_CachedTextElement), (void*)L_380);
 		TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA* L_381 = __this->___m_CachedTextElement;
@@ -4520,21 +4626,27 @@ IL_0ccd:
 IL_0d11:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_383 = ___1_textInfo;
+		NullCheck(L_383);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_384 = L_383->___textElementInfo;
 		int32_t L_385 = __this->___m_CharacterCount;
-		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_386 = ((L_384)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_385)))->___fontAsset;
+		NullCheck(L_384);
+		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_386 = ((L_384)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_385)))->___fontAsset;
 		__this->___m_CurrentFontAsset = L_386;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_CurrentFontAsset), (void*)L_386);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_387 = ___1_textInfo;
+		NullCheck(L_387);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_388 = L_387->___textElementInfo;
 		int32_t L_389 = __this->___m_CharacterCount;
-		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_390 = ((L_388)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_389)))->___material;
+		NullCheck(L_388);
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_390 = ((L_388)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_389)))->___material;
 		__this->___m_CurrentMaterial = L_390;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_CurrentMaterial), (void*)L_390);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_391 = ___1_textInfo;
+		NullCheck(L_391);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_392 = L_391->___textElementInfo;
 		int32_t L_393 = __this->___m_CharacterCount;
-		int32_t L_394 = ((L_392)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_393)))->___materialReferenceIndex;
+		NullCheck(L_392);
+		int32_t L_394 = ((L_392)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_393)))->___materialReferenceIndex;
 		__this->___m_CurrentMaterialIndex = L_394;
 		bool L_395 = V_65;
 		if (!L_395)
@@ -4545,7 +4657,8 @@ IL_0d11:
 	{
 		TextProcessingElementU5BU5D_t24A1E4C8745577D794FE856B4236875595E7FD22* L_396 = __this->___m_TextProcessingArray;
 		int32_t L_397 = V_62;
-		uint32_t L_398 = ((L_396)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_397)))->___unicode;
+		NullCheck(L_396);
+		uint32_t L_398 = ((L_396)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_397)))->___unicode;
 		if ((!(((uint32_t)L_398) == ((uint32_t)((int32_t)10)))))
 		{
 			goto IL_0d92;
@@ -4574,19 +4687,24 @@ IL_0d93:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_402 = ___1_textInfo;
+		NullCheck(L_402);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_403 = L_402->___textElementInfo;
 		int32_t L_404 = __this->___m_CharacterCount;
-		float L_405 = ((L_403)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_404, 1)))))->___pointSize;
+		NullCheck(L_403);
+		float L_405 = ((L_403)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_404, 1)))))->___pointSize;
 		float L_406 = V_66;
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_407 = __this->___m_CurrentFontAsset;
+		NullCheck(L_407);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_408 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_407->___m_FaceInfo);
 		int32_t L_409;
 		L_409 = FaceInfo_get_pointSize_m7EF7429A4725AB715931A220F6BB498C3D6BF7CB(L_408, NULL);
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_410 = __this->___m_CurrentFontAsset;
+		NullCheck(L_410);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_411 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_410->___m_FaceInfo);
 		float L_412;
 		L_412 = FaceInfo_get_scale_mC475A572AD4956B47D8B9F8D90DC69BBBB102FCD(L_411, NULL);
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_413 = ___0_generationSettings;
+		NullCheck(L_413);
 		bool L_414 = L_413->___isOrthographic;
 		if (L_414)
 		{
@@ -4618,14 +4736,17 @@ IL_0df0:
 		float L_415 = __this->___m_CurrentFontSize;
 		float L_416 = V_66;
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_417 = __this->___m_CurrentFontAsset;
+		NullCheck(L_417);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_418 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_417->___m_FaceInfo);
 		int32_t L_419;
 		L_419 = FaceInfo_get_pointSize_m7EF7429A4725AB715931A220F6BB498C3D6BF7CB(L_418, NULL);
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_420 = __this->___m_CurrentFontAsset;
+		NullCheck(L_420);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_421 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_420->___m_FaceInfo);
 		float L_422;
 		L_422 = FaceInfo_get_scale_mC475A572AD4956B47D8B9F8D90DC69BBBB102FCD(L_421, NULL);
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_423 = ___0_generationSettings;
+		NullCheck(L_423);
 		bool L_424 = L_423->___isOrthographic;
 		if (L_424)
 		{
@@ -4688,11 +4809,13 @@ IL_0e43:
 IL_0e5b:
 	{
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_428 = __this->___m_CurrentFontAsset;
+		NullCheck(L_428);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_429 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_428->___m_FaceInfo);
 		float L_430;
 		L_430 = FaceInfo_get_ascentLine_m193755D649428EC24A7E433A1728F11DA7547ABD(L_429, NULL);
 		V_68 = L_430;
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_431 = __this->___m_CurrentFontAsset;
+		NullCheck(L_431);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_432 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_431->___m_FaceInfo);
 		float L_433;
 		L_433 = FaceInfo_get_descentLine_m811A243C9B328B0C546BF9927A010A05DF172BD3(L_432, NULL);
@@ -4704,32 +4827,41 @@ IL_0e81:
 		float L_434 = V_118;
 		float L_435 = __this->___m_FontScaleMultiplier;
 		TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA* L_436 = __this->___m_CachedTextElement;
+		NullCheck(L_436);
 		float L_437 = L_436->___m_Scale;
 		TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA* L_438 = __this->___m_CachedTextElement;
+		NullCheck(L_438);
 		Glyph_t700CF8EBE04ED4AEAB520885AAA1B309E02A103F* L_439 = L_438->___m_Glyph;
+		NullCheck(L_439);
 		float L_440;
 		L_440 = Glyph_get_scale_m3ED738CBB032247526DB38161E180759B2D06F29(L_439, NULL);
 		V_2 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_434, L_435)), L_437)), L_440));
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_441 = __this->___m_CurrentFontAsset;
+		NullCheck(L_441);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_442 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_441->___m_FaceInfo);
 		float L_443;
 		L_443 = FaceInfo_get_baseline_m934B597D3E0080FEF98CBDD091C457B497179C3A(L_442, NULL);
 		float L_444 = V_118;
 		float L_445 = __this->___m_FontScaleMultiplier;
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_446 = __this->___m_CurrentFontAsset;
+		NullCheck(L_446);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_447 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_446->___m_FaceInfo);
 		float L_448;
 		L_448 = FaceInfo_get_scale_mC475A572AD4956B47D8B9F8D90DC69BBBB102FCD(L_447, NULL);
 		V_67 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_443, L_444)), L_445)), L_448));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_449 = ___1_textInfo;
+		NullCheck(L_449);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_450 = L_449->___textElementInfo;
 		int32_t L_451 = __this->___m_CharacterCount;
-		((L_450)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_451)))->___elementType = 1;
+		NullCheck(L_450);
+		((L_450)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_451)))->___elementType = 1;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_452 = ___1_textInfo;
+		NullCheck(L_452);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_453 = L_452->___textElementInfo;
 		int32_t L_454 = __this->___m_CharacterCount;
+		NullCheck(L_453);
 		float L_455 = V_2;
-		((L_453)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_454)))->___scale = L_455;
+		((L_453)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_454)))->___scale = L_455;
 		float L_456 = __this->___m_Padding;
 		V_6 = L_456;
 	}
@@ -4771,44 +4903,60 @@ IL_0f20:
 IL_0f2c:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_461 = ___1_textInfo;
+		NullCheck(L_461);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_462 = L_461->___textElementInfo;
 		int32_t L_463 = __this->___m_CharacterCount;
+		NullCheck(L_462);
 		uint32_t L_464 = V_5;
-		((L_462)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_463)))->___character = ((int32_t)(uint16_t)L_464);
+		((L_462)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_463)))->___character = ((int32_t)(uint16_t)L_464);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_465 = ___1_textInfo;
+		NullCheck(L_465);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_466 = L_465->___textElementInfo;
 		int32_t L_467 = __this->___m_CharacterCount;
+		NullCheck(L_466);
 		float L_468 = __this->___m_CurrentFontSize;
-		((L_466)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_467)))->___pointSize = L_468;
+		((L_466)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_467)))->___pointSize = L_468;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_469 = ___1_textInfo;
+		NullCheck(L_469);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_470 = L_469->___textElementInfo;
 		int32_t L_471 = __this->___m_CharacterCount;
+		NullCheck(L_470);
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_472 = __this->___m_HtmlColor;
-		((L_470)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_471)))->___color = L_472;
+		((L_470)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_471)))->___color = L_472;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_473 = ___1_textInfo;
+		NullCheck(L_473);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_474 = L_473->___textElementInfo;
 		int32_t L_475 = __this->___m_CharacterCount;
+		NullCheck(L_474);
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_476 = __this->___m_UnderlineColor;
-		((L_474)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_475)))->___underlineColor = L_476;
+		((L_474)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_475)))->___underlineColor = L_476;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_477 = ___1_textInfo;
+		NullCheck(L_477);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_478 = L_477->___textElementInfo;
 		int32_t L_479 = __this->___m_CharacterCount;
+		NullCheck(L_478);
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_480 = __this->___m_StrikethroughColor;
-		((L_478)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_479)))->___strikethroughColor = L_480;
+		((L_478)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_479)))->___strikethroughColor = L_480;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_481 = ___1_textInfo;
+		NullCheck(L_481);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_482 = L_481->___textElementInfo;
 		int32_t L_483 = __this->___m_CharacterCount;
+		NullCheck(L_482);
 		HighlightState_tFF5FE9065990F04A37FEC545A0024047F0ABD740 L_484 = __this->___m_HighlightState;
-		((L_482)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_483)))->___highlightState = L_484;
+		((L_482)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_483)))->___highlightState = L_484;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_485 = ___1_textInfo;
+		NullCheck(L_485);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_486 = L_485->___textElementInfo;
 		int32_t L_487 = __this->___m_CharacterCount;
+		NullCheck(L_486);
 		int32_t L_488 = __this->___m_FontStyleInternal;
-		((L_486)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_487)))->___style = L_488;
+		((L_486)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_487)))->___style = L_488;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_489 = ___1_textInfo;
+		NullCheck(L_489);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_490 = L_489->___textElementInfo;
 		int32_t L_491 = __this->___m_CharacterCount;
-		Glyph_t700CF8EBE04ED4AEAB520885AAA1B309E02A103F* L_492 = ((L_490)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_491)))->___alternativeGlyph;
+		NullCheck(L_490);
+		Glyph_t700CF8EBE04ED4AEAB520885AAA1B309E02A103F* L_492 = ((L_490)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_491)))->___alternativeGlyph;
 		V_71 = L_492;
 		Glyph_t700CF8EBE04ED4AEAB520885AAA1B309E02A103F* L_493 = V_71;
 		if (!L_493)
@@ -4818,6 +4966,7 @@ IL_0f2c:
 	}
 	{
 		Glyph_t700CF8EBE04ED4AEAB520885AAA1B309E02A103F* L_494 = V_71;
+		NullCheck(L_494);
 		GlyphMetrics_t6C1C65A891A6279A0EE807C436436B1E44F7AF1A L_495;
 		L_495 = Glyph_get_metrics_mB6E9D3D1899E35BA257638F6F58B7D260170B6FA(L_494, NULL);
 		G_B126_0 = L_495;
@@ -4827,7 +4976,9 @@ IL_0f2c:
 IL_1012:
 	{
 		TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA* L_496 = __this->___m_CachedTextElement;
+		NullCheck(L_496);
 		Glyph_t700CF8EBE04ED4AEAB520885AAA1B309E02A103F* L_497 = L_496->___m_Glyph;
+		NullCheck(L_497);
 		GlyphMetrics_t6C1C65A891A6279A0EE807C436436B1E44F7AF1A L_498;
 		L_498 = Glyph_get_metrics_mB6E9D3D1899E35BA257638F6F58B7D260170B6FA(L_497, NULL);
 		G_B126_0 = L_498;
@@ -4861,9 +5012,11 @@ IL_1038:
 		V_73 = (bool)G_B129_0;
 		il2cpp_codegen_initobj((&V_74), sizeof(GlyphValueRecord_t780927A39D46924E0D546A2AE5DDF1BB2B5A9C8E));
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_502 = ___0_generationSettings;
+		NullCheck(L_502);
 		float L_503 = L_502->___characterSpacing;
 		V_75 = L_503;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_504 = ___0_generationSettings;
+		NullCheck(L_504);
 		bool L_505 = L_504->___enableKerning;
 		V_123 = L_505;
 		bool L_506 = V_123;
@@ -4874,6 +5027,7 @@ IL_1038:
 	}
 	{
 		TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA* L_507 = __this->___m_CachedTextElement;
+		NullCheck(L_507);
 		uint32_t L_508 = L_507->___m_GlyphIndex;
 		V_125 = L_508;
 		int32_t L_509 = __this->___m_CharacterCount;
@@ -4887,18 +5041,24 @@ IL_1038:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_512 = ___1_textInfo;
+		NullCheck(L_512);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_513 = L_512->___textElementInfo;
 		int32_t L_514 = __this->___m_CharacterCount;
-		TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA* L_515 = ((L_513)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_514, 1)))))->___textElement;
+		NullCheck(L_513);
+		TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA* L_515 = ((L_513)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_514, 1)))))->___textElement;
+		NullCheck(L_515);
 		uint32_t L_516 = L_515->___m_GlyphIndex;
 		V_127 = L_516;
 		uint32_t L_517 = V_127;
 		uint32_t L_518 = V_125;
 		V_128 = ((int32_t)(((int32_t)((int32_t)L_517<<((int32_t)16)))|(int32_t)L_518));
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_519 = __this->___m_CurrentFontAsset;
+		NullCheck(L_519);
 		FontFeatureTable_t992E0493CD7E9D7834DF204E0198237F0D25B3B7* L_520 = L_519->___m_FontFeatureTable;
+		NullCheck(L_520);
 		Dictionary_2_tDD72F78A572F94ECEDBDA75C3D17C3ED05C167E0* L_521 = L_520->___m_GlyphPairAdjustmentRecordLookup;
 		uint32_t L_522 = V_128;
+		NullCheck(L_521);
 		bool L_523;
 		L_523 = Dictionary_2_TryGetValue_m45061EA2C8BF9DD9DC9DA92DAB968171136507DA(L_521, L_522, (&V_124), Dictionary_2_TryGetValue_m45061EA2C8BF9DD9DC9DA92DAB968171136507DA_RuntimeMethod_var);
 		V_129 = L_523;
@@ -4954,18 +5114,24 @@ IL_10f5:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_531 = ___1_textInfo;
+		NullCheck(L_531);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_532 = L_531->___textElementInfo;
 		int32_t L_533 = __this->___m_CharacterCount;
-		TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA* L_534 = ((L_532)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_533, 1)))))->___textElement;
+		NullCheck(L_532);
+		TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA* L_534 = ((L_532)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_533, 1)))))->___textElement;
+		NullCheck(L_534);
 		uint32_t L_535 = L_534->___m_GlyphIndex;
 		V_132 = L_535;
 		uint32_t L_536 = V_125;
 		uint32_t L_537 = V_132;
 		V_133 = ((int32_t)(((int32_t)((int32_t)L_536<<((int32_t)16)))|(int32_t)L_537));
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_538 = __this->___m_CurrentFontAsset;
+		NullCheck(L_538);
 		FontFeatureTable_t992E0493CD7E9D7834DF204E0198237F0D25B3B7* L_539 = L_538->___m_FontFeatureTable;
+		NullCheck(L_539);
 		Dictionary_2_tDD72F78A572F94ECEDBDA75C3D17C3ED05C167E0* L_540 = L_539->___m_GlyphPairAdjustmentRecordLookup;
 		uint32_t L_541 = V_133;
+		NullCheck(L_540);
 		bool L_542;
 		L_542 = Dictionary_2_TryGetValue_m45061EA2C8BF9DD9DC9DA92DAB968171136507DA(L_540, L_541, (&V_124), Dictionary_2_TryGetValue_m45061EA2C8BF9DD9DC9DA92DAB968171136507DA_RuntimeMethod_var);
 		V_134 = L_542;
@@ -5019,11 +5185,13 @@ IL_118e:
 IL_118f:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_550 = ___1_textInfo;
+		NullCheck(L_550);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_551 = L_550->___textElementInfo;
 		int32_t L_552 = __this->___m_CharacterCount;
+		NullCheck(L_551);
 		float L_553;
 		L_553 = GlyphValueRecord_get_xAdvance_m6C392027FA91E0705C1585C5EF40D984AAA0013E((&V_74), NULL);
-		((L_551)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_552)))->___adjustedHorizontalAdvance = L_553;
+		((L_551)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_552)))->___adjustedHorizontalAdvance = L_553;
 		uint32_t L_554 = V_5;
 		il2cpp_codegen_runtime_class_init_inline(TextGeneratorUtilities_tAD0F329B1A5C7CC27CF63086C11FE092B43FED53_il2cpp_TypeInfo_var);
 		bool L_555;
@@ -5100,17 +5268,22 @@ IL_1204:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_566 = ___1_textInfo;
+		NullCheck(L_566);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_567 = L_566->___textElementInfo;
 		int32_t L_568 = __this->___m_LastBaseGlyphIndex;
-		TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA* L_569 = ((L_567)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_568)))->___textElement;
+		NullCheck(L_567);
+		TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA* L_569 = ((L_567)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_568)))->___textElement;
+		NullCheck(L_569);
 		Glyph_t700CF8EBE04ED4AEAB520885AAA1B309E02A103F* L_570;
 		L_570 = TextElement_get_glyph_m101DBCCA0CDE2461B504174272A2FFCD53EA59E2(L_569, NULL);
 		V_138 = L_570;
 		Glyph_t700CF8EBE04ED4AEAB520885AAA1B309E02A103F* L_571 = V_138;
+		NullCheck(L_571);
 		uint32_t L_572;
 		L_572 = Glyph_get_index_mCFBBCF85E7F3434B7A595EEE3411EFFB78E5675B(L_571, NULL);
 		V_139 = L_572;
 		TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA* L_573 = __this->___m_CachedTextElement;
+		NullCheck(L_573);
 		uint32_t L_574;
 		L_574 = TextElement_get_glyphIndex_m43F82F2F998D640DEDBE6860EBE7B171DDF4FE56(L_573, NULL);
 		V_140 = L_574;
@@ -5118,10 +5291,13 @@ IL_1204:
 		uint32_t L_576 = V_139;
 		V_141 = ((int32_t)(((int32_t)((int32_t)L_575<<((int32_t)16)))|(int32_t)L_576));
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_577 = __this->___m_CurrentFontAsset;
+		NullCheck(L_577);
 		FontFeatureTable_t992E0493CD7E9D7834DF204E0198237F0D25B3B7* L_578;
 		L_578 = FontAsset_get_fontFeatureTable_m7C4EB9A655B237CE02FAF7B8B16C2F2863FE5070(L_577, NULL);
+		NullCheck(L_578);
 		Dictionary_2_tC58BED428F0C45B2320DCA085F781540D1CC3A26* L_579 = L_578->___m_MarkToBaseAdjustmentRecordLookup;
 		uint32_t L_580 = V_141;
+		NullCheck(L_579);
 		bool L_581;
 		L_581 = Dictionary_2_TryGetValue_mF32BD44799A9D5626676B55AEE98449663C70D33(L_579, L_580, (&V_142), Dictionary_2_TryGetValue_mF32BD44799A9D5626676B55AEE98449663C70D33_RuntimeMethod_var);
 		V_143 = L_581;
@@ -5133,9 +5309,11 @@ IL_1204:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_583 = ___1_textInfo;
+		NullCheck(L_583);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_584 = L_583->___textElementInfo;
 		int32_t L_585 = __this->___m_LastBaseGlyphIndex;
-		float L_586 = ((L_584)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_585)))->___origin;
+		NullCheck(L_584);
+		float L_586 = ((L_584)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_585)))->___origin;
 		float L_587 = __this->___m_XAdvance;
 		float L_588 = V_2;
 		V_144 = ((float)(((float)il2cpp_codegen_subtract(L_586, L_587))/L_588));
@@ -5181,17 +5359,22 @@ IL_12ef:
 IL_1302:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_599 = ___1_textInfo;
+		NullCheck(L_599);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_600 = L_599->___textElementInfo;
 		int32_t L_601 = V_148;
-		TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA* L_602 = ((L_600)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_601)))->___textElement;
+		NullCheck(L_600);
+		TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA* L_602 = ((L_600)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_601)))->___textElement;
+		NullCheck(L_602);
 		Glyph_t700CF8EBE04ED4AEAB520885AAA1B309E02A103F* L_603;
 		L_603 = TextElement_get_glyph_m101DBCCA0CDE2461B504174272A2FFCD53EA59E2(L_602, NULL);
 		V_149 = L_603;
 		Glyph_t700CF8EBE04ED4AEAB520885AAA1B309E02A103F* L_604 = V_149;
+		NullCheck(L_604);
 		uint32_t L_605;
 		L_605 = Glyph_get_index_mCFBBCF85E7F3434B7A595EEE3411EFFB78E5675B(L_604, NULL);
 		V_150 = L_605;
 		TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA* L_606 = __this->___m_CachedTextElement;
+		NullCheck(L_606);
 		uint32_t L_607;
 		L_607 = TextElement_get_glyphIndex_m43F82F2F998D640DEDBE6860EBE7B171DDF4FE56(L_606, NULL);
 		V_151 = L_607;
@@ -5199,10 +5382,13 @@ IL_1302:
 		uint32_t L_609 = V_150;
 		V_152 = ((int32_t)(((int32_t)((int32_t)L_608<<((int32_t)16)))|(int32_t)L_609));
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_610 = __this->___m_CurrentFontAsset;
+		NullCheck(L_610);
 		FontFeatureTable_t992E0493CD7E9D7834DF204E0198237F0D25B3B7* L_611;
 		L_611 = FontAsset_get_fontFeatureTable_m7C4EB9A655B237CE02FAF7B8B16C2F2863FE5070(L_610, NULL);
+		NullCheck(L_611);
 		Dictionary_2_t3B281EAA0FCAF1D0DED857932C74644D3F02E6D0* L_612 = L_611->___m_MarkToMarkAdjustmentRecordLookup;
 		uint32_t L_613 = V_152;
+		NullCheck(L_612);
 		bool L_614;
 		L_614 = Dictionary_2_TryGetValue_mE41304D9F16D4065AEA94463AE53A68A4F4F6395(L_612, L_613, (&V_153), Dictionary_2_TryGetValue_mE41304D9F16D4065AEA94463AE53A68A4F4F6395_RuntimeMethod_var);
 		V_154 = L_614;
@@ -5214,9 +5400,11 @@ IL_1302:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_616 = ___1_textInfo;
+		NullCheck(L_616);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_617 = L_616->___textElementInfo;
 		int32_t L_618 = V_148;
-		float L_619 = ((L_617)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_618)))->___origin;
+		NullCheck(L_617);
+		float L_619 = ((L_617)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_618)))->___origin;
 		float L_620 = __this->___m_XAdvance;
 		float L_621 = V_2;
 		V_155 = ((float)(((float)il2cpp_codegen_subtract(L_619, L_620))/L_621));
@@ -5225,9 +5413,11 @@ IL_1302:
 		float L_624 = __this->___m_BaselineOffset;
 		V_156 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_subtract(L_622, L_623)), L_624));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_625 = ___1_textInfo;
+		NullCheck(L_625);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_626 = L_625->___textElementInfo;
 		int32_t L_627 = V_148;
-		float L_628 = ((L_626)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_627)))->___baseLine;
+		NullCheck(L_626);
+		float L_628 = ((L_626)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_627)))->___baseLine;
 		float L_629 = V_156;
 		float L_630 = V_2;
 		V_157 = ((float)(((float)il2cpp_codegen_subtract(L_628, L_629))/L_630));
@@ -5328,17 +5518,22 @@ IL_1449:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_650 = ___1_textInfo;
+		NullCheck(L_650);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_651 = L_650->___textElementInfo;
 		int32_t L_652 = __this->___m_LastBaseGlyphIndex;
-		TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA* L_653 = ((L_651)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_652)))->___textElement;
+		NullCheck(L_651);
+		TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA* L_653 = ((L_651)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_652)))->___textElement;
+		NullCheck(L_653);
 		Glyph_t700CF8EBE04ED4AEAB520885AAA1B309E02A103F* L_654;
 		L_654 = TextElement_get_glyph_m101DBCCA0CDE2461B504174272A2FFCD53EA59E2(L_653, NULL);
 		V_161 = L_654;
 		Glyph_t700CF8EBE04ED4AEAB520885AAA1B309E02A103F* L_655 = V_161;
+		NullCheck(L_655);
 		uint32_t L_656;
 		L_656 = Glyph_get_index_mCFBBCF85E7F3434B7A595EEE3411EFFB78E5675B(L_655, NULL);
 		V_162 = L_656;
 		TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA* L_657 = __this->___m_CachedTextElement;
+		NullCheck(L_657);
 		uint32_t L_658;
 		L_658 = TextElement_get_glyphIndex_m43F82F2F998D640DEDBE6860EBE7B171DDF4FE56(L_657, NULL);
 		V_163 = L_658;
@@ -5346,10 +5541,13 @@ IL_1449:
 		uint32_t L_660 = V_162;
 		V_164 = ((int32_t)(((int32_t)((int32_t)L_659<<((int32_t)16)))|(int32_t)L_660));
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_661 = __this->___m_CurrentFontAsset;
+		NullCheck(L_661);
 		FontFeatureTable_t992E0493CD7E9D7834DF204E0198237F0D25B3B7* L_662;
 		L_662 = FontAsset_get_fontFeatureTable_m7C4EB9A655B237CE02FAF7B8B16C2F2863FE5070(L_661, NULL);
+		NullCheck(L_662);
 		Dictionary_2_tC58BED428F0C45B2320DCA085F781540D1CC3A26* L_663 = L_662->___m_MarkToBaseAdjustmentRecordLookup;
 		uint32_t L_664 = V_164;
+		NullCheck(L_663);
 		bool L_665;
 		L_665 = Dictionary_2_TryGetValue_mF32BD44799A9D5626676B55AEE98449663C70D33(L_663, L_664, (&V_165), Dictionary_2_TryGetValue_mF32BD44799A9D5626676B55AEE98449663C70D33_RuntimeMethod_var);
 		V_166 = L_665;
@@ -5361,9 +5559,11 @@ IL_1449:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_667 = ___1_textInfo;
+		NullCheck(L_667);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_668 = L_667->___textElementInfo;
 		int32_t L_669 = __this->___m_LastBaseGlyphIndex;
-		float L_670 = ((L_668)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_669)))->___origin;
+		NullCheck(L_668);
+		float L_670 = ((L_668)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_669)))->___origin;
 		float L_671 = __this->___m_XAdvance;
 		float L_672 = V_2;
 		V_167 = ((float)(((float)il2cpp_codegen_subtract(L_670, L_671))/L_672));
@@ -5416,6 +5616,7 @@ IL_1531:
 		L_685 = GlyphValueRecord_get_yPlacement_mB6303F8800305F6F96ECCD0CD9AA70A1A30A15DA((&V_74), NULL);
 		V_69 = ((float)il2cpp_codegen_add(L_684, L_685));
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_686 = ___0_generationSettings;
+		NullCheck(L_686);
 		bool L_687 = L_686->___isRightToLeft;
 		V_168 = L_687;
 		bool L_688 = V_168;
@@ -5460,6 +5661,7 @@ IL_1589:
 	{
 		float L_696 = __this->___m_XAdvance;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_697 = ___0_generationSettings;
+		NullCheck(L_697);
 		float L_698 = L_697->___wordSpacing;
 		float L_699 = V_3;
 		__this->___m_XAdvance = ((float)il2cpp_codegen_subtract(L_696, ((float)il2cpp_codegen_multiply(L_698, L_699))));
@@ -5543,6 +5745,7 @@ IL_1621:
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_715 = __this->___m_CurrentMaterial;
 		il2cpp_codegen_runtime_class_init_inline(TextShaderUtilities_t47B400695C5D96E7B04FEF9D132468B3A1799692_il2cpp_TypeInfo_var);
 		int32_t L_716 = ((TextShaderUtilities_t47B400695C5D96E7B04FEF9D132468B3A1799692_StaticFields*)il2cpp_codegen_static_fields_for(TextShaderUtilities_t47B400695C5D96E7B04FEF9D132468B3A1799692_il2cpp_TypeInfo_var))->___ID_GradientScale;
+		NullCheck(L_715);
 		bool L_717;
 		L_717 = Material_HasProperty_m52E2D3BC3049B8B228149E023CD73C34B05A5222(L_715, L_716, NULL);
 		G_B192_0 = ((int32_t)(L_717));
@@ -5567,15 +5770,18 @@ IL_164c:
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_719 = __this->___m_CurrentMaterial;
 		il2cpp_codegen_runtime_class_init_inline(TextShaderUtilities_t47B400695C5D96E7B04FEF9D132468B3A1799692_il2cpp_TypeInfo_var);
 		int32_t L_720 = ((TextShaderUtilities_t47B400695C5D96E7B04FEF9D132468B3A1799692_StaticFields*)il2cpp_codegen_static_fields_for(TextShaderUtilities_t47B400695C5D96E7B04FEF9D132468B3A1799692_il2cpp_TypeInfo_var))->___ID_GradientScale;
+		NullCheck(L_719);
 		float L_721;
 		L_721 = Material_GetFloat_m52462F4AEDE20758BFB592B11DE83A79D2774932(L_719, L_720, NULL);
 		V_173 = L_721;
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_722 = __this->___m_CurrentFontAsset;
+		NullCheck(L_722);
 		float L_723;
 		L_723 = FontAsset_get_boldStyleWeight_m804ACC85DD80DC72DB4BCC83C3FB866411F8EFCA(L_722, NULL);
 		float L_724 = V_173;
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_725 = __this->___m_CurrentMaterial;
 		int32_t L_726 = ((TextShaderUtilities_t47B400695C5D96E7B04FEF9D132468B3A1799692_StaticFields*)il2cpp_codegen_static_fields_for(TextShaderUtilities_t47B400695C5D96E7B04FEF9D132468B3A1799692_il2cpp_TypeInfo_var))->___ID_ScaleRatio_A;
+		NullCheck(L_725);
 		float L_727;
 		L_727 = Material_GetFloat_m52462F4AEDE20758BFB592B11DE83A79D2774932(L_725, L_726, NULL);
 		V_79 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(((float)(L_723/(4.0f))), L_724)), L_727));
@@ -5608,6 +5814,7 @@ IL_16a5:
 IL_16ac:
 	{
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_734 = __this->___m_CurrentFontAsset;
+		NullCheck(L_734);
 		float L_735;
 		L_735 = FontAsset_get_boldStyleSpacing_mB8CF4F4880B110E41D566648FF1D995010CF1FF0(L_734, NULL);
 		V_78 = L_735;
@@ -5629,6 +5836,7 @@ IL_16bf:
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_738 = __this->___m_CurrentMaterial;
 		il2cpp_codegen_runtime_class_init_inline(TextShaderUtilities_t47B400695C5D96E7B04FEF9D132468B3A1799692_il2cpp_TypeInfo_var);
 		int32_t L_739 = ((TextShaderUtilities_t47B400695C5D96E7B04FEF9D132468B3A1799692_StaticFields*)il2cpp_codegen_static_fields_for(TextShaderUtilities_t47B400695C5D96E7B04FEF9D132468B3A1799692_il2cpp_TypeInfo_var))->___ID_GradientScale;
+		NullCheck(L_738);
 		bool L_740;
 		L_740 = Material_HasProperty_m52E2D3BC3049B8B228149E023CD73C34B05A5222(L_738, L_739, NULL);
 		if (!L_740)
@@ -5640,6 +5848,7 @@ IL_16bf:
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_741 = __this->___m_CurrentMaterial;
 		il2cpp_codegen_runtime_class_init_inline(TextShaderUtilities_t47B400695C5D96E7B04FEF9D132468B3A1799692_il2cpp_TypeInfo_var);
 		int32_t L_742 = ((TextShaderUtilities_t47B400695C5D96E7B04FEF9D132468B3A1799692_StaticFields*)il2cpp_codegen_static_fields_for(TextShaderUtilities_t47B400695C5D96E7B04FEF9D132468B3A1799692_il2cpp_TypeInfo_var))->___ID_ScaleRatio_A;
+		NullCheck(L_741);
 		bool L_743;
 		L_743 = Material_HasProperty_m52E2D3BC3049B8B228149E023CD73C34B05A5222(L_741, L_742, NULL);
 		G_B202_0 = ((int32_t)(L_743));
@@ -5664,14 +5873,17 @@ IL_16f3:
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_745 = __this->___m_CurrentMaterial;
 		il2cpp_codegen_runtime_class_init_inline(TextShaderUtilities_t47B400695C5D96E7B04FEF9D132468B3A1799692_il2cpp_TypeInfo_var);
 		int32_t L_746 = ((TextShaderUtilities_t47B400695C5D96E7B04FEF9D132468B3A1799692_StaticFields*)il2cpp_codegen_static_fields_for(TextShaderUtilities_t47B400695C5D96E7B04FEF9D132468B3A1799692_il2cpp_TypeInfo_var))->___ID_GradientScale;
+		NullCheck(L_745);
 		float L_747;
 		L_747 = Material_GetFloat_m52462F4AEDE20758BFB592B11DE83A79D2774932(L_745, L_746, NULL);
 		V_176 = L_747;
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_748 = __this->___m_CurrentFontAsset;
+		NullCheck(L_748);
 		float L_749 = L_748->___m_RegularStyleWeight;
 		float L_750 = V_176;
 		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_751 = __this->___m_CurrentMaterial;
 		int32_t L_752 = ((TextShaderUtilities_t47B400695C5D96E7B04FEF9D132468B3A1799692_StaticFields*)il2cpp_codegen_static_fields_for(TextShaderUtilities_t47B400695C5D96E7B04FEF9D132468B3A1799692_il2cpp_TypeInfo_var))->___ID_ScaleRatio_A;
+		NullCheck(L_751);
 		float L_753;
 		L_753 = Material_GetFloat_m52462F4AEDE20758BFB592B11DE83A79D2774932(L_751, L_752, NULL);
 		V_79 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(((float)(L_749/(4.0f))), L_750)), L_753));
@@ -5801,16 +6013,19 @@ IL_18ac:
 		int32_t L_802 = __this->___m_ItalicAngle;
 		V_179 = ((float)il2cpp_codegen_multiply(((float)L_802), (0.00999999978f)));
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_803 = __this->___m_CurrentFontAsset;
+		NullCheck(L_803);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_804 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_803->___m_FaceInfo);
 		float L_805;
 		L_805 = FaceInfo_get_capLine_m0D95B5D5CEC5CFB12091F5EB5965DE6E38588C88(L_804, NULL);
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_806 = __this->___m_CurrentFontAsset;
+		NullCheck(L_806);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_807 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_806->___m_FaceInfo);
 		float L_808;
 		L_808 = FaceInfo_get_baseline_m934B597D3E0080FEF98CBDD091C457B497179C3A(L_807, NULL);
 		float L_809 = __this->___m_BaselineOffset;
 		float L_810 = __this->___m_FontScaleMultiplier;
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_811 = __this->___m_CurrentFontAsset;
+		NullCheck(L_811);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_812 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_811->___m_FaceInfo);
 		float L_813;
 		L_813 = FaceInfo_get_scale_mC475A572AD4956B47D8B9F8D90DC69BBBB102FCD(L_812, NULL);
@@ -5926,46 +6141,60 @@ IL_198e:
 IL_1a2f:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_873 = ___1_textInfo;
+		NullCheck(L_873);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_874 = L_873->___textElementInfo;
 		int32_t L_875 = __this->___m_CharacterCount;
+		NullCheck(L_874);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_876 = V_81;
-		((L_874)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_875)))->___bottomLeft = L_876;
+		((L_874)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_875)))->___bottomLeft = L_876;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_877 = ___1_textInfo;
+		NullCheck(L_877);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_878 = L_877->___textElementInfo;
 		int32_t L_879 = __this->___m_CharacterCount;
+		NullCheck(L_878);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_880 = V_80;
-		((L_878)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_879)))->___topLeft = L_880;
+		((L_878)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_879)))->___topLeft = L_880;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_881 = ___1_textInfo;
+		NullCheck(L_881);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_882 = L_881->___textElementInfo;
 		int32_t L_883 = __this->___m_CharacterCount;
+		NullCheck(L_882);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_884 = V_82;
-		((L_882)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_883)))->___topRight = L_884;
+		((L_882)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_883)))->___topRight = L_884;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_885 = ___1_textInfo;
+		NullCheck(L_885);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_886 = L_885->___textElementInfo;
 		int32_t L_887 = __this->___m_CharacterCount;
+		NullCheck(L_886);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_888 = V_83;
-		((L_886)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_887)))->___bottomRight = L_888;
+		((L_886)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_887)))->___bottomRight = L_888;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_889 = ___1_textInfo;
+		NullCheck(L_889);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_890 = L_889->___textElementInfo;
 		int32_t L_891 = __this->___m_CharacterCount;
+		NullCheck(L_890);
 		float L_892 = __this->___m_XAdvance;
 		float L_893;
 		L_893 = GlyphValueRecord_get_xPlacement_m5E2B8B05A5DF57B2DC4B3795E71330CDDE1761C8((&V_74), NULL);
 		float L_894 = V_2;
-		((L_890)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_891)))->___origin = ((float)il2cpp_codegen_add(L_892, ((float)il2cpp_codegen_multiply(L_893, L_894))));
+		((L_890)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_891)))->___origin = ((float)il2cpp_codegen_add(L_892, ((float)il2cpp_codegen_multiply(L_893, L_894))));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_895 = ___1_textInfo;
+		NullCheck(L_895);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_896 = L_895->___textElementInfo;
 		int32_t L_897 = __this->___m_CharacterCount;
+		NullCheck(L_896);
 		float L_898 = V_67;
 		float L_899 = __this->___m_LineOffset;
 		float L_900 = __this->___m_BaselineOffset;
 		float L_901;
 		L_901 = GlyphValueRecord_get_yPlacement_mB6303F8800305F6F96ECCD0CD9AA70A1A30A15DA((&V_74), NULL);
 		float L_902 = V_2;
-		((L_896)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_897)))->___baseLine = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_subtract(L_898, L_899)), L_900)), ((float)il2cpp_codegen_multiply(L_901, L_902))));
+		((L_896)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_897)))->___baseLine = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_subtract(L_898, L_899)), L_900)), ((float)il2cpp_codegen_multiply(L_901, L_902))));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_903 = ___1_textInfo;
+		NullCheck(L_903);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_904 = L_903->___textElementInfo;
 		int32_t L_905 = __this->___m_CharacterCount;
+		NullCheck(L_904);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_906 = V_82;
 		float L_907 = L_906.___x;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_908 = V_81;
@@ -5974,7 +6203,7 @@ IL_1a2f:
 		float L_911 = L_910.___y;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_912 = V_81;
 		float L_913 = L_912.___y;
-		((L_904)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_905)))->___aspectRatio = ((float)(((float)il2cpp_codegen_subtract(L_907, L_909))/((float)il2cpp_codegen_subtract(L_911, L_913))));
+		((L_904)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_905)))->___aspectRatio = ((float)(((float)il2cpp_codegen_subtract(L_907, L_909))/((float)il2cpp_codegen_subtract(L_911, L_913))));
 		uint8_t L_914 = __this->___m_TextElementType;
 		if ((((int32_t)L_914) == ((int32_t)1)))
 		{
@@ -6130,29 +6359,37 @@ IL_1c0e:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_958 = ___1_textInfo;
+		NullCheck(L_958);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_959 = L_958->___textElementInfo;
 		int32_t L_960 = __this->___m_CharacterCount;
+		NullCheck(L_959);
 		float L_961 = V_86;
-		((L_959)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_960)))->___adjustedAscender = L_961;
+		((L_959)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_960)))->___adjustedAscender = L_961;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_962 = ___1_textInfo;
+		NullCheck(L_962);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_963 = L_962->___textElementInfo;
 		int32_t L_964 = __this->___m_CharacterCount;
+		NullCheck(L_963);
 		float L_965 = V_87;
-		((L_963)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_964)))->___adjustedDescender = L_965;
+		((L_963)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_964)))->___adjustedDescender = L_965;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_966 = ___1_textInfo;
+		NullCheck(L_966);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_967 = L_966->___textElementInfo;
 		int32_t L_968 = __this->___m_CharacterCount;
+		NullCheck(L_967);
 		float L_969 = V_84;
 		float L_970 = __this->___m_LineOffset;
-		((L_967)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_968)))->___ascender = ((float)il2cpp_codegen_subtract(L_969, L_970));
+		((L_967)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_968)))->___ascender = ((float)il2cpp_codegen_subtract(L_969, L_970));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_971 = ___1_textInfo;
+		NullCheck(L_971);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_972 = L_971->___textElementInfo;
 		int32_t L_973 = __this->___m_CharacterCount;
+		NullCheck(L_972);
 		float L_974 = V_85;
 		float L_975 = __this->___m_LineOffset;
 		float L_976 = ((float)il2cpp_codegen_subtract(L_974, L_975));
 		V_189 = L_976;
-		((L_972)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_973)))->___descender = L_976;
+		((L_972)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_973)))->___descender = L_976;
 		float L_977 = V_189;
 		__this->___m_MaxDescender = L_977;
 		goto IL_1d22;
@@ -6161,29 +6398,37 @@ IL_1c0e:
 IL_1c97:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_978 = ___1_textInfo;
+		NullCheck(L_978);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_979 = L_978->___textElementInfo;
 		int32_t L_980 = __this->___m_CharacterCount;
+		NullCheck(L_979);
 		float L_981 = __this->___m_MaxLineAscender;
-		((L_979)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_980)))->___adjustedAscender = L_981;
+		((L_979)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_980)))->___adjustedAscender = L_981;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_982 = ___1_textInfo;
+		NullCheck(L_982);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_983 = L_982->___textElementInfo;
 		int32_t L_984 = __this->___m_CharacterCount;
+		NullCheck(L_983);
 		float L_985 = __this->___m_MaxLineDescender;
-		((L_983)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_984)))->___adjustedDescender = L_985;
+		((L_983)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_984)))->___adjustedDescender = L_985;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_986 = ___1_textInfo;
+		NullCheck(L_986);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_987 = L_986->___textElementInfo;
 		int32_t L_988 = __this->___m_CharacterCount;
+		NullCheck(L_987);
 		float L_989 = __this->___m_MaxLineAscender;
 		float L_990 = __this->___m_LineOffset;
-		((L_987)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_988)))->___ascender = ((float)il2cpp_codegen_subtract(L_989, L_990));
+		((L_987)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_988)))->___ascender = ((float)il2cpp_codegen_subtract(L_989, L_990));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_991 = ___1_textInfo;
+		NullCheck(L_991);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_992 = L_991->___textElementInfo;
 		int32_t L_993 = __this->___m_CharacterCount;
+		NullCheck(L_992);
 		float L_994 = __this->___m_MaxLineDescender;
 		float L_995 = __this->___m_LineOffset;
 		float L_996 = ((float)il2cpp_codegen_subtract(L_994, L_995));
 		V_189 = L_996;
-		((L_992)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_993)))->___descender = L_996;
+		((L_992)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_993)))->___descender = L_996;
 		float L_997 = V_189;
 		__this->___m_MaxDescender = L_997;
 	}
@@ -6248,6 +6493,7 @@ IL_1d46:
 		__this->___m_MaxAscender = L_1004;
 		float L_1005 = __this->___m_MaxCapHeight;
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_1006 = __this->___m_CurrentFontAsset;
+		NullCheck(L_1006);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_1007 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_1006->___m_FaceInfo);
 		float L_1008;
 		L_1008 = FaceInfo_get_capLine_m0D95B5D5CEC5CFB12091F5EB5965DE6E38588C88(L_1007, NULL);
@@ -6325,6 +6571,7 @@ IL_1db6:
 
 IL_1dbc:
 	{
+		NullCheck(G_B253_1);
 		G_B253_1->___m_PageAscender = G_B253_0;
 	}
 
@@ -6335,9 +6582,11 @@ IL_1dc1:
 IL_1dc2:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1021 = ___1_textInfo;
+		NullCheck(L_1021);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_1022 = L_1021->___textElementInfo;
 		int32_t L_1023 = __this->___m_CharacterCount;
-		((L_1022)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1023)))->___isVisible = (bool)0;
+		NullCheck(L_1022);
+		((L_1022)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1023)))->___isVisible = (bool)0;
 		int32_t L_1024 = __this->___m_LineJustification;
 		if ((((int32_t)((int32_t)((int32_t)L_1024&((int32_t)16)))) == ((int32_t)((int32_t)16))))
 		{
@@ -6464,9 +6713,11 @@ IL_1e47:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1039 = ___1_textInfo;
+		NullCheck(L_1039);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_1040 = L_1039->___textElementInfo;
 		int32_t L_1041 = __this->___m_CharacterCount;
-		((L_1040)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1041)))->___isVisible = (bool)1;
+		NullCheck(L_1040);
+		((L_1040)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1041)))->___isVisible = (bool)1;
 		float L_1042 = __this->___m_MarginLeft;
 		V_195 = L_1042;
 		float L_1043 = __this->___m_MarginRight;
@@ -6481,14 +6732,18 @@ IL_1e47:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1046 = ___1_textInfo;
+		NullCheck(L_1046);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1047 = L_1046->___lineInfo;
 		int32_t L_1048 = __this->___m_LineNumber;
-		float L_1049 = ((L_1047)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1048)))->___marginLeft;
+		NullCheck(L_1047);
+		float L_1049 = ((L_1047)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1048)))->___marginLeft;
 		V_195 = L_1049;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1050 = ___1_textInfo;
+		NullCheck(L_1050);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1051 = L_1050->___lineInfo;
 		int32_t L_1052 = __this->___m_LineNumber;
-		float L_1053 = ((L_1051)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1052)))->___marginRight;
+		NullCheck(L_1051);
+		float L_1053 = ((L_1051)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1052)))->___marginRight;
 		V_196 = L_1053;
 	}
 
@@ -6526,6 +6781,7 @@ IL_1ee8:
 		float L_1064;
 		L_1064 = fabsf(L_1063);
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1065 = ___0_generationSettings;
+		NullCheck(L_1065);
 		bool L_1066 = L_1065->___isRightToLeft;
 		if (!L_1066)
 		{
@@ -6647,6 +6903,7 @@ IL_1f67:
 IL_1fa3:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1086 = ___0_generationSettings;
+		NullCheck(L_1086);
 		bool L_1087 = L_1086->___autoSize;
 		V_203 = L_1087;
 		bool L_1088 = V_203;
@@ -6658,6 +6915,7 @@ IL_1fa3:
 	{
 		float L_1089 = __this->___m_LineSpacingDelta;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1090 = ___0_generationSettings;
+		NullCheck(L_1090);
 		float L_1091 = L_1090->___lineSpacingMax;
 		if ((!(((float)L_1089) > ((float)L_1091))))
 		{
@@ -6701,6 +6959,7 @@ IL_1fdf:
 		float L_1100 = V_205;
 		float L_1101 = V_1;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1102 = ___0_generationSettings;
+		NullCheck(L_1102);
 		float L_1103 = L_1102->___lineSpacingMax;
 		float L_1104;
 		L_1104 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline(((float)il2cpp_codegen_add(L_1099, ((float)(L_1100/L_1101)))), L_1103, NULL);
@@ -6712,6 +6971,7 @@ IL_2016:
 	{
 		float L_1105 = __this->___m_FontSize;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1106 = ___0_generationSettings;
+		NullCheck(L_1106);
 		float L_1107 = L_1106->___fontSizeMin;
 		if ((!(((float)L_1105) > ((float)L_1107))))
 		{
@@ -6752,6 +7012,7 @@ IL_2035:
 		__this->___m_FontSize = ((float)il2cpp_codegen_subtract(L_1115, L_1116));
 		float L_1117 = __this->___m_FontSize;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1118 = ___0_generationSettings;
+		NullCheck(L_1118);
 		float L_1119 = L_1118->___fontSizeMin;
 		float L_1120;
 		L_1120 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline(((float)(((float)il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_1117, (20.0f))), (0.5f)))))/(20.0f))), L_1119, NULL);
@@ -6766,6 +7027,7 @@ IL_20a6:
 IL_20a7:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1121 = ___0_generationSettings;
+		NullCheck(L_1121);
 		int32_t L_1122 = L_1121->___overflowMode;
 		V_209 = L_1122;
 		int32_t L_1123 = V_209;
@@ -7090,9 +7352,11 @@ IL_2318:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1179 = ___1_textInfo;
+		NullCheck(L_1179);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_1180 = L_1179->___textElementInfo;
 		int32_t L_1181 = __this->___m_CharacterCount;
-		float L_1182 = ((L_1180)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1181)))->___adjustedAscender;
+		NullCheck(L_1180);
+		float L_1182 = ((L_1180)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1181)))->___adjustedAscender;
 		V_221 = L_1182;
 		float L_1183 = __this->___m_LineOffset;
 		if ((!(((float)L_1183) > ((float)(0.0f)))))
@@ -7129,6 +7393,7 @@ IL_238d:
 		float L_1190 = __this->___m_LineSpacingDelta;
 		float L_1191 = V_1;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1192 = ___0_generationSettings;
+		NullCheck(L_1192);
 		float L_1193 = L_1192->___lineSpacing;
 		float L_1194 = V_3;
 		V_217 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_subtract(G_B339_0, L_1187)), L_1188)), ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_add(L_1189, L_1190)), L_1191)))), ((float)il2cpp_codegen_multiply(L_1193, L_1194))));
@@ -7139,6 +7404,7 @@ IL_23b1:
 	{
 		float L_1195 = __this->___m_LineHeight;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1196 = ___0_generationSettings;
+		NullCheck(L_1196);
 		float L_1197 = L_1196->___lineSpacing;
 		float L_1198 = V_3;
 		V_217 = ((float)il2cpp_codegen_add(L_1195, ((float)il2cpp_codegen_multiply(L_1197, L_1198))));
@@ -7151,14 +7417,18 @@ IL_23cb:
 		float L_1200 = V_217;
 		float L_1201 = __this->___m_LineOffset;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1202 = ___1_textInfo;
+		NullCheck(L_1202);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_1203 = L_1202->___textElementInfo;
 		int32_t L_1204 = __this->___m_CharacterCount;
-		float L_1205 = ((L_1203)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1204)))->___adjustedDescender;
+		NullCheck(L_1203);
+		float L_1205 = ((L_1203)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1204)))->___adjustedDescender;
 		V_218 = ((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(L_1199, L_1200)), L_1201)), L_1205));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1206 = ___1_textInfo;
+		NullCheck(L_1206);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_1207 = L_1206->___textElementInfo;
 		int32_t L_1208 = __this->___m_CharacterCount;
-		Il2CppChar L_1209 = ((L_1207)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_1208, 1)))))->___character;
+		NullCheck(L_1207);
+		Il2CppChar L_1209 = ((L_1207)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_1208, 1)))))->___character;
 		if ((!(((uint32_t)L_1209) == ((uint32_t)((int32_t)173)))))
 		{
 			goto IL_241a;
@@ -7186,6 +7456,7 @@ IL_241b:
 	}
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1212 = ___0_generationSettings;
+		NullCheck(L_1212);
 		int32_t L_1213 = L_1212->___overflowMode;
 		if (!L_1213)
 		{
@@ -7232,9 +7503,11 @@ IL_2472:
 	{
 		V_29 = (bool)0;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1220 = ___1_textInfo;
+		NullCheck(L_1220);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_1221 = L_1220->___textElementInfo;
 		int32_t L_1222 = __this->___m_CharacterCount;
-		Il2CppChar L_1223 = ((L_1221)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1222)))->___character;
+		NullCheck(L_1221);
+		Il2CppChar L_1223 = ((L_1221)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1222)))->___character;
 		V_224 = (bool)((((int32_t)L_1223) == ((int32_t)((int32_t)173)))? 1 : 0);
 		bool L_1224 = V_224;
 		if (!L_1224)
@@ -7250,6 +7523,7 @@ IL_2472:
 IL_24a1:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1225 = ___0_generationSettings;
+		NullCheck(L_1225);
 		bool L_1226 = L_1225->___autoSize;
 		bool L_1227 = V_25;
 		V_225 = (bool)((int32_t)((int32_t)L_1226&(int32_t)L_1227));
@@ -7262,6 +7536,7 @@ IL_24a1:
 	{
 		float L_1229 = __this->___m_CharWidthAdjDelta;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1230 = ___0_generationSettings;
+		NullCheck(L_1230);
 		float L_1231 = L_1230->___charWidthMaxAdj;
 		if ((!(((float)L_1229) < ((float)((float)(L_1231/(100.0f)))))))
 		{
@@ -7343,6 +7618,7 @@ IL_2522:
 		__this->___m_CharWidthAdjDelta = ((float)il2cpp_codegen_add(L_1243, ((float)(L_1244/L_1245))));
 		float L_1246 = __this->___m_CharWidthAdjDelta;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1247 = ___0_generationSettings;
+		NullCheck(L_1247);
 		float L_1248 = L_1247->___charWidthMaxAdj;
 		float L_1249;
 		L_1249 = Mathf_Min_m747CA71A9483CDB394B13BD0AD048EE17E48FFE4_inline(L_1246, ((float)(L_1248/(100.0f))), NULL);
@@ -7354,6 +7630,7 @@ IL_255a:
 	{
 		float L_1250 = __this->___m_FontSize;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1251 = ___0_generationSettings;
+		NullCheck(L_1251);
 		float L_1252 = L_1251->___fontSizeMin;
 		if ((!(((float)L_1250) > ((float)L_1252))))
 		{
@@ -7394,6 +7671,7 @@ IL_2579:
 		__this->___m_FontSize = ((float)il2cpp_codegen_subtract(L_1260, L_1261));
 		float L_1262 = __this->___m_FontSize;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1263 = ___0_generationSettings;
+		NullCheck(L_1263);
 		float L_1264 = L_1263->___fontSizeMin;
 		float L_1265;
 		L_1265 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline(((float)(((float)il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_1262, (20.0f))), (0.5f)))))/(20.0f))), L_1264, NULL);
@@ -7455,9 +7733,11 @@ IL_2607:
 		int32_t L_1277 = V_219;
 		V_27 = L_1277;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1278 = ___1_textInfo;
+		NullCheck(L_1278);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_1279 = L_1278->___textElementInfo;
 		int32_t L_1280 = __this->___m_CharacterCount;
-		Il2CppChar L_1281 = ((L_1279)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_1280, 1)))))->___character;
+		NullCheck(L_1279);
+		Il2CppChar L_1281 = ((L_1279)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_1280, 1)))))->___character;
 		V_234 = (bool)((((int32_t)L_1281) == ((int32_t)((int32_t)173)))? 1 : 0);
 		bool L_1282 = V_234;
 		if (!L_1282)
@@ -7512,6 +7792,7 @@ IL_268a:
 IL_26bb:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1292 = ___0_generationSettings;
+		NullCheck(L_1292);
 		bool L_1293 = L_1292->___autoSize;
 		V_237 = L_1293;
 		bool L_1294 = V_237;
@@ -7523,6 +7804,7 @@ IL_26bb:
 	{
 		float L_1295 = __this->___m_LineSpacingDelta;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1296 = ___0_generationSettings;
+		NullCheck(L_1296);
 		float L_1297 = L_1296->___lineSpacingMax;
 		if ((!(((float)L_1295) > ((float)L_1297))))
 		{
@@ -7559,6 +7841,7 @@ IL_26ea:
 		float L_1305 = V_239;
 		float L_1306 = V_1;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1307 = ___0_generationSettings;
+		NullCheck(L_1307);
 		float L_1308 = L_1307->___lineSpacingMax;
 		float L_1309;
 		L_1309 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline(((float)il2cpp_codegen_add(L_1304, ((float)(L_1305/L_1306)))), L_1308, NULL);
@@ -7570,6 +7853,7 @@ IL_2723:
 	{
 		float L_1310 = __this->___m_CharWidthAdjDelta;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1311 = ___0_generationSettings;
+		NullCheck(L_1311);
 		float L_1312 = L_1311->___charWidthMaxAdj;
 		if ((!(((float)L_1310) < ((float)((float)(L_1312/(100.0f)))))))
 		{
@@ -7651,6 +7935,7 @@ IL_2791:
 		__this->___m_CharWidthAdjDelta = ((float)il2cpp_codegen_add(L_1324, ((float)(L_1325/L_1326))));
 		float L_1327 = __this->___m_CharWidthAdjDelta;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1328 = ___0_generationSettings;
+		NullCheck(L_1328);
 		float L_1329 = L_1328->___charWidthMaxAdj;
 		float L_1330;
 		L_1330 = Mathf_Min_m747CA71A9483CDB394B13BD0AD048EE17E48FFE4_inline(L_1327, ((float)(L_1329/(100.0f))), NULL);
@@ -7662,6 +7947,7 @@ IL_27c9:
 	{
 		float L_1331 = __this->___m_FontSize;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1332 = ___0_generationSettings;
+		NullCheck(L_1332);
 		float L_1333 = L_1332->___fontSizeMin;
 		if ((!(((float)L_1331) > ((float)L_1333))))
 		{
@@ -7702,6 +7988,7 @@ IL_27e8:
 		__this->___m_FontSize = ((float)il2cpp_codegen_subtract(L_1341, L_1342));
 		float L_1343 = __this->___m_FontSize;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1344 = ___0_generationSettings;
+		NullCheck(L_1344);
 		float L_1345 = L_1344->___fontSizeMin;
 		float L_1346;
 		L_1346 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline(((float)(((float)il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_1343, (20.0f))), (0.5f)))))/(20.0f))), L_1345, NULL);
@@ -7716,6 +8003,7 @@ IL_2859:
 IL_285a:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1347 = ___0_generationSettings;
+		NullCheck(L_1347);
 		int32_t L_1348 = L_1347->___overflowMode;
 		V_248 = L_1348;
 		int32_t L_1349 = V_248;
@@ -7895,6 +8183,7 @@ IL_2a0c:
 IL_2a12:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1398 = ___0_generationSettings;
+		NullCheck(L_1398);
 		bool L_1399 = L_1398->___autoSize;
 		if (!L_1399)
 		{
@@ -7925,6 +8214,7 @@ IL_2a2c:
 	{
 		float L_1403 = __this->___m_CharWidthAdjDelta;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1404 = ___0_generationSettings;
+		NullCheck(L_1404);
 		float L_1405 = L_1404->___charWidthMaxAdj;
 		V_251 = (bool)((((float)L_1403) < ((float)((float)(L_1405/(100.0f)))))? 1 : 0);
 		bool L_1406 = V_251;
@@ -7987,6 +8277,7 @@ IL_2a93:
 		__this->___m_CharWidthAdjDelta = ((float)il2cpp_codegen_add(L_1415, ((float)(L_1416/L_1417))));
 		float L_1418 = __this->___m_CharWidthAdjDelta;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1419 = ___0_generationSettings;
+		NullCheck(L_1419);
 		float L_1420 = L_1419->___charWidthMaxAdj;
 		float L_1421;
 		L_1421 = Mathf_Min_m747CA71A9483CDB394B13BD0AD048EE17E48FFE4_inline(L_1418, ((float)(L_1420/(100.0f))), NULL);
@@ -7998,6 +8289,7 @@ IL_2acb:
 	{
 		float L_1422 = __this->___m_FontSize;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1423 = ___0_generationSettings;
+		NullCheck(L_1423);
 		float L_1424 = L_1423->___fontSizeMin;
 		V_255 = (bool)((((float)L_1422) > ((float)L_1424))? 1 : 0);
 		bool L_1425 = V_255;
@@ -8019,6 +8311,7 @@ IL_2acb:
 		__this->___m_FontSize = ((float)il2cpp_codegen_subtract(L_1430, L_1431));
 		float L_1432 = __this->___m_FontSize;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1433 = ___0_generationSettings;
+		NullCheck(L_1433);
 		float L_1434 = L_1433->___fontSizeMin;
 		float L_1435;
 		L_1435 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline(((float)(((float)il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_1432, (20.0f))), (0.5f)))))/(20.0f))), L_1434, NULL);
@@ -8033,6 +8326,7 @@ IL_2b5a:
 IL_2b5b:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1436 = ___0_generationSettings;
+		NullCheck(L_1436);
 		int32_t L_1437 = L_1436->___overflowMode;
 		V_259 = L_1437;
 		int32_t L_1438 = V_259;
@@ -8168,15 +8462,19 @@ IL_2c8f:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1461 = ___1_textInfo;
+		NullCheck(L_1461);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_1462 = L_1461->___textElementInfo;
 		int32_t L_1463 = __this->___m_CharacterCount;
-		((L_1462)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1463)))->___isVisible = (bool)0;
+		NullCheck(L_1462);
+		((L_1462)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1463)))->___isVisible = (bool)0;
 		int32_t L_1464 = __this->___m_CharacterCount;
 		__this->___m_LastVisibleCharacterOfLine = L_1464;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1465 = ___1_textInfo;
+		NullCheck(L_1465);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1466 = L_1465->___lineInfo;
 		int32_t L_1467 = __this->___m_LineNumber;
-		int32_t* L_1468 = (int32_t*)(&((L_1466)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1467)))->___spaceCount);
+		NullCheck(L_1466);
+		int32_t* L_1468 = (int32_t*)(&((L_1466)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1467)))->___spaceCount);
 		V_262 = L_1468;
 		int32_t* L_1469 = V_262;
 		int32_t* L_1470 = V_262;
@@ -8187,20 +8485,26 @@ IL_2c8f:
 		int32_t L_1473 = V_158;
 		__this->___m_LineVisibleSpaceCount = L_1473;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1474 = ___1_textInfo;
+		NullCheck(L_1474);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1475 = L_1474->___lineInfo;
 		int32_t L_1476 = __this->___m_LineNumber;
+		NullCheck(L_1475);
 		float L_1477 = V_195;
-		((L_1475)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1476)))->___marginLeft = L_1477;
+		((L_1475)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1476)))->___marginLeft = L_1477;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1478 = ___1_textInfo;
+		NullCheck(L_1478);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1479 = L_1478->___lineInfo;
 		int32_t L_1480 = __this->___m_LineNumber;
+		NullCheck(L_1479);
 		float L_1481 = V_196;
-		((L_1479)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1480)))->___marginRight = L_1481;
+		((L_1479)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1480)))->___marginRight = L_1481;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1482 = ___1_textInfo;
 		V_263 = L_1482;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1483 = V_263;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1484 = V_263;
+		NullCheck(L_1484);
 		int32_t L_1485 = L_1484->___spaceCount;
+		NullCheck(L_1483);
 		L_1483->___spaceCount = ((int32_t)il2cpp_codegen_add(L_1485, 1));
 		goto IL_2e78;
 	}
@@ -8217,15 +8521,18 @@ IL_2d52:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1488 = ___1_textInfo;
+		NullCheck(L_1488);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_1489 = L_1488->___textElementInfo;
 		int32_t L_1490 = __this->___m_CharacterCount;
-		((L_1489)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1490)))->___isVisible = (bool)0;
+		NullCheck(L_1489);
+		((L_1489)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1490)))->___isVisible = (bool)0;
 		goto IL_2e78;
 	}
 
 IL_2d87:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1491 = ___0_generationSettings;
+		NullCheck(L_1491);
 		bool L_1492 = L_1491->___overrideRichTextColors;
 		V_266 = L_1492;
 		bool L_1493 = V_266;
@@ -8306,15 +8613,19 @@ IL_2e2d:
 		int32_t L_1512 = __this->___m_CharacterCount;
 		__this->___m_LastVisibleCharacterOfLine = L_1512;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1513 = ___1_textInfo;
+		NullCheck(L_1513);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1514 = L_1513->___lineInfo;
 		int32_t L_1515 = __this->___m_LineNumber;
+		NullCheck(L_1514);
 		float L_1516 = V_195;
-		((L_1514)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1515)))->___marginLeft = L_1516;
+		((L_1514)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1515)))->___marginLeft = L_1516;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1517 = ___1_textInfo;
+		NullCheck(L_1517);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1518 = L_1517->___lineInfo;
 		int32_t L_1519 = __this->___m_LineNumber;
+		NullCheck(L_1518);
 		float L_1520 = V_196;
-		((L_1518)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1519)))->___marginRight = L_1520;
+		((L_1518)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1519)))->___marginRight = L_1520;
 	}
 
 IL_2e78:
@@ -8325,6 +8636,7 @@ IL_2e78:
 IL_2e7e:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1521 = ___0_generationSettings;
+		NullCheck(L_1521);
 		int32_t L_1522 = L_1521->___overflowMode;
 		if ((!(((uint32_t)L_1522) == ((uint32_t)6))))
 		{
@@ -8542,9 +8854,11 @@ IL_2fc3:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1556 = ___1_textInfo;
+		NullCheck(L_1556);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1557 = L_1556->___lineInfo;
 		int32_t L_1558 = __this->___m_LineNumber;
-		int32_t* L_1559 = (int32_t*)(&((L_1557)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1558)))->___spaceCount);
+		NullCheck(L_1557);
+		int32_t* L_1559 = (int32_t*)(&((L_1557)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1558)))->___spaceCount);
 		V_262 = L_1559;
 		int32_t* L_1560 = V_262;
 		int32_t* L_1561 = V_262;
@@ -8554,7 +8868,9 @@ IL_2fc3:
 		V_263 = L_1563;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1564 = V_263;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1565 = V_263;
+		NullCheck(L_1565);
 		int32_t L_1566 = L_1565->___spaceCount;
+		NullCheck(L_1564);
 		L_1564->___spaceCount = ((int32_t)il2cpp_codegen_add(L_1566, 1));
 	}
 
@@ -8570,9 +8886,11 @@ IL_301e:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1569 = ___1_textInfo;
+		NullCheck(L_1569);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1570 = L_1569->___lineInfo;
 		int32_t L_1571 = __this->___m_LineNumber;
-		int32_t* L_1572 = (int32_t*)(&((L_1570)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1571)))->___controlCharacterCount);
+		NullCheck(L_1570);
+		int32_t* L_1572 = (int32_t*)(&((L_1570)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1571)))->___controlCharacterCount);
 		V_262 = L_1572;
 		int32_t* L_1573 = V_262;
 		int32_t* L_1574 = V_262;
@@ -8587,6 +8905,7 @@ IL_3061:
 IL_3062:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1576 = ___0_generationSettings;
+		NullCheck(L_1576);
 		int32_t L_1577 = L_1576->___overflowMode;
 		if ((!(((uint32_t)L_1577) == ((uint32_t)1))))
 		{
@@ -8635,15 +8954,18 @@ IL_307b:
 		float L_1581 = __this->___m_CurrentFontSize;
 		SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD* L_1582 = (SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD*)(&__this->___m_Ellipsis);
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_1583 = L_1582->___fontAsset;
+		NullCheck(L_1583);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_1584 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_1583->___m_FaceInfo);
 		int32_t L_1585;
 		L_1585 = FaceInfo_get_pointSize_m7EF7429A4725AB715931A220F6BB498C3D6BF7CB(L_1584, NULL);
 		SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD* L_1586 = (SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD*)(&__this->___m_Ellipsis);
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_1587 = L_1586->___fontAsset;
+		NullCheck(L_1587);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_1588 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_1587->___m_FaceInfo);
 		float L_1589;
 		L_1589 = FaceInfo_get_scale_mC475A572AD4956B47D8B9F8D90DC69BBBB102FCD(L_1588, NULL);
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1590 = ___0_generationSettings;
+		NullCheck(L_1590);
 		bool L_1591 = L_1590->___isOrthographic;
 		if (L_1591)
 		{
@@ -8671,10 +8993,13 @@ IL_30d4:
 		float L_1593 = __this->___m_FontScaleMultiplier;
 		SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD* L_1594 = (SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD*)(&__this->___m_Ellipsis);
 		Character_t9B671B493FAC8D43638C69AF6AE92CBD103D80EC* L_1595 = L_1594->___character;
+		NullCheck(L_1595);
 		float L_1596 = ((TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA*)L_1595)->___m_Scale;
 		SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD* L_1597 = (SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD*)(&__this->___m_Ellipsis);
 		Character_t9B671B493FAC8D43638C69AF6AE92CBD103D80EC* L_1598 = L_1597->___character;
+		NullCheck(L_1598);
 		Glyph_t700CF8EBE04ED4AEAB520885AAA1B309E02A103F* L_1599 = ((TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA*)L_1598)->___m_Glyph;
+		NullCheck(L_1599);
 		float L_1600;
 		L_1600 = Glyph_get_scale_m3ED738CBB032247526DB38161E180759B2D06F29(L_1599, NULL);
 		V_279 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_1592, L_1593)), L_1596)), L_1600));
@@ -8711,20 +9036,25 @@ IL_3147:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1607 = ___1_textInfo;
+		NullCheck(L_1607);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_1608 = L_1607->___textElementInfo;
 		int32_t L_1609 = __this->___m_CharacterCount;
-		float L_1610 = ((L_1608)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_1609, 1)))))->___pointSize;
+		NullCheck(L_1608);
+		float L_1610 = ((L_1608)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_1609, 1)))))->___pointSize;
 		SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD* L_1611 = (SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD*)(&__this->___m_Ellipsis);
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_1612 = L_1611->___fontAsset;
+		NullCheck(L_1612);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_1613 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_1612->___m_FaceInfo);
 		int32_t L_1614;
 		L_1614 = FaceInfo_get_pointSize_m7EF7429A4725AB715931A220F6BB498C3D6BF7CB(L_1613, NULL);
 		SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD* L_1615 = (SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD*)(&__this->___m_Ellipsis);
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_1616 = L_1615->___fontAsset;
+		NullCheck(L_1616);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_1617 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_1616->___m_FaceInfo);
 		float L_1618;
 		L_1618 = FaceInfo_get_scale_mC475A572AD4956B47D8B9F8D90DC69BBBB102FCD(L_1617, NULL);
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1619 = ___0_generationSettings;
+		NullCheck(L_1619);
 		bool L_1620 = L_1619->___isOrthographic;
 		if (L_1620)
 		{
@@ -8752,22 +9082,29 @@ IL_31b2:
 		float L_1622 = __this->___m_FontScaleMultiplier;
 		SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD* L_1623 = (SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD*)(&__this->___m_Ellipsis);
 		Character_t9B671B493FAC8D43638C69AF6AE92CBD103D80EC* L_1624 = L_1623->___character;
+		NullCheck(L_1624);
 		float L_1625 = ((TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA*)L_1624)->___m_Scale;
 		SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD* L_1626 = (SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD*)(&__this->___m_Ellipsis);
 		Character_t9B671B493FAC8D43638C69AF6AE92CBD103D80EC* L_1627 = L_1626->___character;
+		NullCheck(L_1627);
 		Glyph_t700CF8EBE04ED4AEAB520885AAA1B309E02A103F* L_1628 = ((TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA*)L_1627)->___m_Glyph;
+		NullCheck(L_1628);
 		float L_1629;
 		L_1629 = Glyph_get_scale_m3ED738CBB032247526DB38161E180759B2D06F29(L_1628, NULL);
 		V_279 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_1621, L_1622)), L_1625)), L_1629));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1630 = ___1_textInfo;
+		NullCheck(L_1630);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1631 = L_1630->___lineInfo;
 		int32_t L_1632 = __this->___m_LineNumber;
-		float L_1633 = ((L_1631)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1632)))->___marginLeft;
+		NullCheck(L_1631);
+		float L_1633 = ((L_1631)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1632)))->___marginLeft;
 		V_280 = L_1633;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1634 = ___1_textInfo;
+		NullCheck(L_1634);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1635 = L_1634->___lineInfo;
 		int32_t L_1636 = __this->___m_LineNumber;
-		float L_1637 = ((L_1635)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1636)))->___marginRight;
+		NullCheck(L_1635);
+		float L_1637 = ((L_1635)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1636)))->___marginRight;
 		V_281 = L_1637;
 	}
 
@@ -8816,6 +9153,7 @@ IL_3269:
 		float L_1646;
 		L_1646 = fabsf(L_1645);
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1647 = ___0_generationSettings;
+		NullCheck(L_1647);
 		bool L_1648 = L_1647->___isRightToLeft;
 		if (!L_1648)
 		{
@@ -8834,7 +9172,9 @@ IL_328a:
 	{
 		SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD* L_1649 = (SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD*)(&__this->___m_Ellipsis);
 		Character_t9B671B493FAC8D43638C69AF6AE92CBD103D80EC* L_1650 = L_1649->___character;
+		NullCheck(L_1650);
 		Glyph_t700CF8EBE04ED4AEAB520885AAA1B309E02A103F* L_1651 = ((TextElement_tCEF567A8810788262275B39DC39CBA6EBE7472DA*)L_1650)->___m_Glyph;
+		NullCheck(L_1651);
 		GlyphMetrics_t6C1C65A891A6279A0EE807C436436B1E44F7AF1A L_1652;
 		L_1652 = Glyph_get_metrics_mB6E9D3D1899E35BA257638F6F58B7D260170B6FA(L_1651, NULL);
 		V_116 = L_1652;
@@ -8930,15 +9270,19 @@ IL_3366:
 IL_3367:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1675 = ___1_textInfo;
+		NullCheck(L_1675);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_1676 = L_1675->___textElementInfo;
 		int32_t L_1677 = __this->___m_CharacterCount;
+		NullCheck(L_1676);
 		int32_t L_1678 = __this->___m_LineNumber;
-		((L_1676)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1677)))->___lineNumber = L_1678;
+		((L_1676)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1677)))->___lineNumber = L_1678;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1679 = ___1_textInfo;
+		NullCheck(L_1679);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_1680 = L_1679->___textElementInfo;
 		int32_t L_1681 = __this->___m_CharacterCount;
+		NullCheck(L_1680);
 		int32_t L_1682 = __this->___m_PageNumber;
-		((L_1680)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1681)))->___pageNumber = L_1682;
+		((L_1680)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1681)))->___pageNumber = L_1682;
 		uint32_t L_1683 = V_5;
 		if ((((int32_t)L_1683) == ((int32_t)((int32_t)10))))
 		{
@@ -8970,9 +9314,11 @@ IL_3367:
 IL_33b5:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1687 = ___1_textInfo;
+		NullCheck(L_1687);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1688 = L_1687->___lineInfo;
 		int32_t L_1689 = __this->___m_LineNumber;
-		int32_t L_1690 = ((L_1688)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1689)))->___characterCount;
+		NullCheck(L_1688);
+		int32_t L_1690 = ((L_1688)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1689)))->___characterCount;
 		G_B527_0 = ((((int32_t)L_1690) == ((int32_t)1))? 1 : 0);
 		goto IL_33d1;
 	}
@@ -8993,10 +9339,12 @@ IL_33d1:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1692 = ___1_textInfo;
+		NullCheck(L_1692);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1693 = L_1692->___lineInfo;
 		int32_t L_1694 = __this->___m_LineNumber;
+		NullCheck(L_1693);
 		int32_t L_1695 = __this->___m_LineJustification;
-		((L_1693)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1694)))->___alignment = L_1695;
+		((L_1693)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1694)))->___alignment = L_1695;
 	}
 
 IL_33fb:
@@ -9020,10 +9368,12 @@ IL_33fb:
 	}
 	{
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_1700 = __this->___m_CurrentFontAsset;
+		NullCheck(L_1700);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756* L_1701 = (FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756*)(&L_1700->___m_FaceInfo);
 		float L_1702;
 		L_1702 = FaceInfo_get_tabWidth_mC6D9F42C40EDD767DE22050E4FBE3878AC96B161(L_1701, NULL);
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_1703 = __this->___m_CurrentFontAsset;
+		NullCheck(L_1703);
 		uint8_t L_1704;
 		L_1704 = FontAsset_get_tabMultiple_m9C0422A00BFCF82091F14F4E303E2717247350AE(L_1703, NULL);
 		float L_1705 = V_2;
@@ -9060,6 +9410,7 @@ IL_3490:
 
 IL_3496:
 	{
+		NullCheck(G_B534_1);
 		G_B534_1->___m_XAdvance = G_B534_0;
 		goto IL_3647;
 	}
@@ -9079,6 +9430,7 @@ IL_34a1:
 		float L_1718 = __this->___m_MonoSpacing;
 		float L_1719 = V_77;
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_1720 = __this->___m_CurrentFontAsset;
+		NullCheck(L_1720);
 		float L_1721;
 		L_1721 = FontAsset_get_regularStyleSpacing_mB7EEEA236312F5AC31FD3B787808279206F521B1(L_1720, NULL);
 		float L_1722 = V_75;
@@ -9115,6 +9467,7 @@ IL_350b:
 	{
 		float L_1729 = __this->___m_XAdvance;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1730 = ___0_generationSettings;
+		NullCheck(L_1730);
 		float L_1731 = L_1730->___wordSpacing;
 		float L_1732 = V_3;
 		__this->___m_XAdvance = ((float)il2cpp_codegen_add(L_1729, ((float)il2cpp_codegen_multiply(L_1731, L_1732))));
@@ -9128,6 +9481,7 @@ IL_352e:
 IL_3534:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1733 = ___0_generationSettings;
+		NullCheck(L_1733);
 		bool L_1734 = L_1733->___isRightToLeft;
 		V_294 = L_1734;
 		bool L_1735 = V_294;
@@ -9142,6 +9496,7 @@ IL_3534:
 		L_1737 = GlyphValueRecord_get_xAdvance_m6C392027FA91E0705C1585C5EF40D984AAA0013E((&V_74), NULL);
 		float L_1738 = V_2;
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_1739 = __this->___m_CurrentFontAsset;
+		NullCheck(L_1739);
 		float L_1740;
 		L_1740 = FontAsset_get_regularStyleSpacing_mB7EEEA236312F5AC31FD3B787808279206F521B1(L_1739, NULL);
 		float L_1741 = V_75;
@@ -9179,6 +9534,7 @@ IL_3597:
 	{
 		float L_1749 = __this->___m_XAdvance;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1750 = ___0_generationSettings;
+		NullCheck(L_1750);
 		float L_1751 = L_1750->___wordSpacing;
 		float L_1752 = V_3;
 		__this->___m_XAdvance = ((float)il2cpp_codegen_subtract(L_1749, ((float)il2cpp_codegen_multiply(L_1751, L_1752))));
@@ -9200,6 +9556,7 @@ IL_35c0:
 		L_1757 = GlyphValueRecord_get_xAdvance_m6C392027FA91E0705C1585C5EF40D984AAA0013E((&V_74), NULL);
 		float L_1758 = V_2;
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_1759 = __this->___m_CurrentFontAsset;
+		NullCheck(L_1759);
 		float L_1760;
 		L_1760 = FontAsset_get_regularStyleSpacing_mB7EEEA236312F5AC31FD3B787808279206F521B1(L_1759, NULL);
 		float L_1761 = V_75;
@@ -9237,6 +9594,7 @@ IL_3623:
 	{
 		float L_1769 = __this->___m_XAdvance;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1770 = ___0_generationSettings;
+		NullCheck(L_1770);
 		float L_1771 = L_1770->___wordSpacing;
 		float L_1772 = V_3;
 		__this->___m_XAdvance = ((float)il2cpp_codegen_add(L_1769, ((float)il2cpp_codegen_multiply(L_1771, L_1772))));
@@ -9253,10 +9611,12 @@ IL_3647:
 IL_3648:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1773 = ___1_textInfo;
+		NullCheck(L_1773);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_1774 = L_1773->___textElementInfo;
 		int32_t L_1775 = __this->___m_CharacterCount;
+		NullCheck(L_1774);
 		float L_1776 = __this->___m_XAdvance;
-		((L_1774)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1775)))->___xAdvance = L_1776;
+		((L_1774)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1775)))->___xAdvance = L_1776;
 		uint32_t L_1777 = V_5;
 		V_297 = (bool)((((int32_t)L_1777) == ((int32_t)((int32_t)13)))? 1 : 0);
 		bool L_1778 = V_297;
@@ -9273,6 +9633,7 @@ IL_3648:
 IL_368c:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1780 = ___0_generationSettings;
+		NullCheck(L_1780);
 		int32_t L_1781 = L_1780->___overflowMode;
 		if ((!(((uint32_t)L_1781) == ((uint32_t)5))))
 		{
@@ -9330,7 +9691,9 @@ IL_36bf:
 	{
 		int32_t L_1788 = __this->___m_PageNumber;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1789 = ___1_textInfo;
+		NullCheck(L_1789);
 		PageInfoU5BU5D_tFEA2CF88695491CFC2F2A2EF6BDCC56E52B0A6D4* L_1790 = L_1789->___pageInfo;
+		NullCheck(L_1790);
 		V_299 = (bool)((((int32_t)((int32_t)il2cpp_codegen_add(L_1788, 1))) > ((int32_t)((int32_t)(((RuntimeArray*)L_1790)->max_length))))? 1 : 0);
 		bool L_1791 = V_299;
 		if (!L_1791)
@@ -9340,6 +9703,7 @@ IL_36bf:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1792 = ___1_textInfo;
+		NullCheck(L_1792);
 		PageInfoU5BU5D_tFEA2CF88695491CFC2F2A2EF6BDCC56E52B0A6D4** L_1793 = (PageInfoU5BU5D_tFEA2CF88695491CFC2F2A2EF6BDCC56E52B0A6D4**)(&L_1792->___pageInfo);
 		int32_t L_1794 = __this->___m_PageNumber;
 		il2cpp_codegen_runtime_class_init_inline(TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09_il2cpp_TypeInfo_var);
@@ -9349,30 +9713,38 @@ IL_36bf:
 IL_3706:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1795 = ___1_textInfo;
+		NullCheck(L_1795);
 		PageInfoU5BU5D_tFEA2CF88695491CFC2F2A2EF6BDCC56E52B0A6D4* L_1796 = L_1795->___pageInfo;
 		int32_t L_1797 = __this->___m_PageNumber;
+		NullCheck(L_1796);
 		float L_1798 = __this->___m_PageAscender;
-		((L_1796)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1797)))->___ascender = L_1798;
+		((L_1796)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1797)))->___ascender = L_1798;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1799 = ___1_textInfo;
+		NullCheck(L_1799);
 		PageInfoU5BU5D_tFEA2CF88695491CFC2F2A2EF6BDCC56E52B0A6D4* L_1800 = L_1799->___pageInfo;
 		int32_t L_1801 = __this->___m_PageNumber;
+		NullCheck(L_1800);
 		float L_1802 = __this->___m_MaxDescender;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1803 = ___1_textInfo;
+		NullCheck(L_1803);
 		PageInfoU5BU5D_tFEA2CF88695491CFC2F2A2EF6BDCC56E52B0A6D4* L_1804 = L_1803->___pageInfo;
 		int32_t L_1805 = __this->___m_PageNumber;
-		float L_1806 = ((L_1804)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1805)))->___descender;
+		NullCheck(L_1804);
+		float L_1806 = ((L_1804)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1805)))->___descender;
 		if ((((float)L_1802) < ((float)L_1806)))
 		{
-			G_B570_0 = ((L_1800)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1801)));
+			G_B570_0 = ((L_1800)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1801)));
 			goto IL_3769;
 		}
-		G_B569_0 = ((L_1800)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1801)));
+		G_B569_0 = ((L_1800)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1801)));
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1807 = ___1_textInfo;
+		NullCheck(L_1807);
 		PageInfoU5BU5D_tFEA2CF88695491CFC2F2A2EF6BDCC56E52B0A6D4* L_1808 = L_1807->___pageInfo;
 		int32_t L_1809 = __this->___m_PageNumber;
-		float L_1810 = ((L_1808)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1809)))->___descender;
+		NullCheck(L_1808);
+		float L_1810 = ((L_1808)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1809)))->___descender;
 		G_B571_0 = L_1810;
 		G_B571_1 = G_B569_0;
 		goto IL_376f;
@@ -9399,19 +9771,23 @@ IL_376f:
 	{
 		__this->___m_IsNewPage = (bool)0;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1814 = ___1_textInfo;
+		NullCheck(L_1814);
 		PageInfoU5BU5D_tFEA2CF88695491CFC2F2A2EF6BDCC56E52B0A6D4* L_1815 = L_1814->___pageInfo;
 		int32_t L_1816 = __this->___m_PageNumber;
+		NullCheck(L_1815);
 		int32_t L_1817 = __this->___m_CharacterCount;
-		((L_1815)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1816)))->___firstCharacterIndex = L_1817;
+		((L_1815)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1816)))->___firstCharacterIndex = L_1817;
 	}
 
 IL_37ad:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1818 = ___1_textInfo;
+		NullCheck(L_1818);
 		PageInfoU5BU5D_tFEA2CF88695491CFC2F2A2EF6BDCC56E52B0A6D4* L_1819 = L_1818->___pageInfo;
 		int32_t L_1820 = __this->___m_PageNumber;
+		NullCheck(L_1819);
 		int32_t L_1821 = __this->___m_CharacterCount;
-		((L_1819)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1820)))->___lastCharacterIndex = L_1821;
+		((L_1819)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1820)))->___lastCharacterIndex = L_1821;
 	}
 
 IL_37ca:
@@ -9683,6 +10059,7 @@ IL_3986:
 
 IL_398c:
 	{
+		NullCheck(G_B595_1);
 		G_B595_1->___m_MaxDescender = G_B595_0;
 		bool L_1876 = V_24;
 		V_309 = (bool)((((int32_t)L_1876) == ((int32_t)0))? 1 : 0);
@@ -9700,6 +10077,7 @@ IL_398c:
 IL_39ac:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1879 = ___0_generationSettings;
+		NullCheck(L_1879);
 		bool L_1880 = L_1879->___useMaxVisibleDescender;
 		if (!L_1880)
 		{
@@ -9709,6 +10087,7 @@ IL_39ac:
 	{
 		int32_t L_1881 = __this->___m_CharacterCount;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1882 = ___0_generationSettings;
+		NullCheck(L_1882);
 		int32_t L_1883 = L_1882->___maxVisibleCharacters;
 		if ((((int32_t)L_1881) >= ((int32_t)L_1883)))
 		{
@@ -9718,6 +10097,7 @@ IL_39ac:
 	{
 		int32_t L_1884 = __this->___m_LineNumber;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_1885 = ___0_generationSettings;
+		NullCheck(L_1885);
 		int32_t L_1886 = L_1885->___maxVisibleLines;
 		G_B601_0 = ((((int32_t)((((int32_t)L_1884) < ((int32_t)L_1886))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		goto IL_39d6;
@@ -9755,23 +10135,27 @@ IL_39d9:
 IL_39ea:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1888 = ___1_textInfo;
+		NullCheck(L_1888);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1889 = L_1888->___lineInfo;
 		int32_t L_1890 = __this->___m_LineNumber;
+		NullCheck(L_1889);
 		int32_t L_1891 = __this->___m_FirstCharacterOfLine;
-		((L_1889)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1890)))->___firstCharacterIndex = L_1891;
+		((L_1889)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1890)))->___firstCharacterIndex = L_1891;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1892 = ___1_textInfo;
+		NullCheck(L_1892);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1893 = L_1892->___lineInfo;
 		int32_t L_1894 = __this->___m_LineNumber;
+		NullCheck(L_1893);
 		int32_t L_1895 = __this->___m_FirstCharacterOfLine;
 		int32_t L_1896 = __this->___m_FirstVisibleCharacterOfLine;
 		if ((((int32_t)L_1895) > ((int32_t)L_1896)))
 		{
 			G_B607_0 = __this;
-			G_B607_1 = ((L_1893)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1894)));
+			G_B607_1 = ((L_1893)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1894)));
 			goto IL_3a2e;
 		}
 		G_B606_0 = __this;
-		G_B606_1 = ((L_1893)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1894)));
+		G_B606_1 = ((L_1893)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1894)));
 	}
 	{
 		int32_t L_1897 = __this->___m_FirstVisibleCharacterOfLine;
@@ -9793,31 +10177,36 @@ IL_3a34:
 	{
 		int32_t L_1899 = G_B608_0;
 		V_158 = L_1899;
+		NullCheck(G_B608_1);
 		G_B608_1->___m_FirstVisibleCharacterOfLine = L_1899;
 		int32_t L_1900 = V_158;
 		G_B608_2->___firstVisibleCharacterIndex = L_1900;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1901 = ___1_textInfo;
+		NullCheck(L_1901);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1902 = L_1901->___lineInfo;
 		int32_t L_1903 = __this->___m_LineNumber;
+		NullCheck(L_1902);
 		int32_t L_1904 = __this->___m_CharacterCount;
 		int32_t L_1905 = L_1904;
 		V_158 = L_1905;
 		__this->___m_LastCharacterOfLine = L_1905;
 		int32_t L_1906 = V_158;
-		((L_1902)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1903)))->___lastCharacterIndex = L_1906;
+		((L_1902)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1903)))->___lastCharacterIndex = L_1906;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1907 = ___1_textInfo;
+		NullCheck(L_1907);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1908 = L_1907->___lineInfo;
 		int32_t L_1909 = __this->___m_LineNumber;
+		NullCheck(L_1908);
 		int32_t L_1910 = __this->___m_LastVisibleCharacterOfLine;
 		int32_t L_1911 = __this->___m_FirstVisibleCharacterOfLine;
 		if ((((int32_t)L_1910) < ((int32_t)L_1911)))
 		{
 			G_B610_0 = __this;
-			G_B610_1 = ((L_1908)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1909)));
+			G_B610_1 = ((L_1908)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1909)));
 			goto IL_3a92;
 		}
 		G_B609_0 = __this;
-		G_B609_1 = ((L_1908)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1909)));
+		G_B609_1 = ((L_1908)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1909)));
 	}
 	{
 		int32_t L_1912 = __this->___m_LastVisibleCharacterOfLine;
@@ -9839,39 +10228,54 @@ IL_3a98:
 	{
 		int32_t L_1914 = G_B611_0;
 		V_158 = L_1914;
+		NullCheck(G_B611_1);
 		G_B611_1->___m_LastVisibleCharacterOfLine = L_1914;
 		int32_t L_1915 = V_158;
 		G_B611_2->___lastVisibleCharacterIndex = L_1915;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1916 = ___1_textInfo;
+		NullCheck(L_1916);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1917 = L_1916->___lineInfo;
 		int32_t L_1918 = __this->___m_LineNumber;
+		NullCheck(L_1917);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1919 = ___1_textInfo;
+		NullCheck(L_1919);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1920 = L_1919->___lineInfo;
 		int32_t L_1921 = __this->___m_LineNumber;
-		int32_t L_1922 = ((L_1920)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1921)))->___lastCharacterIndex;
+		NullCheck(L_1920);
+		int32_t L_1922 = ((L_1920)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1921)))->___lastCharacterIndex;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1923 = ___1_textInfo;
+		NullCheck(L_1923);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1924 = L_1923->___lineInfo;
 		int32_t L_1925 = __this->___m_LineNumber;
-		int32_t L_1926 = ((L_1924)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1925)))->___firstCharacterIndex;
-		((L_1917)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1918)))->___characterCount = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_1922, L_1926)), 1));
+		NullCheck(L_1924);
+		int32_t L_1926 = ((L_1924)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1925)))->___firstCharacterIndex;
+		((L_1917)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1918)))->___characterCount = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_1922, L_1926)), 1));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1927 = ___1_textInfo;
+		NullCheck(L_1927);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1928 = L_1927->___lineInfo;
 		int32_t L_1929 = __this->___m_LineNumber;
+		NullCheck(L_1928);
 		int32_t L_1930 = __this->___m_LineVisibleCharacterCount;
-		((L_1928)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1929)))->___visibleCharacterCount = L_1930;
+		((L_1928)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1929)))->___visibleCharacterCount = L_1930;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1931 = ___1_textInfo;
+		NullCheck(L_1931);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1932 = L_1931->___lineInfo;
 		int32_t L_1933 = __this->___m_LineNumber;
+		NullCheck(L_1932);
 		int32_t L_1934 = __this->___m_LineVisibleSpaceCount;
-		((L_1932)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1933)))->___visibleSpaceCount = L_1934;
+		((L_1932)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1933)))->___visibleSpaceCount = L_1934;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1935 = ___1_textInfo;
+		NullCheck(L_1935);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1936 = L_1935->___lineInfo;
 		int32_t L_1937 = __this->___m_LineNumber;
-		Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6* L_1938 = (Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6*)(&((L_1936)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1937)))->___lineExtents);
+		NullCheck(L_1936);
+		Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6* L_1938 = (Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6*)(&((L_1936)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1937)))->___lineExtents);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1939 = ___1_textInfo;
+		NullCheck(L_1939);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_1940 = L_1939->___textElementInfo;
 		int32_t L_1941 = __this->___m_FirstVisibleCharacterOfLine;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_1942 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_1940)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1941)))->___bottomLeft);
+		NullCheck(L_1940);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_1942 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_1940)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1941)))->___bottomLeft);
 		float L_1943 = L_1942->___x;
 		float L_1944 = V_304;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1945;
@@ -9879,13 +10283,17 @@ IL_3a98:
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_1945), L_1943, L_1944, NULL);
 		L_1938->___min = L_1945;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1946 = ___1_textInfo;
+		NullCheck(L_1946);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1947 = L_1946->___lineInfo;
 		int32_t L_1948 = __this->___m_LineNumber;
-		Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6* L_1949 = (Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6*)(&((L_1947)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1948)))->___lineExtents);
+		NullCheck(L_1947);
+		Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6* L_1949 = (Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6*)(&((L_1947)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1948)))->___lineExtents);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1950 = ___1_textInfo;
+		NullCheck(L_1950);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_1951 = L_1950->___textElementInfo;
 		int32_t L_1952 = __this->___m_LastVisibleCharacterOfLine;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_1953 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_1951)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1952)))->___topRight);
+		NullCheck(L_1951);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_1953 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_1951)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1952)))->___topRight);
 		float L_1954 = L_1953->___x;
 		float L_1955 = V_303;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1956;
@@ -9893,26 +10301,34 @@ IL_3a98:
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_1956), L_1954, L_1955, NULL);
 		L_1949->___max = L_1956;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1957 = ___1_textInfo;
+		NullCheck(L_1957);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1958 = L_1957->___lineInfo;
 		int32_t L_1959 = __this->___m_LineNumber;
+		NullCheck(L_1958);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1960 = ___1_textInfo;
+		NullCheck(L_1960);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1961 = L_1960->___lineInfo;
 		int32_t L_1962 = __this->___m_LineNumber;
-		Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6* L_1963 = (Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6*)(&((L_1961)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1962)))->___lineExtents);
+		NullCheck(L_1961);
+		Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6* L_1963 = (Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6*)(&((L_1961)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1962)))->___lineExtents);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_1964 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_1963->___max);
 		float L_1965 = L_1964->___x;
 		float L_1966 = V_6;
 		float L_1967 = V_2;
-		((L_1958)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1959)))->___length = ((float)il2cpp_codegen_subtract(L_1965, ((float)il2cpp_codegen_multiply(L_1966, L_1967))));
+		((L_1958)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1959)))->___length = ((float)il2cpp_codegen_subtract(L_1965, ((float)il2cpp_codegen_multiply(L_1966, L_1967))));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1968 = ___1_textInfo;
+		NullCheck(L_1968);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1969 = L_1968->___lineInfo;
 		int32_t L_1970 = __this->___m_LineNumber;
+		NullCheck(L_1969);
 		float L_1971 = V_22;
-		((L_1969)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1970)))->___width = L_1971;
+		((L_1969)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1970)))->___width = L_1971;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1972 = ___1_textInfo;
+		NullCheck(L_1972);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1973 = L_1972->___lineInfo;
 		int32_t L_1974 = __this->___m_LineNumber;
-		int32_t L_1975 = ((L_1973)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1974)))->___characterCount;
+		NullCheck(L_1973);
+		int32_t L_1975 = ((L_1973)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1974)))->___characterCount;
 		V_311 = (bool)((((int32_t)L_1975) == ((int32_t)1))? 1 : 0);
 		bool L_1976 = V_311;
 		if (!L_1976)
@@ -9922,15 +10338,18 @@ IL_3a98:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1977 = ___1_textInfo;
+		NullCheck(L_1977);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1978 = L_1977->___lineInfo;
 		int32_t L_1979 = __this->___m_LineNumber;
+		NullCheck(L_1978);
 		int32_t L_1980 = __this->___m_LineJustification;
-		((L_1978)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1979)))->___alignment = L_1980;
+		((L_1978)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1979)))->___alignment = L_1980;
 	}
 
 IL_3c3c:
 	{
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_1981 = __this->___m_CurrentFontAsset;
+		NullCheck(L_1981);
 		float L_1982;
 		L_1982 = FontAsset_get_regularStyleSpacing_mB7EEEA236312F5AC31FD3B787808279206F521B1(L_1981, NULL);
 		float L_1983 = V_75;
@@ -9940,9 +10359,11 @@ IL_3c3c:
 		float L_1987 = __this->___m_CharWidthAdjDelta;
 		V_305 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(L_1982, L_1983)), L_1984)), L_1985)), L_1986)), ((float)il2cpp_codegen_subtract((1.0f), L_1987))));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1988 = ___1_textInfo;
+		NullCheck(L_1988);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_1989 = L_1988->___textElementInfo;
 		int32_t L_1990 = __this->___m_LastVisibleCharacterOfLine;
-		bool L_1991 = ((L_1989)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1990)))->___isVisible;
+		NullCheck(L_1989);
+		bool L_1991 = ((L_1989)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1990)))->___isVisible;
 		V_312 = L_1991;
 		bool L_1992 = V_312;
 		if (!L_1992)
@@ -9952,22 +10373,27 @@ IL_3c3c:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1993 = ___1_textInfo;
+		NullCheck(L_1993);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_1994 = L_1993->___lineInfo;
 		int32_t L_1995 = __this->___m_LineNumber;
+		NullCheck(L_1994);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_1996 = ___1_textInfo;
+		NullCheck(L_1996);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_1997 = L_1996->___textElementInfo;
 		int32_t L_1998 = __this->___m_LastVisibleCharacterOfLine;
-		float L_1999 = ((L_1997)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1998)))->___xAdvance;
+		NullCheck(L_1997);
+		float L_1999 = ((L_1997)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1998)))->___xAdvance;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2000 = ___0_generationSettings;
+		NullCheck(L_2000);
 		bool L_2001 = L_2000->___isRightToLeft;
 		if (L_2001)
 		{
 			G_B616_0 = L_1999;
-			G_B616_1 = ((L_1994)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1995)));
+			G_B616_1 = ((L_1994)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1995)));
 			goto IL_3cc5;
 		}
 		G_B615_0 = L_1999;
-		G_B615_1 = ((L_1994)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_1995)));
+		G_B615_1 = ((L_1994)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1995)));
 	}
 	{
 		float L_2002 = V_305;
@@ -9994,22 +10420,27 @@ IL_3ccb:
 IL_3cd3:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_2004 = ___1_textInfo;
+		NullCheck(L_2004);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_2005 = L_2004->___lineInfo;
 		int32_t L_2006 = __this->___m_LineNumber;
+		NullCheck(L_2005);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_2007 = ___1_textInfo;
+		NullCheck(L_2007);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2008 = L_2007->___textElementInfo;
 		int32_t L_2009 = __this->___m_LastCharacterOfLine;
-		float L_2010 = ((L_2008)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2009)))->___xAdvance;
+		NullCheck(L_2008);
+		float L_2010 = ((L_2008)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2009)))->___xAdvance;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2011 = ___0_generationSettings;
+		NullCheck(L_2011);
 		bool L_2012 = L_2011->___isRightToLeft;
 		if (L_2012)
 		{
 			G_B620_0 = L_2010;
-			G_B620_1 = ((L_2005)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2006)));
+			G_B620_1 = ((L_2005)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2006)));
 			goto IL_3d0b;
 		}
 		G_B619_0 = L_2010;
-		G_B619_1 = ((L_2005)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2006)));
+		G_B619_1 = ((L_2005)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2006)));
 	}
 	{
 		float L_2013 = V_305;
@@ -10035,28 +10466,36 @@ IL_3d11:
 IL_3d17:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_2015 = ___1_textInfo;
+		NullCheck(L_2015);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_2016 = L_2015->___lineInfo;
 		int32_t L_2017 = __this->___m_LineNumber;
+		NullCheck(L_2016);
 		float L_2018 = __this->___m_LineOffset;
-		((L_2016)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2017)))->___baseline = ((float)il2cpp_codegen_subtract((0.0f), L_2018));
+		((L_2016)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2017)))->___baseline = ((float)il2cpp_codegen_subtract((0.0f), L_2018));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_2019 = ___1_textInfo;
+		NullCheck(L_2019);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_2020 = L_2019->___lineInfo;
 		int32_t L_2021 = __this->___m_LineNumber;
+		NullCheck(L_2020);
 		float L_2022 = V_303;
-		((L_2020)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2021)))->___ascender = L_2022;
+		((L_2020)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2021)))->___ascender = L_2022;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_2023 = ___1_textInfo;
+		NullCheck(L_2023);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_2024 = L_2023->___lineInfo;
 		int32_t L_2025 = __this->___m_LineNumber;
+		NullCheck(L_2024);
 		float L_2026 = V_304;
-		((L_2024)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2025)))->___descender = L_2026;
+		((L_2024)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2025)))->___descender = L_2026;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_2027 = ___1_textInfo;
+		NullCheck(L_2027);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_2028 = L_2027->___lineInfo;
 		int32_t L_2029 = __this->___m_LineNumber;
+		NullCheck(L_2028);
 		float L_2030 = V_303;
 		float L_2031 = V_304;
 		float L_2032 = V_16;
 		float L_2033 = V_1;
-		((L_2028)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2029)))->___lineHeight = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_subtract(L_2030, L_2031)), ((float)il2cpp_codegen_multiply(L_2032, L_2033))));
+		((L_2028)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2029)))->___lineHeight = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_subtract(L_2030, L_2031)), ((float)il2cpp_codegen_multiply(L_2032, L_2033))));
 		uint32_t L_2034 = V_5;
 		if ((((int32_t)L_2034) == ((int32_t)((int32_t)10))))
 		{
@@ -10121,7 +10560,9 @@ IL_3dc0:
 		__this->___m_LineVisibleSpaceCount = 0;
 		int32_t L_2046 = __this->___m_LineNumber;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_2047 = ___1_textInfo;
+		NullCheck(L_2047);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_2048 = L_2047->___lineInfo;
+		NullCheck(L_2048);
 		V_315 = (bool)((((int32_t)((((int32_t)L_2046) < ((int32_t)((int32_t)(((RuntimeArray*)L_2048)->max_length))))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		bool L_2049 = V_315;
 		if (!L_2049)
@@ -10139,9 +10580,11 @@ IL_3dc0:
 IL_3e49:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_2052 = ___1_textInfo;
+		NullCheck(L_2052);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2053 = L_2052->___textElementInfo;
 		int32_t L_2054 = __this->___m_CharacterCount;
-		float L_2055 = ((L_2053)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2054)))->___adjustedAscender;
+		NullCheck(L_2053);
+		float L_2055 = ((L_2053)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2054)))->___adjustedAscender;
 		V_314 = L_2055;
 		float L_2056 = __this->___m_LineHeight;
 		V_316 = (bool)((((float)L_2056) == ((float)(-32767.0f)))? 1 : 0);
@@ -10158,6 +10601,7 @@ IL_3e49:
 		float L_2061 = __this->___m_LineSpacingDelta;
 		float L_2062 = V_1;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2063 = ___0_generationSettings;
+		NullCheck(L_2063);
 		float L_2064 = L_2063->___lineSpacing;
 		uint32_t L_2065 = V_5;
 		if ((((int32_t)L_2065) == ((int32_t)((int32_t)10))))
@@ -10190,6 +10634,7 @@ IL_3e49:
 IL_3ebc:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2067 = ___0_generationSettings;
+		NullCheck(L_2067);
 		float L_2068 = L_2067->___paragraphSpacing;
 		G_B636_0 = L_2068;
 		G_B636_1 = G_B635_0;
@@ -10212,6 +10657,7 @@ IL_3ee9:
 		float L_2072 = __this->___m_LineOffset;
 		float L_2073 = __this->___m_LineHeight;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2074 = ___0_generationSettings;
+		NullCheck(L_2074);
 		float L_2075 = L_2074->___lineSpacing;
 		uint32_t L_2076 = V_5;
 		if ((((int32_t)L_2076) == ((int32_t)((int32_t)10))))
@@ -10254,6 +10700,7 @@ IL_3ee9:
 IL_3f13:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2078 = ___0_generationSettings;
+		NullCheck(L_2078);
 		float L_2079 = L_2078->___paragraphSpacing;
 		G_B641_0 = L_2079;
 		G_B641_1 = G_B640_0;
@@ -10265,6 +10712,7 @@ IL_3f13:
 IL_3f19:
 	{
 		float L_2080 = V_3;
+		NullCheck(G_B641_4);
 		G_B641_4->___m_LineOffset = ((float)il2cpp_codegen_add(G_B641_3, ((float)il2cpp_codegen_add(G_B641_2, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_add(G_B641_1, G_B641_0)), L_2080))))));
 		__this->___m_IsDrivenLineSpacing = (bool)1;
 	}
@@ -10305,6 +10753,7 @@ IL_3fa5:
 	}
 	{
 		TextProcessingElementU5BU5D_t24A1E4C8745577D794FE856B4236875595E7FD22* L_2095 = __this->___m_TextProcessingArray;
+		NullCheck(L_2095);
 		V_62 = ((int32_t)(((RuntimeArray*)L_2095)->max_length));
 	}
 
@@ -10315,9 +10764,11 @@ IL_3fc2:
 IL_3fc3:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_2096 = ___1_textInfo;
+		NullCheck(L_2096);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2097 = L_2096->___textElementInfo;
 		int32_t L_2098 = __this->___m_CharacterCount;
-		bool L_2099 = ((L_2097)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2098)))->___isVisible;
+		NullCheck(L_2097);
+		bool L_2099 = ((L_2097)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2098)))->___isVisible;
 		V_319 = L_2099;
 		bool L_2100 = V_319;
 		if (!L_2100)
@@ -10332,9 +10783,11 @@ IL_3fc3:
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_2104 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_2103->___min);
 		float L_2105 = L_2104->___x;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_2106 = ___1_textInfo;
+		NullCheck(L_2106);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2107 = L_2106->___textElementInfo;
 		int32_t L_2108 = __this->___m_CharacterCount;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2109 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_2107)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2108)))->___bottomLeft);
+		NullCheck(L_2107);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2109 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_2107)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2108)))->___bottomLeft);
 		float L_2110 = L_2109->___x;
 		float L_2111;
 		L_2111 = Mathf_Min_m747CA71A9483CDB394B13BD0AD048EE17E48FFE4_inline(L_2105, L_2110, NULL);
@@ -10345,9 +10798,11 @@ IL_3fc3:
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_2115 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_2114->___min);
 		float L_2116 = L_2115->___y;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_2117 = ___1_textInfo;
+		NullCheck(L_2117);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2118 = L_2117->___textElementInfo;
 		int32_t L_2119 = __this->___m_CharacterCount;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2120 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_2118)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2119)))->___bottomLeft);
+		NullCheck(L_2118);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2120 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_2118)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2119)))->___bottomLeft);
 		float L_2121 = L_2120->___y;
 		float L_2122;
 		L_2122 = Mathf_Min_m747CA71A9483CDB394B13BD0AD048EE17E48FFE4_inline(L_2116, L_2121, NULL);
@@ -10358,9 +10813,11 @@ IL_3fc3:
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_2126 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_2125->___max);
 		float L_2127 = L_2126->___x;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_2128 = ___1_textInfo;
+		NullCheck(L_2128);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2129 = L_2128->___textElementInfo;
 		int32_t L_2130 = __this->___m_CharacterCount;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2131 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_2129)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2130)))->___topRight);
+		NullCheck(L_2129);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2131 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_2129)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2130)))->___topRight);
 		float L_2132 = L_2131->___x;
 		float L_2133;
 		L_2133 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline(L_2127, L_2132, NULL);
@@ -10371,9 +10828,11 @@ IL_3fc3:
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_2137 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_2136->___max);
 		float L_2138 = L_2137->___y;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_2139 = ___1_textInfo;
+		NullCheck(L_2139);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2140 = L_2139->___textElementInfo;
 		int32_t L_2141 = __this->___m_CharacterCount;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2142 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_2140)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2141)))->___topRight);
+		NullCheck(L_2140);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2142 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_2140)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2141)))->___topRight);
 		float L_2143 = L_2142->___y;
 		float L_2144;
 		L_2144 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline(L_2138, L_2143, NULL);
@@ -10399,6 +10858,7 @@ IL_40ec:
 IL_40f5:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2147 = ___0_generationSettings;
+		NullCheck(L_2147);
 		int32_t L_2148 = L_2147->___overflowMode;
 		if ((((int32_t)L_2148) == ((int32_t)3)))
 		{
@@ -10407,6 +10867,7 @@ IL_40f5:
 	}
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2149 = ___0_generationSettings;
+		NullCheck(L_2149);
 		int32_t L_2150 = L_2149->___overflowMode;
 		if ((((int32_t)L_2150) == ((int32_t)1)))
 		{
@@ -10415,6 +10876,7 @@ IL_40f5:
 	}
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2151 = ___0_generationSettings;
+		NullCheck(L_2151);
 		int32_t L_2152 = L_2151->___overflowMode;
 		G_B654_0 = ((((int32_t)L_2152) == ((int32_t)6))? 1 : 0);
 		goto IL_4113;
@@ -10552,8 +11014,10 @@ IL_41bc:
 	}
 	{
 		TextSettings_tB7F55685AFFD4A96F714427BCACFD6958E357D64* L_2174 = V_31;
+		NullCheck(L_2174);
 		UnicodeLineBreakingRules_t80BE36F5E16AE48FE7B6DE1C91D36B1142B4EC0E* L_2175;
 		L_2175 = TextSettings_get_lineBreakingRules_m96E2C32D4F08309D904B0BCD83CEBE8CD6716A04(L_2174, NULL);
+		NullCheck(L_2175);
 		bool L_2176;
 		L_2176 = UnicodeLineBreakingRules_get_useModernHangulLineBreakingRules_mD86D283CE7BA23A0174B9227A7BD915D3D9FD464_inline(L_2175, NULL);
 		if (!L_2176)
@@ -10599,11 +11063,14 @@ IL_41e8:
 	}
 	{
 		TextSettings_tB7F55685AFFD4A96F714427BCACFD6958E357D64* L_2180 = V_31;
+		NullCheck(L_2180);
 		UnicodeLineBreakingRules_t80BE36F5E16AE48FE7B6DE1C91D36B1142B4EC0E* L_2181;
 		L_2181 = TextSettings_get_lineBreakingRules_m96E2C32D4F08309D904B0BCD83CEBE8CD6716A04(L_2180, NULL);
+		NullCheck(L_2181);
 		HashSet_1_t5DD20B42149A11AEBF12A75505306E6EFC34943A* L_2182;
 		L_2182 = UnicodeLineBreakingRules_get_leadingCharactersLookup_m1DAC015D7E37112EAE0437E6472AEA0719DFF3DC(L_2181, NULL);
 		uint32_t L_2183 = V_5;
+		NullCheck(L_2182);
 		bool L_2184;
 		L_2184 = HashSet_1_Contains_m02385B663B65E53485251FFFD116D0F26BA172B9(L_2182, L_2183, HashSet_1_Contains_m02385B663B65E53485251FFFD116D0F26BA172B9_RuntimeMethod_var);
 		V_323 = L_2184;
@@ -10616,14 +11083,19 @@ IL_41e8:
 	}
 	{
 		TextSettings_tB7F55685AFFD4A96F714427BCACFD6958E357D64* L_2187 = V_31;
+		NullCheck(L_2187);
 		UnicodeLineBreakingRules_t80BE36F5E16AE48FE7B6DE1C91D36B1142B4EC0E* L_2188;
 		L_2188 = TextSettings_get_lineBreakingRules_m96E2C32D4F08309D904B0BCD83CEBE8CD6716A04(L_2187, NULL);
+		NullCheck(L_2188);
 		HashSet_1_t5DD20B42149A11AEBF12A75505306E6EFC34943A* L_2189;
 		L_2189 = UnicodeLineBreakingRules_get_followingCharactersLookup_m5510A21873DC5DA66F4A2DFA4C26A5EFAD494D8B(L_2188, NULL);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_2190 = ___1_textInfo;
+		NullCheck(L_2190);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2191 = L_2190->___textElementInfo;
 		int32_t L_2192 = __this->___m_CharacterCount;
-		Il2CppChar L_2193 = ((L_2191)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_2192, 1)))))->___character;
+		NullCheck(L_2191);
+		Il2CppChar L_2193 = ((L_2191)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_2192, 1)))))->___character;
+		NullCheck(L_2189);
 		bool L_2194;
 		L_2194 = HashSet_1_Contains_m02385B663B65E53485251FFFD116D0F26BA172B9(L_2189, L_2193, HashSet_1_Contains_m02385B663B65E53485251FFFD116D0F26BA172B9_RuntimeMethod_var);
 		G_B679_0 = ((int32_t)(L_2194));
@@ -10859,6 +11331,7 @@ IL_43e1:
 	{
 		int32_t L_2250 = V_62;
 		TextProcessingElementU5BU5D_t24A1E4C8745577D794FE856B4236875595E7FD22* L_2251 = __this->___m_TextProcessingArray;
+		NullCheck(L_2251);
 		if ((((int32_t)L_2250) >= ((int32_t)((int32_t)(((RuntimeArray*)L_2251)->max_length)))))
 		{
 			goto IL_4404;
@@ -10867,7 +11340,8 @@ IL_43e1:
 	{
 		TextProcessingElementU5BU5D_t24A1E4C8745577D794FE856B4236875595E7FD22* L_2252 = __this->___m_TextProcessingArray;
 		int32_t L_2253 = V_62;
-		uint32_t L_2254 = ((L_2252)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2253)))->___unicode;
+		NullCheck(L_2252);
+		uint32_t L_2254 = ((L_2252)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2253)))->___unicode;
 		G_B710_0 = ((!(((uint32_t)L_2254) <= ((uint32_t)0)))? 1 : 0);
 		goto IL_4405;
 	}
@@ -10891,6 +11365,7 @@ IL_4405:
 		float L_2257 = __this->___m_MinFontSize;
 		V_4 = ((float)il2cpp_codegen_subtract(L_2256, L_2257));
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2258 = ___0_generationSettings;
+		NullCheck(L_2258);
 		bool L_2259 = L_2258->___autoSize;
 		if (!L_2259)
 		{
@@ -10907,6 +11382,7 @@ IL_4405:
 	{
 		float L_2261 = __this->___m_FontSize;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2262 = ___0_generationSettings;
+		NullCheck(L_2262);
 		float L_2263 = L_2262->___fontSizeMax;
 		if ((!(((float)L_2261) < ((float)L_2263))))
 		{
@@ -10937,6 +11413,7 @@ IL_4455:
 	{
 		float L_2267 = __this->___m_CharWidthAdjDelta;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2268 = ___0_generationSettings;
+		NullCheck(L_2268);
 		float L_2269 = L_2268->___charWidthMaxAdj;
 		V_336 = (bool)((((float)L_2267) < ((float)((float)(L_2269/(100.0f)))))? 1 : 0);
 		bool L_2270 = V_336;
@@ -10963,6 +11440,7 @@ IL_4494:
 		__this->___m_FontSize = ((float)il2cpp_codegen_add(L_2275, L_2276));
 		float L_2277 = __this->___m_FontSize;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2278 = ___0_generationSettings;
+		NullCheck(L_2278);
 		float L_2279 = L_2278->___charWidthMaxAdj;
 		float L_2280;
 		L_2280 = Mathf_Min_m747CA71A9483CDB394B13BD0AD048EE17E48FFE4_inline(((float)(((float)il2cpp_codegen_cast_double_to_int<int32_t>(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_2277, (20.0f))), (0.5f)))))/(20.0f))), L_2279, NULL);
@@ -11050,16 +11528,19 @@ IL_4573:
 IL_458f:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_2294 = ___1_textInfo;
+		NullCheck(L_2294);
 		MeshInfoU5BU5D_t3DF8B75BF4A213334EED197AD25E432212894AC6* L_2295 = L_2294->___meshInfo;
 		int32_t L_2296 = __this->___m_CurrentMaterialIndex;
+		NullCheck(L_2295);
 		il2cpp_codegen_runtime_class_init_inline(MeshInfo_tE55C4A8846CC2C399CCC3FE989476D987B86AB2F_il2cpp_TypeInfo_var);
-		MeshInfo_Clear_m06992FEB7AC9B2AE1728BEDFC8D8A39DE1AAD475(((L_2295)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2296))), (bool)0, NULL);
+		MeshInfo_Clear_m06992FEB7AC9B2AE1728BEDFC8D8A39DE1AAD475(((L_2295)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2296))), (bool)0, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2297;
 		L_2297 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		V_33 = L_2297;
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_2298 = __this->___m_RectTransformCorners;
 		V_34 = L_2298;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2299 = ___0_generationSettings;
+		NullCheck(L_2299);
 		int32_t L_2300 = L_2299->___textAlignment;
 		V_340 = L_2300;
 		int32_t L_2301 = V_340;
@@ -11516,6 +11997,7 @@ IL_48bd:
 IL_48d2:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2345 = ___0_generationSettings;
+		NullCheck(L_2345);
 		int32_t L_2346 = L_2345->___overflowMode;
 		V_341 = (bool)((((int32_t)((((int32_t)L_2346) == ((int32_t)5))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		bool L_2347 = V_341;
@@ -11526,8 +12008,9 @@ IL_48d2:
 	}
 	{
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_2348 = V_34;
+		NullCheck(L_2348);
 		int32_t L_2349 = 1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2350 = (L_2348)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_2349));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2350 = (L_2348)->GetAt(static_cast<il2cpp_array_size_t>(L_2349));
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_2351 = V_19;
 		float L_2352 = L_2351.___x;
 		float L_2353 = __this->___m_MaxAscender;
@@ -11545,14 +12028,17 @@ IL_48d2:
 IL_4928:
 	{
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_2358 = V_34;
+		NullCheck(L_2358);
 		int32_t L_2359 = 1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2360 = (L_2358)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_2359));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2360 = (L_2358)->GetAt(static_cast<il2cpp_array_size_t>(L_2359));
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_2361 = V_19;
 		float L_2362 = L_2361.___x;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_2363 = ___1_textInfo;
+		NullCheck(L_2363);
 		PageInfoU5BU5D_tFEA2CF88695491CFC2F2A2EF6BDCC56E52B0A6D4* L_2364 = L_2363->___pageInfo;
 		int32_t L_2365 = V_18;
-		float L_2366 = ((L_2364)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2365)))->___ascender;
+		NullCheck(L_2364);
+		float L_2366 = ((L_2364)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2365)))->___ascender;
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_2367 = V_19;
 		float L_2368 = L_2367.___y;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2369;
@@ -11571,6 +12057,7 @@ IL_496e:
 IL_4973:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2371 = ___0_generationSettings;
+		NullCheck(L_2371);
 		int32_t L_2372 = L_2371->___overflowMode;
 		V_342 = (bool)((((int32_t)((((int32_t)L_2372) == ((int32_t)5))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		bool L_2373 = V_342;
@@ -11581,11 +12068,13 @@ IL_4973:
 	}
 	{
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_2374 = V_34;
+		NullCheck(L_2374);
 		int32_t L_2375 = 0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2376 = (L_2374)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_2375));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2376 = (L_2374)->GetAt(static_cast<il2cpp_array_size_t>(L_2375));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_2377 = V_34;
+		NullCheck(L_2377);
 		int32_t L_2378 = 1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2379 = (L_2377)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_2378));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2379 = (L_2377)->GetAt(static_cast<il2cpp_array_size_t>(L_2378));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2380;
 		L_2380 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_2376, L_2379, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2381;
@@ -11610,11 +12099,13 @@ IL_4973:
 IL_49f1:
 	{
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_2392 = V_34;
+		NullCheck(L_2392);
 		int32_t L_2393 = 0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2394 = (L_2392)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_2393));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2394 = (L_2392)->GetAt(static_cast<il2cpp_array_size_t>(L_2393));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_2395 = V_34;
+		NullCheck(L_2395);
 		int32_t L_2396 = 1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2397 = (L_2395)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_2396));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2397 = (L_2395)->GetAt(static_cast<il2cpp_array_size_t>(L_2396));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2398;
 		L_2398 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_2394, L_2397, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2399;
@@ -11622,15 +12113,19 @@ IL_49f1:
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_2400 = V_19;
 		float L_2401 = L_2400.___x;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_2402 = ___1_textInfo;
+		NullCheck(L_2402);
 		PageInfoU5BU5D_tFEA2CF88695491CFC2F2A2EF6BDCC56E52B0A6D4* L_2403 = L_2402->___pageInfo;
 		int32_t L_2404 = V_18;
-		float L_2405 = ((L_2403)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2404)))->___ascender;
+		NullCheck(L_2403);
+		float L_2405 = ((L_2403)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2404)))->___ascender;
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_2406 = V_19;
 		float L_2407 = L_2406.___y;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_2408 = ___1_textInfo;
+		NullCheck(L_2408);
 		PageInfoU5BU5D_tFEA2CF88695491CFC2F2A2EF6BDCC56E52B0A6D4* L_2409 = L_2408->___pageInfo;
 		int32_t L_2410 = V_18;
-		float L_2411 = ((L_2409)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2410)))->___descender;
+		NullCheck(L_2409);
+		float L_2411 = ((L_2409)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2410)))->___descender;
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_2412 = V_19;
 		float L_2413 = L_2412.___w;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2414;
@@ -11649,6 +12144,7 @@ IL_4a6f:
 IL_4a74:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2416 = ___0_generationSettings;
+		NullCheck(L_2416);
 		int32_t L_2417 = L_2416->___overflowMode;
 		V_343 = (bool)((((int32_t)((((int32_t)L_2417) == ((int32_t)5))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		bool L_2418 = V_343;
@@ -11659,8 +12155,9 @@ IL_4a74:
 	}
 	{
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_2419 = V_34;
+		NullCheck(L_2419);
 		int32_t L_2420 = 0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2421 = (L_2419)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_2420));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2421 = (L_2419)->GetAt(static_cast<il2cpp_array_size_t>(L_2420));
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_2422 = V_19;
 		float L_2423 = L_2422.___x;
 		float L_2424 = V_23;
@@ -11678,14 +12175,17 @@ IL_4a74:
 IL_4ac6:
 	{
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_2429 = V_34;
+		NullCheck(L_2429);
 		int32_t L_2430 = 0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2431 = (L_2429)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_2430));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2431 = (L_2429)->GetAt(static_cast<il2cpp_array_size_t>(L_2430));
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_2432 = V_19;
 		float L_2433 = L_2432.___x;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_2434 = ___1_textInfo;
+		NullCheck(L_2434);
 		PageInfoU5BU5D_tFEA2CF88695491CFC2F2A2EF6BDCC56E52B0A6D4* L_2435 = L_2434->___pageInfo;
 		int32_t L_2436 = V_18;
-		float L_2437 = ((L_2435)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2436)))->___descender;
+		NullCheck(L_2435);
+		float L_2437 = ((L_2435)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2436)))->___descender;
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_2438 = V_19;
 		float L_2439 = L_2438.___w;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2440;
@@ -11704,11 +12204,13 @@ IL_4b0c:
 IL_4b11:
 	{
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_2442 = V_34;
+		NullCheck(L_2442);
 		int32_t L_2443 = 0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2444 = (L_2442)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_2443));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2444 = (L_2442)->GetAt(static_cast<il2cpp_array_size_t>(L_2443));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_2445 = V_34;
+		NullCheck(L_2445);
 		int32_t L_2446 = 1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2447 = (L_2445)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_2446));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2447 = (L_2445)->GetAt(static_cast<il2cpp_array_size_t>(L_2446));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2448;
 		L_2448 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_2444, L_2447, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2449;
@@ -11727,11 +12229,13 @@ IL_4b11:
 IL_4b58:
 	{
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_2454 = V_34;
+		NullCheck(L_2454);
 		int32_t L_2455 = 0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2456 = (L_2454)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_2455));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2456 = (L_2454)->GetAt(static_cast<il2cpp_array_size_t>(L_2455));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_2457 = V_34;
+		NullCheck(L_2457);
 		int32_t L_2458 = 1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2459 = (L_2457)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_2458));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2459 = (L_2457)->GetAt(static_cast<il2cpp_array_size_t>(L_2458));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2460;
 		L_2460 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_2456, L_2459, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2461;
@@ -11760,11 +12264,13 @@ IL_4b58:
 IL_4bd4:
 	{
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_2476 = V_34;
+		NullCheck(L_2476);
 		int32_t L_2477 = 0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2478 = (L_2476)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_2477));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2478 = (L_2476)->GetAt(static_cast<il2cpp_array_size_t>(L_2477));
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_2479 = V_34;
+		NullCheck(L_2479);
 		int32_t L_2480 = 1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2481 = (L_2479)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_2480));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2481 = (L_2479)->GetAt(static_cast<il2cpp_array_size_t>(L_2480));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2482;
 		L_2482 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_2478, L_2481, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2483;
@@ -11828,6 +12334,7 @@ IL_4c35:
 		V_55 = (0.0f);
 		V_56 = (0.0f);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_2501 = ___1_textInfo;
+		NullCheck(L_2501);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2502 = L_2501->___textElementInfo;
 		V_57 = L_2502;
 		V_344 = 0;
@@ -11838,11 +12345,13 @@ IL_4ce4:
 	{
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2503 = V_57;
 		int32_t L_2504 = V_344;
-		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_2505 = ((L_2503)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2504)))->___fontAsset;
+		NullCheck(L_2503);
+		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_2505 = ((L_2503)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2504)))->___fontAsset;
 		V_345 = L_2505;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2506 = V_57;
 		int32_t L_2507 = V_344;
-		Il2CppChar L_2508 = ((L_2506)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2507)))->___character;
+		NullCheck(L_2506);
+		Il2CppChar L_2508 = ((L_2506)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2507)))->___character;
 		V_346 = L_2508;
 		Il2CppChar L_2509 = V_346;
 		il2cpp_codegen_runtime_class_init_inline(Char_t521A6F19B456D956AF452D926C32709DC03D6B17_il2cpp_TypeInfo_var);
@@ -11851,13 +12360,16 @@ IL_4ce4:
 		V_347 = L_2510;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2511 = V_57;
 		int32_t L_2512 = V_344;
-		int32_t L_2513 = ((L_2511)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2512)))->___lineNumber;
+		NullCheck(L_2511);
+		int32_t L_2513 = ((L_2511)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2512)))->___lineNumber;
 		V_348 = L_2513;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_2514 = ___1_textInfo;
+		NullCheck(L_2514);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_2515 = L_2514->___lineInfo;
 		int32_t L_2516 = V_348;
+		NullCheck(L_2515);
 		int32_t L_2517 = L_2516;
-		LineInfo_t2BBD461B330C46ACA45596A8E72FEA4172F88CF5 L_2518 = (L_2515)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_2517));
+		LineInfo_t2BBD461B330C46ACA45596A8E72FEA4172F88CF5 L_2518 = (L_2515)->GetAt(static_cast<il2cpp_array_size_t>(L_2517));
 		V_349 = L_2518;
 		int32_t L_2519 = V_348;
 		V_38 = ((int32_t)il2cpp_codegen_add(L_2519, 1));
@@ -12296,6 +12808,7 @@ IL_5005:
 IL_501a:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2555 = ___0_generationSettings;
+		NullCheck(L_2555);
 		bool L_2556 = L_2555->___isRightToLeft;
 		V_360 = (bool)((((int32_t)L_2556) == ((int32_t)0))? 1 : 0);
 		bool L_2557 = V_360;
@@ -12356,6 +12869,7 @@ IL_50c1:
 IL_5126:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2580 = ___0_generationSettings;
+		NullCheck(L_2580);
 		bool L_2581 = L_2580->___isRightToLeft;
 		V_361 = (bool)((((int32_t)L_2581) == ((int32_t)0))? 1 : 0);
 		bool L_2582 = V_361;
@@ -12456,7 +12970,8 @@ IL_5203:
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2602 = V_57;
 		LineInfo_t2BBD461B330C46ACA45596A8E72FEA4172F88CF5 L_2603 = V_349;
 		int32_t L_2604 = L_2603.___lastCharacterIndex;
-		Il2CppChar L_2605 = ((L_2602)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2604)))->___character;
+		NullCheck(L_2602);
+		Il2CppChar L_2605 = ((L_2602)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2604)))->___character;
 		V_356 = L_2605;
 		int32_t L_2606 = V_350;
 		V_357 = (bool)((((int32_t)((int32_t)((int32_t)L_2606&((int32_t)16)))) == ((int32_t)((int32_t)16)))? 1 : 0);
@@ -12530,6 +13045,7 @@ IL_5275:
 	{
 		int32_t L_2620 = V_344;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2621 = ___0_generationSettings;
+		NullCheck(L_2621);
 		int32_t L_2622 = L_2621->___firstVisibleCharacter;
 		G_B904_0 = ((((int32_t)L_2620) == ((int32_t)L_2622))? 1 : 0);
 		goto IL_52aa;
@@ -12551,6 +13067,7 @@ IL_52aa:
 	}
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2624 = ___0_generationSettings;
+		NullCheck(L_2624);
 		bool L_2625 = L_2624->___isRightToLeft;
 		V_365 = (bool)((((int32_t)L_2625) == ((int32_t)0))? 1 : 0);
 		bool L_2626 = V_365;
@@ -12606,6 +13123,7 @@ IL_533a:
 IL_5340:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2636 = ___0_generationSettings;
+		NullCheck(L_2636);
 		bool L_2637 = L_2636->___isRightToLeft;
 		if (!L_2637)
 		{
@@ -12674,6 +13192,7 @@ IL_53e9:
 IL_53f9:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2659 = ___0_generationSettings;
+		NullCheck(L_2659);
 		float L_2660 = L_2659->___wordWrappingRatio;
 		G_B920_0 = L_2660;
 	}
@@ -12744,6 +13263,7 @@ IL_544b:
 	}
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2668 = ___0_generationSettings;
+		NullCheck(L_2668);
 		bool L_2669 = L_2668->___isRightToLeft;
 		V_374 = (bool)((((int32_t)L_2669) == ((int32_t)0))? 1 : 0);
 		bool L_2670 = V_374;
@@ -12788,6 +13308,7 @@ IL_54dc:
 IL_54df:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2683 = ___0_generationSettings;
+		NullCheck(L_2683);
 		bool L_2684 = L_2683->___isRightToLeft;
 		V_375 = (bool)((((int32_t)L_2684) == ((int32_t)0))? 1 : 0);
 		bool L_2685 = V_375;
@@ -12840,6 +13361,7 @@ IL_5555:
 IL_5558:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2698 = ___0_generationSettings;
+		NullCheck(L_2698);
 		bool L_2699 = L_2698->___isRightToLeft;
 		V_376 = (bool)((((int32_t)L_2699) == ((int32_t)0))? 1 : 0);
 		bool L_2700 = V_376;
@@ -12882,7 +13404,8 @@ IL_55b9:
 		V_36 = L_2709;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2710 = V_57;
 		int32_t L_2711 = V_344;
-		bool L_2712 = ((L_2710)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2711)))->___isVisible;
+		NullCheck(L_2710);
+		bool L_2712 = ((L_2710)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2711)))->___isVisible;
 		V_351 = L_2712;
 		bool L_2713 = V_351;
 		V_377 = L_2713;
@@ -12895,7 +13418,8 @@ IL_55b9:
 	{
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2715 = V_57;
 		int32_t L_2716 = V_344;
-		uint8_t L_2717 = ((L_2715)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2716)))->___elementType;
+		NullCheck(L_2715);
+		uint8_t L_2717 = ((L_2715)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2716)))->___elementType;
 		V_378 = L_2717;
 		uint8_t L_2718 = V_378;
 		V_383 = L_2718;
@@ -12929,10 +13453,12 @@ IL_5640:
 		Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6 L_2723 = L_2722.___lineExtents;
 		V_380 = L_2723;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2724 = ___0_generationSettings;
+		NullCheck(L_2724);
 		float L_2725 = L_2724->___uvLineOffset;
 		int32_t L_2726 = V_348;
 		V_381 = (fmodf(((float)il2cpp_codegen_multiply(L_2725, ((float)L_2726))), (1.0f)));
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2727 = ___0_generationSettings;
+		NullCheck(L_2727);
 		int32_t L_2728 = L_2727->___horizontalMapping;
 		V_386 = L_2728;
 		int32_t L_2729 = V_386;
@@ -12966,22 +13492,26 @@ IL_56a3:
 	{
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2731 = V_57;
 		int32_t L_2732 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2733 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2731)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2732)))->___vertexBottomLeft);
+		NullCheck(L_2731);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2733 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2731)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2732)))->___vertexBottomLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_2734 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_2733->___uv2);
 		L_2734->___x = (0.0f);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2735 = V_57;
 		int32_t L_2736 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2737 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2735)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2736)))->___vertexTopLeft);
+		NullCheck(L_2735);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2737 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2735)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2736)))->___vertexTopLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_2738 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_2737->___uv2);
 		L_2738->___x = (0.0f);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2739 = V_57;
 		int32_t L_2740 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2741 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2739)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2740)))->___vertexTopRight);
+		NullCheck(L_2739);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2741 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2739)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2740)))->___vertexTopRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_2742 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_2741->___uv2);
 		L_2742->___x = (1.0f);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2743 = V_57;
 		int32_t L_2744 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2745 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2743)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2744)))->___vertexBottomRight);
+		NullCheck(L_2743);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2745 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2743)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2744)))->___vertexBottomRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_2746 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_2745->___uv2);
 		L_2746->___x = (1.0f);
 		goto IL_61f5;
@@ -12990,6 +13520,7 @@ IL_56a3:
 IL_572c:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2747 = ___0_generationSettings;
+		NullCheck(L_2747);
 		int32_t L_2748 = L_2747->___textAlignment;
 		V_387 = (bool)((((int32_t)((((int32_t)L_2748) == ((int32_t)((int32_t)520)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		bool L_2749 = V_387;
@@ -13001,11 +13532,13 @@ IL_572c:
 	{
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2750 = V_57;
 		int32_t L_2751 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2752 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2750)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2751)))->___vertexBottomLeft);
+		NullCheck(L_2750);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2752 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2750)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2751)))->___vertexBottomLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_2753 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_2752->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2754 = V_57;
 		int32_t L_2755 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2756 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2754)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2755)))->___vertexBottomLeft);
+		NullCheck(L_2754);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2756 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2754)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2755)))->___vertexBottomLeft);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2757 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_2756->___position);
 		float L_2758 = L_2757->___x;
 		Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6 L_2759 = V_380;
@@ -13021,11 +13554,13 @@ IL_572c:
 		L_2753->___x = ((float)il2cpp_codegen_add(((float)(((float)il2cpp_codegen_subtract(L_2758, L_2761))/((float)il2cpp_codegen_subtract(L_2764, L_2767)))), L_2768));
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2769 = V_57;
 		int32_t L_2770 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2771 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2769)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2770)))->___vertexTopLeft);
+		NullCheck(L_2769);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2771 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2769)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2770)))->___vertexTopLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_2772 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_2771->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2773 = V_57;
 		int32_t L_2774 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2775 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2773)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2774)))->___vertexTopLeft);
+		NullCheck(L_2773);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2775 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2773)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2774)))->___vertexTopLeft);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2776 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_2775->___position);
 		float L_2777 = L_2776->___x;
 		Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6 L_2778 = V_380;
@@ -13041,11 +13576,13 @@ IL_572c:
 		L_2772->___x = ((float)il2cpp_codegen_add(((float)(((float)il2cpp_codegen_subtract(L_2777, L_2780))/((float)il2cpp_codegen_subtract(L_2783, L_2786)))), L_2787));
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2788 = V_57;
 		int32_t L_2789 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2790 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2788)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2789)))->___vertexTopRight);
+		NullCheck(L_2788);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2790 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2788)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2789)))->___vertexTopRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_2791 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_2790->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2792 = V_57;
 		int32_t L_2793 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2794 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2792)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2793)))->___vertexTopRight);
+		NullCheck(L_2792);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2794 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2792)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2793)))->___vertexTopRight);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2795 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_2794->___position);
 		float L_2796 = L_2795->___x;
 		Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6 L_2797 = V_380;
@@ -13061,11 +13598,13 @@ IL_572c:
 		L_2791->___x = ((float)il2cpp_codegen_add(((float)(((float)il2cpp_codegen_subtract(L_2796, L_2799))/((float)il2cpp_codegen_subtract(L_2802, L_2805)))), L_2806));
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2807 = V_57;
 		int32_t L_2808 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2809 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2807)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2808)))->___vertexBottomRight);
+		NullCheck(L_2807);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2809 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2807)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2808)))->___vertexBottomRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_2810 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_2809->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2811 = V_57;
 		int32_t L_2812 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2813 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2811)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2812)))->___vertexBottomRight);
+		NullCheck(L_2811);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2813 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2811)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2812)))->___vertexBottomRight);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2814 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_2813->___position);
 		float L_2815 = L_2814->___x;
 		Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6 L_2816 = V_380;
@@ -13086,11 +13625,13 @@ IL_591b:
 	{
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2826 = V_57;
 		int32_t L_2827 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2828 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2826)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2827)))->___vertexBottomLeft);
+		NullCheck(L_2826);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2828 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2826)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2827)))->___vertexBottomLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_2829 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_2828->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2830 = V_57;
 		int32_t L_2831 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2832 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2830)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2831)))->___vertexBottomLeft);
+		NullCheck(L_2830);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2832 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2830)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2831)))->___vertexBottomLeft);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2833 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_2832->___position);
 		float L_2834 = L_2833->___x;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2835 = V_35;
@@ -13108,11 +13649,13 @@ IL_591b:
 		L_2829->___x = ((float)il2cpp_codegen_add(((float)(((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_add(L_2834, L_2836)), L_2839))/((float)il2cpp_codegen_subtract(L_2842, L_2845)))), L_2846));
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2847 = V_57;
 		int32_t L_2848 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2849 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2847)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2848)))->___vertexTopLeft);
+		NullCheck(L_2847);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2849 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2847)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2848)))->___vertexTopLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_2850 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_2849->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2851 = V_57;
 		int32_t L_2852 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2853 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2851)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2852)))->___vertexTopLeft);
+		NullCheck(L_2851);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2853 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2851)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2852)))->___vertexTopLeft);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2854 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_2853->___position);
 		float L_2855 = L_2854->___x;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2856 = V_35;
@@ -13130,11 +13673,13 @@ IL_591b:
 		L_2850->___x = ((float)il2cpp_codegen_add(((float)(((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_add(L_2855, L_2857)), L_2860))/((float)il2cpp_codegen_subtract(L_2863, L_2866)))), L_2867));
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2868 = V_57;
 		int32_t L_2869 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2870 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2868)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2869)))->___vertexTopRight);
+		NullCheck(L_2868);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2870 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2868)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2869)))->___vertexTopRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_2871 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_2870->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2872 = V_57;
 		int32_t L_2873 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2874 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2872)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2873)))->___vertexTopRight);
+		NullCheck(L_2872);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2874 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2872)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2873)))->___vertexTopRight);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2875 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_2874->___position);
 		float L_2876 = L_2875->___x;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2877 = V_35;
@@ -13152,11 +13697,13 @@ IL_591b:
 		L_2871->___x = ((float)il2cpp_codegen_add(((float)(((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_add(L_2876, L_2878)), L_2881))/((float)il2cpp_codegen_subtract(L_2884, L_2887)))), L_2888));
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2889 = V_57;
 		int32_t L_2890 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2891 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2889)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2890)))->___vertexBottomRight);
+		NullCheck(L_2889);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2891 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2889)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2890)))->___vertexBottomRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_2892 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_2891->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2893 = V_57;
 		int32_t L_2894 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2895 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2893)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2894)))->___vertexBottomRight);
+		NullCheck(L_2893);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2895 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2893)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2894)))->___vertexBottomRight);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2896 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_2895->___position);
 		float L_2897 = L_2896->___x;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2898 = V_35;
@@ -13179,11 +13726,13 @@ IL_5b09:
 	{
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2910 = V_57;
 		int32_t L_2911 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2912 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2910)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2911)))->___vertexBottomLeft);
+		NullCheck(L_2910);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2912 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2910)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2911)))->___vertexBottomLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_2913 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_2912->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2914 = V_57;
 		int32_t L_2915 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2916 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2914)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2915)))->___vertexBottomLeft);
+		NullCheck(L_2914);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2916 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2914)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2915)))->___vertexBottomLeft);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2917 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_2916->___position);
 		float L_2918 = L_2917->___x;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2919 = V_35;
@@ -13201,11 +13750,13 @@ IL_5b09:
 		L_2913->___x = ((float)il2cpp_codegen_add(((float)(((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_add(L_2918, L_2920)), L_2923))/((float)il2cpp_codegen_subtract(L_2926, L_2929)))), L_2930));
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2931 = V_57;
 		int32_t L_2932 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2933 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2931)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2932)))->___vertexTopLeft);
+		NullCheck(L_2931);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2933 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2931)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2932)))->___vertexTopLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_2934 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_2933->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2935 = V_57;
 		int32_t L_2936 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2937 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2935)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2936)))->___vertexTopLeft);
+		NullCheck(L_2935);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2937 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2935)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2936)))->___vertexTopLeft);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2938 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_2937->___position);
 		float L_2939 = L_2938->___x;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2940 = V_35;
@@ -13223,11 +13774,13 @@ IL_5b09:
 		L_2934->___x = ((float)il2cpp_codegen_add(((float)(((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_add(L_2939, L_2941)), L_2944))/((float)il2cpp_codegen_subtract(L_2947, L_2950)))), L_2951));
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2952 = V_57;
 		int32_t L_2953 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2954 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2952)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2953)))->___vertexTopRight);
+		NullCheck(L_2952);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2954 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2952)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2953)))->___vertexTopRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_2955 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_2954->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2956 = V_57;
 		int32_t L_2957 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2958 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2956)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2957)))->___vertexTopRight);
+		NullCheck(L_2956);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2958 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2956)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2957)))->___vertexTopRight);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2959 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_2958->___position);
 		float L_2960 = L_2959->___x;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2961 = V_35;
@@ -13245,11 +13798,13 @@ IL_5b09:
 		L_2955->___x = ((float)il2cpp_codegen_add(((float)(((float)il2cpp_codegen_subtract(((float)il2cpp_codegen_add(L_2960, L_2962)), L_2965))/((float)il2cpp_codegen_subtract(L_2968, L_2971)))), L_2972));
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2973 = V_57;
 		int32_t L_2974 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2975 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2973)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2974)))->___vertexBottomRight);
+		NullCheck(L_2973);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2975 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2973)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2974)))->___vertexBottomRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_2976 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_2975->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2977 = V_57;
 		int32_t L_2978 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2979 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2977)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2978)))->___vertexBottomRight);
+		NullCheck(L_2977);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_2979 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2977)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2978)))->___vertexBottomRight);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2980 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_2979->___position);
 		float L_2981 = L_2980->___x;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2982 = V_35;
@@ -13271,6 +13826,7 @@ IL_5b09:
 IL_5cf6:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_2994 = ___0_generationSettings;
+		NullCheck(L_2994);
 		int32_t L_2995 = L_2994->___verticalMapping;
 		V_389 = L_2995;
 		int32_t L_2996 = V_389;
@@ -13304,22 +13860,26 @@ IL_5d2e:
 	{
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_2998 = V_57;
 		int32_t L_2999 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3000 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2998)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_2999)))->___vertexBottomLeft);
+		NullCheck(L_2998);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3000 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_2998)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_2999)))->___vertexBottomLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3001 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3000->___uv2);
 		L_3001->___y = (0.0f);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3002 = V_57;
 		int32_t L_3003 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3004 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3002)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3003)))->___vertexTopLeft);
+		NullCheck(L_3002);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3004 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3002)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3003)))->___vertexTopLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3005 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3004->___uv2);
 		L_3005->___y = (1.0f);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3006 = V_57;
 		int32_t L_3007 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3008 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3006)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3007)))->___vertexTopRight);
+		NullCheck(L_3006);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3008 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3006)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3007)))->___vertexTopRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3009 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3008->___uv2);
 		L_3009->___y = (0.0f);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3010 = V_57;
 		int32_t L_3011 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3012 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3010)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3011)))->___vertexBottomRight);
+		NullCheck(L_3010);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3012 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3010)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3011)))->___vertexBottomRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3013 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3012->___uv2);
 		L_3013->___y = (1.0f);
 		goto IL_6073;
@@ -13329,11 +13889,13 @@ IL_5db7:
 	{
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3014 = V_57;
 		int32_t L_3015 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3016 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3014)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3015)))->___vertexBottomLeft);
+		NullCheck(L_3014);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3016 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3014)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3015)))->___vertexBottomLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3017 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3016->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3018 = V_57;
 		int32_t L_3019 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3020 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3018)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3019)))->___vertexBottomLeft);
+		NullCheck(L_3018);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3020 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3018)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3019)))->___vertexBottomLeft);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3021 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_3020->___position);
 		float L_3022 = L_3021->___y;
 		Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6 L_3023 = V_380;
@@ -13349,11 +13911,13 @@ IL_5db7:
 		L_3017->___y = ((float)il2cpp_codegen_add(((float)(((float)il2cpp_codegen_subtract(L_3022, L_3025))/((float)il2cpp_codegen_subtract(L_3028, L_3031)))), L_3032));
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3033 = V_57;
 		int32_t L_3034 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3035 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3033)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3034)))->___vertexTopLeft);
+		NullCheck(L_3033);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3035 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3033)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3034)))->___vertexTopLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3036 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3035->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3037 = V_57;
 		int32_t L_3038 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3039 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3037)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3038)))->___vertexTopLeft);
+		NullCheck(L_3037);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3039 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3037)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3038)))->___vertexTopLeft);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3040 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_3039->___position);
 		float L_3041 = L_3040->___y;
 		Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6 L_3042 = V_380;
@@ -13369,21 +13933,25 @@ IL_5db7:
 		L_3036->___y = ((float)il2cpp_codegen_add(((float)(((float)il2cpp_codegen_subtract(L_3041, L_3044))/((float)il2cpp_codegen_subtract(L_3047, L_3050)))), L_3051));
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3052 = V_57;
 		int32_t L_3053 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3054 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3052)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3053)))->___vertexTopRight);
+		NullCheck(L_3052);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3054 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3052)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3053)))->___vertexTopRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3055 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3054->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3056 = V_57;
 		int32_t L_3057 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3058 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3056)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3057)))->___vertexBottomLeft);
+		NullCheck(L_3056);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3058 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3056)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3057)))->___vertexBottomLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3059 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3058->___uv2);
 		float L_3060 = L_3059->___y;
 		L_3055->___y = L_3060;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3061 = V_57;
 		int32_t L_3062 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3063 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3061)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3062)))->___vertexBottomRight);
+		NullCheck(L_3061);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3063 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3061)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3062)))->___vertexBottomRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3064 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3063->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3065 = V_57;
 		int32_t L_3066 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3067 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3065)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3066)))->___vertexTopLeft);
+		NullCheck(L_3065);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3067 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3065)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3066)))->___vertexTopLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3068 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3067->___uv2);
 		float L_3069 = L_3068->___y;
 		L_3064->___y = L_3069;
@@ -13394,11 +13962,13 @@ IL_5f10:
 	{
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3070 = V_57;
 		int32_t L_3071 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3072 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3070)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3071)))->___vertexBottomLeft);
+		NullCheck(L_3070);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3072 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3070)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3071)))->___vertexBottomLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3073 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3072->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3074 = V_57;
 		int32_t L_3075 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3076 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3074)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3075)))->___vertexBottomLeft);
+		NullCheck(L_3074);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3076 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3074)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3075)))->___vertexBottomLeft);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3077 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_3076->___position);
 		float L_3078 = L_3077->___y;
 		Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6* L_3079 = (Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6*)(&__this->___m_MeshExtents);
@@ -13414,11 +13984,13 @@ IL_5f10:
 		L_3073->___y = ((float)il2cpp_codegen_add(((float)(((float)il2cpp_codegen_subtract(L_3078, L_3081))/((float)il2cpp_codegen_subtract(L_3084, L_3087)))), L_3088));
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3089 = V_57;
 		int32_t L_3090 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3091 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3089)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3090)))->___vertexTopLeft);
+		NullCheck(L_3089);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3091 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3089)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3090)))->___vertexTopLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3092 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3091->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3093 = V_57;
 		int32_t L_3094 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3095 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3093)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3094)))->___vertexTopLeft);
+		NullCheck(L_3093);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3095 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3093)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3094)))->___vertexTopLeft);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3096 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_3095->___position);
 		float L_3097 = L_3096->___y;
 		Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6* L_3098 = (Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6*)(&__this->___m_MeshExtents);
@@ -13434,21 +14006,25 @@ IL_5f10:
 		L_3092->___y = ((float)il2cpp_codegen_add(((float)(((float)il2cpp_codegen_subtract(L_3097, L_3100))/((float)il2cpp_codegen_subtract(L_3103, L_3106)))), L_3107));
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3108 = V_57;
 		int32_t L_3109 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3110 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3108)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3109)))->___vertexTopRight);
+		NullCheck(L_3108);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3110 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3108)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3109)))->___vertexTopRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3111 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3110->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3112 = V_57;
 		int32_t L_3113 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3114 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3112)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3113)))->___vertexBottomLeft);
+		NullCheck(L_3112);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3114 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3112)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3113)))->___vertexBottomLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3115 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3114->___uv2);
 		float L_3116 = L_3115->___y;
 		L_3111->___y = L_3116;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3117 = V_57;
 		int32_t L_3118 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3119 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3117)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3118)))->___vertexBottomRight);
+		NullCheck(L_3117);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3119 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3117)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3118)))->___vertexBottomRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3120 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3119->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3121 = V_57;
 		int32_t L_3122 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3123 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3121)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3122)))->___vertexTopLeft);
+		NullCheck(L_3121);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3123 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3121)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3122)))->___vertexTopLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3124 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3123->___uv2);
 		float L_3125 = L_3124->___y;
 		L_3120->___y = L_3125;
@@ -13466,65 +14042,78 @@ IL_6073:
 	{
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3126 = V_57;
 		int32_t L_3127 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3128 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3126)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3127)))->___vertexBottomLeft);
+		NullCheck(L_3126);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3128 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3126)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3127)))->___vertexBottomLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3129 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3128->___uv2);
 		float L_3130 = L_3129->___y;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3131 = V_57;
 		int32_t L_3132 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3133 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3131)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3132)))->___vertexTopLeft);
+		NullCheck(L_3131);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3133 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3131)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3132)))->___vertexTopLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3134 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3133->___uv2);
 		float L_3135 = L_3134->___y;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3136 = V_57;
 		int32_t L_3137 = V_344;
-		float L_3138 = ((L_3136)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3137)))->___aspectRatio;
+		NullCheck(L_3136);
+		float L_3138 = ((L_3136)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3137)))->___aspectRatio;
 		V_384 = ((float)(((float)il2cpp_codegen_subtract((1.0f), ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_add(L_3130, L_3135)), L_3138))))/(2.0f)));
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3139 = V_57;
 		int32_t L_3140 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3141 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3139)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3140)))->___vertexBottomLeft);
+		NullCheck(L_3139);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3141 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3139)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3140)))->___vertexBottomLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3142 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3141->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3143 = V_57;
 		int32_t L_3144 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3145 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3143)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3144)))->___vertexBottomLeft);
+		NullCheck(L_3143);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3145 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3143)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3144)))->___vertexBottomLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3146 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3145->___uv2);
 		float L_3147 = L_3146->___y;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3148 = V_57;
 		int32_t L_3149 = V_344;
-		float L_3150 = ((L_3148)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3149)))->___aspectRatio;
+		NullCheck(L_3148);
+		float L_3150 = ((L_3148)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3149)))->___aspectRatio;
 		float L_3151 = V_384;
 		float L_3152 = V_381;
 		L_3142->___x = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_3147, L_3150)), L_3151)), L_3152));
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3153 = V_57;
 		int32_t L_3154 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3155 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3153)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3154)))->___vertexTopLeft);
+		NullCheck(L_3153);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3155 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3153)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3154)))->___vertexTopLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3156 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3155->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3157 = V_57;
 		int32_t L_3158 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3159 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3157)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3158)))->___vertexBottomLeft);
+		NullCheck(L_3157);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3159 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3157)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3158)))->___vertexBottomLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3160 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3159->___uv2);
 		float L_3161 = L_3160->___x;
 		L_3156->___x = L_3161;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3162 = V_57;
 		int32_t L_3163 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3164 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3162)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3163)))->___vertexTopRight);
+		NullCheck(L_3162);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3164 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3162)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3163)))->___vertexTopRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3165 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3164->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3166 = V_57;
 		int32_t L_3167 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3168 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3166)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3167)))->___vertexTopLeft);
+		NullCheck(L_3166);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3168 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3166)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3167)))->___vertexTopLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3169 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3168->___uv2);
 		float L_3170 = L_3169->___y;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3171 = V_57;
 		int32_t L_3172 = V_344;
-		float L_3173 = ((L_3171)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3172)))->___aspectRatio;
+		NullCheck(L_3171);
+		float L_3173 = ((L_3171)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3172)))->___aspectRatio;
 		float L_3174 = V_384;
 		float L_3175 = V_381;
 		L_3165->___x = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_3170, L_3173)), L_3174)), L_3175));
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3176 = V_57;
 		int32_t L_3177 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3178 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3176)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3177)))->___vertexBottomRight);
+		NullCheck(L_3176);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3178 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3176)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3177)))->___vertexBottomRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3179 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3178->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3180 = V_57;
 		int32_t L_3181 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3182 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3180)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3181)))->___vertexTopRight);
+		NullCheck(L_3180);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3182 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3180)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3181)))->___vertexTopRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3183 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3182->___uv2);
 		float L_3184 = L_3183->___x;
 		L_3179->___x = L_3184;
@@ -13534,6 +14123,7 @@ IL_6073:
 IL_61f5:
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_3185 = ___0_generationSettings;
+		NullCheck(L_3185);
 		int32_t L_3186 = L_3185->___verticalMapping;
 		V_392 = L_3186;
 		int32_t L_3187 = V_392;
@@ -13567,22 +14157,26 @@ IL_622d:
 	{
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3189 = V_57;
 		int32_t L_3190 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3191 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3189)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3190)))->___vertexBottomLeft);
+		NullCheck(L_3189);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3191 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3189)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3190)))->___vertexBottomLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3192 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3191->___uv2);
 		L_3192->___y = (0.0f);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3193 = V_57;
 		int32_t L_3194 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3195 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3193)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3194)))->___vertexTopLeft);
+		NullCheck(L_3193);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3195 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3193)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3194)))->___vertexTopLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3196 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3195->___uv2);
 		L_3196->___y = (1.0f);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3197 = V_57;
 		int32_t L_3198 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3199 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3197)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3198)))->___vertexTopRight);
+		NullCheck(L_3197);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3199 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3197)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3198)))->___vertexTopRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3200 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3199->___uv2);
 		L_3200->___y = (1.0f);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3201 = V_57;
 		int32_t L_3202 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3203 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3201)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3202)))->___vertexBottomRight);
+		NullCheck(L_3201);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3203 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3201)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3202)))->___vertexBottomRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3204 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3203->___uv2);
 		L_3204->___y = (0.0f);
 		goto IL_66a2;
@@ -13592,11 +14186,13 @@ IL_62b6:
 	{
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3205 = V_57;
 		int32_t L_3206 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3207 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3205)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3206)))->___vertexBottomLeft);
+		NullCheck(L_3205);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3207 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3205)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3206)))->___vertexBottomLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3208 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3207->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3209 = V_57;
 		int32_t L_3210 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3211 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3209)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3210)))->___vertexBottomLeft);
+		NullCheck(L_3209);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3211 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3209)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3210)))->___vertexBottomLeft);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3212 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_3211->___position);
 		float L_3213 = L_3212->___y;
 		LineInfo_t2BBD461B330C46ACA45596A8E72FEA4172F88CF5 L_3214 = V_349;
@@ -13608,11 +14204,13 @@ IL_62b6:
 		L_3208->___y = ((float)(((float)il2cpp_codegen_subtract(L_3213, L_3215))/((float)il2cpp_codegen_subtract(L_3217, L_3219))));
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3220 = V_57;
 		int32_t L_3221 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3222 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3220)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3221)))->___vertexTopLeft);
+		NullCheck(L_3220);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3222 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3220)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3221)))->___vertexTopLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3223 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3222->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3224 = V_57;
 		int32_t L_3225 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3226 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3224)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3225)))->___vertexTopLeft);
+		NullCheck(L_3224);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3226 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3224)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3225)))->___vertexTopLeft);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3227 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_3226->___position);
 		float L_3228 = L_3227->___y;
 		LineInfo_t2BBD461B330C46ACA45596A8E72FEA4172F88CF5 L_3229 = V_349;
@@ -13624,21 +14222,25 @@ IL_62b6:
 		L_3223->___y = ((float)(((float)il2cpp_codegen_subtract(L_3228, L_3230))/((float)il2cpp_codegen_subtract(L_3232, L_3234))));
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3235 = V_57;
 		int32_t L_3236 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3237 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3235)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3236)))->___vertexTopRight);
+		NullCheck(L_3235);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3237 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3235)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3236)))->___vertexTopRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3238 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3237->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3239 = V_57;
 		int32_t L_3240 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3241 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3239)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3240)))->___vertexTopLeft);
+		NullCheck(L_3239);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3241 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3239)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3240)))->___vertexTopLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3242 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3241->___uv2);
 		float L_3243 = L_3242->___y;
 		L_3238->___y = L_3243;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3244 = V_57;
 		int32_t L_3245 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3246 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3244)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3245)))->___vertexBottomRight);
+		NullCheck(L_3244);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3246 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3244)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3245)))->___vertexBottomRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3247 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3246->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3248 = V_57;
 		int32_t L_3249 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3250 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3248)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3249)))->___vertexBottomLeft);
+		NullCheck(L_3248);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3250 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3248)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3249)))->___vertexBottomLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3251 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3250->___uv2);
 		float L_3252 = L_3251->___y;
 		L_3247->___y = L_3252;
@@ -13649,11 +14251,13 @@ IL_63e3:
 	{
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3253 = V_57;
 		int32_t L_3254 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3255 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3253)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3254)))->___vertexBottomLeft);
+		NullCheck(L_3253);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3255 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3253)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3254)))->___vertexBottomLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3256 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3255->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3257 = V_57;
 		int32_t L_3258 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3259 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3257)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3258)))->___vertexBottomLeft);
+		NullCheck(L_3257);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3259 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3257)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3258)))->___vertexBottomLeft);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3260 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_3259->___position);
 		float L_3261 = L_3260->___y;
 		Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6* L_3262 = (Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6*)(&__this->___m_MeshExtents);
@@ -13668,11 +14272,13 @@ IL_63e3:
 		L_3256->___y = ((float)(((float)il2cpp_codegen_subtract(L_3261, L_3264))/((float)il2cpp_codegen_subtract(L_3267, L_3270))));
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3271 = V_57;
 		int32_t L_3272 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3273 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3271)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3272)))->___vertexTopLeft);
+		NullCheck(L_3271);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3273 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3271)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3272)))->___vertexTopLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3274 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3273->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3275 = V_57;
 		int32_t L_3276 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3277 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3275)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3276)))->___vertexTopLeft);
+		NullCheck(L_3275);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3277 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3275)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3276)))->___vertexTopLeft);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3278 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_3277->___position);
 		float L_3279 = L_3278->___y;
 		Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6* L_3280 = (Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6*)(&__this->___m_MeshExtents);
@@ -13687,21 +14293,25 @@ IL_63e3:
 		L_3274->___y = ((float)(((float)il2cpp_codegen_subtract(L_3279, L_3282))/((float)il2cpp_codegen_subtract(L_3285, L_3288))));
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3289 = V_57;
 		int32_t L_3290 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3291 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3289)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3290)))->___vertexTopRight);
+		NullCheck(L_3289);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3291 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3289)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3290)))->___vertexTopRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3292 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3291->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3293 = V_57;
 		int32_t L_3294 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3295 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3293)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3294)))->___vertexTopLeft);
+		NullCheck(L_3293);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3295 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3293)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3294)))->___vertexTopLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3296 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3295->___uv2);
 		float L_3297 = L_3296->___y;
 		L_3292->___y = L_3297;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3298 = V_57;
 		int32_t L_3299 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3300 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3298)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3299)))->___vertexBottomRight);
+		NullCheck(L_3298);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3300 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3298)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3299)))->___vertexBottomRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3301 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3300->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3302 = V_57;
 		int32_t L_3303 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3304 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3302)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3303)))->___vertexBottomLeft);
+		NullCheck(L_3302);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3304 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3302)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3303)))->___vertexBottomLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3305 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3304->___uv2);
 		float L_3306 = L_3305->___y;
 		L_3301->___y = L_3306;
@@ -13712,63 +14322,76 @@ IL_652e:
 	{
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3307 = V_57;
 		int32_t L_3308 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3309 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3307)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3308)))->___vertexBottomLeft);
+		NullCheck(L_3307);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3309 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3307)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3308)))->___vertexBottomLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3310 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3309->___uv2);
 		float L_3311 = L_3310->___x;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3312 = V_57;
 		int32_t L_3313 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3314 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3312)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3313)))->___vertexTopRight);
+		NullCheck(L_3312);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3314 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3312)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3313)))->___vertexTopRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3315 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3314->___uv2);
 		float L_3316 = L_3315->___x;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3317 = V_57;
 		int32_t L_3318 = V_344;
-		float L_3319 = ((L_3317)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3318)))->___aspectRatio;
+		NullCheck(L_3317);
+		float L_3319 = ((L_3317)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3318)))->___aspectRatio;
 		V_390 = ((float)(((float)il2cpp_codegen_subtract((1.0f), ((float)(((float)il2cpp_codegen_add(L_3311, L_3316))/L_3319))))/(2.0f)));
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3320 = V_57;
 		int32_t L_3321 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3322 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3320)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3321)))->___vertexBottomLeft);
+		NullCheck(L_3320);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3322 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3320)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3321)))->___vertexBottomLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3323 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3322->___uv2);
 		float L_3324 = V_390;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3325 = V_57;
 		int32_t L_3326 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3327 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3325)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3326)))->___vertexBottomLeft);
+		NullCheck(L_3325);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3327 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3325)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3326)))->___vertexBottomLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3328 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3327->___uv2);
 		float L_3329 = L_3328->___x;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3330 = V_57;
 		int32_t L_3331 = V_344;
-		float L_3332 = ((L_3330)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3331)))->___aspectRatio;
+		NullCheck(L_3330);
+		float L_3332 = ((L_3330)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3331)))->___aspectRatio;
 		L_3323->___y = ((float)il2cpp_codegen_add(L_3324, ((float)(L_3329/L_3332))));
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3333 = V_57;
 		int32_t L_3334 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3335 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3333)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3334)))->___vertexTopLeft);
+		NullCheck(L_3333);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3335 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3333)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3334)))->___vertexTopLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3336 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3335->___uv2);
 		float L_3337 = V_390;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3338 = V_57;
 		int32_t L_3339 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3340 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3338)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3339)))->___vertexTopRight);
+		NullCheck(L_3338);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3340 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3338)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3339)))->___vertexTopRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3341 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3340->___uv2);
 		float L_3342 = L_3341->___x;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3343 = V_57;
 		int32_t L_3344 = V_344;
-		float L_3345 = ((L_3343)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3344)))->___aspectRatio;
+		NullCheck(L_3343);
+		float L_3345 = ((L_3343)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3344)))->___aspectRatio;
 		L_3336->___y = ((float)il2cpp_codegen_add(L_3337, ((float)(L_3342/L_3345))));
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3346 = V_57;
 		int32_t L_3347 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3348 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3346)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3347)))->___vertexBottomRight);
+		NullCheck(L_3346);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3348 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3346)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3347)))->___vertexBottomRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3349 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3348->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3350 = V_57;
 		int32_t L_3351 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3352 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3350)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3351)))->___vertexBottomLeft);
+		NullCheck(L_3350);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3352 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3350)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3351)))->___vertexBottomLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3353 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3352->___uv2);
 		float L_3354 = L_3353->___y;
 		L_3349->___y = L_3354;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3355 = V_57;
 		int32_t L_3356 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3357 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3355)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3356)))->___vertexTopRight);
+		NullCheck(L_3355);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3357 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3355)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3356)))->___vertexTopRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3358 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3357->___uv2);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3359 = V_57;
 		int32_t L_3360 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3361 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3359)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3360)))->___vertexTopLeft);
+		NullCheck(L_3359);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3361 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3359)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3360)))->___vertexTopLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3362 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3361->___uv2);
 		float L_3363 = L_3362->___y;
 		L_3358->___y = L_3363;
@@ -13779,12 +14402,14 @@ IL_66a2:
 	{
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3364 = V_57;
 		int32_t L_3365 = V_344;
-		float L_3366 = ((L_3364)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3365)))->___scale;
+		NullCheck(L_3364);
+		float L_3366 = ((L_3364)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3365)))->___scale;
 		float L_3367 = __this->___m_CharWidthAdjDelta;
 		V_47 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_3366, ((float)il2cpp_codegen_subtract((1.0f), L_3367)))), (1.0f)));
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3368 = V_57;
 		int32_t L_3369 = V_344;
-		bool L_3370 = ((L_3368)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3369)))->___isUsingAlternateTypeface;
+		NullCheck(L_3368);
+		bool L_3370 = ((L_3368)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3369)))->___isUsingAlternateTypeface;
 		if (L_3370)
 		{
 			goto IL_66f6;
@@ -13793,7 +14418,8 @@ IL_66a2:
 	{
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3371 = V_57;
 		int32_t L_3372 = V_344;
-		int32_t L_3373 = ((L_3371)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3372)))->___style;
+		NullCheck(L_3371);
+		int32_t L_3373 = ((L_3371)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3372)))->___style;
 		G_B972_0 = ((((int32_t)((int32_t)((int32_t)L_3373&1))) == ((int32_t)1))? 1 : 0);
 		goto IL_66f7;
 	}
@@ -13821,69 +14447,81 @@ IL_670f:
 	{
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3376 = V_57;
 		int32_t L_3377 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3378 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3376)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3377)))->___vertexBottomLeft);
+		NullCheck(L_3376);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3378 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3376)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3377)))->___vertexBottomLeft);
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3* L_3379 = (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3*)(&L_3378->___uv);
 		float L_3380 = V_47;
 		L_3379->___w = L_3380;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3381 = V_57;
 		int32_t L_3382 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3383 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3381)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3382)))->___vertexTopLeft);
+		NullCheck(L_3381);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3383 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3381)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3382)))->___vertexTopLeft);
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3* L_3384 = (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3*)(&L_3383->___uv);
 		float L_3385 = V_47;
 		L_3384->___w = L_3385;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3386 = V_57;
 		int32_t L_3387 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3388 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3386)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3387)))->___vertexTopRight);
+		NullCheck(L_3386);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3388 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3386)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3387)))->___vertexTopRight);
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3* L_3389 = (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3*)(&L_3388->___uv);
 		float L_3390 = V_47;
 		L_3389->___w = L_3390;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3391 = V_57;
 		int32_t L_3392 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3393 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3391)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3392)))->___vertexBottomRight);
+		NullCheck(L_3391);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3393 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3391)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3392)))->___vertexBottomRight);
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3* L_3394 = (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3*)(&L_3393->___uv);
 		float L_3395 = V_47;
 		L_3394->___w = L_3395;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3396 = V_57;
 		int32_t L_3397 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3398 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3396)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3397)))->___vertexBottomLeft);
+		NullCheck(L_3396);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3398 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3396)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3397)))->___vertexBottomLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3399 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3398->___uv2);
 		L_3399->___x = (1.0f);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3400 = V_57;
 		int32_t L_3401 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3402 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3400)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3401)))->___vertexBottomLeft);
+		NullCheck(L_3400);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3402 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3400)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3401)))->___vertexBottomLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3403 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3402->___uv2);
 		float L_3404 = V_47;
 		L_3403->___y = L_3404;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3405 = V_57;
 		int32_t L_3406 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3407 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3405)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3406)))->___vertexTopLeft);
+		NullCheck(L_3405);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3407 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3405)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3406)))->___vertexTopLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3408 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3407->___uv2);
 		L_3408->___x = (1.0f);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3409 = V_57;
 		int32_t L_3410 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3411 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3409)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3410)))->___vertexTopLeft);
+		NullCheck(L_3409);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3411 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3409)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3410)))->___vertexTopLeft);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3412 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3411->___uv2);
 		float L_3413 = V_47;
 		L_3412->___y = L_3413;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3414 = V_57;
 		int32_t L_3415 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3416 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3414)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3415)))->___vertexTopRight);
+		NullCheck(L_3414);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3416 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3414)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3415)))->___vertexTopRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3417 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3416->___uv2);
 		L_3417->___x = (1.0f);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3418 = V_57;
 		int32_t L_3419 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3420 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3418)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3419)))->___vertexTopRight);
+		NullCheck(L_3418);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3420 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3418)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3419)))->___vertexTopRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3421 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3420->___uv2);
 		float L_3422 = V_47;
 		L_3421->___y = L_3422;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3423 = V_57;
 		int32_t L_3424 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3425 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3423)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3424)))->___vertexBottomRight);
+		NullCheck(L_3423);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3425 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3423)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3424)))->___vertexBottomRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3426 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3425->___uv2);
 		L_3426->___x = (1.0f);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3427 = V_57;
 		int32_t L_3428 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3429 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3427)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3428)))->___vertexBottomRight);
+		NullCheck(L_3427);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3429 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3427)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3428)))->___vertexBottomRight);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_3430 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_3429->___uv2);
 		float L_3431 = V_47;
 		L_3430->___y = L_3431;
@@ -13899,6 +14537,7 @@ IL_6887:
 	{
 		int32_t L_3432 = V_344;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_3433 = ___0_generationSettings;
+		NullCheck(L_3433);
 		int32_t L_3434 = L_3433->___maxVisibleCharacters;
 		if ((((int32_t)L_3432) >= ((int32_t)L_3434)))
 		{
@@ -13908,6 +14547,7 @@ IL_6887:
 	{
 		int32_t L_3435 = V_37;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_3436 = ___0_generationSettings;
+		NullCheck(L_3436);
 		int32_t L_3437 = L_3436->___maxVisibleWords;
 		if ((((int32_t)L_3435) >= ((int32_t)L_3437)))
 		{
@@ -13917,6 +14557,7 @@ IL_6887:
 	{
 		int32_t L_3438 = V_348;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_3439 = ___0_generationSettings;
+		NullCheck(L_3439);
 		int32_t L_3440 = L_3439->___maxVisibleLines;
 		if ((((int32_t)L_3438) >= ((int32_t)L_3440)))
 		{
@@ -13925,6 +14566,7 @@ IL_6887:
 	}
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_3441 = ___0_generationSettings;
+		NullCheck(L_3441);
 		int32_t L_3442 = L_3441->___overflowMode;
 		G_B981_0 = ((((int32_t)((((int32_t)L_3442) == ((int32_t)5))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		goto IL_68bc;
@@ -13947,7 +14589,8 @@ IL_68bc:
 	{
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3444 = V_57;
 		int32_t L_3445 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3446 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3444)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3445)))->___vertexBottomLeft);
+		NullCheck(L_3444);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3446 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3444)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3445)))->___vertexBottomLeft);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3447 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_3446->___position);
 		V_395 = L_3447;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3448 = V_395;
@@ -13959,7 +14602,8 @@ IL_68bc:
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_3448 = L_3452;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3453 = V_57;
 		int32_t L_3454 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3455 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3453)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3454)))->___vertexTopLeft);
+		NullCheck(L_3453);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3455 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3453)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3454)))->___vertexTopLeft);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3456 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_3455->___position);
 		V_395 = L_3456;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3457 = V_395;
@@ -13971,7 +14615,8 @@ IL_68bc:
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_3457 = L_3461;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3462 = V_57;
 		int32_t L_3463 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3464 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3462)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3463)))->___vertexTopRight);
+		NullCheck(L_3462);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3464 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3462)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3463)))->___vertexTopRight);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3465 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_3464->___position);
 		V_395 = L_3465;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3466 = V_395;
@@ -13983,7 +14628,8 @@ IL_68bc:
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_3466 = L_3470;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3471 = V_57;
 		int32_t L_3472 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3473 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3471)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3472)))->___vertexBottomRight);
+		NullCheck(L_3471);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3473 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3471)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3472)))->___vertexBottomRight);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3474 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_3473->___position);
 		V_395 = L_3474;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3475 = V_395;
@@ -14000,6 +14646,7 @@ IL_69bc:
 	{
 		int32_t L_3480 = V_344;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_3481 = ___0_generationSettings;
+		NullCheck(L_3481);
 		int32_t L_3482 = L_3481->___maxVisibleCharacters;
 		if ((((int32_t)L_3480) >= ((int32_t)L_3482)))
 		{
@@ -14009,6 +14656,7 @@ IL_69bc:
 	{
 		int32_t L_3483 = V_37;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_3484 = ___0_generationSettings;
+		NullCheck(L_3484);
 		int32_t L_3485 = L_3484->___maxVisibleWords;
 		if ((((int32_t)L_3483) >= ((int32_t)L_3485)))
 		{
@@ -14018,6 +14666,7 @@ IL_69bc:
 	{
 		int32_t L_3486 = V_348;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_3487 = ___0_generationSettings;
+		NullCheck(L_3487);
 		int32_t L_3488 = L_3487->___maxVisibleLines;
 		if ((((int32_t)L_3486) >= ((int32_t)L_3488)))
 		{
@@ -14026,6 +14675,7 @@ IL_69bc:
 	}
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_3489 = ___0_generationSettings;
+		NullCheck(L_3489);
 		int32_t L_3490 = L_3489->___overflowMode;
 		if ((!(((uint32_t)L_3490) == ((uint32_t)5))))
 		{
@@ -14035,7 +14685,8 @@ IL_69bc:
 	{
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3491 = V_57;
 		int32_t L_3492 = V_344;
-		int32_t L_3493 = ((L_3491)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3492)))->___pageNumber;
+		NullCheck(L_3491);
+		int32_t L_3493 = ((L_3491)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3492)))->___pageNumber;
 		int32_t L_3494 = V_18;
 		G_B989_0 = ((((int32_t)L_3493) == ((int32_t)L_3494))? 1 : 0);
 		goto IL_6a04;
@@ -14058,7 +14709,8 @@ IL_6a04:
 	{
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3496 = V_57;
 		int32_t L_3497 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3498 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3496)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3497)))->___vertexBottomLeft);
+		NullCheck(L_3496);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3498 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3496)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3497)))->___vertexBottomLeft);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3499 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_3498->___position);
 		V_395 = L_3499;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3500 = V_395;
@@ -14070,7 +14722,8 @@ IL_6a04:
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_3500 = L_3504;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3505 = V_57;
 		int32_t L_3506 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3507 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3505)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3506)))->___vertexTopLeft);
+		NullCheck(L_3505);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3507 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3505)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3506)))->___vertexTopLeft);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3508 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_3507->___position);
 		V_395 = L_3508;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3509 = V_395;
@@ -14082,7 +14735,8 @@ IL_6a04:
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_3509 = L_3513;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3514 = V_57;
 		int32_t L_3515 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3516 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3514)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3515)))->___vertexTopRight);
+		NullCheck(L_3514);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3516 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3514)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3515)))->___vertexTopRight);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3517 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_3516->___position);
 		V_395 = L_3517;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3518 = V_395;
@@ -14094,7 +14748,8 @@ IL_6a04:
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_3518 = L_3522;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3523 = V_57;
 		int32_t L_3524 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3525 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3523)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3524)))->___vertexBottomRight);
+		NullCheck(L_3523);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3525 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3523)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3524)))->___vertexBottomRight);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3526 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&L_3525->___position);
 		V_395 = L_3526;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3527 = V_395;
@@ -14111,31 +14766,36 @@ IL_6b04:
 	{
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3532 = V_57;
 		int32_t L_3533 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3534 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3532)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3533)))->___vertexBottomLeft);
+		NullCheck(L_3532);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3534 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3532)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3533)))->___vertexBottomLeft);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3535;
 		L_3535 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		L_3534->___position = L_3535;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3536 = V_57;
 		int32_t L_3537 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3538 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3536)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3537)))->___vertexTopLeft);
+		NullCheck(L_3536);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3538 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3536)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3537)))->___vertexTopLeft);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3539;
 		L_3539 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		L_3538->___position = L_3539;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3540 = V_57;
 		int32_t L_3541 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3542 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3540)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3541)))->___vertexTopRight);
+		NullCheck(L_3540);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3542 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3540)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3541)))->___vertexTopRight);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3543;
 		L_3543 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		L_3542->___position = L_3543;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3544 = V_57;
 		int32_t L_3545 = V_344;
-		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3546 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3544)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3545)))->___vertexBottomRight);
+		NullCheck(L_3544);
+		TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9* L_3546 = (TextVertex_tF030A16DC67EAF3F6C9C9C0564D4B88758B173A9*)(&((L_3544)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3545)))->___vertexBottomRight);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3547;
 		L_3547 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
 		L_3546->___position = L_3547;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3548 = V_57;
 		int32_t L_3549 = V_344;
-		((L_3548)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3549)))->___isVisible = (bool)0;
+		NullCheck(L_3548);
+		((L_3548)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3549)))->___isVisible = (bool)0;
 	}
 
 IL_6b89:
@@ -14149,6 +14809,7 @@ IL_6b89:
 	}
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_3551 = ___0_generationSettings;
+		NullCheck(L_3551);
 		bool L_3552 = L_3551->___shouldConvertToLinearSpace;
 		G_B995_0 = ((int32_t)(L_3552));
 		goto IL_6b9a;
@@ -14206,9 +14867,11 @@ IL_6bfc:
 IL_6bfd:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3565 = ___1_textInfo;
+		NullCheck(L_3565);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3566 = L_3565->___textElementInfo;
 		int32_t L_3567 = V_344;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3568 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_3566)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3567)))->___bottomLeft);
+		NullCheck(L_3566);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3568 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_3566)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3567)))->___bottomLeft);
 		V_395 = L_3568;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3569 = V_395;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3570 = V_395;
@@ -14218,9 +14881,11 @@ IL_6bfd:
 		L_3573 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_3571, L_3572, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_3569 = L_3573;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3574 = ___1_textInfo;
+		NullCheck(L_3574);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3575 = L_3574->___textElementInfo;
 		int32_t L_3576 = V_344;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3577 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_3575)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3576)))->___topLeft);
+		NullCheck(L_3575);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3577 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_3575)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3576)))->___topLeft);
 		V_395 = L_3577;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3578 = V_395;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3579 = V_395;
@@ -14230,9 +14895,11 @@ IL_6bfd:
 		L_3582 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_3580, L_3581, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_3578 = L_3582;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3583 = ___1_textInfo;
+		NullCheck(L_3583);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3584 = L_3583->___textElementInfo;
 		int32_t L_3585 = V_344;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3586 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_3584)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3585)))->___topRight);
+		NullCheck(L_3584);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3586 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_3584)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3585)))->___topRight);
 		V_395 = L_3586;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3587 = V_395;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3588 = V_395;
@@ -14242,9 +14909,11 @@ IL_6bfd:
 		L_3591 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_3589, L_3590, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_3587 = L_3591;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3592 = ___1_textInfo;
+		NullCheck(L_3592);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3593 = L_3592->___textElementInfo;
 		int32_t L_3594 = V_344;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3595 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_3593)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3594)))->___bottomRight);
+		NullCheck(L_3593);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3595 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_3593)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3594)))->___bottomRight);
 		V_395 = L_3595;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3596 = V_395;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3597 = V_395;
@@ -14254,9 +14923,11 @@ IL_6bfd:
 		L_3600 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_3598, L_3599, NULL);
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_3596 = L_3600;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3601 = ___1_textInfo;
+		NullCheck(L_3601);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3602 = L_3601->___textElementInfo;
 		int32_t L_3603 = V_344;
-		float* L_3604 = (float*)(&((L_3602)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3603)))->___origin);
+		NullCheck(L_3602);
+		float* L_3604 = (float*)(&((L_3602)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3603)))->___origin);
 		V_308 = L_3604;
 		float* L_3605 = V_308;
 		float* L_3606 = V_308;
@@ -14265,9 +14936,11 @@ IL_6bfd:
 		float L_3609 = L_3608.___x;
 		*((float*)L_3605) = (float)((float)il2cpp_codegen_add(L_3607, L_3609));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3610 = ___1_textInfo;
+		NullCheck(L_3610);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3611 = L_3610->___textElementInfo;
 		int32_t L_3612 = V_344;
-		float* L_3613 = (float*)(&((L_3611)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3612)))->___xAdvance);
+		NullCheck(L_3611);
+		float* L_3613 = (float*)(&((L_3611)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3612)))->___xAdvance);
 		V_308 = L_3613;
 		float* L_3614 = V_308;
 		float* L_3615 = V_308;
@@ -14276,9 +14949,11 @@ IL_6bfd:
 		float L_3618 = L_3617.___x;
 		*((float*)L_3614) = (float)((float)il2cpp_codegen_add(L_3616, L_3618));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3619 = ___1_textInfo;
+		NullCheck(L_3619);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3620 = L_3619->___textElementInfo;
 		int32_t L_3621 = V_344;
-		float* L_3622 = (float*)(&((L_3620)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3621)))->___ascender);
+		NullCheck(L_3620);
+		float* L_3622 = (float*)(&((L_3620)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3621)))->___ascender);
 		V_308 = L_3622;
 		float* L_3623 = V_308;
 		float* L_3624 = V_308;
@@ -14287,9 +14962,11 @@ IL_6bfd:
 		float L_3627 = L_3626.___y;
 		*((float*)L_3623) = (float)((float)il2cpp_codegen_add(L_3625, L_3627));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3628 = ___1_textInfo;
+		NullCheck(L_3628);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3629 = L_3628->___textElementInfo;
 		int32_t L_3630 = V_344;
-		float* L_3631 = (float*)(&((L_3629)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3630)))->___descender);
+		NullCheck(L_3629);
+		float* L_3631 = (float*)(&((L_3629)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3630)))->___descender);
 		V_308 = L_3631;
 		float* L_3632 = V_308;
 		float* L_3633 = V_308;
@@ -14298,9 +14975,11 @@ IL_6bfd:
 		float L_3636 = L_3635.___y;
 		*((float*)L_3632) = (float)((float)il2cpp_codegen_add(L_3634, L_3636));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3637 = ___1_textInfo;
+		NullCheck(L_3637);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3638 = L_3637->___textElementInfo;
 		int32_t L_3639 = V_344;
-		float* L_3640 = (float*)(&((L_3638)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3639)))->___baseLine);
+		NullCheck(L_3638);
+		float* L_3640 = (float*)(&((L_3638)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3639)))->___baseLine);
 		V_308 = L_3640;
 		float* L_3641 = V_308;
 		float* L_3642 = V_308;
@@ -14361,9 +15040,11 @@ IL_6e0e:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3656 = ___1_textInfo;
+		NullCheck(L_3656);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_3657 = L_3656->___lineInfo;
 		int32_t L_3658 = V_39;
-		float* L_3659 = (float*)(&((L_3657)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3658)))->___baseline);
+		NullCheck(L_3657);
+		float* L_3659 = (float*)(&((L_3657)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3658)))->___baseline);
 		V_308 = L_3659;
 		float* L_3660 = V_308;
 		float* L_3661 = V_308;
@@ -14372,9 +15053,11 @@ IL_6e0e:
 		float L_3664 = L_3663.___y;
 		*((float*)L_3660) = (float)((float)il2cpp_codegen_add(L_3662, L_3664));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3665 = ___1_textInfo;
+		NullCheck(L_3665);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_3666 = L_3665->___lineInfo;
 		int32_t L_3667 = V_39;
-		float* L_3668 = (float*)(&((L_3666)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3667)))->___ascender);
+		NullCheck(L_3666);
+		float* L_3668 = (float*)(&((L_3666)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3667)))->___ascender);
 		V_308 = L_3668;
 		float* L_3669 = V_308;
 		float* L_3670 = V_308;
@@ -14383,9 +15066,11 @@ IL_6e0e:
 		float L_3673 = L_3672.___y;
 		*((float*)L_3669) = (float)((float)il2cpp_codegen_add(L_3671, L_3673));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3674 = ___1_textInfo;
+		NullCheck(L_3674);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_3675 = L_3674->___lineInfo;
 		int32_t L_3676 = V_39;
-		float* L_3677 = (float*)(&((L_3675)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3676)))->___descender);
+		NullCheck(L_3675);
+		float* L_3677 = (float*)(&((L_3675)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3676)))->___descender);
 		V_308 = L_3677;
 		float* L_3678 = V_308;
 		float* L_3679 = V_308;
@@ -14394,9 +15079,11 @@ IL_6e0e:
 		float L_3682 = L_3681.___y;
 		*((float*)L_3678) = (float)((float)il2cpp_codegen_add(L_3680, L_3682));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3683 = ___1_textInfo;
+		NullCheck(L_3683);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_3684 = L_3683->___lineInfo;
 		int32_t L_3685 = V_39;
-		float* L_3686 = (float*)(&((L_3684)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3685)))->___maxAdvance);
+		NullCheck(L_3684);
+		float* L_3686 = (float*)(&((L_3684)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3685)))->___maxAdvance);
 		V_308 = L_3686;
 		float* L_3687 = V_308;
 		float* L_3688 = V_308;
@@ -14405,41 +15092,57 @@ IL_6e0e:
 		float L_3691 = L_3690.___x;
 		*((float*)L_3687) = (float)((float)il2cpp_codegen_add(L_3689, L_3691));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3692 = ___1_textInfo;
+		NullCheck(L_3692);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_3693 = L_3692->___lineInfo;
 		int32_t L_3694 = V_39;
-		Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6* L_3695 = (Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6*)(&((L_3693)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3694)))->___lineExtents);
+		NullCheck(L_3693);
+		Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6* L_3695 = (Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6*)(&((L_3693)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3694)))->___lineExtents);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3696 = ___1_textInfo;
+		NullCheck(L_3696);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3697 = L_3696->___textElementInfo;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3698 = ___1_textInfo;
+		NullCheck(L_3698);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_3699 = L_3698->___lineInfo;
 		int32_t L_3700 = V_39;
-		int32_t L_3701 = ((L_3699)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3700)))->___firstCharacterIndex;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3702 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_3697)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3701)))->___bottomLeft);
+		NullCheck(L_3699);
+		int32_t L_3701 = ((L_3699)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3700)))->___firstCharacterIndex;
+		NullCheck(L_3697);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3702 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_3697)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3701)))->___bottomLeft);
 		float L_3703 = L_3702->___x;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3704 = ___1_textInfo;
+		NullCheck(L_3704);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_3705 = L_3704->___lineInfo;
 		int32_t L_3706 = V_39;
-		float L_3707 = ((L_3705)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3706)))->___descender;
+		NullCheck(L_3705);
+		float L_3707 = ((L_3705)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3706)))->___descender;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_3708;
 		memset((&L_3708), 0, sizeof(L_3708));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_3708), L_3703, L_3707, NULL);
 		L_3695->___min = L_3708;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3709 = ___1_textInfo;
+		NullCheck(L_3709);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_3710 = L_3709->___lineInfo;
 		int32_t L_3711 = V_39;
-		Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6* L_3712 = (Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6*)(&((L_3710)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3711)))->___lineExtents);
+		NullCheck(L_3710);
+		Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6* L_3712 = (Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6*)(&((L_3710)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3711)))->___lineExtents);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3713 = ___1_textInfo;
+		NullCheck(L_3713);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3714 = L_3713->___textElementInfo;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3715 = ___1_textInfo;
+		NullCheck(L_3715);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_3716 = L_3715->___lineInfo;
 		int32_t L_3717 = V_39;
-		int32_t L_3718 = ((L_3716)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3717)))->___lastVisibleCharacterIndex;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3719 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_3714)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3718)))->___topRight);
+		NullCheck(L_3716);
+		int32_t L_3718 = ((L_3716)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3717)))->___lastVisibleCharacterIndex;
+		NullCheck(L_3714);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3719 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_3714)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3718)))->___topRight);
 		float L_3720 = L_3719->___x;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3721 = ___1_textInfo;
+		NullCheck(L_3721);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_3722 = L_3721->___lineInfo;
 		int32_t L_3723 = V_39;
-		float L_3724 = ((L_3722)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3723)))->___ascender;
+		NullCheck(L_3722);
+		float L_3724 = ((L_3722)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3723)))->___ascender;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_3725;
 		memset((&L_3725), 0, sizeof(L_3725));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_3725), L_3720, L_3724, NULL);
@@ -14459,9 +15162,11 @@ IL_6fa2:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3729 = ___1_textInfo;
+		NullCheck(L_3729);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_3730 = L_3729->___lineInfo;
 		int32_t L_3731 = V_348;
-		float* L_3732 = (float*)(&((L_3730)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3731)))->___baseline);
+		NullCheck(L_3730);
+		float* L_3732 = (float*)(&((L_3730)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3731)))->___baseline);
 		V_308 = L_3732;
 		float* L_3733 = V_308;
 		float* L_3734 = V_308;
@@ -14470,9 +15175,11 @@ IL_6fa2:
 		float L_3737 = L_3736.___y;
 		*((float*)L_3733) = (float)((float)il2cpp_codegen_add(L_3735, L_3737));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3738 = ___1_textInfo;
+		NullCheck(L_3738);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_3739 = L_3738->___lineInfo;
 		int32_t L_3740 = V_348;
-		float* L_3741 = (float*)(&((L_3739)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3740)))->___ascender);
+		NullCheck(L_3739);
+		float* L_3741 = (float*)(&((L_3739)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3740)))->___ascender);
 		V_308 = L_3741;
 		float* L_3742 = V_308;
 		float* L_3743 = V_308;
@@ -14481,9 +15188,11 @@ IL_6fa2:
 		float L_3746 = L_3745.___y;
 		*((float*)L_3742) = (float)((float)il2cpp_codegen_add(L_3744, L_3746));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3747 = ___1_textInfo;
+		NullCheck(L_3747);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_3748 = L_3747->___lineInfo;
 		int32_t L_3749 = V_348;
-		float* L_3750 = (float*)(&((L_3748)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3749)))->___descender);
+		NullCheck(L_3748);
+		float* L_3750 = (float*)(&((L_3748)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3749)))->___descender);
 		V_308 = L_3750;
 		float* L_3751 = V_308;
 		float* L_3752 = V_308;
@@ -14492,9 +15201,11 @@ IL_6fa2:
 		float L_3755 = L_3754.___y;
 		*((float*)L_3751) = (float)((float)il2cpp_codegen_add(L_3753, L_3755));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3756 = ___1_textInfo;
+		NullCheck(L_3756);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_3757 = L_3756->___lineInfo;
 		int32_t L_3758 = V_348;
-		float* L_3759 = (float*)(&((L_3757)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3758)))->___maxAdvance);
+		NullCheck(L_3757);
+		float* L_3759 = (float*)(&((L_3757)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3758)))->___maxAdvance);
 		V_308 = L_3759;
 		float* L_3760 = V_308;
 		float* L_3761 = V_308;
@@ -14503,41 +15214,57 @@ IL_6fa2:
 		float L_3764 = L_3763.___x;
 		*((float*)L_3760) = (float)((float)il2cpp_codegen_add(L_3762, L_3764));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3765 = ___1_textInfo;
+		NullCheck(L_3765);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_3766 = L_3765->___lineInfo;
 		int32_t L_3767 = V_348;
-		Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6* L_3768 = (Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6*)(&((L_3766)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3767)))->___lineExtents);
+		NullCheck(L_3766);
+		Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6* L_3768 = (Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6*)(&((L_3766)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3767)))->___lineExtents);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3769 = ___1_textInfo;
+		NullCheck(L_3769);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3770 = L_3769->___textElementInfo;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3771 = ___1_textInfo;
+		NullCheck(L_3771);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_3772 = L_3771->___lineInfo;
 		int32_t L_3773 = V_348;
-		int32_t L_3774 = ((L_3772)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3773)))->___firstCharacterIndex;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3775 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_3770)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3774)))->___bottomLeft);
+		NullCheck(L_3772);
+		int32_t L_3774 = ((L_3772)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3773)))->___firstCharacterIndex;
+		NullCheck(L_3770);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3775 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_3770)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3774)))->___bottomLeft);
 		float L_3776 = L_3775->___x;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3777 = ___1_textInfo;
+		NullCheck(L_3777);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_3778 = L_3777->___lineInfo;
 		int32_t L_3779 = V_348;
-		float L_3780 = ((L_3778)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3779)))->___descender;
+		NullCheck(L_3778);
+		float L_3780 = ((L_3778)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3779)))->___descender;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_3781;
 		memset((&L_3781), 0, sizeof(L_3781));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_3781), L_3776, L_3780, NULL);
 		L_3768->___min = L_3781;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3782 = ___1_textInfo;
+		NullCheck(L_3782);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_3783 = L_3782->___lineInfo;
 		int32_t L_3784 = V_348;
-		Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6* L_3785 = (Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6*)(&((L_3783)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3784)))->___lineExtents);
+		NullCheck(L_3783);
+		Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6* L_3785 = (Extents_t369FB2B84521A0229C2FA3D4C8592B14E07CEFE6*)(&((L_3783)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3784)))->___lineExtents);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3786 = ___1_textInfo;
+		NullCheck(L_3786);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3787 = L_3786->___textElementInfo;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3788 = ___1_textInfo;
+		NullCheck(L_3788);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_3789 = L_3788->___lineInfo;
 		int32_t L_3790 = V_348;
-		int32_t L_3791 = ((L_3789)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3790)))->___lastVisibleCharacterIndex;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3792 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_3787)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3791)))->___topRight);
+		NullCheck(L_3789);
+		int32_t L_3791 = ((L_3789)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3790)))->___lastVisibleCharacterIndex;
+		NullCheck(L_3787);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3792 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_3787)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3791)))->___topRight);
 		float L_3793 = L_3792->___x;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3794 = ___1_textInfo;
+		NullCheck(L_3794);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_3795 = L_3794->___lineInfo;
 		int32_t L_3796 = V_348;
-		float L_3797 = ((L_3795)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3796)))->___ascender;
+		NullCheck(L_3795);
+		float L_3797 = ((L_3795)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3796)))->___ascender;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_3798;
 		memset((&L_3798), 0, sizeof(L_3798));
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_3798), L_3793, L_3797, NULL);
@@ -14646,12 +15373,16 @@ IL_71da:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3813 = ___1_textInfo;
+		NullCheck(L_3813);
 		WordInfoU5BU5D_tAD74C9720883D7BB229A20FFAE9EFD2CF9963F7B* L_3814 = L_3813->___wordInfo;
+		NullCheck(L_3814);
 		V_406 = ((int32_t)(((RuntimeArray*)L_3814)->max_length));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3815 = ___1_textInfo;
+		NullCheck(L_3815);
 		int32_t L_3816 = L_3815->___wordCount;
 		V_407 = L_3816;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3817 = ___1_textInfo;
+		NullCheck(L_3817);
 		int32_t L_3818 = L_3817->___wordCount;
 		int32_t L_3819 = V_406;
 		V_408 = (bool)((((int32_t)((int32_t)il2cpp_codegen_add(L_3818, 1))) > ((int32_t)L_3819))? 1 : 0);
@@ -14663,6 +15394,7 @@ IL_71da:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3821 = ___1_textInfo;
+		NullCheck(L_3821);
 		WordInfoU5BU5D_tAD74C9720883D7BB229A20FFAE9EFD2CF9963F7B** L_3822 = (WordInfoU5BU5D_tAD74C9720883D7BB229A20FFAE9EFD2CF9963F7B**)(&L_3821->___wordInfo);
 		int32_t L_3823 = V_406;
 		il2cpp_codegen_runtime_class_init_inline(TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09_il2cpp_TypeInfo_var);
@@ -14674,33 +15406,43 @@ IL_7238:
 		int32_t L_3824 = V_344;
 		V_43 = L_3824;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3825 = ___1_textInfo;
+		NullCheck(L_3825);
 		WordInfoU5BU5D_tAD74C9720883D7BB229A20FFAE9EFD2CF9963F7B* L_3826 = L_3825->___wordInfo;
 		int32_t L_3827 = V_407;
+		NullCheck(L_3826);
 		int32_t L_3828 = V_42;
-		((L_3826)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3827)))->___firstCharacterIndex = L_3828;
+		((L_3826)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3827)))->___firstCharacterIndex = L_3828;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3829 = ___1_textInfo;
+		NullCheck(L_3829);
 		WordInfoU5BU5D_tAD74C9720883D7BB229A20FFAE9EFD2CF9963F7B* L_3830 = L_3829->___wordInfo;
 		int32_t L_3831 = V_407;
+		NullCheck(L_3830);
 		int32_t L_3832 = V_43;
-		((L_3830)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3831)))->___lastCharacterIndex = L_3832;
+		((L_3830)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3831)))->___lastCharacterIndex = L_3832;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3833 = ___1_textInfo;
+		NullCheck(L_3833);
 		WordInfoU5BU5D_tAD74C9720883D7BB229A20FFAE9EFD2CF9963F7B* L_3834 = L_3833->___wordInfo;
 		int32_t L_3835 = V_407;
+		NullCheck(L_3834);
 		int32_t L_3836 = V_43;
 		int32_t L_3837 = V_42;
-		((L_3834)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3835)))->___characterCount = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_3836, L_3837)), 1));
+		((L_3834)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3835)))->___characterCount = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_3836, L_3837)), 1));
 		int32_t L_3838 = V_37;
 		V_37 = ((int32_t)il2cpp_codegen_add(L_3838, 1));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3839 = ___1_textInfo;
 		V_263 = L_3839;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3840 = V_263;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3841 = V_263;
+		NullCheck(L_3841);
 		int32_t L_3842 = L_3841->___wordCount;
+		NullCheck(L_3840);
 		L_3840->___wordCount = ((int32_t)il2cpp_codegen_add(L_3842, 1));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3843 = ___1_textInfo;
+		NullCheck(L_3843);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_3844 = L_3843->___lineInfo;
 		int32_t L_3845 = V_348;
-		int32_t* L_3846 = (int32_t*)(&((L_3844)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3845)))->___wordCount);
+		NullCheck(L_3844);
+		int32_t* L_3846 = (int32_t*)(&((L_3844)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3845)))->___wordCount);
 		V_262 = L_3846;
 		int32_t* L_3847 = V_262;
 		int32_t* L_3848 = V_262;
@@ -14799,6 +15541,7 @@ IL_732e:
 	{
 		int32_t L_3860 = V_344;
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3861 = V_57;
+		NullCheck(L_3861);
 		if ((((int32_t)L_3860) >= ((int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_3861)->max_length)), 1)))))
 		{
 			goto IL_73b2;
@@ -14831,7 +15574,8 @@ IL_737c:
 	{
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3866 = V_57;
 		int32_t L_3867 = V_344;
-		Il2CppChar L_3868 = ((L_3866)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_3867, 1)))))->___character;
+		NullCheck(L_3866);
+		Il2CppChar L_3868 = ((L_3866)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_3867, 1)))))->___character;
 		il2cpp_codegen_runtime_class_init_inline(Char_t521A6F19B456D956AF452D926C32709DC03D6B17_il2cpp_TypeInfo_var);
 		bool L_3869;
 		L_3869 = Char_IsLetterOrDigit_m14049A362108679FD23E424FD9C5C42057359B72(L_3868, NULL);
@@ -14843,7 +15587,8 @@ IL_737c:
 	{
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3870 = V_57;
 		int32_t L_3871 = V_344;
-		Il2CppChar L_3872 = ((L_3870)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_3871, 1)))))->___character;
+		NullCheck(L_3870);
+		Il2CppChar L_3872 = ((L_3870)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_3871, 1)))))->___character;
 		il2cpp_codegen_runtime_class_init_inline(Char_t521A6F19B456D956AF452D926C32709DC03D6B17_il2cpp_TypeInfo_var);
 		bool L_3873;
 		L_3873 = Char_IsLetterOrDigit_m14049A362108679FD23E424FD9C5C42057359B72(L_3872, NULL);
@@ -14907,12 +15652,16 @@ IL_73f6:
 		V_43 = G_B1053_0;
 		V_41 = (bool)0;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3881 = ___1_textInfo;
+		NullCheck(L_3881);
 		WordInfoU5BU5D_tAD74C9720883D7BB229A20FFAE9EFD2CF9963F7B* L_3882 = L_3881->___wordInfo;
+		NullCheck(L_3882);
 		V_411 = ((int32_t)(((RuntimeArray*)L_3882)->max_length));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3883 = ___1_textInfo;
+		NullCheck(L_3883);
 		int32_t L_3884 = L_3883->___wordCount;
 		V_412 = L_3884;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3885 = ___1_textInfo;
+		NullCheck(L_3885);
 		int32_t L_3886 = L_3885->___wordCount;
 		int32_t L_3887 = V_411;
 		V_413 = (bool)((((int32_t)((int32_t)il2cpp_codegen_add(L_3886, 1))) > ((int32_t)L_3887))? 1 : 0);
@@ -14924,6 +15673,7 @@ IL_73f6:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3889 = ___1_textInfo;
+		NullCheck(L_3889);
 		WordInfoU5BU5D_tAD74C9720883D7BB229A20FFAE9EFD2CF9963F7B** L_3890 = (WordInfoU5BU5D_tAD74C9720883D7BB229A20FFAE9EFD2CF9963F7B**)(&L_3889->___wordInfo);
 		int32_t L_3891 = V_411;
 		il2cpp_codegen_runtime_class_init_inline(TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09_il2cpp_TypeInfo_var);
@@ -14933,33 +15683,43 @@ IL_73f6:
 IL_7447:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3892 = ___1_textInfo;
+		NullCheck(L_3892);
 		WordInfoU5BU5D_tAD74C9720883D7BB229A20FFAE9EFD2CF9963F7B* L_3893 = L_3892->___wordInfo;
 		int32_t L_3894 = V_412;
+		NullCheck(L_3893);
 		int32_t L_3895 = V_42;
-		((L_3893)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3894)))->___firstCharacterIndex = L_3895;
+		((L_3893)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3894)))->___firstCharacterIndex = L_3895;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3896 = ___1_textInfo;
+		NullCheck(L_3896);
 		WordInfoU5BU5D_tAD74C9720883D7BB229A20FFAE9EFD2CF9963F7B* L_3897 = L_3896->___wordInfo;
 		int32_t L_3898 = V_412;
+		NullCheck(L_3897);
 		int32_t L_3899 = V_43;
-		((L_3897)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3898)))->___lastCharacterIndex = L_3899;
+		((L_3897)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3898)))->___lastCharacterIndex = L_3899;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3900 = ___1_textInfo;
+		NullCheck(L_3900);
 		WordInfoU5BU5D_tAD74C9720883D7BB229A20FFAE9EFD2CF9963F7B* L_3901 = L_3900->___wordInfo;
 		int32_t L_3902 = V_412;
+		NullCheck(L_3901);
 		int32_t L_3903 = V_43;
 		int32_t L_3904 = V_42;
-		((L_3901)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3902)))->___characterCount = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_3903, L_3904)), 1));
+		((L_3901)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3902)))->___characterCount = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_3903, L_3904)), 1));
 		int32_t L_3905 = V_37;
 		V_37 = ((int32_t)il2cpp_codegen_add(L_3905, 1));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3906 = ___1_textInfo;
 		V_263 = L_3906;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3907 = V_263;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3908 = V_263;
+		NullCheck(L_3908);
 		int32_t L_3909 = L_3908->___wordCount;
+		NullCheck(L_3907);
 		L_3907->___wordCount = ((int32_t)il2cpp_codegen_add(L_3909, 1));
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3910 = ___1_textInfo;
+		NullCheck(L_3910);
 		LineInfoU5BU5D_t37598F2175B291797270D1161DC29B6296FB169D* L_3911 = L_3910->___lineInfo;
 		int32_t L_3912 = V_348;
-		int32_t* L_3913 = (int32_t*)(&((L_3911)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3912)))->___wordCount);
+		NullCheck(L_3911);
+		int32_t* L_3913 = (int32_t*)(&((L_3911)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3912)))->___wordCount);
 		V_262 = L_3913;
 		int32_t* L_3914 = V_262;
 		int32_t* L_3915 = V_262;
@@ -14974,9 +15734,11 @@ IL_74e6:
 IL_74e7:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3917 = ___1_textInfo;
+		NullCheck(L_3917);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3918 = L_3917->___textElementInfo;
 		int32_t L_3919 = V_344;
-		int32_t L_3920 = ((L_3918)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3919)))->___style;
+		NullCheck(L_3918);
+		int32_t L_3920 = ((L_3918)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3919)))->___style;
 		V_352 = (bool)((((int32_t)((int32_t)((int32_t)L_3920&4))) == ((int32_t)4))? 1 : 0);
 		bool L_3921 = V_352;
 		V_414 = L_3921;
@@ -14989,20 +15751,26 @@ IL_74e7:
 	{
 		V_415 = (bool)1;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3923 = ___1_textInfo;
+		NullCheck(L_3923);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3924 = L_3923->___textElementInfo;
 		int32_t L_3925 = V_344;
-		int32_t L_3926 = ((L_3924)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3925)))->___pageNumber;
+		NullCheck(L_3924);
+		int32_t L_3926 = ((L_3924)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3925)))->___pageNumber;
 		V_416 = L_3926;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3927 = ___1_textInfo;
+		NullCheck(L_3927);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3928 = L_3927->___textElementInfo;
 		int32_t L_3929 = V_344;
+		NullCheck(L_3928);
 		MaterialReferenceU5BU5D_t4A9B88114E223BD96CE5121053664023CE2DE07E* L_3930 = __this->___m_MaterialReferences;
 		SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD* L_3931 = (SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD*)(&__this->___m_Underline);
 		int32_t L_3932 = L_3931->___materialIndex;
-		int32_t L_3933 = ((L_3930)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3932)))->___referenceCount;
-		((L_3928)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3929)))->___underlineVertexIndex = ((int32_t)il2cpp_codegen_multiply(L_3933, 4));
+		NullCheck(L_3930);
+		int32_t L_3933 = ((L_3930)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3932)))->___referenceCount;
+		((L_3928)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3929)))->___underlineVertexIndex = ((int32_t)il2cpp_codegen_multiply(L_3933, 4));
 		int32_t L_3934 = V_344;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_3935 = ___0_generationSettings;
+		NullCheck(L_3935);
 		int32_t L_3936 = L_3935->___maxVisibleCharacters;
 		if ((((int32_t)L_3934) > ((int32_t)L_3936)))
 		{
@@ -15012,6 +15780,7 @@ IL_74e7:
 	{
 		int32_t L_3937 = V_348;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_3938 = ___0_generationSettings;
+		NullCheck(L_3938);
 		int32_t L_3939 = L_3938->___maxVisibleLines;
 		if ((((int32_t)L_3937) > ((int32_t)L_3939)))
 		{
@@ -15020,6 +15789,7 @@ IL_74e7:
 	}
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_3940 = ___0_generationSettings;
+		NullCheck(L_3940);
 		int32_t L_3941 = L_3940->___overflowMode;
 		if ((!(((uint32_t)L_3941) == ((uint32_t)5))))
 		{
@@ -15029,6 +15799,7 @@ IL_74e7:
 	{
 		int32_t L_3942 = V_416;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_3943 = ___0_generationSettings;
+		NullCheck(L_3943);
 		int32_t L_3944 = L_3943->___pageToDisplay;
 		G_B1063_0 = ((((int32_t)((((int32_t)((int32_t)il2cpp_codegen_add(L_3942, 1))) == ((int32_t)L_3944))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		goto IL_75b1;
@@ -15094,9 +15865,11 @@ IL_75e4:
 	{
 		float L_3949 = V_51;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3950 = ___1_textInfo;
+		NullCheck(L_3950);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3951 = L_3950->___textElementInfo;
 		int32_t L_3952 = V_344;
-		float L_3953 = ((L_3951)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3952)))->___scale;
+		NullCheck(L_3951);
+		float L_3953 = ((L_3951)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3952)))->___scale;
 		float L_3954;
 		L_3954 = Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline(L_3949, L_3953, NULL);
 		V_51 = L_3954;
@@ -15128,10 +15901,13 @@ IL_7636:
 IL_7638:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3962 = ___1_textInfo;
+		NullCheck(L_3962);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3963 = L_3962->___textElementInfo;
 		int32_t L_3964 = V_344;
-		float L_3965 = ((L_3963)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3964)))->___baseLine;
+		NullCheck(L_3963);
+		float L_3965 = ((L_3963)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3964)))->___baseLine;
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_3966 = V_345;
+		NullCheck(L_3966);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756 L_3967;
 		L_3967 = FontAsset_get_faceInfo_mF020EC579E3C18A6279D55D86AF1C585031B49A9(L_3966, NULL);
 		V_61 = L_3967;
@@ -15243,9 +16019,11 @@ IL_76fe:
 	{
 		V_7 = (bool)1;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3987 = ___1_textInfo;
+		NullCheck(L_3987);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3988 = L_3987->___textElementInfo;
 		int32_t L_3989 = V_344;
-		float L_3990 = ((L_3988)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3989)))->___scale;
+		NullCheck(L_3988);
+		float L_3990 = ((L_3988)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3989)))->___scale;
 		V_49 = L_3990;
 		float L_3991 = V_51;
 		V_421 = (bool)((((float)L_3991) == ((float)(0.0f)))? 1 : 0);
@@ -15265,16 +16043,20 @@ IL_76fe:
 IL_773b:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_3995 = ___1_textInfo;
+		NullCheck(L_3995);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_3996 = L_3995->___textElementInfo;
 		int32_t L_3997 = V_344;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3998 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_3996)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_3997)))->___bottomLeft);
+		NullCheck(L_3996);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3998 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_3996)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_3997)))->___bottomLeft);
 		float L_3999 = L_3998->___x;
 		float L_4000 = V_52;
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_8), L_3999, L_4000, (0.0f), NULL);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4001 = ___1_textInfo;
+		NullCheck(L_4001);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4002 = L_4001->___textElementInfo;
 		int32_t L_4003 = V_344;
-		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_4004 = ((L_4002)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4003)))->___underlineColor;
+		NullCheck(L_4002);
+		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_4004 = ((L_4002)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4003)))->___underlineColor;
 		V_44 = L_4004;
 	}
 
@@ -15313,16 +16095,20 @@ IL_778e:
 	{
 		V_7 = (bool)0;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4008 = ___1_textInfo;
+		NullCheck(L_4008);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4009 = L_4008->___textElementInfo;
 		int32_t L_4010 = V_344;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4011 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4009)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4010)))->___topRight);
+		NullCheck(L_4009);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4011 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4009)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4010)))->___topRight);
 		float L_4012 = L_4011->___x;
 		float L_4013 = V_52;
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_9), L_4012, L_4013, (0.0f), NULL);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4014 = ___1_textInfo;
+		NullCheck(L_4014);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4015 = L_4014->___textElementInfo;
 		int32_t L_4016 = V_344;
-		float L_4017 = ((L_4015)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4016)))->___scale;
+		NullCheck(L_4015);
+		float L_4017 = ((L_4015)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4016)))->___scale;
 		V_50 = L_4017;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4018 = V_8;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4019 = V_9;
@@ -15422,16 +16208,20 @@ IL_7870:
 		int32_t L_4039 = L_4038.___lastVisibleCharacterIndex;
 		V_425 = L_4039;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4040 = ___1_textInfo;
+		NullCheck(L_4040);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4041 = L_4040->___textElementInfo;
 		int32_t L_4042 = V_425;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4043 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4041)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4042)))->___topRight);
+		NullCheck(L_4041);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4043 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4041)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4042)))->___topRight);
 		float L_4044 = L_4043->___x;
 		float L_4045 = V_52;
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_9), L_4044, L_4045, (0.0f), NULL);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4046 = ___1_textInfo;
+		NullCheck(L_4046);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4047 = L_4046->___textElementInfo;
 		int32_t L_4048 = V_425;
-		float L_4049 = ((L_4047)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4048)))->___scale;
+		NullCheck(L_4047);
+		float L_4049 = ((L_4047)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4048)))->___scale;
 		V_50 = L_4049;
 		goto IL_7917;
 	}
@@ -15439,16 +16229,20 @@ IL_7870:
 IL_78d4:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4050 = ___1_textInfo;
+		NullCheck(L_4050);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4051 = L_4050->___textElementInfo;
 		int32_t L_4052 = V_344;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4053 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4051)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4052)))->___topRight);
+		NullCheck(L_4051);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4053 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4051)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4052)))->___topRight);
 		float L_4054 = L_4053->___x;
 		float L_4055 = V_52;
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_9), L_4054, L_4055, (0.0f), NULL);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4056 = ___1_textInfo;
+		NullCheck(L_4056);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4057 = L_4056->___textElementInfo;
 		int32_t L_4058 = V_344;
-		float L_4059 = ((L_4057)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4058)))->___scale;
+		NullCheck(L_4057);
+		float L_4059 = ((L_4057)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4058)))->___scale;
 		V_50 = L_4059;
 	}
 
@@ -15502,16 +16296,20 @@ IL_795c:
 	{
 		V_7 = (bool)0;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4072 = ___1_textInfo;
+		NullCheck(L_4072);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4073 = L_4072->___textElementInfo;
 		int32_t L_4074 = V_344;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4075 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4073)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_4074, 1)))))->___topRight);
+		NullCheck(L_4073);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4075 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4073)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_4074, 1)))))->___topRight);
 		float L_4076 = L_4075->___x;
 		float L_4077 = V_52;
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_9), L_4076, L_4077, (0.0f), NULL);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4078 = ___1_textInfo;
+		NullCheck(L_4078);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4079 = L_4078->___textElementInfo;
 		int32_t L_4080 = V_344;
-		float L_4081 = ((L_4079)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_4080, 1)))))->___scale;
+		NullCheck(L_4079);
+		float L_4081 = ((L_4079)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_4080, 1)))))->___scale;
 		V_50 = L_4081;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4082 = V_8;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4083 = V_9;
@@ -15548,9 +16346,11 @@ IL_79e5:
 	{
 		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_4094 = V_44;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4095 = ___1_textInfo;
+		NullCheck(L_4095);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4096 = L_4095->___textElementInfo;
 		int32_t L_4097 = V_344;
-		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_4098 = ((L_4096)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_4097, 1)))))->___underlineColor;
+		NullCheck(L_4096);
+		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_4098 = ((L_4096)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_4097, 1)))))->___underlineColor;
 		bool L_4099;
 		L_4099 = ColorUtilities_CompareColors_m0F0F140129DEE889FB8AE3B2921C495E94B5E875(L_4094, L_4098, NULL);
 		G_B1120_0 = ((((int32_t)L_4099) == ((int32_t)0))? 1 : 0);
@@ -15574,16 +16374,20 @@ IL_7a1e:
 	{
 		V_7 = (bool)0;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4101 = ___1_textInfo;
+		NullCheck(L_4101);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4102 = L_4101->___textElementInfo;
 		int32_t L_4103 = V_344;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4104 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4102)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4103)))->___topRight);
+		NullCheck(L_4102);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4104 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4102)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4103)))->___topRight);
 		float L_4105 = L_4104->___x;
 		float L_4106 = V_52;
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_9), L_4105, L_4106, (0.0f), NULL);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4107 = ___1_textInfo;
+		NullCheck(L_4107);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4108 = L_4107->___textElementInfo;
 		int32_t L_4109 = V_344;
-		float L_4110 = ((L_4108)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4109)))->___scale;
+		NullCheck(L_4108);
+		float L_4110 = ((L_4108)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4109)))->___scale;
 		V_50 = L_4110;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4111 = V_8;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4112 = V_9;
@@ -15618,16 +16422,20 @@ IL_7aa4:
 	{
 		V_7 = (bool)0;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4122 = ___1_textInfo;
+		NullCheck(L_4122);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4123 = L_4122->___textElementInfo;
 		int32_t L_4124 = V_344;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4125 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4123)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_4124, 1)))))->___topRight);
+		NullCheck(L_4123);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4125 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4123)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_4124, 1)))))->___topRight);
 		float L_4126 = L_4125->___x;
 		float L_4127 = V_52;
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_9), L_4126, L_4127, (0.0f), NULL);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4128 = ___1_textInfo;
+		NullCheck(L_4128);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4129 = L_4128->___textElementInfo;
 		int32_t L_4130 = V_344;
-		float L_4131 = ((L_4129)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_4130, 1)))))->___scale;
+		NullCheck(L_4129);
+		float L_4131 = ((L_4129)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_4130, 1)))))->___scale;
 		V_50 = L_4131;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4132 = V_8;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4133 = V_9;
@@ -15651,11 +16459,14 @@ IL_7b2b:
 IL_7b2c:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4141 = ___1_textInfo;
+		NullCheck(L_4141);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4142 = L_4141->___textElementInfo;
 		int32_t L_4143 = V_344;
-		int32_t L_4144 = ((L_4142)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4143)))->___style;
+		NullCheck(L_4142);
+		int32_t L_4144 = ((L_4142)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4143)))->___style;
 		V_353 = (bool)((((int32_t)((int32_t)((int32_t)L_4144&((int32_t)64)))) == ((int32_t)((int32_t)64)))? 1 : 0);
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_4145 = V_345;
+		NullCheck(L_4145);
 		FaceInfo_t12F0319E555A62CBA1D9E51A16C7963393932756 L_4146;
 		L_4146 = FontAsset_get_faceInfo_mF020EC579E3C18A6279D55D86AF1C585031B49A9(L_4145, NULL);
 		V_61 = L_4146;
@@ -15673,15 +16484,19 @@ IL_7b2c:
 	{
 		V_430 = (bool)1;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4150 = ___1_textInfo;
+		NullCheck(L_4150);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4151 = L_4150->___textElementInfo;
 		int32_t L_4152 = V_344;
+		NullCheck(L_4151);
 		MaterialReferenceU5BU5D_t4A9B88114E223BD96CE5121053664023CE2DE07E* L_4153 = __this->___m_MaterialReferences;
 		SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD* L_4154 = (SpecialCharacter_t869F8BE65A7FE32AFD4196118258F49A63D8E2BD*)(&__this->___m_Underline);
 		int32_t L_4155 = L_4154->___materialIndex;
-		int32_t L_4156 = ((L_4153)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4155)))->___referenceCount;
-		((L_4151)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4152)))->___strikethroughVertexIndex = ((int32_t)il2cpp_codegen_multiply(L_4156, 4));
+		NullCheck(L_4153);
+		int32_t L_4156 = ((L_4153)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4155)))->___referenceCount;
+		((L_4151)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4152)))->___strikethroughVertexIndex = ((int32_t)il2cpp_codegen_multiply(L_4156, 4));
 		int32_t L_4157 = V_344;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_4158 = ___0_generationSettings;
+		NullCheck(L_4158);
 		int32_t L_4159 = L_4158->___maxVisibleCharacters;
 		if ((((int32_t)L_4157) > ((int32_t)L_4159)))
 		{
@@ -15691,6 +16506,7 @@ IL_7b2c:
 	{
 		int32_t L_4160 = V_348;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_4161 = ___0_generationSettings;
+		NullCheck(L_4161);
 		int32_t L_4162 = L_4161->___maxVisibleLines;
 		if ((((int32_t)L_4160) > ((int32_t)L_4162)))
 		{
@@ -15699,6 +16515,7 @@ IL_7b2c:
 	}
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_4163 = ___0_generationSettings;
+		NullCheck(L_4163);
 		int32_t L_4164 = L_4163->___overflowMode;
 		if ((!(((uint32_t)L_4164) == ((uint32_t)5))))
 		{
@@ -15707,10 +16524,13 @@ IL_7b2c:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4165 = ___1_textInfo;
+		NullCheck(L_4165);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4166 = L_4165->___textElementInfo;
 		int32_t L_4167 = V_344;
-		int32_t L_4168 = ((L_4166)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4167)))->___pageNumber;
+		NullCheck(L_4166);
+		int32_t L_4168 = ((L_4166)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4167)))->___pageNumber;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_4169 = ___0_generationSettings;
+		NullCheck(L_4169);
 		int32_t L_4170 = L_4169->___pageToDisplay;
 		G_B1132_0 = ((((int32_t)((((int32_t)((int32_t)il2cpp_codegen_add(L_4168, 1))) == ((int32_t)L_4170))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		goto IL_7c06;
@@ -15837,36 +16657,48 @@ IL_7cab:
 	{
 		V_10 = (bool)1;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4187 = ___1_textInfo;
+		NullCheck(L_4187);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4188 = L_4187->___textElementInfo;
 		int32_t L_4189 = V_344;
-		float L_4190 = ((L_4188)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4189)))->___pointSize;
+		NullCheck(L_4188);
+		float L_4190 = ((L_4188)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4189)))->___pointSize;
 		V_54 = L_4190;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4191 = ___1_textInfo;
+		NullCheck(L_4191);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4192 = L_4191->___textElementInfo;
 		int32_t L_4193 = V_344;
-		float L_4194 = ((L_4192)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4193)))->___scale;
+		NullCheck(L_4192);
+		float L_4194 = ((L_4192)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4193)))->___scale;
 		V_55 = L_4194;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4195 = ___1_textInfo;
+		NullCheck(L_4195);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4196 = L_4195->___textElementInfo;
 		int32_t L_4197 = V_344;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4198 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4196)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4197)))->___bottomLeft);
+		NullCheck(L_4196);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4198 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4196)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4197)))->___bottomLeft);
 		float L_4199 = L_4198->___x;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4200 = ___1_textInfo;
+		NullCheck(L_4200);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4201 = L_4200->___textElementInfo;
 		int32_t L_4202 = V_344;
-		float L_4203 = ((L_4201)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4202)))->___baseLine;
+		NullCheck(L_4201);
+		float L_4203 = ((L_4201)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4202)))->___baseLine;
 		float L_4204 = V_354;
 		float L_4205 = V_55;
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_11), L_4199, ((float)il2cpp_codegen_add(L_4203, ((float)il2cpp_codegen_multiply(L_4204, L_4205)))), (0.0f), NULL);
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4206 = ___1_textInfo;
+		NullCheck(L_4206);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4207 = L_4206->___textElementInfo;
 		int32_t L_4208 = V_344;
-		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_4209 = ((L_4207)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4208)))->___strikethroughColor;
+		NullCheck(L_4207);
+		Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B L_4209 = ((L_4207)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4208)))->___strikethroughColor;
 		V_45 = L_4209;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4210 = ___1_textInfo;
+		NullCheck(L_4210);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4211 = L_4210->___textElementInfo;
 		int32_t L_4212 = V_344;
-		float L_4213 = ((L_4211)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4212)))->___baseLine;
+		NullCheck(L_4211);
+		float L_4213 = ((L_4211)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4212)))->___baseLine;
 		V_56 = L_4213;
 	}
 
@@ -15905,14 +16737,18 @@ IL_7d68:
 	{
 		V_10 = (bool)0;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4217 = ___1_textInfo;
+		NullCheck(L_4217);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4218 = L_4217->___textElementInfo;
 		int32_t L_4219 = V_344;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4220 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4218)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4219)))->___topRight);
+		NullCheck(L_4218);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4220 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4218)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4219)))->___topRight);
 		float L_4221 = L_4220->___x;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4222 = ___1_textInfo;
+		NullCheck(L_4222);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4223 = L_4222->___textElementInfo;
 		int32_t L_4224 = V_344;
-		float L_4225 = ((L_4223)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4224)))->___baseLine;
+		NullCheck(L_4223);
+		float L_4225 = ((L_4223)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4224)))->___baseLine;
 		float L_4226 = V_354;
 		float L_4227 = V_55;
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_12), L_4221, ((float)il2cpp_codegen_add(L_4225, ((float)il2cpp_codegen_multiply(L_4226, L_4227)))), (0.0f), NULL);
@@ -15991,14 +16827,18 @@ IL_7e22:
 		int32_t L_4246 = L_4245.___lastVisibleCharacterIndex;
 		V_437 = L_4246;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4247 = ___1_textInfo;
+		NullCheck(L_4247);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4248 = L_4247->___textElementInfo;
 		int32_t L_4249 = V_437;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4250 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4248)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4249)))->___topRight);
+		NullCheck(L_4248);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4250 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4248)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4249)))->___topRight);
 		float L_4251 = L_4250->___x;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4252 = ___1_textInfo;
+		NullCheck(L_4252);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4253 = L_4252->___textElementInfo;
 		int32_t L_4254 = V_437;
-		float L_4255 = ((L_4253)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4254)))->___baseLine;
+		NullCheck(L_4253);
+		float L_4255 = ((L_4253)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4254)))->___baseLine;
 		float L_4256 = V_354;
 		float L_4257 = V_55;
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_12), L_4251, ((float)il2cpp_codegen_add(L_4255, ((float)il2cpp_codegen_multiply(L_4256, L_4257)))), (0.0f), NULL);
@@ -16008,14 +16848,18 @@ IL_7e22:
 IL_7e8c:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4258 = ___1_textInfo;
+		NullCheck(L_4258);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4259 = L_4258->___textElementInfo;
 		int32_t L_4260 = V_344;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4261 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4259)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4260)))->___topRight);
+		NullCheck(L_4259);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4261 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4259)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4260)))->___topRight);
 		float L_4262 = L_4261->___x;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4263 = ___1_textInfo;
+		NullCheck(L_4263);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4264 = L_4263->___textElementInfo;
 		int32_t L_4265 = V_344;
-		float L_4266 = ((L_4264)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4265)))->___baseLine;
+		NullCheck(L_4264);
+		float L_4266 = ((L_4264)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4265)))->___baseLine;
 		float L_4267 = V_354;
 		float L_4268 = V_55;
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_12), L_4262, ((float)il2cpp_codegen_add(L_4266, ((float)il2cpp_codegen_multiply(L_4267, L_4268)))), (0.0f), NULL);
@@ -16055,9 +16899,11 @@ IL_7ef5:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4281 = ___1_textInfo;
+		NullCheck(L_4281);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4282 = L_4281->___textElementInfo;
 		int32_t L_4283 = V_344;
-		float L_4284 = ((L_4282)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_4283, 1)))))->___pointSize;
+		NullCheck(L_4282);
+		float L_4284 = ((L_4282)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_4283, 1)))))->___pointSize;
 		float L_4285 = V_54;
 		if ((!(((float)L_4284) == ((float)L_4285))))
 		{
@@ -16066,9 +16912,11 @@ IL_7ef5:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4286 = ___1_textInfo;
+		NullCheck(L_4286);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4287 = L_4286->___textElementInfo;
 		int32_t L_4288 = V_344;
-		float L_4289 = ((L_4287)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_4288, 1)))))->___baseLine;
+		NullCheck(L_4287);
+		float L_4289 = ((L_4287)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_4288, 1)))))->___baseLine;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4290 = V_36;
 		float L_4291 = L_4290.___y;
 		float L_4292 = V_56;
@@ -16120,14 +16968,18 @@ IL_7f53:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4300 = ___1_textInfo;
+		NullCheck(L_4300);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4301 = L_4300->___textElementInfo;
 		int32_t L_4302 = V_439;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4303 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4301)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4302)))->___topRight);
+		NullCheck(L_4301);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4303 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4301)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4302)))->___topRight);
 		float L_4304 = L_4303->___x;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4305 = ___1_textInfo;
+		NullCheck(L_4305);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4306 = L_4305->___textElementInfo;
 		int32_t L_4307 = V_439;
-		float L_4308 = ((L_4306)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4307)))->___baseLine;
+		NullCheck(L_4306);
+		float L_4308 = ((L_4306)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4307)))->___baseLine;
 		float L_4309 = V_354;
 		float L_4310 = V_55;
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_12), L_4304, ((float)il2cpp_codegen_add(L_4308, ((float)il2cpp_codegen_multiply(L_4309, L_4310)))), (0.0f), NULL);
@@ -16137,14 +16989,18 @@ IL_7f53:
 IL_7fde:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4311 = ___1_textInfo;
+		NullCheck(L_4311);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4312 = L_4311->___textElementInfo;
 		int32_t L_4313 = V_344;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4314 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4312)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4313)))->___topRight);
+		NullCheck(L_4312);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4314 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4312)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4313)))->___topRight);
 		float L_4315 = L_4314->___x;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4316 = ___1_textInfo;
+		NullCheck(L_4316);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4317 = L_4316->___textElementInfo;
 		int32_t L_4318 = V_344;
-		float L_4319 = ((L_4317)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4318)))->___baseLine;
+		NullCheck(L_4317);
+		float L_4319 = ((L_4317)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4318)))->___baseLine;
 		float L_4320 = V_354;
 		float L_4321 = V_55;
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_12), L_4315, ((float)il2cpp_codegen_add(L_4319, ((float)il2cpp_codegen_multiply(L_4320, L_4321)))), (0.0f), NULL);
@@ -16183,11 +17039,14 @@ IL_8042:
 	}
 	{
 		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_4334 = V_345;
+		NullCheck(L_4334);
 		int32_t L_4335;
 		L_4335 = Object_GetInstanceID_m554FF4073C9465F3835574CC084E68AAEEC6CC6A(L_4334, NULL);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4336 = V_57;
 		int32_t L_4337 = V_344;
-		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_4338 = ((L_4336)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_4337, 1)))))->___fontAsset;
+		NullCheck(L_4336);
+		FontAsset_t61A6446D934E582651044E33D250EA8D306AB958* L_4338 = ((L_4336)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_add(L_4337, 1)))))->___fontAsset;
+		NullCheck(L_4338);
 		int32_t L_4339;
 		L_4339 = Object_GetInstanceID_m554FF4073C9465F3835574CC084E68AAEEC6CC6A(L_4338, NULL);
 		G_B1182_0 = ((((int32_t)((((int32_t)L_4335) == ((int32_t)L_4339))? 1 : 0)) == ((int32_t)0))? 1 : 0);
@@ -16211,14 +17070,18 @@ IL_8080:
 	{
 		V_10 = (bool)0;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4341 = ___1_textInfo;
+		NullCheck(L_4341);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4342 = L_4341->___textElementInfo;
 		int32_t L_4343 = V_344;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4344 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4342)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4343)))->___topRight);
+		NullCheck(L_4342);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4344 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4342)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4343)))->___topRight);
 		float L_4345 = L_4344->___x;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4346 = ___1_textInfo;
+		NullCheck(L_4346);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4347 = L_4346->___textElementInfo;
 		int32_t L_4348 = V_344;
-		float L_4349 = ((L_4347)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4348)))->___baseLine;
+		NullCheck(L_4347);
+		float L_4349 = ((L_4347)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4348)))->___baseLine;
 		float L_4350 = V_354;
 		float L_4351 = V_55;
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_12), L_4345, ((float)il2cpp_codegen_add(L_4349, ((float)il2cpp_codegen_multiply(L_4350, L_4351)))), (0.0f), NULL);
@@ -16266,14 +17129,18 @@ IL_8106:
 	{
 		V_10 = (bool)0;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4364 = ___1_textInfo;
+		NullCheck(L_4364);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4365 = L_4364->___textElementInfo;
 		int32_t L_4366 = V_344;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4367 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4365)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_4366, 1)))))->___topRight);
+		NullCheck(L_4365);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4367 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4365)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_4366, 1)))))->___topRight);
 		float L_4368 = L_4367->___x;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4369 = ___1_textInfo;
+		NullCheck(L_4369);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4370 = L_4369->___textElementInfo;
 		int32_t L_4371 = V_344;
-		float L_4372 = ((L_4370)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_4371, 1)))))->___baseLine;
+		NullCheck(L_4370);
+		float L_4372 = ((L_4370)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_4371, 1)))))->___baseLine;
 		float L_4373 = V_354;
 		float L_4374 = V_55;
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_12), L_4368, ((float)il2cpp_codegen_add(L_4372, ((float)il2cpp_codegen_multiply(L_4373, L_4374)))), (0.0f), NULL);
@@ -16307,14 +17174,18 @@ IL_817e:
 	{
 		V_10 = (bool)0;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4386 = ___1_textInfo;
+		NullCheck(L_4386);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4387 = L_4386->___textElementInfo;
 		int32_t L_4388 = V_344;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4389 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4387)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_4388, 1)))))->___topRight);
+		NullCheck(L_4387);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4389 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&((L_4387)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_4388, 1)))))->___topRight);
 		float L_4390 = L_4389->___x;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4391 = ___1_textInfo;
+		NullCheck(L_4391);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4392 = L_4391->___textElementInfo;
 		int32_t L_4393 = V_344;
-		float L_4394 = ((L_4392)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_4393, 1)))))->___baseLine;
+		NullCheck(L_4392);
+		float L_4394 = ((L_4392)->GetAddressAt(static_cast<il2cpp_array_size_t>(((int32_t)il2cpp_codegen_subtract(L_4393, 1)))))->___baseLine;
 		float L_4395 = V_354;
 		float L_4396 = V_55;
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&V_12), L_4390, ((float)il2cpp_codegen_add(L_4394, ((float)il2cpp_codegen_multiply(L_4395, L_4396)))), (0.0f), NULL);
@@ -16337,9 +17208,11 @@ IL_81f6:
 IL_81f7:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4406 = ___1_textInfo;
+		NullCheck(L_4406);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4407 = L_4406->___textElementInfo;
 		int32_t L_4408 = V_344;
-		int32_t L_4409 = ((L_4407)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4408)))->___style;
+		NullCheck(L_4407);
+		int32_t L_4409 = ((L_4407)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4408)))->___style;
 		V_355 = (bool)((((int32_t)((int32_t)((int32_t)L_4409&((int32_t)512)))) == ((int32_t)((int32_t)512)))? 1 : 0);
 		bool L_4410 = V_355;
 		V_444 = L_4410;
@@ -16352,12 +17225,15 @@ IL_81f7:
 	{
 		V_445 = (bool)1;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4412 = ___1_textInfo;
+		NullCheck(L_4412);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4413 = L_4412->___textElementInfo;
 		int32_t L_4414 = V_344;
-		int32_t L_4415 = ((L_4413)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4414)))->___pageNumber;
+		NullCheck(L_4413);
+		int32_t L_4415 = ((L_4413)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4414)))->___pageNumber;
 		V_446 = L_4415;
 		int32_t L_4416 = V_344;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_4417 = ___0_generationSettings;
+		NullCheck(L_4417);
 		int32_t L_4418 = L_4417->___maxVisibleCharacters;
 		if ((((int32_t)L_4416) > ((int32_t)L_4418)))
 		{
@@ -16367,6 +17243,7 @@ IL_81f7:
 	{
 		int32_t L_4419 = V_348;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_4420 = ___0_generationSettings;
+		NullCheck(L_4420);
 		int32_t L_4421 = L_4420->___maxVisibleLines;
 		if ((((int32_t)L_4419) > ((int32_t)L_4421)))
 		{
@@ -16375,6 +17252,7 @@ IL_81f7:
 	}
 	{
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_4422 = ___0_generationSettings;
+		NullCheck(L_4422);
 		int32_t L_4423 = L_4422->___overflowMode;
 		if ((!(((uint32_t)L_4423) == ((uint32_t)5))))
 		{
@@ -16384,6 +17262,7 @@ IL_81f7:
 	{
 		int32_t L_4424 = V_446;
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_4425 = ___0_generationSettings;
+		NullCheck(L_4425);
 		int32_t L_4426 = L_4425->___pageToDisplay;
 		G_B1199_0 = ((((int32_t)((((int32_t)((int32_t)il2cpp_codegen_add(L_4424, 1))) == ((int32_t)L_4426))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 		goto IL_8296;
@@ -16525,9 +17404,11 @@ IL_8333:
 		L_4446 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_4445, NULL);
 		V_15 = L_4446;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4447 = ___1_textInfo;
+		NullCheck(L_4447);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4448 = L_4447->___textElementInfo;
 		int32_t L_4449 = V_344;
-		HighlightState_tFF5FE9065990F04A37FEC545A0024047F0ABD740 L_4450 = ((L_4448)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4449)))->___highlightState;
+		NullCheck(L_4448);
+		HighlightState_tFF5FE9065990F04A37FEC545A0024047F0ABD740 L_4450 = ((L_4448)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4449)))->___highlightState;
 		V_46 = L_4450;
 	}
 
@@ -16547,10 +17428,12 @@ IL_8369:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4453 = ___1_textInfo;
+		NullCheck(L_4453);
 		TextElementInfoU5BU5D_tEC28C9B72883EE21AA798913497C69E179A15C4E* L_4454 = L_4453->___textElementInfo;
 		int32_t L_4455 = V_344;
+		NullCheck(L_4454);
 		int32_t L_4456 = L_4455;
-		TextElementInfo_tDD7A12E319505510E0B350E342BD55F32AB5F976 L_4457 = (L_4454)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_4456));
+		TextElementInfo_tDD7A12E319505510E0B350E342BD55F32AB5F976 L_4457 = (L_4454)->GetAt(static_cast<il2cpp_array_size_t>(L_4456));
 		V_451 = L_4457;
 		TextElementInfo_tDD7A12E319505510E0B350E342BD55F32AB5F976 L_4458 = V_451;
 		HighlightState_tFF5FE9065990F04A37FEC545A0024047F0ABD740 L_4459 = L_4458.___highlightState;
@@ -16994,12 +17877,15 @@ IL_87d0:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4621 = ___1_textInfo;
 		int32_t L_4622 = __this->___m_CharacterCount;
+		NullCheck(L_4621);
 		L_4621->___characterCount = L_4622;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4623 = ___1_textInfo;
 		int32_t L_4624 = __this->___m_SpriteCount;
+		NullCheck(L_4623);
 		L_4623->___spriteCount = L_4624;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4625 = ___1_textInfo;
 		int32_t L_4626 = V_38;
+		NullCheck(L_4625);
 		L_4625->___lineCount = L_4626;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4627 = ___1_textInfo;
 		int32_t L_4628 = V_37;
@@ -17036,9 +17922,11 @@ IL_8820:
 
 IL_8822:
 	{
+		NullCheck(G_B1261_1);
 		G_B1261_1->___wordCount = G_B1261_0;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4631 = ___1_textInfo;
 		int32_t L_4632 = __this->___m_PageNumber;
+		NullCheck(L_4631);
 		L_4631->___pageCount = ((int32_t)il2cpp_codegen_add(L_4632, 1));
 		V_464 = 1;
 		goto IL_8898;
@@ -17047,11 +17935,14 @@ IL_8822:
 IL_883e:
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4633 = ___1_textInfo;
+		NullCheck(L_4633);
 		MeshInfoU5BU5D_t3DF8B75BF4A213334EED197AD25E432212894AC6* L_4634 = L_4633->___meshInfo;
 		int32_t L_4635 = V_464;
+		NullCheck(L_4634);
 		il2cpp_codegen_runtime_class_init_inline(MeshInfo_tE55C4A8846CC2C399CCC3FE989476D987B86AB2F_il2cpp_TypeInfo_var);
-		MeshInfo_ClearUnusedVertices_m7B6003EF4CA72C0ABBA4D25DEA8B0BF3934B2830(((L_4634)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4635))), NULL);
+		MeshInfo_ClearUnusedVertices_m7B6003EF4CA72C0ABBA4D25DEA8B0BF3934B2830(((L_4634)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4635))), NULL);
 		TextGenerationSettings_t3E75DB1D14DF53934AF76C9ACB1CD94A344A92A2* L_4636 = ___0_generationSettings;
+		NullCheck(L_4636);
 		int32_t L_4637 = L_4636->___geometrySortingOrder;
 		V_465 = (bool)((!(((uint32_t)L_4637) <= ((uint32_t)0)))? 1 : 0);
 		bool L_4638 = V_465;
@@ -17062,10 +17953,12 @@ IL_883e:
 	}
 	{
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4639 = ___1_textInfo;
+		NullCheck(L_4639);
 		MeshInfoU5BU5D_t3DF8B75BF4A213334EED197AD25E432212894AC6* L_4640 = L_4639->___meshInfo;
 		int32_t L_4641 = V_464;
+		NullCheck(L_4640);
 		il2cpp_codegen_runtime_class_init_inline(MeshInfo_tE55C4A8846CC2C399CCC3FE989476D987B86AB2F_il2cpp_TypeInfo_var);
-		MeshInfo_SortGeometry_m92046C53AA6AE75EE3627CE73846296AB3E99DD1(((L_4640)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_4641))), 1, NULL);
+		MeshInfo_SortGeometry_m92046C53AA6AE75EE3627CE73846296AB3E99DD1(((L_4640)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4641))), 1, NULL);
 	}
 
 IL_8885:
@@ -17080,6 +17973,7 @@ IL_8898:
 	{
 		int32_t L_4644 = V_464;
 		TextInfo_t27E58E62A7552C66D38C175AF9D22622365F5D09* L_4645 = ___1_textInfo;
+		NullCheck(L_4645);
 		int32_t L_4646 = L_4645->___materialCount;
 		V_466 = (bool)((((int32_t)L_4644) < ((int32_t)L_4646))? 1 : 0);
 		bool L_4647 = V_466;

@@ -6702,6 +6702,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mC86B3FA778A630F3AED203
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t0BE12F16A937298114B20824E93D706BCA5214D5* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		BlitInfo_t6D4C0580BBEF65F5EAD39FB6DBC85F360CF6A357* L_3 = (BlitInfo_t6D4C0580BBEF65F5EAD39FB6DBC85F360CF6A357*)(&__this->____current);
@@ -6737,6 +6738,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m314BE36D3C04E73B55A
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t0BE12F16A937298114B20824E93D706BCA5214D5* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -6746,6 +6748,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m314BE36D3C04E73B55A
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t0BE12F16A937298114B20824E93D706BCA5214D5* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -6754,10 +6757,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m314BE36D3C04E73B55A
 	}
 	{
 		List_1_t0BE12F16A937298114B20824E93D706BCA5214D5* L_7 = V_0;
+		NullCheck(L_7);
 		BlitInfoU5BU5D_t090EAE36AF18528B2F72B1D3BBA4831E32F287BA* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		BlitInfo_t6D4C0580BBEF65F5EAD39FB6DBC85F360CF6A357 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		BlitInfo_t6D4C0580BBEF65F5EAD39FB6DBC85F360CF6A357 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___src), (void*)NULL);
 		int32_t L_12 = __this->____index;
@@ -6786,6 +6791,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m1B8F7CE801C59BA
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t0BE12F16A937298114B20824E93D706BCA5214D5* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -6799,6 +6805,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m1B8F7CE801C59BA
 IL_0018:
 	{
 		List_1_t0BE12F16A937298114B20824E93D706BCA5214D5* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		BlitInfo_t6D4C0580BBEF65F5EAD39FB6DBC85F360CF6A357* L_5 = (BlitInfo_t6D4C0580BBEF65F5EAD39FB6DBC85F360CF6A357*)(&__this->____current);
@@ -6843,6 +6850,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t0BE12F16A937298114B20824E93D706BCA5214D5* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -6878,6 +6886,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t0BE12F16A937298114B20824E93D706BCA5214D5* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -6919,6 +6928,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m044D29537A453F2E460751
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t4627353295F8415A37CF5B575A1EE871A8174EF0* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		Frame_tE254B3BDA010B9114EF1F470C177342FAF3E8FFD* L_3 = (Frame_tE254B3BDA010B9114EF1F470C177342FAF3E8FFD*)(&__this->____current);
@@ -6954,6 +6964,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m391D9A7EB87015E0693
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t4627353295F8415A37CF5B575A1EE871A8174EF0* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -6963,6 +6974,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m391D9A7EB87015E0693
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t4627353295F8415A37CF5B575A1EE871A8174EF0* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -6971,10 +6983,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m391D9A7EB87015E0693
 	}
 	{
 		List_1_t4627353295F8415A37CF5B575A1EE871A8174EF0* L_7 = V_0;
+		NullCheck(L_7);
 		FrameU5BU5D_tED4B6DE19C37177FEDD77F466E6807E1D5288F25* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		Frame_tE254B3BDA010B9114EF1F470C177342FAF3E8FFD L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		Frame_tE254B3BDA010B9114EF1F470C177342FAF3E8FFD L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___filename), (void*)NULL);
 		int32_t L_12 = __this->____index;
@@ -7003,6 +7017,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m7F0187F4267B950
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t4627353295F8415A37CF5B575A1EE871A8174EF0* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -7016,6 +7031,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m7F0187F4267B950
 IL_0018:
 	{
 		List_1_t4627353295F8415A37CF5B575A1EE871A8174EF0* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		Frame_tE254B3BDA010B9114EF1F470C177342FAF3E8FFD* L_5 = (Frame_tE254B3BDA010B9114EF1F470C177342FAF3E8FFD*)(&__this->____current);
@@ -7060,6 +7076,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t4627353295F8415A37CF5B575A1EE871A8174EF0* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -7095,6 +7112,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t4627353295F8415A37CF5B575A1EE871A8174EF0* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -7136,6 +7154,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mC161A476CF8D7CC5C23A6C
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t33D0D5DC1CC999D9E66584CFA3E5F86E9C719E8C* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		TextureInfo_t581C305A0444F786E0E7405054714685BE3A5A5B* L_3 = (TextureInfo_t581C305A0444F786E0E7405054714685BE3A5A5B*)(&__this->____current);
@@ -7171,6 +7190,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m70E10A2DBD842A641C9
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t33D0D5DC1CC999D9E66584CFA3E5F86E9C719E8C* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -7180,6 +7200,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m70E10A2DBD842A641C9
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t33D0D5DC1CC999D9E66584CFA3E5F86E9C719E8C* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -7188,10 +7209,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m70E10A2DBD842A641C9
 	}
 	{
 		List_1_t33D0D5DC1CC999D9E66584CFA3E5F86E9C719E8C* L_7 = V_0;
+		NullCheck(L_7);
 		TextureInfoU5BU5D_t0571178EAC2A0DE9A1F27F2C00A9301E04AAFB83* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		TextureInfo_t581C305A0444F786E0E7405054714685BE3A5A5B L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		TextureInfo_t581C305A0444F786E0E7405054714685BE3A5A5B L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___texture), (void*)NULL);
 		int32_t L_12 = __this->____index;
@@ -7220,6 +7243,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m78A2B502323D799
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t33D0D5DC1CC999D9E66584CFA3E5F86E9C719E8C* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -7233,6 +7257,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m78A2B502323D799
 IL_0018:
 	{
 		List_1_t33D0D5DC1CC999D9E66584CFA3E5F86E9C719E8C* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		TextureInfo_t581C305A0444F786E0E7405054714685BE3A5A5B* L_5 = (TextureInfo_t581C305A0444F786E0E7405054714685BE3A5A5B*)(&__this->____current);
@@ -7277,6 +7302,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t33D0D5DC1CC999D9E66584CFA3E5F86E9C719E8C* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -7312,6 +7338,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t33D0D5DC1CC999D9E66584CFA3E5F86E9C719E8C* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -7353,6 +7380,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m03C4B6FB68E3BC1E4B7D15
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_tE6A967BAC61940A70814BDD10C019CC887E70047* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		Entry_tB8765CA56422E2C92887314844384843688DCB9F* L_3 = (Entry_tB8765CA56422E2C92887314844384843688DCB9F*)(&__this->____current);
@@ -7388,6 +7416,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m64C3413B85F3D5F7E9A
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_tE6A967BAC61940A70814BDD10C019CC887E70047* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -7397,6 +7426,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m64C3413B85F3D5F7E9A
 	{
 		int32_t L_4 = __this->____index;
 		List_1_tE6A967BAC61940A70814BDD10C019CC887E70047* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -7405,10 +7435,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m64C3413B85F3D5F7E9A
 	}
 	{
 		List_1_tE6A967BAC61940A70814BDD10C019CC887E70047* L_7 = V_0;
+		NullCheck(L_7);
 		EntryU5BU5D_t0E1B13D46D84865A64150BC9C0299A2189F6F1E8* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		Entry_tB8765CA56422E2C92887314844384843688DCB9F L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		Entry_tB8765CA56422E2C92887314844384843688DCB9F L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___material), (void*)NULL);
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
@@ -7440,6 +7472,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mB19796E7E47BEFA
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tE6A967BAC61940A70814BDD10C019CC887E70047* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -7453,6 +7486,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mB19796E7E47BEFA
 IL_0018:
 	{
 		List_1_tE6A967BAC61940A70814BDD10C019CC887E70047* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		Entry_tB8765CA56422E2C92887314844384843688DCB9F* L_5 = (Entry_tB8765CA56422E2C92887314844384843688DCB9F*)(&__this->____current);
@@ -7497,6 +7531,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_tE6A967BAC61940A70814BDD10C019CC887E70047* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -7532,6 +7567,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tE6A967BAC61940A70814BDD10C019CC887E70047* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -7573,6 +7609,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m679E3955F629807401FF35
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_tEDB0595051ED28C07BCE193DDA4A3DF560A114C8* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		RepeatRectUV_t9DEBA876B6627ACC6496B9BC609EB953E3593935* L_3 = (RepeatRectUV_t9DEBA876B6627ACC6496B9BC609EB953E3593935*)(&__this->____current);
@@ -7608,6 +7645,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mADCA1437FC3FFB75EC1
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_tEDB0595051ED28C07BCE193DDA4A3DF560A114C8* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -7617,6 +7655,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mADCA1437FC3FFB75EC1
 	{
 		int32_t L_4 = __this->____index;
 		List_1_tEDB0595051ED28C07BCE193DDA4A3DF560A114C8* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -7625,10 +7664,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mADCA1437FC3FFB75EC1
 	}
 	{
 		List_1_tEDB0595051ED28C07BCE193DDA4A3DF560A114C8* L_7 = V_0;
+		NullCheck(L_7);
 		RepeatRectUVU5BU5D_t1C032A55EC385A844DC49A8788D8B97A986FD581* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		RepeatRectUV_t9DEBA876B6627ACC6496B9BC609EB953E3593935 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		RepeatRectUV_t9DEBA876B6627ACC6496B9BC609EB953E3593935 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		int32_t L_12 = __this->____index;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_12, 1));
@@ -7656,6 +7697,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m5C58A845153EC8B
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tEDB0595051ED28C07BCE193DDA4A3DF560A114C8* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -7669,6 +7711,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m5C58A845153EC8B
 IL_0018:
 	{
 		List_1_tEDB0595051ED28C07BCE193DDA4A3DF560A114C8* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		RepeatRectUV_t9DEBA876B6627ACC6496B9BC609EB953E3593935* L_5 = (RepeatRectUV_t9DEBA876B6627ACC6496B9BC609EB953E3593935*)(&__this->____current);
@@ -7713,6 +7756,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_tEDB0595051ED28C07BCE193DDA4A3DF560A114C8* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -7748,6 +7792,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tEDB0595051ED28C07BCE193DDA4A3DF560A114C8* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -7789,6 +7834,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m076DD2EF37581C58428CB0
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t558C941DC24A59973D98EDA0C9C3EFDFF486AC15* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		AllocToFree_tC46982856CB8220A92BB724F5FB75CCCD09C67D8* L_3 = (AllocToFree_tC46982856CB8220A92BB724F5FB75CCCD09C67D8*)(&__this->____current);
@@ -7824,6 +7870,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mC17753213EA86CEA187
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t558C941DC24A59973D98EDA0C9C3EFDFF486AC15* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -7833,6 +7880,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mC17753213EA86CEA187
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t558C941DC24A59973D98EDA0C9C3EFDFF486AC15* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -7841,10 +7889,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mC17753213EA86CEA187
 	}
 	{
 		List_1_t558C941DC24A59973D98EDA0C9C3EFDFF486AC15* L_7 = V_0;
+		NullCheck(L_7);
 		AllocToFreeU5BU5D_tABB7AF052966F0E8DFAA88DF107B682ED5411788* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		AllocToFree_tC46982856CB8220A92BB724F5FB75CCCD09C67D8 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		AllocToFree_tC46982856CB8220A92BB724F5FB75CCCD09C67D8 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&((&(((&__this->____current))->___alloc))->___handle), (void*)NULL);
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
@@ -7876,6 +7926,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mD66DEEA9D1C1601
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t558C941DC24A59973D98EDA0C9C3EFDFF486AC15* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -7889,6 +7940,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mD66DEEA9D1C1601
 IL_0018:
 	{
 		List_1_t558C941DC24A59973D98EDA0C9C3EFDFF486AC15* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		AllocToFree_tC46982856CB8220A92BB724F5FB75CCCD09C67D8* L_5 = (AllocToFree_tC46982856CB8220A92BB724F5FB75CCCD09C67D8*)(&__this->____current);
@@ -7933,6 +7985,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t558C941DC24A59973D98EDA0C9C3EFDFF486AC15* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -7968,6 +8021,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t558C941DC24A59973D98EDA0C9C3EFDFF486AC15* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -8009,6 +8063,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m662076281D5451AABCA679
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t5C1C55636F11C4FEC3CCBC415FE4529B01D406D2* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		AllocToUpdate_tD0221D0ABC5378DDE5AAB1DAA219C337E562B512* L_3 = (AllocToUpdate_tD0221D0ABC5378DDE5AAB1DAA219C337E562B512*)(&__this->____current);
@@ -8044,6 +8099,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m7AAB0ACE9DE436BBDC5
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t5C1C55636F11C4FEC3CCBC415FE4529B01D406D2* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -8053,6 +8109,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m7AAB0ACE9DE436BBDC5
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t5C1C55636F11C4FEC3CCBC415FE4529B01D406D2* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -8061,10 +8118,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m7AAB0ACE9DE436BBDC5
 	}
 	{
 		List_1_t5C1C55636F11C4FEC3CCBC415FE4529B01D406D2* L_7 = V_0;
+		NullCheck(L_7);
 		AllocToUpdateU5BU5D_tC52656BA0214FA47884361867D3ED2D23CE612C3* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		AllocToUpdate_tD0221D0ABC5378DDE5AAB1DAA219C337E562B512 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		AllocToUpdate_tD0221D0ABC5378DDE5AAB1DAA219C337E562B512 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___meshHandle), (void*)NULL);
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
@@ -8102,6 +8161,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m758E16A79FFBF3C
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t5C1C55636F11C4FEC3CCBC415FE4529B01D406D2* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -8115,6 +8175,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m758E16A79FFBF3C
 IL_0018:
 	{
 		List_1_t5C1C55636F11C4FEC3CCBC415FE4529B01D406D2* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		AllocToUpdate_tD0221D0ABC5378DDE5AAB1DAA219C337E562B512* L_5 = (AllocToUpdate_tD0221D0ABC5378DDE5AAB1DAA219C337E562B512*)(&__this->____current);
@@ -8159,6 +8220,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t5C1C55636F11C4FEC3CCBC415FE4529B01D406D2* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -8194,6 +8256,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t5C1C55636F11C4FEC3CCBC415FE4529B01D406D2* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -8234,9 +8297,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mD8576BA924B646601CD49B
 		__this->____list = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		LinkedList_1_t09F6FB09C766455615BBF59716D285304C49E0E7* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->___version;
 		__this->____version = L_2;
 		LinkedList_1_t09F6FB09C766455615BBF59716D285304C49E0E7* L_3 = ___0_list;
+		NullCheck(L_3);
 		LinkedListNode_1_t67D23132699BD5AA974F03A53E11E94CB77B8EB1* L_4 = L_3->___head;
 		__this->____node = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____node), (void*)L_4);
@@ -8296,6 +8361,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		LinkedList_1_t09F6FB09C766455615BBF59716D285304C49E0E7* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3;
 		L_3 = LinkedList_1_get_Count_m3AA55D20D258A7BF6A95309F71C5F7FF7907215C_inline(L_2, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 4));
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
@@ -8333,6 +8399,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mA77050516065DE6021A
 	{
 		int32_t L_0 = __this->____version;
 		LinkedList_1_t09F6FB09C766455615BBF59716D285304C49E0E7* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->___version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -8355,6 +8422,7 @@ IL_001e:
 	}
 	{
 		LinkedList_1_t09F6FB09C766455615BBF59716D285304C49E0E7* L_5 = __this->____list;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = LinkedList_1_get_Count_m3AA55D20D258A7BF6A95309F71C5F7FF7907215C_inline(L_5, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 4));
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
@@ -8366,15 +8434,18 @@ IL_003b:
 		int32_t L_7 = __this->____index;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_7, 1));
 		LinkedListNode_1_t67D23132699BD5AA974F03A53E11E94CB77B8EB1* L_8 = __this->____node;
+		NullCheck(L_8);
 		DeviceToFree_tF2AD2D5F5C1936F25516AEF0736CF4BCA1B3052B L_9 = L_8->___item;
 		__this->____current = L_9;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___page), (void*)NULL);
 		LinkedListNode_1_t67D23132699BD5AA974F03A53E11E94CB77B8EB1* L_10 = __this->____node;
+		NullCheck(L_10);
 		LinkedListNode_1_t67D23132699BD5AA974F03A53E11E94CB77B8EB1* L_11 = L_10->___next;
 		__this->____node = L_11;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____node), (void*)L_11);
 		LinkedListNode_1_t67D23132699BD5AA974F03A53E11E94CB77B8EB1* L_12 = __this->____node;
 		LinkedList_1_t09F6FB09C766455615BBF59716D285304C49E0E7* L_13 = __this->____list;
+		NullCheck(L_13);
 		LinkedListNode_1_t67D23132699BD5AA974F03A53E11E94CB77B8EB1* L_14 = L_13->___head;
 		if ((!(((RuntimeObject*)(LinkedListNode_1_t67D23132699BD5AA974F03A53E11E94CB77B8EB1*)L_12) == ((RuntimeObject*)(LinkedListNode_1_t67D23132699BD5AA974F03A53E11E94CB77B8EB1*)L_14))))
 		{
@@ -8405,6 +8476,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		LinkedList_1_t09F6FB09C766455615BBF59716D285304C49E0E7* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->___version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -8422,6 +8494,7 @@ IL_001e:
 		DeviceToFree_tF2AD2D5F5C1936F25516AEF0736CF4BCA1B3052B* L_4 = (DeviceToFree_tF2AD2D5F5C1936F25516AEF0736CF4BCA1B3052B*)(&__this->____current);
 		il2cpp_codegen_initobj(L_4, sizeof(DeviceToFree_tF2AD2D5F5C1936F25516AEF0736CF4BCA1B3052B));
 		LinkedList_1_t09F6FB09C766455615BBF59716D285304C49E0E7* L_5 = __this->____list;
+		NullCheck(L_5);
 		LinkedListNode_1_t67D23132699BD5AA974F03A53E11E94CB77B8EB1* L_6 = L_5->___head;
 		__this->____node = L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____node), (void*)L_6);
@@ -8495,6 +8568,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m67AC7635AF0AF22787100E
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t115BFDF2D524B656F091D4CBADCF1C35287684B4* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		WorkRequest_t8AF542F2E248D9234341817CDB5F76C27D348B44* L_3 = (WorkRequest_t8AF542F2E248D9234341817CDB5F76C27D348B44*)(&__this->____current);
@@ -8530,6 +8604,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mFBF836B2B837D65A016
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t115BFDF2D524B656F091D4CBADCF1C35287684B4* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -8539,6 +8614,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mFBF836B2B837D65A016
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t115BFDF2D524B656F091D4CBADCF1C35287684B4* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -8547,10 +8623,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mFBF836B2B837D65A016
 	}
 	{
 		List_1_t115BFDF2D524B656F091D4CBADCF1C35287684B4* L_7 = V_0;
+		NullCheck(L_7);
 		WorkRequestU5BU5D_t1B912B8BE58CF60CAF3A4FEC0A5C0F5BB6D99577* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		WorkRequest_t8AF542F2E248D9234341817CDB5F76C27D348B44 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		WorkRequest_t8AF542F2E248D9234341817CDB5F76C27D348B44 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___m_DelagateCallback), (void*)NULL);
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
@@ -8585,6 +8663,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mE8B02D68B006D42
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t115BFDF2D524B656F091D4CBADCF1C35287684B4* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -8598,6 +8677,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mE8B02D68B006D42
 IL_0018:
 	{
 		List_1_t115BFDF2D524B656F091D4CBADCF1C35287684B4* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		WorkRequest_t8AF542F2E248D9234341817CDB5F76C27D348B44* L_5 = (WorkRequest_t8AF542F2E248D9234341817CDB5F76C27D348B44*)(&__this->____current);
@@ -8642,6 +8722,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t115BFDF2D524B656F091D4CBADCF1C35287684B4* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -8677,6 +8758,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t115BFDF2D524B656F091D4CBADCF1C35287684B4* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -8718,6 +8800,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m021DD3B0DA557DF45CDA1A
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t82C928BB4A4FE60D606FEBAFB9949F993554C39F* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		AssetEntry_tEB6FC90E5BB63DCA4FF932F2D64595339A28806D* L_3 = (AssetEntry_tEB6FC90E5BB63DCA4FF932F2D64595339A28806D*)(&__this->____current);
@@ -8753,6 +8836,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mD763754153D8A8F9D20
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t82C928BB4A4FE60D606FEBAFB9949F993554C39F* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -8762,6 +8846,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mD763754153D8A8F9D20
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t82C928BB4A4FE60D606FEBAFB9949F993554C39F* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -8770,10 +8855,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mD763754153D8A8F9D20
 	}
 	{
 		List_1_t82C928BB4A4FE60D606FEBAFB9949F993554C39F* L_7 = V_0;
+		NullCheck(L_7);
 		AssetEntryU5BU5D_t83ECF66F13D78425A1AF86967D10F3FA0A0C123F* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		AssetEntry_tEB6FC90E5BB63DCA4FF932F2D64595339A28806D L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		AssetEntry_tEB6FC90E5BB63DCA4FF932F2D64595339A28806D L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___path), (void*)NULL);
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
@@ -8811,6 +8898,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mF0CBFFE21E2671D
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t82C928BB4A4FE60D606FEBAFB9949F993554C39F* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -8824,6 +8912,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mF0CBFFE21E2671D
 IL_0018:
 	{
 		List_1_t82C928BB4A4FE60D606FEBAFB9949F993554C39F* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		AssetEntry_tEB6FC90E5BB63DCA4FF932F2D64595339A28806D* L_5 = (AssetEntry_tEB6FC90E5BB63DCA4FF932F2D64595339A28806D*)(&__this->____current);
@@ -8868,6 +8957,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t82C928BB4A4FE60D606FEBAFB9949F993554C39F* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -8903,6 +8993,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t82C928BB4A4FE60D606FEBAFB9949F993554C39F* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -8944,6 +9035,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m420FC20C439EA97FA93438
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t70BBA01AC05569034FEB9847D92E5F046528FBAF* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		SlotDefinition_t2E39E965BBE5A336DD1B93A115DD01044D1A66F8* L_3 = (SlotDefinition_t2E39E965BBE5A336DD1B93A115DD01044D1A66F8*)(&__this->____current);
@@ -8979,6 +9071,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m67BB5D16164E998C5F5
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t70BBA01AC05569034FEB9847D92E5F046528FBAF* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -8988,6 +9081,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m67BB5D16164E998C5F5
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t70BBA01AC05569034FEB9847D92E5F046528FBAF* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -8996,10 +9090,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m67BB5D16164E998C5F5
 	}
 	{
 		List_1_t70BBA01AC05569034FEB9847D92E5F046528FBAF* L_7 = V_0;
+		NullCheck(L_7);
 		SlotDefinitionU5BU5D_t9003D04EBDD74C44DD8490A99624A727154E1299* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		SlotDefinition_t2E39E965BBE5A336DD1B93A115DD01044D1A66F8 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		SlotDefinition_t2E39E965BBE5A336DD1B93A115DD01044D1A66F8 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___name), (void*)NULL);
 		int32_t L_12 = __this->____index;
@@ -9028,6 +9124,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m83C801D768E3D72
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t70BBA01AC05569034FEB9847D92E5F046528FBAF* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -9041,6 +9138,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m83C801D768E3D72
 IL_0018:
 	{
 		List_1_t70BBA01AC05569034FEB9847D92E5F046528FBAF* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		SlotDefinition_t2E39E965BBE5A336DD1B93A115DD01044D1A66F8* L_5 = (SlotDefinition_t2E39E965BBE5A336DD1B93A115DD01044D1A66F8*)(&__this->____current);
@@ -9085,6 +9183,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t70BBA01AC05569034FEB9847D92E5F046528FBAF* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -9120,6 +9219,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t70BBA01AC05569034FEB9847D92E5F046528FBAF* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -9161,6 +9261,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m1D35CFF2D2180AE34DC9CC
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t10D8EC0B84DD3EDB54DA9AE6AF65B5AB50BA9D5A* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		SlotUsageEntry_t73A628038C799E4FD44436E093EC19D2B9EA1B76* L_3 = (SlotUsageEntry_t73A628038C799E4FD44436E093EC19D2B9EA1B76*)(&__this->____current);
@@ -9196,6 +9297,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m50A475FCCAFE77F7ABC
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t10D8EC0B84DD3EDB54DA9AE6AF65B5AB50BA9D5A* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -9205,6 +9307,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m50A475FCCAFE77F7ABC
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t10D8EC0B84DD3EDB54DA9AE6AF65B5AB50BA9D5A* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -9213,10 +9316,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m50A475FCCAFE77F7ABC
 	}
 	{
 		List_1_t10D8EC0B84DD3EDB54DA9AE6AF65B5AB50BA9D5A* L_7 = V_0;
+		NullCheck(L_7);
 		SlotUsageEntryU5BU5D_t02CCAC4881F115443BE39FCBE8439A9DCFC1C67A* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		SlotUsageEntry_t73A628038C799E4FD44436E093EC19D2B9EA1B76 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		SlotUsageEntry_t73A628038C799E4FD44436E093EC19D2B9EA1B76 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___slotName), (void*)NULL);
 		int32_t L_12 = __this->____index;
@@ -9245,6 +9350,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m064A4DB58FCCB8F
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t10D8EC0B84DD3EDB54DA9AE6AF65B5AB50BA9D5A* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -9258,6 +9364,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m064A4DB58FCCB8F
 IL_0018:
 	{
 		List_1_t10D8EC0B84DD3EDB54DA9AE6AF65B5AB50BA9D5A* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		SlotUsageEntry_t73A628038C799E4FD44436E093EC19D2B9EA1B76* L_5 = (SlotUsageEntry_t73A628038C799E4FD44436E093EC19D2B9EA1B76*)(&__this->____current);
@@ -9302,6 +9409,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t10D8EC0B84DD3EDB54DA9AE6AF65B5AB50BA9D5A* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -9337,6 +9445,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t10D8EC0B84DD3EDB54DA9AE6AF65B5AB50BA9D5A* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -9378,6 +9487,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m57DCB43A11D27902D33566
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t3A511618E31C01BE3D1EA788ABB9AD6F354E8485* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		UsingEntry_t0454AD34026FDFD1733CE07BD4AE807B0FBCE484* L_3 = (UsingEntry_t0454AD34026FDFD1733CE07BD4AE807B0FBCE484*)(&__this->____current);
@@ -9413,6 +9523,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mA67ACB36D2774F1590F
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t3A511618E31C01BE3D1EA788ABB9AD6F354E8485* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -9422,6 +9533,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mA67ACB36D2774F1590F
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t3A511618E31C01BE3D1EA788ABB9AD6F354E8485* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -9430,10 +9542,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mA67ACB36D2774F1590F
 	}
 	{
 		List_1_t3A511618E31C01BE3D1EA788ABB9AD6F354E8485* L_7 = V_0;
+		NullCheck(L_7);
 		UsingEntryU5BU5D_t3E321CB1464DE1D2F7FDE3790BD4AD8B72FBE811* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		UsingEntry_t0454AD34026FDFD1733CE07BD4AE807B0FBCE484 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		UsingEntry_t0454AD34026FDFD1733CE07BD4AE807B0FBCE484 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___alias), (void*)NULL);
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
@@ -9468,6 +9582,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m5F96242B4566FBE
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t3A511618E31C01BE3D1EA788ABB9AD6F354E8485* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -9481,6 +9596,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m5F96242B4566FBE
 IL_0018:
 	{
 		List_1_t3A511618E31C01BE3D1EA788ABB9AD6F354E8485* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		UsingEntry_t0454AD34026FDFD1733CE07BD4AE807B0FBCE484* L_5 = (UsingEntry_t0454AD34026FDFD1733CE07BD4AE807B0FBCE484*)(&__this->____current);
@@ -9525,6 +9641,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t3A511618E31C01BE3D1EA788ABB9AD6F354E8485* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -9560,6 +9677,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t3A511618E31C01BE3D1EA788ABB9AD6F354E8485* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -9601,6 +9719,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m5EFD5DB3AD2FE8F13BB2EE
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t63DCD4AC5D286527CD19DD2D0023AF7C03AAB2D1* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		UxmlObjectEntry_t1E72E4EBFDF4A1D3B8017BC882A5BAC71BE19E02* L_3 = (UxmlObjectEntry_t1E72E4EBFDF4A1D3B8017BC882A5BAC71BE19E02*)(&__this->____current);
@@ -9636,6 +9755,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m35CA8B39709705123F2
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t63DCD4AC5D286527CD19DD2D0023AF7C03AAB2D1* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -9645,6 +9765,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m35CA8B39709705123F2
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t63DCD4AC5D286527CD19DD2D0023AF7C03AAB2D1* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -9653,10 +9774,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m35CA8B39709705123F2
 	}
 	{
 		List_1_t63DCD4AC5D286527CD19DD2D0023AF7C03AAB2D1* L_7 = V_0;
+		NullCheck(L_7);
 		UxmlObjectEntryU5BU5D_tF3F29A7BDD62E8BD2563FDD77C6C304E2A566235* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		UxmlObjectEntry_t1E72E4EBFDF4A1D3B8017BC882A5BAC71BE19E02 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		UxmlObjectEntry_t1E72E4EBFDF4A1D3B8017BC882A5BAC71BE19E02 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___uxmlObjectAssets), (void*)NULL);
 		int32_t L_12 = __this->____index;
@@ -9685,6 +9808,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m95E68ADDC93924F
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t63DCD4AC5D286527CD19DD2D0023AF7C03AAB2D1* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -9698,6 +9822,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m95E68ADDC93924F
 IL_0018:
 	{
 		List_1_t63DCD4AC5D286527CD19DD2D0023AF7C03AAB2D1* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		UxmlObjectEntry_t1E72E4EBFDF4A1D3B8017BC882A5BAC71BE19E02* L_5 = (UxmlObjectEntry_t1E72E4EBFDF4A1D3B8017BC882A5BAC71BE19E02*)(&__this->____current);
@@ -9742,6 +9867,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t63DCD4AC5D286527CD19DD2D0023AF7C03AAB2D1* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -9777,6 +9903,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t63DCD4AC5D286527CD19DD2D0023AF7C03AAB2D1* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -9818,6 +9945,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m34968A644217338251F2AC
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t9FCF421D436E7388FC34EB04CC1A4AF55A14F565* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		ColumnState_tC563C18EC36392C792E3E0645B1CE344DCC75957* L_3 = (ColumnState_tC563C18EC36392C792E3E0645B1CE344DCC75957*)(&__this->____current);
@@ -9853,6 +9981,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m51A4FBF5C8A2E57891F
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t9FCF421D436E7388FC34EB04CC1A4AF55A14F565* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -9862,6 +9991,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m51A4FBF5C8A2E57891F
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t9FCF421D436E7388FC34EB04CC1A4AF55A14F565* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -9870,10 +10000,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m51A4FBF5C8A2E57891F
 	}
 	{
 		List_1_t9FCF421D436E7388FC34EB04CC1A4AF55A14F565* L_7 = V_0;
+		NullCheck(L_7);
 		ColumnStateU5BU5D_t0FFA0C38CD44D738D50B935EA357157A41C99290* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		ColumnState_tC563C18EC36392C792E3E0645B1CE344DCC75957 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		ColumnState_tC563C18EC36392C792E3E0645B1CE344DCC75957 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___name), (void*)NULL);
 		int32_t L_12 = __this->____index;
@@ -9902,6 +10034,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m121D4C4723BD32D
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t9FCF421D436E7388FC34EB04CC1A4AF55A14F565* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -9915,6 +10048,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m121D4C4723BD32D
 IL_0018:
 	{
 		List_1_t9FCF421D436E7388FC34EB04CC1A4AF55A14F565* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		ColumnState_tC563C18EC36392C792E3E0645B1CE344DCC75957* L_5 = (ColumnState_tC563C18EC36392C792E3E0645B1CE344DCC75957*)(&__this->____current);
@@ -9959,6 +10093,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t9FCF421D436E7388FC34EB04CC1A4AF55A14F565* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -9994,6 +10129,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t9FCF421D436E7388FC34EB04CC1A4AF55A14F565* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -10034,6 +10170,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m0030D0B8AB9E107228FCD8
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t5F612094EFD165ACA0CAF9E2CA18AC945F813FA6* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -10058,6 +10195,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m8F9664867C424EB77EE
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t5F612094EFD165ACA0CAF9E2CA18AC945F813FA6* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -10072,13 +10210,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m8F9664867C424EB77EE
 IL_001a:
 	{
 		Dictionary_2_t5F612094EFD165ACA0CAF9E2CA18AC945F813FA6* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t009CED360A2FA018311DE3955CB56CDE40CBBBA5* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t087349F3AE170AB56B4363B52E225A982E89F930* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -10121,6 +10261,7 @@ IL_005e:
 	{
 		int32_t L_15 = __this->____index;
 		Dictionary_2_t5F612094EFD165ACA0CAF9E2CA18AC945F813FA6* L_16 = __this->____dictionary;
+		NullCheck(L_16);
 		int32_t L_17 = L_16->____count;
 		if ((!(((uint32_t)L_15) >= ((uint32_t)L_17))))
 		{
@@ -10129,6 +10270,7 @@ IL_005e:
 	}
 	{
 		Dictionary_2_t5F612094EFD165ACA0CAF9E2CA18AC945F813FA6* L_18 = __this->____dictionary;
+		NullCheck(L_18);
 		int32_t L_19 = L_18->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_19, 1));
 		KeyValuePair_2_t2C8DA491EB4B4335BCB54693DA03A350920AFB37* L_20 = (KeyValuePair_2_t2C8DA491EB4B4335BCB54693DA03A350920AFB37*)(&__this->____current);
@@ -10192,6 +10334,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t5F612094EFD165ACA0CAF9E2CA18AC945F813FA6* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -10261,6 +10404,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t5F612094EFD165ACA0CAF9E2CA18AC945F813FA6* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -10298,6 +10442,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DictionaryEntry_t171080F37B311C25AA9E75888F9C
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t5F612094EFD165ACA0CAF9E2CA18AC945F813FA6* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -10349,6 +10494,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t5F612094EFD165ACA0CAF9E2CA18AC945F813FA6* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -10392,6 +10538,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t5F612094EFD165ACA0CAF9E2CA18AC945F813FA6* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -10438,6 +10585,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mED0CC768692DEF06C46425
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t5F612094EFD165ACA0CAF9E2CA18AC945F813FA6* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -10473,6 +10621,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mDFA72E6F5DD8E255E6E
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t5F612094EFD165ACA0CAF9E2CA18AC945F813FA6* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -10487,13 +10636,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mDFA72E6F5DD8E255E6E
 IL_001a:
 	{
 		Dictionary_2_t5F612094EFD165ACA0CAF9E2CA18AC945F813FA6* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t009CED360A2FA018311DE3955CB56CDE40CBBBA5* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t087349F3AE170AB56B4363B52E225A982E89F930* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -10513,6 +10664,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t5F612094EFD165ACA0CAF9E2CA18AC945F813FA6* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -10521,6 +10673,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t5F612094EFD165ACA0CAF9E2CA18AC945F813FA6* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		ValueTuple_2_tBC19AE73793D615D180F320AB46A541EF61AFBF9* L_17 = (ValueTuple_2_tBC19AE73793D615D180F320AB46A541EF61AFBF9*)(&__this->____currentKey);
@@ -10565,6 +10718,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t5F612094EFD165ACA0CAF9E2CA18AC945F813FA6* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -10599,6 +10753,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t5F612094EFD165ACA0CAF9E2CA18AC945F813FA6* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -10639,6 +10794,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m8A2CBE0CFFF81F4F88A60F
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t5F612094EFD165ACA0CAF9E2CA18AC945F813FA6* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -10674,6 +10830,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m8D4D7C15E0EDF1BD29B
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t5F612094EFD165ACA0CAF9E2CA18AC945F813FA6* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -10688,13 +10845,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m8D4D7C15E0EDF1BD29B
 IL_001a:
 	{
 		Dictionary_2_t5F612094EFD165ACA0CAF9E2CA18AC945F813FA6* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t009CED360A2FA018311DE3955CB56CDE40CBBBA5* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t087349F3AE170AB56B4363B52E225A982E89F930* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -10729,6 +10888,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t5F612094EFD165ACA0CAF9E2CA18AC945F813FA6* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -10737,6 +10897,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t5F612094EFD165ACA0CAF9E2CA18AC945F813FA6* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		EnumData_tB9520C9179D9D6C57B2BF70E76FE4EB4DC94A6F8* L_17 = (EnumData_tB9520C9179D9D6C57B2BF70E76FE4EB4DC94A6F8*)(&__this->____currentValue);
@@ -10781,6 +10942,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t5F612094EFD165ACA0CAF9E2CA18AC945F813FA6* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -10815,6 +10977,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t5F612094EFD165ACA0CAF9E2CA18AC945F813FA6* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -10855,6 +11018,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m283889D2E2926F56ECD2EE
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t75B3851683946D9E81C88EB6AE173C2857737B27* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -10879,6 +11043,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m7BE9604BF9CD6F4D32D
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t75B3851683946D9E81C88EB6AE173C2857737B27* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -10893,13 +11058,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m7BE9604BF9CD6F4D32D
 IL_001a:
 	{
 		Dictionary_2_t75B3851683946D9E81C88EB6AE173C2857737B27* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t520AA07AED73E0A49370ECDF320E581859F860A9* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t9E54CCBCBF389A3EB228FFF39B2963CCB6661448* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -10930,6 +11097,7 @@ IL_005e:
 	{
 		int32_t L_15 = __this->____index;
 		Dictionary_2_t75B3851683946D9E81C88EB6AE173C2857737B27* L_16 = __this->____dictionary;
+		NullCheck(L_16);
 		int32_t L_17 = L_16->____count;
 		if ((!(((uint32_t)L_15) >= ((uint32_t)L_17))))
 		{
@@ -10938,6 +11106,7 @@ IL_005e:
 	}
 	{
 		Dictionary_2_t75B3851683946D9E81C88EB6AE173C2857737B27* L_18 = __this->____dictionary;
+		NullCheck(L_18);
 		int32_t L_19 = L_18->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_19, 1));
 		KeyValuePair_2_t2A9D1B7DEBB99A68011F37B017FDD44CFE5AEC14* L_20 = (KeyValuePair_2_t2A9D1B7DEBB99A68011F37B017FDD44CFE5AEC14*)(&__this->____current);
@@ -11001,6 +11170,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t75B3851683946D9E81C88EB6AE173C2857737B27* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -11068,6 +11238,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t75B3851683946D9E81C88EB6AE173C2857737B27* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -11105,6 +11276,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DictionaryEntry_t171080F37B311C25AA9E75888F9C
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t75B3851683946D9E81C88EB6AE173C2857737B27* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -11154,6 +11326,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t75B3851683946D9E81C88EB6AE173C2857737B27* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -11197,6 +11370,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t75B3851683946D9E81C88EB6AE173C2857737B27* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -11241,6 +11415,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mD2D71C2EA14663A1ED9290
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t75B3851683946D9E81C88EB6AE173C2857737B27* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -11276,6 +11451,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m8B671913D4711276B92
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t75B3851683946D9E81C88EB6AE173C2857737B27* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -11290,13 +11466,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m8B671913D4711276B92
 IL_001a:
 	{
 		Dictionary_2_t75B3851683946D9E81C88EB6AE173C2857737B27* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t520AA07AED73E0A49370ECDF320E581859F860A9* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t9E54CCBCBF389A3EB228FFF39B2963CCB6661448* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -11319,6 +11497,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t75B3851683946D9E81C88EB6AE173C2857737B27* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -11327,6 +11506,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t75B3851683946D9E81C88EB6AE173C2857737B27* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		ValueTuple_2_tC3717D4552EE1E5FC27BFBA3F5155741BC04557A* L_17 = (ValueTuple_2_tC3717D4552EE1E5FC27BFBA3F5155741BC04557A*)(&__this->____currentKey);
@@ -11371,6 +11551,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t75B3851683946D9E81C88EB6AE173C2857737B27* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -11405,6 +11586,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t75B3851683946D9E81C88EB6AE173C2857737B27* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -11445,6 +11627,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mF81E61316A0FA35C1FBD90
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t75B3851683946D9E81C88EB6AE173C2857737B27* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -11480,6 +11663,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m74BB70C3C825886B25F
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t75B3851683946D9E81C88EB6AE173C2857737B27* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -11494,13 +11678,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m74BB70C3C825886B25F
 IL_001a:
 	{
 		Dictionary_2_t75B3851683946D9E81C88EB6AE173C2857737B27* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t520AA07AED73E0A49370ECDF320E581859F860A9* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t9E54CCBCBF389A3EB228FFF39B2963CCB6661448* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -11520,6 +11706,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t75B3851683946D9E81C88EB6AE173C2857737B27* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -11528,6 +11715,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t75B3851683946D9E81C88EB6AE173C2857737B27* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		RuntimeObject** L_17 = (RuntimeObject**)(&__this->____currentValue);
@@ -11572,6 +11760,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t75B3851683946D9E81C88EB6AE173C2857737B27* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -11604,6 +11793,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t75B3851683946D9E81C88EB6AE173C2857737B27* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -11644,6 +11834,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m31B9A15C37D5A017654810
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t4D7978E5F7E236382AF32684305AC72452D49043* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -11668,6 +11859,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mB2E74C1C7A8563174F8
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t4D7978E5F7E236382AF32684305AC72452D49043* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -11682,13 +11874,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mB2E74C1C7A8563174F8
 IL_001a:
 	{
 		Dictionary_2_t4D7978E5F7E236382AF32684305AC72452D49043* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t103180204D286AA5897443F7674A3782622F8744* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t36D828B685CBBFA5F4D6FBBA12A076C10A21AB3C* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -11712,6 +11906,7 @@ IL_005e:
 	{
 		int32_t L_15 = __this->____index;
 		Dictionary_2_t4D7978E5F7E236382AF32684305AC72452D49043* L_16 = __this->____dictionary;
+		NullCheck(L_16);
 		int32_t L_17 = L_16->____count;
 		if ((!(((uint32_t)L_15) >= ((uint32_t)L_17))))
 		{
@@ -11720,6 +11915,7 @@ IL_005e:
 	}
 	{
 		Dictionary_2_t4D7978E5F7E236382AF32684305AC72452D49043* L_18 = __this->____dictionary;
+		NullCheck(L_18);
 		int32_t L_19 = L_18->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_19, 1));
 		KeyValuePair_2_tE3EA5100FA35C94F54D8D5F93B806E7614C34DBD* L_20 = (KeyValuePair_2_tE3EA5100FA35C94F54D8D5F93B806E7614C34DBD*)(&__this->____current);
@@ -11783,6 +11979,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t4D7978E5F7E236382AF32684305AC72452D49043* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -11852,6 +12049,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t4D7978E5F7E236382AF32684305AC72452D49043* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -11889,6 +12087,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DictionaryEntry_t171080F37B311C25AA9E75888F9C
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t4D7978E5F7E236382AF32684305AC72452D49043* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -11940,6 +12139,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t4D7978E5F7E236382AF32684305AC72452D49043* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -11983,6 +12183,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t4D7978E5F7E236382AF32684305AC72452D49043* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -12029,6 +12230,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m33D753B9AEBFEC047CA598
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t4D7978E5F7E236382AF32684305AC72452D49043* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -12064,6 +12266,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m0F90849131BD8E59B82
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t4D7978E5F7E236382AF32684305AC72452D49043* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -12078,13 +12281,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m0F90849131BD8E59B82
 IL_001a:
 	{
 		Dictionary_2_t4D7978E5F7E236382AF32684305AC72452D49043* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t103180204D286AA5897443F7674A3782622F8744* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t36D828B685CBBFA5F4D6FBBA12A076C10A21AB3C* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -12103,6 +12308,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t4D7978E5F7E236382AF32684305AC72452D49043* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -12111,6 +12317,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t4D7978E5F7E236382AF32684305AC72452D49043* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		int32_t* L_17 = (int32_t*)(&__this->____currentKey);
@@ -12155,6 +12362,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t4D7978E5F7E236382AF32684305AC72452D49043* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -12189,6 +12397,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t4D7978E5F7E236382AF32684305AC72452D49043* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -12229,6 +12438,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m0BB51B95C5D841105553EB
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t4D7978E5F7E236382AF32684305AC72452D49043* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -12264,6 +12474,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mD601C717132473605D8
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t4D7978E5F7E236382AF32684305AC72452D49043* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -12278,13 +12489,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mD601C717132473605D8
 IL_001a:
 	{
 		Dictionary_2_t4D7978E5F7E236382AF32684305AC72452D49043* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t103180204D286AA5897443F7674A3782622F8744* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t36D828B685CBBFA5F4D6FBBA12A076C10A21AB3C* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -12303,6 +12516,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t4D7978E5F7E236382AF32684305AC72452D49043* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -12311,6 +12525,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t4D7978E5F7E236382AF32684305AC72452D49043* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		ContentHeightCacheInfo_tA616347D46981FC5684B6268FC7035C431E99FBC* L_17 = (ContentHeightCacheInfo_tA616347D46981FC5684B6268FC7035C431E99FBC*)(&__this->____currentValue);
@@ -12355,6 +12570,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t4D7978E5F7E236382AF32684305AC72452D49043* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -12389,6 +12605,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t4D7978E5F7E236382AF32684305AC72452D49043* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -12429,6 +12646,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m05BF5395EAD892FD0CB4F3
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_tC44035903CD447F30151D3470629A0598D22856F* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -12453,6 +12671,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mEED7705700C78431A53
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tC44035903CD447F30151D3470629A0598D22856F* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -12467,13 +12686,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mEED7705700C78431A53
 IL_001a:
 	{
 		Dictionary_2_tC44035903CD447F30151D3470629A0598D22856F* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_tD89AF257A311DB3C41DA1BEE9D8F0B2E5EA7E86E* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t3C43C931209AE339471E46F5C5C78DFFAD543BC9* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -12501,6 +12722,7 @@ IL_005e:
 	{
 		int32_t L_15 = __this->____index;
 		Dictionary_2_tC44035903CD447F30151D3470629A0598D22856F* L_16 = __this->____dictionary;
+		NullCheck(L_16);
 		int32_t L_17 = L_16->____count;
 		if ((!(((uint32_t)L_15) >= ((uint32_t)L_17))))
 		{
@@ -12509,6 +12731,7 @@ IL_005e:
 	}
 	{
 		Dictionary_2_tC44035903CD447F30151D3470629A0598D22856F* L_18 = __this->____dictionary;
+		NullCheck(L_18);
 		int32_t L_19 = L_18->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_19, 1));
 		KeyValuePair_2_tCA9456FCC0FBD03E0C9FF69F0B168B558FD2A5ED* L_20 = (KeyValuePair_2_tCA9456FCC0FBD03E0C9FF69F0B168B558FD2A5ED*)(&__this->____current);
@@ -12572,6 +12795,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tC44035903CD447F30151D3470629A0598D22856F* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -12641,6 +12865,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tC44035903CD447F30151D3470629A0598D22856F* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -12678,6 +12903,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DictionaryEntry_t171080F37B311C25AA9E75888F9C
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tC44035903CD447F30151D3470629A0598D22856F* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -12729,6 +12955,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tC44035903CD447F30151D3470629A0598D22856F* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -12772,6 +12999,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tC44035903CD447F30151D3470629A0598D22856F* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -12818,6 +13046,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m568EF65BFD852301F36757
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_tC44035903CD447F30151D3470629A0598D22856F* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -12853,6 +13082,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mECFBE350F8C2FD44C3C
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tC44035903CD447F30151D3470629A0598D22856F* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -12867,13 +13097,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mECFBE350F8C2FD44C3C
 IL_001a:
 	{
 		Dictionary_2_tC44035903CD447F30151D3470629A0598D22856F* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_tD89AF257A311DB3C41DA1BEE9D8F0B2E5EA7E86E* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t3C43C931209AE339471E46F5C5C78DFFAD543BC9* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -12892,6 +13124,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_tC44035903CD447F30151D3470629A0598D22856F* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -12900,6 +13133,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_tC44035903CD447F30151D3470629A0598D22856F* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		int32_t* L_17 = (int32_t*)(&__this->____currentKey);
@@ -12944,6 +13178,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tC44035903CD447F30151D3470629A0598D22856F* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -12978,6 +13213,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tC44035903CD447F30151D3470629A0598D22856F* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -13018,6 +13254,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m0529CD6B08DB0B2C375BBC
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_tC44035903CD447F30151D3470629A0598D22856F* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -13053,6 +13290,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mEC57B2B004E47DA7973
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tC44035903CD447F30151D3470629A0598D22856F* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -13067,13 +13305,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mEC57B2B004E47DA7973
 IL_001a:
 	{
 		Dictionary_2_tC44035903CD447F30151D3470629A0598D22856F* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_tD89AF257A311DB3C41DA1BEE9D8F0B2E5EA7E86E* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t3C43C931209AE339471E46F5C5C78DFFAD543BC9* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -13096,6 +13336,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_tC44035903CD447F30151D3470629A0598D22856F* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -13104,6 +13345,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_tC44035903CD447F30151D3470629A0598D22856F* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		TreeViewItemData_1_t95D9721135F40D0DB3D221F8EB2543C396D350F4* L_17 = (TreeViewItemData_1_t95D9721135F40D0DB3D221F8EB2543C396D350F4*)(&__this->____currentValue);
@@ -13148,6 +13390,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tC44035903CD447F30151D3470629A0598D22856F* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -13182,6 +13425,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tC44035903CD447F30151D3470629A0598D22856F* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -13222,6 +13466,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m2F677A930996556C63EB1D
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -13246,6 +13491,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mC322265B23F40A6C3A5
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -13260,13 +13506,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mC322265B23F40A6C3A5
 IL_001a:
 	{
 		Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t6E8F51999B5C2D1A5E09B1963CF042E7B5CAA500* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t740F919D5BA6D1FE201C58777E6EB966B35EE2EE* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -13290,6 +13538,7 @@ IL_005e:
 	{
 		int32_t L_15 = __this->____index;
 		Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* L_16 = __this->____dictionary;
+		NullCheck(L_16);
 		int32_t L_17 = L_16->____count;
 		if ((!(((uint32_t)L_15) >= ((uint32_t)L_17))))
 		{
@@ -13298,6 +13547,7 @@ IL_005e:
 	}
 	{
 		Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* L_18 = __this->____dictionary;
+		NullCheck(L_18);
 		int32_t L_19 = L_18->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_19, 1));
 		KeyValuePair_2_t0EAC8DA2D95957AFA60DD198D013622384C0D213* L_20 = (KeyValuePair_2_t0EAC8DA2D95957AFA60DD198D013622384C0D213*)(&__this->____current);
@@ -13361,6 +13611,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -13430,6 +13681,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -13467,6 +13719,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DictionaryEntry_t171080F37B311C25AA9E75888F9C
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -13518,6 +13771,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -13561,6 +13815,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -13607,6 +13862,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m7C7CBEC844A68EF014B486
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -13642,6 +13898,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m3510061248E41CD9B49
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -13656,13 +13913,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m3510061248E41CD9B49
 IL_001a:
 	{
 		Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t6E8F51999B5C2D1A5E09B1963CF042E7B5CAA500* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t740F919D5BA6D1FE201C58777E6EB966B35EE2EE* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -13681,6 +13940,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -13689,6 +13949,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		int32_t* L_17 = (int32_t*)(&__this->____currentKey);
@@ -13733,6 +13994,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -13767,6 +14029,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -13807,6 +14070,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m69D0E398C7CC1C4B2E95D7
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -13842,6 +14106,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mEF479CBD326611FE6A7
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -13856,13 +14121,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mEF479CBD326611FE6A7
 IL_001a:
 	{
 		Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t6E8F51999B5C2D1A5E09B1963CF042E7B5CAA500* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t740F919D5BA6D1FE201C58777E6EB966B35EE2EE* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -13881,6 +14148,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -13889,6 +14157,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		bool* L_17 = (bool*)(&__this->____currentValue);
@@ -13933,6 +14202,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -13967,6 +14237,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -14007,6 +14278,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m06C5648CD941BE733FD754
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t760E9A9490B53715AE11CA76450386C19A39A0C8* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -14031,6 +14303,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m3EB0EC6DDC6E5F00952
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t760E9A9490B53715AE11CA76450386C19A39A0C8* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -14045,13 +14318,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m3EB0EC6DDC6E5F00952
 IL_001a:
 	{
 		Dictionary_2_t760E9A9490B53715AE11CA76450386C19A39A0C8* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t74939D41FA6DAF2CD4F7462D8AD016D48B99B8B7* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t5A1DD43C826878A3853C7DF32E971C3D19805227* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -14075,6 +14350,7 @@ IL_005e:
 	{
 		int32_t L_15 = __this->____index;
 		Dictionary_2_t760E9A9490B53715AE11CA76450386C19A39A0C8* L_16 = __this->____dictionary;
+		NullCheck(L_16);
 		int32_t L_17 = L_16->____count;
 		if ((!(((uint32_t)L_15) >= ((uint32_t)L_17))))
 		{
@@ -14083,6 +14359,7 @@ IL_005e:
 	}
 	{
 		Dictionary_2_t760E9A9490B53715AE11CA76450386C19A39A0C8* L_18 = __this->____dictionary;
+		NullCheck(L_18);
 		int32_t L_19 = L_18->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_19, 1));
 		KeyValuePair_2_t25871D01DA51BBB8CEF1F27E727B5D3A545FD4EF* L_20 = (KeyValuePair_2_t25871D01DA51BBB8CEF1F27E727B5D3A545FD4EF*)(&__this->____current);
@@ -14146,6 +14423,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t760E9A9490B53715AE11CA76450386C19A39A0C8* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -14215,6 +14493,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t760E9A9490B53715AE11CA76450386C19A39A0C8* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -14252,6 +14531,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DictionaryEntry_t171080F37B311C25AA9E75888F9C
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t760E9A9490B53715AE11CA76450386C19A39A0C8* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -14303,6 +14583,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t760E9A9490B53715AE11CA76450386C19A39A0C8* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -14346,6 +14627,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t760E9A9490B53715AE11CA76450386C19A39A0C8* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -14392,6 +14674,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m52D2A7C97D84DD1244D775
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t760E9A9490B53715AE11CA76450386C19A39A0C8* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -14427,6 +14710,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m131DDD9F2C18BBF5E1C
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t760E9A9490B53715AE11CA76450386C19A39A0C8* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -14441,13 +14725,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m131DDD9F2C18BBF5E1C
 IL_001a:
 	{
 		Dictionary_2_t760E9A9490B53715AE11CA76450386C19A39A0C8* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t74939D41FA6DAF2CD4F7462D8AD016D48B99B8B7* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t5A1DD43C826878A3853C7DF32E971C3D19805227* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -14466,6 +14752,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t760E9A9490B53715AE11CA76450386C19A39A0C8* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -14474,6 +14761,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t760E9A9490B53715AE11CA76450386C19A39A0C8* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		int32_t* L_17 = (int32_t*)(&__this->____currentKey);
@@ -14518,6 +14806,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t760E9A9490B53715AE11CA76450386C19A39A0C8* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -14552,6 +14841,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t760E9A9490B53715AE11CA76450386C19A39A0C8* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -14592,6 +14882,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m2737D2AB09E26B6B101096
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t760E9A9490B53715AE11CA76450386C19A39A0C8* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -14627,6 +14918,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m83D942326E3D8CFD778
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t760E9A9490B53715AE11CA76450386C19A39A0C8* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -14641,13 +14933,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m83D942326E3D8CFD778
 IL_001a:
 	{
 		Dictionary_2_t760E9A9490B53715AE11CA76450386C19A39A0C8* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t74939D41FA6DAF2CD4F7462D8AD016D48B99B8B7* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t5A1DD43C826878A3853C7DF32E971C3D19805227* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -14666,6 +14960,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t760E9A9490B53715AE11CA76450386C19A39A0C8* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -14674,6 +14969,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t760E9A9490B53715AE11CA76450386C19A39A0C8* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		Il2CppChar* L_17 = (Il2CppChar*)(&__this->____currentValue);
@@ -14718,6 +15014,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t760E9A9490B53715AE11CA76450386C19A39A0C8* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -14752,6 +15049,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t760E9A9490B53715AE11CA76450386C19A39A0C8* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -14792,6 +15090,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m280A079EDB4B0B6DD21D3B
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -14816,6 +15115,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mB3209CB4B6378CF044D
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -14830,13 +15130,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mB3209CB4B6378CF044D
 IL_001a:
 	{
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t197C691F43F1694B771BF83C278D12BBFEEB86FA* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_tA212E7034D981AC2F7E219C600769EE485919684* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -14860,6 +15162,7 @@ IL_005e:
 	{
 		int32_t L_15 = __this->____index;
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_16 = __this->____dictionary;
+		NullCheck(L_16);
 		int32_t L_17 = L_16->____count;
 		if ((!(((uint32_t)L_15) >= ((uint32_t)L_17))))
 		{
@@ -14868,6 +15171,7 @@ IL_005e:
 	}
 	{
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_18 = __this->____dictionary;
+		NullCheck(L_18);
 		int32_t L_19 = L_18->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_19, 1));
 		KeyValuePair_2_tA6BE5EEAC56CB97CB7383FCC3CC6C84FAF129189* L_20 = (KeyValuePair_2_tA6BE5EEAC56CB97CB7383FCC3CC6C84FAF129189*)(&__this->____current);
@@ -14931,6 +15235,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -15000,6 +15305,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -15037,6 +15343,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DictionaryEntry_t171080F37B311C25AA9E75888F9C
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -15088,6 +15395,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -15131,6 +15439,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -15177,6 +15486,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mCD7E2F050B9CB33900EC34
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -15212,6 +15522,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m33B09ABC5C101FB5F54
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -15226,13 +15537,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m33B09ABC5C101FB5F54
 IL_001a:
 	{
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t197C691F43F1694B771BF83C278D12BBFEEB86FA* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_tA212E7034D981AC2F7E219C600769EE485919684* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -15251,6 +15564,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -15259,6 +15573,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		int32_t* L_17 = (int32_t*)(&__this->____currentKey);
@@ -15303,6 +15618,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -15337,6 +15653,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -15377,6 +15694,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mD73A2DA210A1BF97118DAE
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -15412,6 +15730,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m34E181EAEBD64C829B1
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -15426,13 +15745,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m34E181EAEBD64C829B1
 IL_001a:
 	{
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t197C691F43F1694B771BF83C278D12BBFEEB86FA* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_tA212E7034D981AC2F7E219C600769EE485919684* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -15451,6 +15772,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -15459,6 +15781,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		int32_t* L_17 = (int32_t*)(&__this->____currentValue);
@@ -15503,6 +15826,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -15537,6 +15861,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -15577,6 +15902,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mBCB2AA5BAC4B6C6A254262
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t3082339123A235665A1142FCA16B1B8BB2D63735* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -15601,6 +15927,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mBB8F84D9EFE7D64D626
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t3082339123A235665A1142FCA16B1B8BB2D63735* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -15615,13 +15942,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mBB8F84D9EFE7D64D626
 IL_001a:
 	{
 		Dictionary_2_t3082339123A235665A1142FCA16B1B8BB2D63735* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t19CA95B544EBD9F254D17342F41A7F9203BB2515* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t4F374F13C9422AE969BA033893F5B076AEE88131* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -15645,6 +15974,7 @@ IL_005e:
 	{
 		int32_t L_15 = __this->____index;
 		Dictionary_2_t3082339123A235665A1142FCA16B1B8BB2D63735* L_16 = __this->____dictionary;
+		NullCheck(L_16);
 		int32_t L_17 = L_16->____count;
 		if ((!(((uint32_t)L_15) >= ((uint32_t)L_17))))
 		{
@@ -15653,6 +15983,7 @@ IL_005e:
 	}
 	{
 		Dictionary_2_t3082339123A235665A1142FCA16B1B8BB2D63735* L_18 = __this->____dictionary;
+		NullCheck(L_18);
 		int32_t L_19 = L_18->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_19, 1));
 		KeyValuePair_2_t90B506CAD143B28FB88CA6965C9B35679F8F9678* L_20 = (KeyValuePair_2_t90B506CAD143B28FB88CA6965C9B35679F8F9678*)(&__this->____current);
@@ -15716,6 +16047,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t3082339123A235665A1142FCA16B1B8BB2D63735* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -15785,6 +16117,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t3082339123A235665A1142FCA16B1B8BB2D63735* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -15822,6 +16155,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DictionaryEntry_t171080F37B311C25AA9E75888F9C
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t3082339123A235665A1142FCA16B1B8BB2D63735* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -15873,6 +16207,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t3082339123A235665A1142FCA16B1B8BB2D63735* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -15916,6 +16251,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t3082339123A235665A1142FCA16B1B8BB2D63735* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -15962,6 +16298,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mE3E19748F4268CF5EEC487
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t3082339123A235665A1142FCA16B1B8BB2D63735* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -15997,6 +16334,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m16A29F2DD809A30A483
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t3082339123A235665A1142FCA16B1B8BB2D63735* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -16011,13 +16349,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m16A29F2DD809A30A483
 IL_001a:
 	{
 		Dictionary_2_t3082339123A235665A1142FCA16B1B8BB2D63735* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t19CA95B544EBD9F254D17342F41A7F9203BB2515* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t4F374F13C9422AE969BA033893F5B076AEE88131* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -16036,6 +16376,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t3082339123A235665A1142FCA16B1B8BB2D63735* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -16044,6 +16385,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t3082339123A235665A1142FCA16B1B8BB2D63735* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		int32_t* L_17 = (int32_t*)(&__this->____currentKey);
@@ -16088,6 +16430,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t3082339123A235665A1142FCA16B1B8BB2D63735* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -16122,6 +16465,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t3082339123A235665A1142FCA16B1B8BB2D63735* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -16162,6 +16506,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m79AD5C211EA2F3EA716138
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t3082339123A235665A1142FCA16B1B8BB2D63735* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -16197,6 +16542,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m915135CC2C04D7A8366
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t3082339123A235665A1142FCA16B1B8BB2D63735* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -16211,13 +16557,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m915135CC2C04D7A8366
 IL_001a:
 	{
 		Dictionary_2_t3082339123A235665A1142FCA16B1B8BB2D63735* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t19CA95B544EBD9F254D17342F41A7F9203BB2515* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t4F374F13C9422AE969BA033893F5B076AEE88131* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -16236,6 +16584,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t3082339123A235665A1142FCA16B1B8BB2D63735* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -16244,6 +16593,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t3082339123A235665A1142FCA16B1B8BB2D63735* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		int64_t* L_17 = (int64_t*)(&__this->____currentValue);
@@ -16288,6 +16638,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t3082339123A235665A1142FCA16B1B8BB2D63735* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -16322,6 +16673,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t3082339123A235665A1142FCA16B1B8BB2D63735* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -16362,6 +16714,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mB3F797DCBDE117922668AA
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -16386,6 +16739,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m4DC143BC57F14EDD85A
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -16400,13 +16754,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m4DC143BC57F14EDD85A
 IL_001a:
 	{
 		Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_tFE752FEFBBCDEA0ABFB46556A567D61EFF176FD1* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t59E90724C756CA6F3F5F5B2D04D9E6A4FDDFC339* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -16431,6 +16787,7 @@ IL_005e:
 	{
 		int32_t L_15 = __this->____index;
 		Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* L_16 = __this->____dictionary;
+		NullCheck(L_16);
 		int32_t L_17 = L_16->____count;
 		if ((!(((uint32_t)L_15) >= ((uint32_t)L_17))))
 		{
@@ -16439,6 +16796,7 @@ IL_005e:
 	}
 	{
 		Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* L_18 = __this->____dictionary;
+		NullCheck(L_18);
 		int32_t L_19 = L_18->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_19, 1));
 		KeyValuePair_2_tDC26B09C26BA829DDE331BCB6AF7C508C763D7A3* L_20 = (KeyValuePair_2_tDC26B09C26BA829DDE331BCB6AF7C508C763D7A3*)(&__this->____current);
@@ -16502,6 +16860,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -16569,6 +16928,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -16606,6 +16966,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DictionaryEntry_t171080F37B311C25AA9E75888F9C
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -16655,6 +17016,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -16698,6 +17060,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -16742,6 +17105,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m450DC1EA0F7F9A9C52FAA4
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -16777,6 +17141,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m82EDDA07CB5C5189F87
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -16791,13 +17156,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m82EDDA07CB5C5189F87
 IL_001a:
 	{
 		Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_tFE752FEFBBCDEA0ABFB46556A567D61EFF176FD1* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t59E90724C756CA6F3F5F5B2D04D9E6A4FDDFC339* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -16816,6 +17183,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -16824,6 +17192,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		int32_t* L_17 = (int32_t*)(&__this->____currentKey);
@@ -16868,6 +17237,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -16902,6 +17272,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -16942,6 +17313,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m029B00CF03DC6E7BFD5F78
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -16977,6 +17349,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mF45CB0E0D7475963B61
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -16991,13 +17364,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mF45CB0E0D7475963B61
 IL_001a:
 	{
 		Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_tFE752FEFBBCDEA0ABFB46556A567D61EFF176FD1* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t59E90724C756CA6F3F5F5B2D04D9E6A4FDDFC339* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -17017,6 +17392,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -17025,6 +17401,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		RuntimeObject** L_17 = (RuntimeObject**)(&__this->____currentValue);
@@ -17069,6 +17446,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -17101,6 +17479,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -17141,6 +17520,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m7414C839B4B4DBF67BE33C
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t325E0994DB9C0744932C602369C10E8ED56E7FF6* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -17165,6 +17545,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m8128B56B2D50BF0FFE8
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t325E0994DB9C0744932C602369C10E8ED56E7FF6* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -17179,13 +17560,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m8128B56B2D50BF0FFE8
 IL_001a:
 	{
 		Dictionary_2_t325E0994DB9C0744932C602369C10E8ED56E7FF6* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t5CF00908077AFA23116F9781751B67DCBF590D7B* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t7CE9E7B40ACCEAB7712065D95D28EEF626D8DABC* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -17209,6 +17592,7 @@ IL_005e:
 	{
 		int32_t L_15 = __this->____index;
 		Dictionary_2_t325E0994DB9C0744932C602369C10E8ED56E7FF6* L_16 = __this->____dictionary;
+		NullCheck(L_16);
 		int32_t L_17 = L_16->____count;
 		if ((!(((uint32_t)L_15) >= ((uint32_t)L_17))))
 		{
@@ -17217,6 +17601,7 @@ IL_005e:
 	}
 	{
 		Dictionary_2_t325E0994DB9C0744932C602369C10E8ED56E7FF6* L_18 = __this->____dictionary;
+		NullCheck(L_18);
 		int32_t L_19 = L_18->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_19, 1));
 		KeyValuePair_2_tC3F888EEED334B1047E7634B9B9440158BAFA362* L_20 = (KeyValuePair_2_tC3F888EEED334B1047E7634B9B9440158BAFA362*)(&__this->____current);
@@ -17280,6 +17665,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t325E0994DB9C0744932C602369C10E8ED56E7FF6* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -17349,6 +17735,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t325E0994DB9C0744932C602369C10E8ED56E7FF6* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -17386,6 +17773,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DictionaryEntry_t171080F37B311C25AA9E75888F9C
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t325E0994DB9C0744932C602369C10E8ED56E7FF6* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -17437,6 +17825,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t325E0994DB9C0744932C602369C10E8ED56E7FF6* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -17480,6 +17869,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t325E0994DB9C0744932C602369C10E8ED56E7FF6* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -17526,6 +17916,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m8373AE294030F37921B865
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t325E0994DB9C0744932C602369C10E8ED56E7FF6* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -17561,6 +17952,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m52FC061BF09FD897ADE
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t325E0994DB9C0744932C602369C10E8ED56E7FF6* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -17575,13 +17967,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m52FC061BF09FD897ADE
 IL_001a:
 	{
 		Dictionary_2_t325E0994DB9C0744932C602369C10E8ED56E7FF6* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t5CF00908077AFA23116F9781751B67DCBF590D7B* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t7CE9E7B40ACCEAB7712065D95D28EEF626D8DABC* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -17600,6 +17994,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t325E0994DB9C0744932C602369C10E8ED56E7FF6* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -17608,6 +18003,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t325E0994DB9C0744932C602369C10E8ED56E7FF6* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		int32_t* L_17 = (int32_t*)(&__this->____currentKey);
@@ -17652,6 +18048,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t325E0994DB9C0744932C602369C10E8ED56E7FF6* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -17686,6 +18083,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t325E0994DB9C0744932C602369C10E8ED56E7FF6* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -17726,6 +18124,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mB85D32B4090050570130CE
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t325E0994DB9C0744932C602369C10E8ED56E7FF6* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -17761,6 +18160,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mF8A0C67A1CC8DEFBC93
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t325E0994DB9C0744932C602369C10E8ED56E7FF6* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -17775,13 +18175,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mF8A0C67A1CC8DEFBC93
 IL_001a:
 	{
 		Dictionary_2_t325E0994DB9C0744932C602369C10E8ED56E7FF6* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t5CF00908077AFA23116F9781751B67DCBF590D7B* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t7CE9E7B40ACCEAB7712065D95D28EEF626D8DABC* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -17800,6 +18202,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t325E0994DB9C0744932C602369C10E8ED56E7FF6* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -17808,6 +18211,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t325E0994DB9C0744932C602369C10E8ED56E7FF6* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		RenderInstancedDataLayout_t06AF33510AC89DBD09A3A161FF809EDFAB30EC7A* L_17 = (RenderInstancedDataLayout_t06AF33510AC89DBD09A3A161FF809EDFAB30EC7A*)(&__this->____currentValue);
@@ -17852,6 +18256,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t325E0994DB9C0744932C602369C10E8ED56E7FF6* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -17886,6 +18291,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t325E0994DB9C0744932C602369C10E8ED56E7FF6* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -17926,6 +18332,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m0AE7871090980D8BB0A3BC
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -17950,6 +18357,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m73738B400C6CDD4858B
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -17964,13 +18372,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m73738B400C6CDD4858B
 IL_001a:
 	{
 		Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t073FACA530F2690A9E997B1617C81029BBC8FD2C* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t532FECF491646E3372F9D145FEC277E0C5089CBC* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -17994,6 +18404,7 @@ IL_005e:
 	{
 		int32_t L_15 = __this->____index;
 		Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC* L_16 = __this->____dictionary;
+		NullCheck(L_16);
 		int32_t L_17 = L_16->____count;
 		if ((!(((uint32_t)L_15) >= ((uint32_t)L_17))))
 		{
@@ -18002,6 +18413,7 @@ IL_005e:
 	}
 	{
 		Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC* L_18 = __this->____dictionary;
+		NullCheck(L_18);
 		int32_t L_19 = L_18->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_19, 1));
 		KeyValuePair_2_t891D449DA189ED572EFC0E4457FE9D980AF86555* L_20 = (KeyValuePair_2_t891D449DA189ED572EFC0E4457FE9D980AF86555*)(&__this->____current);
@@ -18065,6 +18477,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -18134,6 +18547,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -18171,6 +18585,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DictionaryEntry_t171080F37B311C25AA9E75888F9C
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -18222,6 +18637,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -18265,6 +18681,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -18311,6 +18728,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m046282169B24B32E669D02
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -18346,6 +18764,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m66C3A3D1561D8BACDAA
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -18360,13 +18779,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m66C3A3D1561D8BACDAA
 IL_001a:
 	{
 		Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t073FACA530F2690A9E997B1617C81029BBC8FD2C* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t532FECF491646E3372F9D145FEC277E0C5089CBC* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -18385,6 +18806,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -18393,6 +18815,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		int32_t* L_17 = (int32_t*)(&__this->____currentKey);
@@ -18437,6 +18860,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -18471,6 +18895,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -18511,6 +18936,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m20883EBDF8B233D9F79435
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -18546,6 +18972,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m7CF286384DDFC5E2E9D
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -18560,13 +18987,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m7CF286384DDFC5E2E9D
 IL_001a:
 	{
 		Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t073FACA530F2690A9E997B1617C81029BBC8FD2C* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t532FECF491646E3372F9D145FEC277E0C5089CBC* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -18585,6 +19014,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -18593,6 +19023,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		float* L_17 = (float*)(&__this->____currentValue);
@@ -18637,6 +19068,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -18671,6 +19103,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t17BB14695909F39BA5B9F9F51F527D09419C12FC* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -18711,6 +19144,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m27D7D5892978C38A56251F
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_tBA28DDE9EBD7869B2D9C725CB660A33231C09054* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -18735,6 +19169,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mBF18EAA36197327D6F7
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tBA28DDE9EBD7869B2D9C725CB660A33231C09054* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -18749,13 +19184,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mBF18EAA36197327D6F7
 IL_001a:
 	{
 		Dictionary_2_tBA28DDE9EBD7869B2D9C725CB660A33231C09054* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_tAB3F6A4535D4446C00D5BB409CF38ADF253E977D* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t527DA100A303E999D54D4B92AEE950BC1015C30F* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -18780,6 +19217,7 @@ IL_005e:
 	{
 		int32_t L_15 = __this->____index;
 		Dictionary_2_tBA28DDE9EBD7869B2D9C725CB660A33231C09054* L_16 = __this->____dictionary;
+		NullCheck(L_16);
 		int32_t L_17 = L_16->____count;
 		if ((!(((uint32_t)L_15) >= ((uint32_t)L_17))))
 		{
@@ -18788,6 +19226,7 @@ IL_005e:
 	}
 	{
 		Dictionary_2_tBA28DDE9EBD7869B2D9C725CB660A33231C09054* L_18 = __this->____dictionary;
+		NullCheck(L_18);
 		int32_t L_19 = L_18->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_19, 1));
 		KeyValuePair_2_t98F7E0B9AD02F4112F295B7071F5EBC6DC519731* L_20 = (KeyValuePair_2_t98F7E0B9AD02F4112F295B7071F5EBC6DC519731*)(&__this->____current);
@@ -18851,6 +19290,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tBA28DDE9EBD7869B2D9C725CB660A33231C09054* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -18920,6 +19360,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tBA28DDE9EBD7869B2D9C725CB660A33231C09054* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -18957,6 +19398,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DictionaryEntry_t171080F37B311C25AA9E75888F9C
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tBA28DDE9EBD7869B2D9C725CB660A33231C09054* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -19008,6 +19450,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tBA28DDE9EBD7869B2D9C725CB660A33231C09054* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -19051,6 +19494,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tBA28DDE9EBD7869B2D9C725CB660A33231C09054* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -19097,6 +19541,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mD4037FC4D51012305E340F
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_tBA28DDE9EBD7869B2D9C725CB660A33231C09054* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -19132,6 +19577,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mD3AC3E03CE18DB68E4E
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tBA28DDE9EBD7869B2D9C725CB660A33231C09054* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -19146,13 +19592,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mD3AC3E03CE18DB68E4E
 IL_001a:
 	{
 		Dictionary_2_tBA28DDE9EBD7869B2D9C725CB660A33231C09054* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_tAB3F6A4535D4446C00D5BB409CF38ADF253E977D* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t527DA100A303E999D54D4B92AEE950BC1015C30F* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -19171,6 +19619,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_tBA28DDE9EBD7869B2D9C725CB660A33231C09054* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -19179,6 +19628,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_tBA28DDE9EBD7869B2D9C725CB660A33231C09054* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		int32_t* L_17 = (int32_t*)(&__this->____currentKey);
@@ -19223,6 +19673,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tBA28DDE9EBD7869B2D9C725CB660A33231C09054* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -19257,6 +19708,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tBA28DDE9EBD7869B2D9C725CB660A33231C09054* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -19297,6 +19749,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m85C563895C00FF50B5E1F4
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_tBA28DDE9EBD7869B2D9C725CB660A33231C09054* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -19332,6 +19785,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m8BB28E9C7D2C47A5F46
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tBA28DDE9EBD7869B2D9C725CB660A33231C09054* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -19346,13 +19800,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m8BB28E9C7D2C47A5F46
 IL_001a:
 	{
 		Dictionary_2_tBA28DDE9EBD7869B2D9C725CB660A33231C09054* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_tAB3F6A4535D4446C00D5BB409CF38ADF253E977D* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t527DA100A303E999D54D4B92AEE950BC1015C30F* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -19372,6 +19828,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_tBA28DDE9EBD7869B2D9C725CB660A33231C09054* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -19380,6 +19837,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_tBA28DDE9EBD7869B2D9C725CB660A33231C09054* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		TreeItem_t6B0F84E487FB869A51E1DA4987183127271F4F90* L_17 = (TreeItem_t6B0F84E487FB869A51E1DA4987183127271F4F90*)(&__this->____currentValue);
@@ -19424,6 +19882,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tBA28DDE9EBD7869B2D9C725CB660A33231C09054* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -19458,6 +19917,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tBA28DDE9EBD7869B2D9C725CB660A33231C09054* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -19498,6 +19958,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m098D43B30CB1AB1B3086C6
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t4661854F33069AF8662C1B28E9D53EC275B7F2AC* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -19522,6 +19983,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m6D17B8BD184AB0E88F0
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t4661854F33069AF8662C1B28E9D53EC275B7F2AC* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -19536,13 +19998,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m6D17B8BD184AB0E88F0
 IL_001a:
 	{
 		Dictionary_2_t4661854F33069AF8662C1B28E9D53EC275B7F2AC* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t727665A2CC38CE638F8690FEB5F840BD16C70658* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t4F0B35124785FD59A34054EADD56FBA4EAA12AEC* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -19573,6 +20037,7 @@ IL_005e:
 	{
 		int32_t L_15 = __this->____index;
 		Dictionary_2_t4661854F33069AF8662C1B28E9D53EC275B7F2AC* L_16 = __this->____dictionary;
+		NullCheck(L_16);
 		int32_t L_17 = L_16->____count;
 		if ((!(((uint32_t)L_15) >= ((uint32_t)L_17))))
 		{
@@ -19581,6 +20046,7 @@ IL_005e:
 	}
 	{
 		Dictionary_2_t4661854F33069AF8662C1B28E9D53EC275B7F2AC* L_18 = __this->____dictionary;
+		NullCheck(L_18);
 		int32_t L_19 = L_18->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_19, 1));
 		KeyValuePair_2_t16DBE67A85AC9FD03F718EA69A0A05079C893F14* L_20 = (KeyValuePair_2_t16DBE67A85AC9FD03F718EA69A0A05079C893F14*)(&__this->____current);
@@ -19644,6 +20110,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t4661854F33069AF8662C1B28E9D53EC275B7F2AC* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -19713,6 +20180,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t4661854F33069AF8662C1B28E9D53EC275B7F2AC* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -19750,6 +20218,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DictionaryEntry_t171080F37B311C25AA9E75888F9C
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t4661854F33069AF8662C1B28E9D53EC275B7F2AC* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -19801,6 +20270,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t4661854F33069AF8662C1B28E9D53EC275B7F2AC* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -19844,6 +20314,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t4661854F33069AF8662C1B28E9D53EC275B7F2AC* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -19890,6 +20361,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m8AC76E5059605A9FF050CC
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t4661854F33069AF8662C1B28E9D53EC275B7F2AC* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -19925,6 +20397,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m74966947B0C66E3D2C5
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t4661854F33069AF8662C1B28E9D53EC275B7F2AC* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -19939,13 +20412,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m74966947B0C66E3D2C5
 IL_001a:
 	{
 		Dictionary_2_t4661854F33069AF8662C1B28E9D53EC275B7F2AC* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t727665A2CC38CE638F8690FEB5F840BD16C70658* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t4F0B35124785FD59A34054EADD56FBA4EAA12AEC* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -19964,6 +20439,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t4661854F33069AF8662C1B28E9D53EC275B7F2AC* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -19972,6 +20448,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t4661854F33069AF8662C1B28E9D53EC275B7F2AC* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		int32_t* L_17 = (int32_t*)(&__this->____currentKey);
@@ -20016,6 +20493,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t4661854F33069AF8662C1B28E9D53EC275B7F2AC* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -20050,6 +20528,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t4661854F33069AF8662C1B28E9D53EC275B7F2AC* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -20090,6 +20569,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m04219FEC83DF8266F90954
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t4661854F33069AF8662C1B28E9D53EC275B7F2AC* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -20125,6 +20605,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m4D1A72F7B749E645FB1
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t4661854F33069AF8662C1B28E9D53EC275B7F2AC* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -20139,13 +20620,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m4D1A72F7B749E645FB1
 IL_001a:
 	{
 		Dictionary_2_t4661854F33069AF8662C1B28E9D53EC275B7F2AC* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t727665A2CC38CE638F8690FEB5F840BD16C70658* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t4F0B35124785FD59A34054EADD56FBA4EAA12AEC* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -20171,6 +20654,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t4661854F33069AF8662C1B28E9D53EC275B7F2AC* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -20179,6 +20663,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t4661854F33069AF8662C1B28E9D53EC275B7F2AC* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		CategoryEntrySprite_t921E1B4FF6D1C2E396E4012894CED7DE39892074* L_17 = (CategoryEntrySprite_t921E1B4FF6D1C2E396E4012894CED7DE39892074*)(&__this->____currentValue);
@@ -20223,6 +20708,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t4661854F33069AF8662C1B28E9D53EC275B7F2AC* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -20257,6 +20743,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t4661854F33069AF8662C1B28E9D53EC275B7F2AC* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -20297,6 +20784,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mD4366510BEF7ECA0F907C1
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t4B29EB34D6BDD7CF67CE77D60AC718EB61186713* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -20321,6 +20809,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m3456B1A5A0F26DD0A64
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t4B29EB34D6BDD7CF67CE77D60AC718EB61186713* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -20335,13 +20824,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m3456B1A5A0F26DD0A64
 IL_001a:
 	{
 		Dictionary_2_t4B29EB34D6BDD7CF67CE77D60AC718EB61186713* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t1A2CD9285C48598A04F408DAE442164E7A2BFC20* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_tAB4AC6D6C313741B7F6F6C4694EF22BCDEBF5B20* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -20366,6 +20857,7 @@ IL_005e:
 	{
 		int32_t L_15 = __this->____index;
 		Dictionary_2_t4B29EB34D6BDD7CF67CE77D60AC718EB61186713* L_16 = __this->____dictionary;
+		NullCheck(L_16);
 		int32_t L_17 = L_16->____count;
 		if ((!(((uint32_t)L_15) >= ((uint32_t)L_17))))
 		{
@@ -20374,6 +20866,7 @@ IL_005e:
 	}
 	{
 		Dictionary_2_t4B29EB34D6BDD7CF67CE77D60AC718EB61186713* L_18 = __this->____dictionary;
+		NullCheck(L_18);
 		int32_t L_19 = L_18->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_19, 1));
 		KeyValuePair_2_t39179BF27CE980AB00F738EC85DF2D428FAAB65A* L_20 = (KeyValuePair_2_t39179BF27CE980AB00F738EC85DF2D428FAAB65A*)(&__this->____current);
@@ -20437,6 +20930,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t4B29EB34D6BDD7CF67CE77D60AC718EB61186713* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -20506,6 +21000,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t4B29EB34D6BDD7CF67CE77D60AC718EB61186713* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -20543,6 +21038,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DictionaryEntry_t171080F37B311C25AA9E75888F9C
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t4B29EB34D6BDD7CF67CE77D60AC718EB61186713* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -20594,6 +21090,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t4B29EB34D6BDD7CF67CE77D60AC718EB61186713* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -20637,6 +21134,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t4B29EB34D6BDD7CF67CE77D60AC718EB61186713* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -20683,6 +21181,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mB540B1DF003C256171E01A
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t4B29EB34D6BDD7CF67CE77D60AC718EB61186713* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -20718,6 +21217,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m91897078EA901F1FBAF
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t4B29EB34D6BDD7CF67CE77D60AC718EB61186713* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -20732,13 +21232,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m91897078EA901F1FBAF
 IL_001a:
 	{
 		Dictionary_2_t4B29EB34D6BDD7CF67CE77D60AC718EB61186713* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t1A2CD9285C48598A04F408DAE442164E7A2BFC20* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_tAB4AC6D6C313741B7F6F6C4694EF22BCDEBF5B20* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -20757,6 +21259,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t4B29EB34D6BDD7CF67CE77D60AC718EB61186713* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -20765,6 +21268,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t4B29EB34D6BDD7CF67CE77D60AC718EB61186713* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		int32_t* L_17 = (int32_t*)(&__this->____currentKey);
@@ -20809,6 +21313,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t4B29EB34D6BDD7CF67CE77D60AC718EB61186713* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -20843,6 +21348,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t4B29EB34D6BDD7CF67CE77D60AC718EB61186713* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -20883,6 +21389,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m073D0B200FE00D46926590
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t4B29EB34D6BDD7CF67CE77D60AC718EB61186713* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -20918,6 +21425,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m43E68A0DBF4A9EDC67D
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t4B29EB34D6BDD7CF67CE77D60AC718EB61186713* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -20932,13 +21440,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m43E68A0DBF4A9EDC67D
 IL_001a:
 	{
 		Dictionary_2_t4B29EB34D6BDD7CF67CE77D60AC718EB61186713* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t1A2CD9285C48598A04F408DAE442164E7A2BFC20* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_tAB4AC6D6C313741B7F6F6C4694EF22BCDEBF5B20* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -20958,6 +21468,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t4B29EB34D6BDD7CF67CE77D60AC718EB61186713* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -20966,6 +21477,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t4B29EB34D6BDD7CF67CE77D60AC718EB61186713* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		FontAssetRef_t7B8E634754BC5683F1E6601D7CD0061285A28FF3* L_17 = (FontAssetRef_t7B8E634754BC5683F1E6601D7CD0061285A28FF3*)(&__this->____currentValue);
@@ -21010,6 +21522,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t4B29EB34D6BDD7CF67CE77D60AC718EB61186713* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -21044,6 +21557,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t4B29EB34D6BDD7CF67CE77D60AC718EB61186713* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -21084,6 +21598,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mB538E22C22DC79C8FC59C2
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -21108,6 +21623,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m2B81AF70E031A662ECD
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -21122,13 +21638,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m2B81AF70E031A662ECD
 IL_001a:
 	{
 		Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_tD52BB614B1A3926BCD58815471C1753516F2602B* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t787B5926E2DAD340D81286D743DEB8AED0192C40* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -21152,6 +21670,7 @@ IL_005e:
 	{
 		int32_t L_15 = __this->____index;
 		Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62* L_16 = __this->____dictionary;
+		NullCheck(L_16);
 		int32_t L_17 = L_16->____count;
 		if ((!(((uint32_t)L_15) >= ((uint32_t)L_17))))
 		{
@@ -21160,6 +21679,7 @@ IL_005e:
 	}
 	{
 		Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62* L_18 = __this->____dictionary;
+		NullCheck(L_18);
 		int32_t L_19 = L_18->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_19, 1));
 		KeyValuePair_2_t8119C4668B01DE5BDC84EDBA81EE010B6CA16C5C* L_20 = (KeyValuePair_2_t8119C4668B01DE5BDC84EDBA81EE010B6CA16C5C*)(&__this->____current);
@@ -21223,6 +21743,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -21292,6 +21813,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -21329,6 +21851,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DictionaryEntry_t171080F37B311C25AA9E75888F9C
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -21380,6 +21903,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -21423,6 +21947,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -21469,6 +21994,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m2D6199801E5B19AD8EDE86
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -21504,6 +22030,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m59441005A0AD2209B76
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -21518,13 +22045,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m59441005A0AD2209B76
 IL_001a:
 	{
 		Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_tD52BB614B1A3926BCD58815471C1753516F2602B* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t787B5926E2DAD340D81286D743DEB8AED0192C40* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -21543,6 +22072,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -21551,6 +22081,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		int32_t* L_17 = (int32_t*)(&__this->____currentKey);
@@ -21595,6 +22126,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -21629,6 +22161,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -21669,6 +22202,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mA9D520FEADD2DFB77451DF
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -21704,6 +22238,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m99946014F486E27DEF4
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -21718,13 +22253,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m99946014F486E27DEF4
 IL_001a:
 	{
 		Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_tD52BB614B1A3926BCD58815471C1753516F2602B* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t787B5926E2DAD340D81286D743DEB8AED0192C40* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -21743,6 +22280,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -21751,6 +22289,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		int32_t* L_17 = (int32_t*)(&__this->____currentValue);
@@ -21795,6 +22334,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -21829,6 +22369,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tFCDE91BDD0207A67521C455FD60B9EAA6E0E6B62* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -21869,6 +22410,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mF1011A53EA20BACF511E6B
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -21893,6 +22435,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mCDE1ADBCB891601102F
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -21907,13 +22450,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mCDE1ADBCB891601102F
 IL_001a:
 	{
 		Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t74DBBEDFEA84979EC7428ADBFE28C5FA3A7DB67A* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_tFF4285DE3B86A2B349258B4BD7E12C0EE4A4B74A* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -21937,6 +22482,7 @@ IL_005e:
 	{
 		int32_t L_15 = __this->____index;
 		Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* L_16 = __this->____dictionary;
+		NullCheck(L_16);
 		int32_t L_17 = L_16->____count;
 		if ((!(((uint32_t)L_15) >= ((uint32_t)L_17))))
 		{
@@ -21945,6 +22491,7 @@ IL_005e:
 	}
 	{
 		Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* L_18 = __this->____dictionary;
+		NullCheck(L_18);
 		int32_t L_19 = L_18->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_19, 1));
 		KeyValuePair_2_tC032038170A998E9F4AE89CDC2DBC2E5F88F91E3* L_20 = (KeyValuePair_2_tC032038170A998E9F4AE89CDC2DBC2E5F88F91E3*)(&__this->____current);
@@ -22008,6 +22555,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -22077,6 +22625,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -22114,6 +22663,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DictionaryEntry_t171080F37B311C25AA9E75888F9C
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -22165,6 +22715,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -22208,6 +22759,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -22254,6 +22806,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m52104075D045C61D3960B2
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -22289,6 +22842,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m38782EC5B13FD54FBB2
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -22303,13 +22857,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m38782EC5B13FD54FBB2
 IL_001a:
 	{
 		Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t74DBBEDFEA84979EC7428ADBFE28C5FA3A7DB67A* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_tFF4285DE3B86A2B349258B4BD7E12C0EE4A4B74A* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -22328,6 +22884,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -22336,6 +22893,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		int32_t* L_17 = (int32_t*)(&__this->____currentKey);
@@ -22380,6 +22938,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -22414,6 +22973,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -22454,6 +23014,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m5A809355020FF0008E912E
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -22489,6 +23050,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m2A5C07652C68FC97BCC
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -22503,13 +23065,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m2A5C07652C68FC97BCC
 IL_001a:
 	{
 		Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t74DBBEDFEA84979EC7428ADBFE28C5FA3A7DB67A* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_tFF4285DE3B86A2B349258B4BD7E12C0EE4A4B74A* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -22528,6 +23092,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -22536,6 +23101,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		int32_t* L_17 = (int32_t*)(&__this->____currentValue);
@@ -22580,6 +23146,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -22614,6 +23181,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t1BADE94A7E53FAAFB3B9C0BB4DF061F13C8A1298* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -22654,6 +23222,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mF2B67943B3638C9AD81394
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -22678,6 +23247,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m48EC022EB2EB605F29E
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -22692,13 +23262,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m48EC022EB2EB605F29E
 IL_001a:
 	{
 		Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_tDDBB3C07C36F178929A69EB8B8CE07B49AE02252* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t4D5A107E6414D8B9DE012405A201C46AACFACF98* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -22723,6 +23295,7 @@ IL_005e:
 	{
 		int32_t L_15 = __this->____index;
 		Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* L_16 = __this->____dictionary;
+		NullCheck(L_16);
 		int32_t L_17 = L_16->____count;
 		if ((!(((uint32_t)L_15) >= ((uint32_t)L_17))))
 		{
@@ -22731,6 +23304,7 @@ IL_005e:
 	}
 	{
 		Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* L_18 = __this->____dictionary;
+		NullCheck(L_18);
 		int32_t L_19 = L_18->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_19, 1));
 		KeyValuePair_2_tF70DDE0C5A349727371FB070D433FA147032A13B* L_20 = (KeyValuePair_2_tF70DDE0C5A349727371FB070D433FA147032A13B*)(&__this->____current);
@@ -22794,6 +23368,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -22861,6 +23436,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -22898,6 +23474,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DictionaryEntry_t171080F37B311C25AA9E75888F9C
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -22947,6 +23524,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -22990,6 +23568,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -23034,6 +23613,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m7B6143DE7BAA82ECEE4F91
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -23069,6 +23649,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m98AB4D7F01C0F5F1D22
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -23083,13 +23664,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m98AB4D7F01C0F5F1D22
 IL_001a:
 	{
 		Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_tDDBB3C07C36F178929A69EB8B8CE07B49AE02252* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t4D5A107E6414D8B9DE012405A201C46AACFACF98* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -23108,6 +23691,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -23116,6 +23700,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		int32_t* L_17 = (int32_t*)(&__this->____currentKey);
@@ -23160,6 +23745,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -23194,6 +23780,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -23234,6 +23821,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m1B3EA4CAFB3E63FFB0519F
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -23269,6 +23857,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m30C883F9DF743472B21
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -23283,13 +23872,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m30C883F9DF743472B21
 IL_001a:
 	{
 		Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_tDDBB3C07C36F178929A69EB8B8CE07B49AE02252* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_t4D5A107E6414D8B9DE012405A201C46AACFACF98* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -23309,6 +23900,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -23317,6 +23909,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		RuntimeObject** L_17 = (RuntimeObject**)(&__this->____currentValue);
@@ -23361,6 +23954,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -23393,6 +23987,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -23433,6 +24028,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m48F3BFCF8417A096082255
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t37F557505423C20CABB84F18ADA6FE019FD5411F* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -23457,6 +24053,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m860B439CF36132AF08D
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t37F557505423C20CABB84F18ADA6FE019FD5411F* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -23471,13 +24068,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m860B439CF36132AF08D
 IL_001a:
 	{
 		Dictionary_2_t37F557505423C20CABB84F18ADA6FE019FD5411F* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t05E52844511353E4ABF08A5014CE9794F2BC7FB2* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_tA76B18EF78BF0132EE1736D5F5B829D890C26E5C* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -23526,6 +24125,7 @@ IL_005e:
 	{
 		int32_t L_15 = __this->____index;
 		Dictionary_2_t37F557505423C20CABB84F18ADA6FE019FD5411F* L_16 = __this->____dictionary;
+		NullCheck(L_16);
 		int32_t L_17 = L_16->____count;
 		if ((!(((uint32_t)L_15) >= ((uint32_t)L_17))))
 		{
@@ -23534,6 +24134,7 @@ IL_005e:
 	}
 	{
 		Dictionary_2_t37F557505423C20CABB84F18ADA6FE019FD5411F* L_18 = __this->____dictionary;
+		NullCheck(L_18);
 		int32_t L_19 = L_18->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_19, 1));
 		KeyValuePair_2_tA1F840CB30C9D8AC1E1F1BC4347D21B598D5F0D5* L_20 = (KeyValuePair_2_tA1F840CB30C9D8AC1E1F1BC4347D21B598D5F0D5*)(&__this->____current);
@@ -23597,6 +24198,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t37F557505423C20CABB84F18ADA6FE019FD5411F* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -23666,6 +24268,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t37F557505423C20CABB84F18ADA6FE019FD5411F* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -23703,6 +24306,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DictionaryEntry_t171080F37B311C25AA9E75888F9C
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t37F557505423C20CABB84F18ADA6FE019FD5411F* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -23754,6 +24358,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t37F557505423C20CABB84F18ADA6FE019FD5411F* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -23797,6 +24402,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t37F557505423C20CABB84F18ADA6FE019FD5411F* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -23843,6 +24449,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m246CD5F143FDE1068C7313
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t37F557505423C20CABB84F18ADA6FE019FD5411F* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -23878,6 +24485,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mAAE5F5AD288AF68B667
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t37F557505423C20CABB84F18ADA6FE019FD5411F* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -23892,13 +24500,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mAAE5F5AD288AF68B667
 IL_001a:
 	{
 		Dictionary_2_t37F557505423C20CABB84F18ADA6FE019FD5411F* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t05E52844511353E4ABF08A5014CE9794F2BC7FB2* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_tA76B18EF78BF0132EE1736D5F5B829D890C26E5C* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -23917,6 +24527,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t37F557505423C20CABB84F18ADA6FE019FD5411F* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -23925,6 +24536,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t37F557505423C20CABB84F18ADA6FE019FD5411F* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		int64_t* L_17 = (int64_t*)(&__this->____currentKey);
@@ -23969,6 +24581,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t37F557505423C20CABB84F18ADA6FE019FD5411F* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -24003,6 +24616,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t37F557505423C20CABB84F18ADA6FE019FD5411F* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -24043,6 +24657,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m99317326E3151CD298882A
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t37F557505423C20CABB84F18ADA6FE019FD5411F* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -24078,6 +24693,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m8134B4AF4A16FBCACE8
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t37F557505423C20CABB84F18ADA6FE019FD5411F* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -24092,13 +24708,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m8134B4AF4A16FBCACE8
 IL_001a:
 	{
 		Dictionary_2_t37F557505423C20CABB84F18ADA6FE019FD5411F* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t05E52844511353E4ABF08A5014CE9794F2BC7FB2* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_tA76B18EF78BF0132EE1736D5F5B829D890C26E5C* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -24142,6 +24760,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t37F557505423C20CABB84F18ADA6FE019FD5411F* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -24150,6 +24769,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t37F557505423C20CABB84F18ADA6FE019FD5411F* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_17 = (ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C*)(&__this->____currentValue);
@@ -24194,6 +24814,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t37F557505423C20CABB84F18ADA6FE019FD5411F* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -24228,6 +24849,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t37F557505423C20CABB84F18ADA6FE019FD5411F* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -24268,6 +24890,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m9D3078BAC4490BC1F7701F
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -24292,6 +24915,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m881147E85D8BD700798
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -24306,13 +24930,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m881147E85D8BD700798
 IL_001a:
 	{
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t37A30D502FEB00D75695A63792AE99DC7C4D68D1* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_tFFDF932514D611FAE4AB69C8DDC8FA5F889B6438* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -24337,6 +24963,7 @@ IL_005e:
 	{
 		int32_t L_15 = __this->____index;
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_16 = __this->____dictionary;
+		NullCheck(L_16);
 		int32_t L_17 = L_16->____count;
 		if ((!(((uint32_t)L_15) >= ((uint32_t)L_17))))
 		{
@@ -24345,6 +24972,7 @@ IL_005e:
 	}
 	{
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_18 = __this->____dictionary;
+		NullCheck(L_18);
 		int32_t L_19 = L_18->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_19, 1));
 		KeyValuePair_2_t88288FD7C987CABEE070E49639E8603D27AF799F* L_20 = (KeyValuePair_2_t88288FD7C987CABEE070E49639E8603D27AF799F*)(&__this->____current);
@@ -24408,6 +25036,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -24475,6 +25104,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -24512,6 +25142,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DictionaryEntry_t171080F37B311C25AA9E75888F9C
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -24561,6 +25192,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -24604,6 +25236,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -24648,6 +25281,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m048CD74DC2A24077A61CD4
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -24683,6 +25317,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m23A9E98E5BCAECF6D4E
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -24697,13 +25332,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m23A9E98E5BCAECF6D4E
 IL_001a:
 	{
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t37A30D502FEB00D75695A63792AE99DC7C4D68D1* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_tFFDF932514D611FAE4AB69C8DDC8FA5F889B6438* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -24722,6 +25359,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -24730,6 +25368,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		int64_t* L_17 = (int64_t*)(&__this->____currentKey);
@@ -24774,6 +25413,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -24808,6 +25448,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -24848,6 +25489,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m6D7993F0F416C598B9DB0D
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -24883,6 +25525,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mCBADFB9B05D60046069
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -24897,13 +25540,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mCBADFB9B05D60046069
 IL_001a:
 	{
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t37A30D502FEB00D75695A63792AE99DC7C4D68D1* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_tFFDF932514D611FAE4AB69C8DDC8FA5F889B6438* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -24923,6 +25568,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -24931,6 +25577,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		RuntimeObject** L_17 = (RuntimeObject**)(&__this->____currentValue);
@@ -24975,6 +25622,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -25007,6 +25655,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t4A0148843FDD82FE00634A604A772FC4EE3A0379* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -25047,6 +25696,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m53A63D389B2C13C44B8521
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_tDBC7BB75C617E4886F85171F2758C7996F98EC36* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -25071,6 +25721,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m0712867110707C27D0A
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tDBC7BB75C617E4886F85171F2758C7996F98EC36* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -25085,13 +25736,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m0712867110707C27D0A
 IL_001a:
 	{
 		Dictionary_2_tDBC7BB75C617E4886F85171F2758C7996F98EC36* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t6DE30D037976CA42E046CF78CF4BEF758A9E886B* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_tF9C4D725857FFCC0AD98E4629FD00A7E064A0C1C* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -25116,6 +25769,7 @@ IL_005e:
 	{
 		int32_t L_15 = __this->____index;
 		Dictionary_2_tDBC7BB75C617E4886F85171F2758C7996F98EC36* L_16 = __this->____dictionary;
+		NullCheck(L_16);
 		int32_t L_17 = L_16->____count;
 		if ((!(((uint32_t)L_15) >= ((uint32_t)L_17))))
 		{
@@ -25124,6 +25778,7 @@ IL_005e:
 	}
 	{
 		Dictionary_2_tDBC7BB75C617E4886F85171F2758C7996F98EC36* L_18 = __this->____dictionary;
+		NullCheck(L_18);
 		int32_t L_19 = L_18->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_19, 1));
 		KeyValuePair_2_t7E5E41B933054DBF6F52C6CDF0BC2CB4B1606423* L_20 = (KeyValuePair_2_t7E5E41B933054DBF6F52C6CDF0BC2CB4B1606423*)(&__this->____current);
@@ -25187,6 +25842,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tDBC7BB75C617E4886F85171F2758C7996F98EC36* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -25254,6 +25910,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tDBC7BB75C617E4886F85171F2758C7996F98EC36* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -25291,6 +25948,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DictionaryEntry_t171080F37B311C25AA9E75888F9C
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tDBC7BB75C617E4886F85171F2758C7996F98EC36* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -25340,6 +25998,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tDBC7BB75C617E4886F85171F2758C7996F98EC36* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -25381,6 +26040,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tDBC7BB75C617E4886F85171F2758C7996F98EC36* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -25427,6 +26087,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m87B736D322CF061FBCFCD3
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_tDBC7BB75C617E4886F85171F2758C7996F98EC36* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -25462,6 +26123,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mEFFD5C63D30E8006AEC
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tDBC7BB75C617E4886F85171F2758C7996F98EC36* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -25476,13 +26138,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mEFFD5C63D30E8006AEC
 IL_001a:
 	{
 		Dictionary_2_tDBC7BB75C617E4886F85171F2758C7996F98EC36* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t6DE30D037976CA42E046CF78CF4BEF758A9E886B* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_tF9C4D725857FFCC0AD98E4629FD00A7E064A0C1C* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -25502,6 +26166,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_tDBC7BB75C617E4886F85171F2758C7996F98EC36* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -25510,6 +26175,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_tDBC7BB75C617E4886F85171F2758C7996F98EC36* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		RuntimeObject** L_17 = (RuntimeObject**)(&__this->____currentKey);
@@ -25554,6 +26220,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tDBC7BB75C617E4886F85171F2758C7996F98EC36* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -25586,6 +26253,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tDBC7BB75C617E4886F85171F2758C7996F98EC36* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -25626,6 +26294,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m8F4612BB59FD6053A53F44
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_tDBC7BB75C617E4886F85171F2758C7996F98EC36* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -25661,6 +26330,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mD4B624D158B30642602
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tDBC7BB75C617E4886F85171F2758C7996F98EC36* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -25675,13 +26345,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mD4B624D158B30642602
 IL_001a:
 	{
 		Dictionary_2_tDBC7BB75C617E4886F85171F2758C7996F98EC36* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_t6DE30D037976CA42E046CF78CF4BEF758A9E886B* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_tF9C4D725857FFCC0AD98E4629FD00A7E064A0C1C* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -25700,6 +26372,7 @@ IL_0053:
 	{
 		int32_t L_12 = __this->____index;
 		Dictionary_2_tDBC7BB75C617E4886F85171F2758C7996F98EC36* L_13 = __this->____dictionary;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____count;
 		if ((!(((uint32_t)L_12) >= ((uint32_t)L_14))))
 		{
@@ -25708,6 +26381,7 @@ IL_0053:
 	}
 	{
 		Dictionary_2_tDBC7BB75C617E4886F85171F2758C7996F98EC36* L_15 = __this->____dictionary;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_16, 1));
 		bool* L_17 = (bool*)(&__this->____currentValue);
@@ -25752,6 +26426,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_tDBC7BB75C617E4886F85171F2758C7996F98EC36* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -25786,6 +26461,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_tDBC7BB75C617E4886F85171F2758C7996F98EC36* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -25826,6 +26502,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m869EE3B6985313CD75D4F2
 		__this->____dictionary = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____dictionary), (void*)L_0);
 		Dictionary_2_t2EDFFA8C88267125923C377EC815E642568BCCAA* L_1 = ___0_dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = 0;
@@ -25850,6 +26527,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m64C94517E937663C3F3
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t2EDFFA8C88267125923C377EC815E642568BCCAA* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -25864,13 +26542,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m64C94517E937663C3F3
 IL_001a:
 	{
 		Dictionary_2_t2EDFFA8C88267125923C377EC815E642568BCCAA* L_3 = __this->____dictionary;
+		NullCheck(L_3);
 		EntryU5BU5D_tFE726D463F611E4E4A72D28490134171736CC1FF* L_4 = L_3->____entries;
 		int32_t L_5 = __this->____index;
 		V_1 = L_5;
 		int32_t L_6 = V_1;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
 		int32_t L_7 = V_1;
-		V_0 = ((L_4)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_7)));
+		NullCheck(L_4);
+		V_0 = ((L_4)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_7)));
 		Entry_tE39771EB73DA3008BB0DF74028FF7285866C18C8* L_8 = V_0;
 		int32_t L_9 = L_8->___hashCode;
 		if ((((int32_t)L_9) < ((int32_t)0)))
@@ -25895,6 +26575,7 @@ IL_005e:
 	{
 		int32_t L_15 = __this->____index;
 		Dictionary_2_t2EDFFA8C88267125923C377EC815E642568BCCAA* L_16 = __this->____dictionary;
+		NullCheck(L_16);
 		int32_t L_17 = L_16->____count;
 		if ((!(((uint32_t)L_15) >= ((uint32_t)L_17))))
 		{
@@ -25903,6 +26584,7 @@ IL_005e:
 	}
 	{
 		Dictionary_2_t2EDFFA8C88267125923C377EC815E642568BCCAA* L_18 = __this->____dictionary;
+		NullCheck(L_18);
 		int32_t L_19 = L_18->____count;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_19, 1));
 		KeyValuePair_2_tE15BD34F75B584F06758FD8C5E0A50897E927167* L_20 = (KeyValuePair_2_tE15BD34F75B584F06758FD8C5E0A50897E927167*)(&__this->____current);
@@ -25966,6 +26648,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t2EDFFA8C88267125923C377EC815E642568BCCAA* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -26033,6 +26716,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Dictionary_2_t2EDFFA8C88267125923C377EC815E642568BCCAA* L_1 = __this->____dictionary;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -26070,6 +26754,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DictionaryEntry_t171080F37B311C25AA9E75888F9C
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t2EDFFA8C88267125923C377EC815E642568BCCAA* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -26119,6 +26804,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t2EDFFA8C88267125923C377EC815E642568BCCAA* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -26160,6 +26846,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		Dictionary_2_t2EDFFA8C88267125923C377EC815E642568BCCAA* L_2 = __this->____dictionary;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____count;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{

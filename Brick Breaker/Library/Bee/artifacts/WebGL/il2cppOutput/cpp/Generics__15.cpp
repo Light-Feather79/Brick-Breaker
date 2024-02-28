@@ -9634,6 +9634,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m2DD667605D1D62A7C34640
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____set), (void*)L_0);
 		__this->____index = 0;
 		HashSet_1_t2EC13BE6E93BB0C99D5CF97A25799B40FD6CBAF4* L_1 = ___0_set;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		int32_t* L_3 = (int32_t*)(&__this->____current);
@@ -9666,6 +9667,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mC6ED73C696A0B066E8B
 	{
 		int32_t L_0 = __this->____version;
 		HashSet_1_t2EC13BE6E93BB0C99D5CF97A25799B40FD6CBAF4* L_1 = __this->____set;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -9681,9 +9683,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mC6ED73C696A0B066E8B
 IL_001e:
 	{
 		HashSet_1_t2EC13BE6E93BB0C99D5CF97A25799B40FD6CBAF4* L_4 = __this->____set;
+		NullCheck(L_4);
 		SlotU5BU5D_tF983180619181B43E8A87C70A9FC0D8456A499FD* L_5 = L_4->____slots;
 		int32_t L_6 = __this->____index;
-		int32_t L_7 = ((L_5)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_6)))->___hashCode;
+		NullCheck(L_5);
+		int32_t L_7 = ((L_5)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_6)))->___hashCode;
 		if ((((int32_t)L_7) < ((int32_t)0)))
 		{
 			goto IL_006d;
@@ -9691,9 +9695,11 @@ IL_001e:
 	}
 	{
 		HashSet_1_t2EC13BE6E93BB0C99D5CF97A25799B40FD6CBAF4* L_8 = __this->____set;
+		NullCheck(L_8);
 		SlotU5BU5D_tF983180619181B43E8A87C70A9FC0D8456A499FD* L_9 = L_8->____slots;
 		int32_t L_10 = __this->____index;
-		int32_t L_11 = ((L_9)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_10)))->___value;
+		NullCheck(L_9);
+		int32_t L_11 = ((L_9)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_10)))->___value;
 		__this->____current = L_11;
 		int32_t L_12 = __this->____index;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_12, 1));
@@ -9710,6 +9716,7 @@ IL_007b:
 	{
 		int32_t L_14 = __this->____index;
 		HashSet_1_t2EC13BE6E93BB0C99D5CF97A25799B40FD6CBAF4* L_15 = __this->____set;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____lastIndex;
 		if ((((int32_t)L_14) < ((int32_t)L_16)))
 		{
@@ -9718,6 +9725,7 @@ IL_007b:
 	}
 	{
 		HashSet_1_t2EC13BE6E93BB0C99D5CF97A25799B40FD6CBAF4* L_17 = __this->____set;
+		NullCheck(L_17);
 		int32_t L_18 = L_17->____lastIndex;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_18, 1));
 		int32_t* L_19 = (int32_t*)(&__this->____current);
@@ -9762,6 +9770,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		HashSet_1_t2EC13BE6E93BB0C99D5CF97A25799B40FD6CBAF4* L_2 = __this->____set;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____lastIndex;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -9799,6 +9808,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		HashSet_1_t2EC13BE6E93BB0C99D5CF97A25799B40FD6CBAF4* L_1 = __this->____set;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -9842,6 +9852,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mC6E6B2337772FC83C59264
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_tDA4D291C60B1EFA9EA50BBA3367C657CC9410576* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		int32_t* L_3 = (int32_t*)(&__this->____current);
@@ -9877,6 +9888,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mCAE99D26B8B4D7880B3
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_tDA4D291C60B1EFA9EA50BBA3367C657CC9410576* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -9886,6 +9898,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mCAE99D26B8B4D7880B3
 	{
 		int32_t L_4 = __this->____index;
 		List_1_tDA4D291C60B1EFA9EA50BBA3367C657CC9410576* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -9894,10 +9907,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mCAE99D26B8B4D7880B3
 	}
 	{
 		List_1_tDA4D291C60B1EFA9EA50BBA3367C657CC9410576* L_7 = V_0;
+		NullCheck(L_7);
 		Int32EnumU5BU5D_t87B7DB802810C38016332669039EF42C487A081F* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		int32_t L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		int32_t L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		int32_t L_12 = __this->____index;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_12, 1));
@@ -9925,6 +9940,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m38194452AB87C3D
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tDA4D291C60B1EFA9EA50BBA3367C657CC9410576* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -9938,6 +9954,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m38194452AB87C3D
 IL_0018:
 	{
 		List_1_tDA4D291C60B1EFA9EA50BBA3367C657CC9410576* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		int32_t* L_5 = (int32_t*)(&__this->____current);
@@ -9982,6 +9999,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_tDA4D291C60B1EFA9EA50BBA3367C657CC9410576* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -10017,6 +10035,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tDA4D291C60B1EFA9EA50BBA3367C657CC9410576* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -10057,6 +10076,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m89062508E459D03177AC1E
 		__this->____stack = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____stack), (void*)L_0);
 		Stack_1_t509AEAED71EF48FB8551C238C1BA01882CC654B9* L_1 = ___0_stack;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = ((int32_t)-2);
@@ -10096,6 +10116,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mAA56DD03A2843B39F6C
 	{
 		int32_t L_0 = __this->____version;
 		Stack_1_t509AEAED71EF48FB8551C238C1BA01882CC654B9* L_1 = __this->____stack;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -10118,6 +10139,7 @@ IL_001e:
 	}
 	{
 		Stack_1_t509AEAED71EF48FB8551C238C1BA01882CC654B9* L_5 = __this->____stack;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_subtract(L_6, 1));
 		int32_t L_7 = __this->____index;
@@ -10131,10 +10153,12 @@ IL_001e:
 	}
 	{
 		Stack_1_t509AEAED71EF48FB8551C238C1BA01882CC654B9* L_9 = __this->____stack;
+		NullCheck(L_9);
 		Int32EnumU5BU5D_t87B7DB802810C38016332669039EF42C487A081F* L_10 = L_9->____array;
 		int32_t L_11 = __this->____index;
+		NullCheck(L_10);
 		int32_t L_12 = L_11;
-		int32_t L_13 = (L_10)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_12));
+		int32_t L_13 = (L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_12));
 		__this->____currentElement = L_13;
 		G_B5_0 = G_B4_0;
 	}
@@ -10173,10 +10197,12 @@ IL_0072:
 	}
 	{
 		Stack_1_t509AEAED71EF48FB8551C238C1BA01882CC654B9* L_19 = __this->____stack;
+		NullCheck(L_19);
 		Int32EnumU5BU5D_t87B7DB802810C38016332669039EF42C487A081F* L_20 = L_19->____array;
 		int32_t L_21 = __this->____index;
+		NullCheck(L_20);
 		int32_t L_22 = L_21;
-		int32_t L_23 = (L_20)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_22));
+		int32_t L_23 = (L_20)->GetAt(static_cast<il2cpp_array_size_t>(L_22));
 		__this->____currentElement = L_23;
 		return (bool)G_B9_0;
 	}
@@ -10283,6 +10309,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Stack_1_t509AEAED71EF48FB8551C238C1BA01882CC654B9* L_1 = __this->____stack;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -11039,6 +11066,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mE23D271442656549091441
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t420B17163897A4DF994BA698744548CD81961E70* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		LigatureSubstitutionRecord_t8660DC6B1D65C655D698216F72BFB3C85DDCAB94* L_3 = (LigatureSubstitutionRecord_t8660DC6B1D65C655D698216F72BFB3C85DDCAB94*)(&__this->____current);
@@ -11074,6 +11102,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mD634C067A5B7B6AECB6
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t420B17163897A4DF994BA698744548CD81961E70* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -11083,6 +11112,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mD634C067A5B7B6AECB6
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t420B17163897A4DF994BA698744548CD81961E70* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -11091,10 +11121,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mD634C067A5B7B6AECB6
 	}
 	{
 		List_1_t420B17163897A4DF994BA698744548CD81961E70* L_7 = V_0;
+		NullCheck(L_7);
 		LigatureSubstitutionRecordU5BU5D_t04186B1B45C8D4F2AAB2299EE24668D39B4E9B50* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		LigatureSubstitutionRecord_t8660DC6B1D65C655D698216F72BFB3C85DDCAB94 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		LigatureSubstitutionRecord_t8660DC6B1D65C655D698216F72BFB3C85DDCAB94 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___m_ComponentGlyphIDs), (void*)NULL);
 		int32_t L_12 = __this->____index;
@@ -11123,6 +11155,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mE67D842CAB59D76
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t420B17163897A4DF994BA698744548CD81961E70* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -11136,6 +11169,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mE67D842CAB59D76
 IL_0018:
 	{
 		List_1_t420B17163897A4DF994BA698744548CD81961E70* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		LigatureSubstitutionRecord_t8660DC6B1D65C655D698216F72BFB3C85DDCAB94* L_5 = (LigatureSubstitutionRecord_t8660DC6B1D65C655D698216F72BFB3C85DDCAB94*)(&__this->____current);
@@ -11180,6 +11214,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t420B17163897A4DF994BA698744548CD81961E70* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -11215,6 +11250,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t420B17163897A4DF994BA698744548CD81961E70* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -11553,6 +11589,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m85DDDAD94938D99B29BE89
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t569CB45C96475FFA9C716A7CC2ADE24112D38121* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		ManipulatorActivationFilter_t866A0295DA75EA271B30BDC1F9EEA2C4FDEB1A81* L_3 = (ManipulatorActivationFilter_t866A0295DA75EA271B30BDC1F9EEA2C4FDEB1A81*)(&__this->____current);
@@ -11588,6 +11625,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m84E3A02B742FD4888E2
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t569CB45C96475FFA9C716A7CC2ADE24112D38121* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -11597,6 +11635,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m84E3A02B742FD4888E2
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t569CB45C96475FFA9C716A7CC2ADE24112D38121* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -11605,10 +11644,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m84E3A02B742FD4888E2
 	}
 	{
 		List_1_t569CB45C96475FFA9C716A7CC2ADE24112D38121* L_7 = V_0;
+		NullCheck(L_7);
 		ManipulatorActivationFilterU5BU5D_tE2A0BDE194B3B4600164AE8238C8CE2B20DBD4D7* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		ManipulatorActivationFilter_t866A0295DA75EA271B30BDC1F9EEA2C4FDEB1A81 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		ManipulatorActivationFilter_t866A0295DA75EA271B30BDC1F9EEA2C4FDEB1A81 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		int32_t L_12 = __this->____index;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_12, 1));
@@ -11636,6 +11677,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m96642373252D92C
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t569CB45C96475FFA9C716A7CC2ADE24112D38121* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -11649,6 +11691,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m96642373252D92C
 IL_0018:
 	{
 		List_1_t569CB45C96475FFA9C716A7CC2ADE24112D38121* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		ManipulatorActivationFilter_t866A0295DA75EA271B30BDC1F9EEA2C4FDEB1A81* L_5 = (ManipulatorActivationFilter_t866A0295DA75EA271B30BDC1F9EEA2C4FDEB1A81*)(&__this->____current);
@@ -11693,6 +11736,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t569CB45C96475FFA9C716A7CC2ADE24112D38121* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -11728,6 +11772,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t569CB45C96475FFA9C716A7CC2ADE24112D38121* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -11769,6 +11814,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mBFD97CE7FBC658EAA43E0A
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t8837CD02A40CED632406E449B6D76FF9AB3E4468* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		MarkToBaseAdjustmentRecord_t4BE0F5A88932146F70A2B521176BDA91A20D8607* L_3 = (MarkToBaseAdjustmentRecord_t4BE0F5A88932146F70A2B521176BDA91A20D8607*)(&__this->____current);
@@ -11804,6 +11850,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m573184ECCB43E939A47
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t8837CD02A40CED632406E449B6D76FF9AB3E4468* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -11813,6 +11860,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m573184ECCB43E939A47
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t8837CD02A40CED632406E449B6D76FF9AB3E4468* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -11821,10 +11869,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m573184ECCB43E939A47
 	}
 	{
 		List_1_t8837CD02A40CED632406E449B6D76FF9AB3E4468* L_7 = V_0;
+		NullCheck(L_7);
 		MarkToBaseAdjustmentRecordU5BU5D_t4F120A507E14039BC63574D1815FF2E7B9D73911* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		MarkToBaseAdjustmentRecord_t4BE0F5A88932146F70A2B521176BDA91A20D8607 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		MarkToBaseAdjustmentRecord_t4BE0F5A88932146F70A2B521176BDA91A20D8607 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		int32_t L_12 = __this->____index;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_12, 1));
@@ -11852,6 +11902,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mEF86125AAC4AECD
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t8837CD02A40CED632406E449B6D76FF9AB3E4468* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -11865,6 +11916,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mEF86125AAC4AECD
 IL_0018:
 	{
 		List_1_t8837CD02A40CED632406E449B6D76FF9AB3E4468* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		MarkToBaseAdjustmentRecord_t4BE0F5A88932146F70A2B521176BDA91A20D8607* L_5 = (MarkToBaseAdjustmentRecord_t4BE0F5A88932146F70A2B521176BDA91A20D8607*)(&__this->____current);
@@ -11909,6 +11961,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t8837CD02A40CED632406E449B6D76FF9AB3E4468* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -11944,6 +11997,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t8837CD02A40CED632406E449B6D76FF9AB3E4468* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -11985,6 +12039,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m53B2769EE2681F58CAE053
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_tF7A39AE542CF9A5C63B48726F173FA38571D52C3* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		MarkToMarkAdjustmentRecord_tD53618A3728435D5C904857DAC644EE27640807C* L_3 = (MarkToMarkAdjustmentRecord_tD53618A3728435D5C904857DAC644EE27640807C*)(&__this->____current);
@@ -12020,6 +12075,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mC0C962349A6283FD9FA
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_tF7A39AE542CF9A5C63B48726F173FA38571D52C3* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -12029,6 +12085,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mC0C962349A6283FD9FA
 	{
 		int32_t L_4 = __this->____index;
 		List_1_tF7A39AE542CF9A5C63B48726F173FA38571D52C3* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -12037,10 +12094,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mC0C962349A6283FD9FA
 	}
 	{
 		List_1_tF7A39AE542CF9A5C63B48726F173FA38571D52C3* L_7 = V_0;
+		NullCheck(L_7);
 		MarkToMarkAdjustmentRecordU5BU5D_t09E9394A7451C53E2DD62ACB4FD0CF5F52159061* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		MarkToMarkAdjustmentRecord_tD53618A3728435D5C904857DAC644EE27640807C L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		MarkToMarkAdjustmentRecord_tD53618A3728435D5C904857DAC644EE27640807C L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		int32_t L_12 = __this->____index;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_12, 1));
@@ -12068,6 +12127,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m59BDE27124AB582
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tF7A39AE542CF9A5C63B48726F173FA38571D52C3* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -12081,6 +12141,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m59BDE27124AB582
 IL_0018:
 	{
 		List_1_tF7A39AE542CF9A5C63B48726F173FA38571D52C3* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		MarkToMarkAdjustmentRecord_tD53618A3728435D5C904857DAC644EE27640807C* L_5 = (MarkToMarkAdjustmentRecord_tD53618A3728435D5C904857DAC644EE27640807C*)(&__this->____current);
@@ -12125,6 +12186,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_tF7A39AE542CF9A5C63B48726F173FA38571D52C3* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -12160,6 +12222,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tF7A39AE542CF9A5C63B48726F173FA38571D52C3* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -12476,6 +12539,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mB2E659404649FBEA780D53
 		__this->____stack = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____stack), (void*)L_0);
 		Stack_1_t8A661B4E11F715EF60608DE57485D9956E00C72E* L_1 = ___0_stack;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = ((int32_t)-2);
@@ -12515,6 +12579,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m11D98A639C2BC848E46
 	{
 		int32_t L_0 = __this->____version;
 		Stack_1_t8A661B4E11F715EF60608DE57485D9956E00C72E* L_1 = __this->____stack;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -12537,6 +12602,7 @@ IL_001e:
 	}
 	{
 		Stack_1_t8A661B4E11F715EF60608DE57485D9956E00C72E* L_5 = __this->____stack;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_subtract(L_6, 1));
 		int32_t L_7 = __this->____index;
@@ -12550,10 +12616,12 @@ IL_001e:
 	}
 	{
 		Stack_1_t8A661B4E11F715EF60608DE57485D9956E00C72E* L_9 = __this->____stack;
+		NullCheck(L_9);
 		Matrix4x4U5BU5D_t9C51C93425FABC022B506D2DB3A5FA70F9752C4D* L_10 = L_9->____array;
 		int32_t L_11 = __this->____index;
+		NullCheck(L_10);
 		int32_t L_12 = L_11;
-		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_13 = (L_10)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_12));
+		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_13 = (L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_12));
 		__this->____currentElement = L_13;
 		G_B5_0 = G_B4_0;
 	}
@@ -12592,10 +12660,12 @@ IL_0072:
 	}
 	{
 		Stack_1_t8A661B4E11F715EF60608DE57485D9956E00C72E* L_19 = __this->____stack;
+		NullCheck(L_19);
 		Matrix4x4U5BU5D_t9C51C93425FABC022B506D2DB3A5FA70F9752C4D* L_20 = L_19->____array;
 		int32_t L_21 = __this->____index;
+		NullCheck(L_20);
 		int32_t L_22 = L_21;
-		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_23 = (L_20)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_22));
+		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_23 = (L_20)->GetAt(static_cast<il2cpp_array_size_t>(L_22));
 		__this->____currentElement = L_23;
 		return (bool)G_B9_0;
 	}
@@ -12702,6 +12772,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Stack_1_t8A661B4E11F715EF60608DE57485D9956E00C72E* L_1 = __this->____stack;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -13182,6 +13253,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mE1163009922C13BBE682EA
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_tD497C1314C02F6E7345D74565C2424A939B46AA7* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		MultipleSubstitutionRecord_t668A640AFADBD46E3D4EC3A8417D0A02764DF87B* L_3 = (MultipleSubstitutionRecord_t668A640AFADBD46E3D4EC3A8417D0A02764DF87B*)(&__this->____current);
@@ -13217,6 +13289,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mBDD31BC8014BDB63E38
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_tD497C1314C02F6E7345D74565C2424A939B46AA7* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -13226,6 +13299,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mBDD31BC8014BDB63E38
 	{
 		int32_t L_4 = __this->____index;
 		List_1_tD497C1314C02F6E7345D74565C2424A939B46AA7* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -13234,10 +13308,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mBDD31BC8014BDB63E38
 	}
 	{
 		List_1_tD497C1314C02F6E7345D74565C2424A939B46AA7* L_7 = V_0;
+		NullCheck(L_7);
 		MultipleSubstitutionRecordU5BU5D_t97C158785342D9FF7B0B89861AC760DE6E38E934* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		MultipleSubstitutionRecord_t668A640AFADBD46E3D4EC3A8417D0A02764DF87B L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		MultipleSubstitutionRecord_t668A640AFADBD46E3D4EC3A8417D0A02764DF87B L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___m_SubstituteGlyphIDs), (void*)NULL);
 		int32_t L_12 = __this->____index;
@@ -13266,6 +13342,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m85DB71C67C73AA8
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tD497C1314C02F6E7345D74565C2424A939B46AA7* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -13279,6 +13356,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m85DB71C67C73AA8
 IL_0018:
 	{
 		List_1_tD497C1314C02F6E7345D74565C2424A939B46AA7* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		MultipleSubstitutionRecord_t668A640AFADBD46E3D4EC3A8417D0A02764DF87B* L_5 = (MultipleSubstitutionRecord_t668A640AFADBD46E3D4EC3A8417D0A02764DF87B*)(&__this->____current);
@@ -13323,6 +13401,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_tD497C1314C02F6E7345D74565C2424A939B46AA7* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -13358,6 +13437,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tD497C1314C02F6E7345D74565C2424A939B46AA7* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -13815,6 +13895,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mC9D698BB17611B2B5A3A80
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____set), (void*)L_0);
 		__this->____index = 0;
 		HashSet_1_t2F33BEB06EEA4A872E2FAF464382422AA39AE885* L_1 = ___0_set;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		RuntimeObject** L_3 = (RuntimeObject**)(&__this->____current);
@@ -13847,6 +13928,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m27565F5ACCCC75C3DD3
 	{
 		int32_t L_0 = __this->____version;
 		HashSet_1_t2F33BEB06EEA4A872E2FAF464382422AA39AE885* L_1 = __this->____set;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -13862,9 +13944,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m27565F5ACCCC75C3DD3
 IL_001e:
 	{
 		HashSet_1_t2F33BEB06EEA4A872E2FAF464382422AA39AE885* L_4 = __this->____set;
+		NullCheck(L_4);
 		SlotU5BU5D_tF596AD324082C553DB364C768406A40BB3C85343* L_5 = L_4->____slots;
 		int32_t L_6 = __this->____index;
-		int32_t L_7 = ((L_5)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_6)))->___hashCode;
+		NullCheck(L_5);
+		int32_t L_7 = ((L_5)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_6)))->___hashCode;
 		if ((((int32_t)L_7) < ((int32_t)0)))
 		{
 			goto IL_006d;
@@ -13872,9 +13956,11 @@ IL_001e:
 	}
 	{
 		HashSet_1_t2F33BEB06EEA4A872E2FAF464382422AA39AE885* L_8 = __this->____set;
+		NullCheck(L_8);
 		SlotU5BU5D_tF596AD324082C553DB364C768406A40BB3C85343* L_9 = L_8->____slots;
 		int32_t L_10 = __this->____index;
-		RuntimeObject* L_11 = ((L_9)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_10)))->___value;
+		NullCheck(L_9);
+		RuntimeObject* L_11 = ((L_9)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_10)))->___value;
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____current), (void*)L_11);
 		int32_t L_12 = __this->____index;
@@ -13892,6 +13978,7 @@ IL_007b:
 	{
 		int32_t L_14 = __this->____index;
 		HashSet_1_t2F33BEB06EEA4A872E2FAF464382422AA39AE885* L_15 = __this->____set;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____lastIndex;
 		if ((((int32_t)L_14) < ((int32_t)L_16)))
 		{
@@ -13900,6 +13987,7 @@ IL_007b:
 	}
 	{
 		HashSet_1_t2F33BEB06EEA4A872E2FAF464382422AA39AE885* L_17 = __this->____set;
+		NullCheck(L_17);
 		int32_t L_18 = L_17->____lastIndex;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_18, 1));
 		RuntimeObject** L_19 = (RuntimeObject**)(&__this->____current);
@@ -13944,6 +14032,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		HashSet_1_t2F33BEB06EEA4A872E2FAF464382422AA39AE885* L_2 = __this->____set;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____lastIndex;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -13979,6 +14068,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		HashSet_1_t2F33BEB06EEA4A872E2FAF464382422AA39AE885* L_1 = __this->____set;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -14021,9 +14111,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m01EBD00AA2094A26D7A066
 		__this->____list = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		LinkedList_1_t49DC5CF34D4D642E6417F1245CDEC26A32F60C76* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->___version;
 		__this->____version = L_2;
 		LinkedList_1_t49DC5CF34D4D642E6417F1245CDEC26A32F60C76* L_3 = ___0_list;
+		NullCheck(L_3);
 		LinkedListNode_1_t293BB098D459DDAE6A26977D0731A997186D1D4C* L_4 = L_3->___head;
 		__this->____node = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____node), (void*)L_4);
@@ -14083,6 +14175,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		LinkedList_1_t49DC5CF34D4D642E6417F1245CDEC26A32F60C76* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3;
 		L_3 = LinkedList_1_get_Count_mBFF1AE23B10EDF501026201C0427AA5820AECD82_inline(L_2, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 4));
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
@@ -14118,6 +14211,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m5148B3CE498B6E84B88
 	{
 		int32_t L_0 = __this->____version;
 		LinkedList_1_t49DC5CF34D4D642E6417F1245CDEC26A32F60C76* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->___version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -14140,6 +14234,7 @@ IL_001e:
 	}
 	{
 		LinkedList_1_t49DC5CF34D4D642E6417F1245CDEC26A32F60C76* L_5 = __this->____list;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = LinkedList_1_get_Count_mBFF1AE23B10EDF501026201C0427AA5820AECD82_inline(L_5, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 4));
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_6, 1));
@@ -14151,15 +14246,18 @@ IL_003b:
 		int32_t L_7 = __this->____index;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_7, 1));
 		LinkedListNode_1_t293BB098D459DDAE6A26977D0731A997186D1D4C* L_8 = __this->____node;
+		NullCheck(L_8);
 		RuntimeObject* L_9 = L_8->___item;
 		__this->____current = L_9;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____current), (void*)L_9);
 		LinkedListNode_1_t293BB098D459DDAE6A26977D0731A997186D1D4C* L_10 = __this->____node;
+		NullCheck(L_10);
 		LinkedListNode_1_t293BB098D459DDAE6A26977D0731A997186D1D4C* L_11 = L_10->___next;
 		__this->____node = L_11;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____node), (void*)L_11);
 		LinkedListNode_1_t293BB098D459DDAE6A26977D0731A997186D1D4C* L_12 = __this->____node;
 		LinkedList_1_t49DC5CF34D4D642E6417F1245CDEC26A32F60C76* L_13 = __this->____list;
+		NullCheck(L_13);
 		LinkedListNode_1_t293BB098D459DDAE6A26977D0731A997186D1D4C* L_14 = L_13->___head;
 		if ((!(((RuntimeObject*)(LinkedListNode_1_t293BB098D459DDAE6A26977D0731A997186D1D4C*)L_12) == ((RuntimeObject*)(LinkedListNode_1_t293BB098D459DDAE6A26977D0731A997186D1D4C*)L_14))))
 		{
@@ -14190,6 +14288,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		LinkedList_1_t49DC5CF34D4D642E6417F1245CDEC26A32F60C76* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->___version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -14207,6 +14306,7 @@ IL_001e:
 		RuntimeObject** L_4 = (RuntimeObject**)(&__this->____current);
 		il2cpp_codegen_initobj(L_4, sizeof(RuntimeObject*));
 		LinkedList_1_t49DC5CF34D4D642E6417F1245CDEC26A32F60C76* L_5 = __this->____list;
+		NullCheck(L_5);
 		LinkedListNode_1_t293BB098D459DDAE6A26977D0731A997186D1D4C* L_6 = L_5->___head;
 		__this->____node = L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____node), (void*)L_6);
@@ -14280,6 +14380,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m540236388ED02DCFB60698
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		RuntimeObject** L_3 = (RuntimeObject**)(&__this->____current);
@@ -14315,6 +14416,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mE921CC8F29FBBDE7CC3
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -14324,6 +14426,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mE921CC8F29FBBDE7CC3
 	{
 		int32_t L_4 = __this->____index;
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -14332,10 +14435,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mE921CC8F29FBBDE7CC3
 	}
 	{
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_7 = V_0;
+		NullCheck(L_7);
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		RuntimeObject* L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		RuntimeObject* L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____current), (void*)L_11);
 		int32_t L_12 = __this->____index;
@@ -14364,6 +14469,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mE00558EA689CC12
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -14377,6 +14483,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mE00558EA689CC12
 IL_0018:
 	{
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		RuntimeObject** L_5 = (RuntimeObject**)(&__this->____current);
@@ -14421,6 +14528,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -14454,6 +14562,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -14495,6 +14604,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mE48807999815FCA9A84BDD
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		LowLevelListWithIList_1_t424B84BB083921C00880052D4B49074AF66B72FC* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = ((LowLevelList_1_tFB82D019B54AD98BC47D01C80B32C9DC3FA3BE58*)L_1)->____version;
 		__this->____version = L_2;
 		RuntimeObject** L_3 = (RuntimeObject**)(&__this->____current);
@@ -14530,6 +14640,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mEF03AF3876B8910EC6D
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		LowLevelListWithIList_1_t424B84BB083921C00880052D4B49074AF66B72FC* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = ((LowLevelList_1_tFB82D019B54AD98BC47D01C80B32C9DC3FA3BE58*)L_2)->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -14539,6 +14650,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mEF03AF3876B8910EC6D
 	{
 		int32_t L_4 = __this->____index;
 		LowLevelListWithIList_1_t424B84BB083921C00880052D4B49074AF66B72FC* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = ((LowLevelList_1_tFB82D019B54AD98BC47D01C80B32C9DC3FA3BE58*)L_5)->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -14547,10 +14659,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mEF03AF3876B8910EC6D
 	}
 	{
 		LowLevelListWithIList_1_t424B84BB083921C00880052D4B49074AF66B72FC* L_7 = V_0;
+		NullCheck(L_7);
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_8 = ((LowLevelList_1_tFB82D019B54AD98BC47D01C80B32C9DC3FA3BE58*)L_7)->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		RuntimeObject* L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		RuntimeObject* L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____current), (void*)L_11);
 		int32_t L_12 = __this->____index;
@@ -14579,6 +14693,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m8FB21FA8B88B22D
 	{
 		int32_t L_0 = __this->____version;
 		LowLevelListWithIList_1_t424B84BB083921C00880052D4B49074AF66B72FC* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = ((LowLevelList_1_tFB82D019B54AD98BC47D01C80B32C9DC3FA3BE58*)L_1)->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -14594,6 +14709,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m8FB21FA8B88B22D
 IL_0019:
 	{
 		LowLevelListWithIList_1_t424B84BB083921C00880052D4B49074AF66B72FC* L_4 = __this->____list;
+		NullCheck(L_4);
 		int32_t L_5 = ((LowLevelList_1_tFB82D019B54AD98BC47D01C80B32C9DC3FA3BE58*)L_4)->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_5, 1));
 		RuntimeObject** L_6 = (RuntimeObject**)(&__this->____current);
@@ -14638,6 +14754,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		LowLevelListWithIList_1_t424B84BB083921C00880052D4B49074AF66B72FC* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = ((LowLevelList_1_tFB82D019B54AD98BC47D01C80B32C9DC3FA3BE58*)L_2)->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -14673,6 +14790,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		LowLevelListWithIList_1_t424B84BB083921C00880052D4B49074AF66B72FC* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = ((LowLevelList_1_tFB82D019B54AD98BC47D01C80B32C9DC3FA3BE58*)L_1)->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -14715,6 +14833,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m07A08E9A1E2AB072CB1654
 		__this->____q = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____q), (void*)L_0);
 		Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5* L_1 = ___0_q;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = (-1);
@@ -14754,6 +14873,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mABD92CBE05B031E50E3
 	{
 		int32_t L_0 = __this->____version;
 		Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5* L_1 = __this->____q;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -14784,6 +14904,7 @@ IL_002a:
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_5, 1));
 		int32_t L_6 = __this->____index;
 		Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5* L_7 = __this->____q;
+		NullCheck(L_7);
 		int32_t L_8 = L_7->____size;
 		if ((!(((uint32_t)L_6) == ((uint32_t)L_8))))
 		{
@@ -14800,11 +14921,14 @@ IL_002a:
 IL_0061:
 	{
 		Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5* L_10 = __this->____q;
+		NullCheck(L_10);
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_11 = L_10->____array;
 		V_0 = L_11;
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_12 = V_0;
+		NullCheck(L_12);
 		V_1 = ((int32_t)(((RuntimeArray*)L_12)->max_length));
 		Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5* L_13 = __this->____q;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____head;
 		int32_t L_15 = __this->____index;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_14, L_15));
@@ -14825,8 +14949,9 @@ IL_008c:
 	{
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_20 = V_0;
 		int32_t L_21 = V_2;
+		NullCheck(L_20);
 		int32_t L_22 = L_21;
-		RuntimeObject* L_23 = (L_20)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_22));
+		RuntimeObject* L_23 = (L_20)->GetAt(static_cast<il2cpp_array_size_t>(L_22));
 		__this->____currentElement = L_23;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____currentElement), (void*)L_23);
 		return (bool)1;
@@ -14925,6 +15050,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5* L_1 = __this->____q;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -14967,6 +15093,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m9F25E94BA06F0C82E9CE1E
 		__this->____stack = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____stack), (void*)L_0);
 		Stack_1_tAD790A47551563636908E21E4F08C54C0C323EB5* L_1 = ___0_stack;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = ((int32_t)-2);
@@ -15006,6 +15133,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mACF5F0B611CD40A1A21
 	{
 		int32_t L_0 = __this->____version;
 		Stack_1_tAD790A47551563636908E21E4F08C54C0C323EB5* L_1 = __this->____stack;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -15028,6 +15156,7 @@ IL_001e:
 	}
 	{
 		Stack_1_tAD790A47551563636908E21E4F08C54C0C323EB5* L_5 = __this->____stack;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_subtract(L_6, 1));
 		int32_t L_7 = __this->____index;
@@ -15041,10 +15170,12 @@ IL_001e:
 	}
 	{
 		Stack_1_tAD790A47551563636908E21E4F08C54C0C323EB5* L_9 = __this->____stack;
+		NullCheck(L_9);
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_10 = L_9->____array;
 		int32_t L_11 = __this->____index;
+		NullCheck(L_10);
 		int32_t L_12 = L_11;
-		RuntimeObject* L_13 = (L_10)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_12));
+		RuntimeObject* L_13 = (L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_12));
 		__this->____currentElement = L_13;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____currentElement), (void*)L_13);
 		G_B5_0 = G_B4_0;
@@ -15084,10 +15215,12 @@ IL_0072:
 	}
 	{
 		Stack_1_tAD790A47551563636908E21E4F08C54C0C323EB5* L_19 = __this->____stack;
+		NullCheck(L_19);
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_20 = L_19->____array;
 		int32_t L_21 = __this->____index;
+		NullCheck(L_20);
 		int32_t L_22 = L_21;
-		RuntimeObject* L_23 = (L_20)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_22));
+		RuntimeObject* L_23 = (L_20)->GetAt(static_cast<il2cpp_array_size_t>(L_22));
 		__this->____currentElement = L_23;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____currentElement), (void*)L_23);
 		return (bool)G_B9_0;
@@ -15193,6 +15326,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Stack_1_tAD790A47551563636908E21E4F08C54C0C323EB5* L_1 = __this->____stack;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -15245,14 +15379,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mD912767F3C3AB1A573EE48
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 3));
 		ListQueryMatcher_1_tC447E3396770813CE332360F6EECEEFB6B51FA69* L_1 = ((UQueryState_1_tDA47936DEF27643350186CA4E1DED7053A3D02B2_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 3)))->___s_EnumerationList;
 		List_1_t6115BBE78FE9310B180A2027321DF46F2A06AC95* L_2 = __this->___iterationList;
+		NullCheck(L_1);
 		ListQueryMatcher_1_set_matches_mE9277FB5815A73F8A5D2BCF2A21EB8E6F93AA3DE_inline(L_1, L_2, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 4));
 		ListQueryMatcher_1_tC447E3396770813CE332360F6EECEEFB6B51FA69* L_3 = ((UQueryState_1_tDA47936DEF27643350186CA4E1DED7053A3D02B2_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 3)))->___s_EnumerationList;
 		UQueryState_1_tDA47936DEF27643350186CA4E1DED7053A3D02B2 L_4 = ___0_queryState;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_5 = L_4.___m_Element;
 		UQueryState_1_tDA47936DEF27643350186CA4E1DED7053A3D02B2 L_6 = ___0_queryState;
 		List_1_t7C8CC805CEADA09DFAC2AC1A5D731D5EE956F6DC* L_7 = L_6.___m_Matchers;
+		NullCheck((UQueryMatcher_tF8783F54BA397641240DA7025126F6301EF53FF8*)L_3);
 		VirtualActionInvoker2< VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115*, List_1_t7C8CC805CEADA09DFAC2AC1A5D731D5EE956F6DC* >::Invoke(7, (UQueryMatcher_tF8783F54BA397641240DA7025126F6301EF53FF8*)L_3, L_5, L_7);
 		ListQueryMatcher_1_tC447E3396770813CE332360F6EECEEFB6B51FA69* L_8 = ((UQueryState_1_tDA47936DEF27643350186CA4E1DED7053A3D02B2_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 3)))->___s_EnumerationList;
+		NullCheck(L_8);
 		ListQueryMatcher_1_Reset_mE74237AF83F18959936B4A289A0BA2489A48C02B(L_8, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 5));
 		__this->___currentIndex = (-1);
 		return;
@@ -15276,6 +15413,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m3E9756
 	{
 		List_1_t6115BBE78FE9310B180A2027321DF46F2A06AC95* L_0 = __this->___iterationList;
 		int32_t L_1 = __this->___currentIndex;
+		NullCheck(L_0);
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_2;
 		L_2 = List_1_get_Item_mF58794633948FE8284FCDACC4456686548388092(L_0, L_1, List_1_get_Item_mF58794633948FE8284FCDACC4456686548388092_RuntimeMethod_var);
 		return ((RuntimeObject*)Castclass((RuntimeObject*)L_2, il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 6)));
@@ -15324,6 +15462,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mCF34F788777D451B9DE
 		__this->___currentIndex = L_1;
 		int32_t L_2 = V_0;
 		List_1_t6115BBE78FE9310B180A2027321DF46F2A06AC95* L_3 = __this->___iterationList;
+		NullCheck(L_3);
 		int32_t L_4;
 		L_4 = List_1_get_Count_m76A83B76330D385CC22ECE544729CDD0FCEAFECC_inline(L_3, List_1_get_Count_m76A83B76330D385CC22ECE544729CDD0FCEAFECC_RuntimeMethod_var);
 		V_1 = (bool)((((int32_t)L_2) < ((int32_t)L_4))? 1 : 0);
@@ -17122,6 +17261,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mAF215FD358D499CB5ECC13
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t2EF0515F9247C0F480F55BF3E296366A47CB0324* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA* L_3 = (RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA*)(&__this->____current);
@@ -17157,6 +17297,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m50A4A0A7D91115619B7
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t2EF0515F9247C0F480F55BF3E296366A47CB0324* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -17166,6 +17307,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m50A4A0A7D91115619B7
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t2EF0515F9247C0F480F55BF3E296366A47CB0324* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -17174,10 +17316,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m50A4A0A7D91115619B7
 	}
 	{
 		List_1_t2EF0515F9247C0F480F55BF3E296366A47CB0324* L_7 = V_0;
+		NullCheck(L_7);
 		RaycastHit2DU5BU5D_t28739C686586993113318B63C84927FD43063FC7* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		int32_t L_12 = __this->____index;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_12, 1));
@@ -17205,6 +17349,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m5B179F6C953A9C8
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t2EF0515F9247C0F480F55BF3E296366A47CB0324* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -17218,6 +17363,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m5B179F6C953A9C8
 IL_0018:
 	{
 		List_1_t2EF0515F9247C0F480F55BF3E296366A47CB0324* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA* L_5 = (RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA*)(&__this->____current);
@@ -17262,6 +17408,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t2EF0515F9247C0F480F55BF3E296366A47CB0324* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -17297,6 +17444,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t2EF0515F9247C0F480F55BF3E296366A47CB0324* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -17338,6 +17486,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m5A7521BE949105D4DD80B0
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t8292C421BBB00D7661DC07462822936152BAB446* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023* L_3 = (RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023*)(&__this->____current);
@@ -17373,6 +17522,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m22E22E0108683303C9E
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t8292C421BBB00D7661DC07462822936152BAB446* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -17382,6 +17532,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m22E22E0108683303C9E
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t8292C421BBB00D7661DC07462822936152BAB446* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -17390,10 +17541,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m22E22E0108683303C9E
 	}
 	{
 		List_1_t8292C421BBB00D7661DC07462822936152BAB446* L_7 = V_0;
+		NullCheck(L_7);
 		RaycastResultU5BU5D_tEAF6B3C3088179304676571328CBB001D8CECBC7* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___m_GameObject), (void*)NULL);
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
@@ -17425,6 +17578,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mCCCB8F8034C1376
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t8292C421BBB00D7661DC07462822936152BAB446* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -17438,6 +17592,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mCCCB8F8034C1376
 IL_0018:
 	{
 		List_1_t8292C421BBB00D7661DC07462822936152BAB446* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023* L_5 = (RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023*)(&__this->____current);
@@ -17482,6 +17637,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t8292C421BBB00D7661DC07462822936152BAB446* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -17517,6 +17673,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t8292C421BBB00D7661DC07462822936152BAB446* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -17557,6 +17714,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mF9CC77EDB16F67702CB069
 		__this->____stack = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____stack), (void*)L_0);
 		Stack_1_tEEC1F6968B6388E4800894946805617A2E7EDFDA* L_1 = ___0_stack;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = ((int32_t)-2);
@@ -17596,6 +17754,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m106B377D01B3AE09D6A
 	{
 		int32_t L_0 = __this->____version;
 		Stack_1_tEEC1F6968B6388E4800894946805617A2E7EDFDA* L_1 = __this->____stack;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -17618,6 +17777,7 @@ IL_001e:
 	}
 	{
 		Stack_1_tEEC1F6968B6388E4800894946805617A2E7EDFDA* L_5 = __this->____stack;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_subtract(L_6, 1));
 		int32_t L_7 = __this->____index;
@@ -17631,10 +17791,12 @@ IL_001e:
 	}
 	{
 		Stack_1_tEEC1F6968B6388E4800894946805617A2E7EDFDA* L_9 = __this->____stack;
+		NullCheck(L_9);
 		RectU5BU5D_t83297CB2E61BDF9D27DCB1A3E5C78EBCE9F7C993* L_10 = L_9->____array;
 		int32_t L_11 = __this->____index;
+		NullCheck(L_10);
 		int32_t L_12 = L_11;
-		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_13 = (L_10)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_12));
+		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_13 = (L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_12));
 		__this->____currentElement = L_13;
 		G_B5_0 = G_B4_0;
 	}
@@ -17673,10 +17835,12 @@ IL_0072:
 	}
 	{
 		Stack_1_tEEC1F6968B6388E4800894946805617A2E7EDFDA* L_19 = __this->____stack;
+		NullCheck(L_19);
 		RectU5BU5D_t83297CB2E61BDF9D27DCB1A3E5C78EBCE9F7C993* L_20 = L_19->____array;
 		int32_t L_21 = __this->____index;
+		NullCheck(L_20);
 		int32_t L_22 = L_21;
-		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_23 = (L_20)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_22));
+		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_23 = (L_20)->GetAt(static_cast<il2cpp_array_size_t>(L_22));
 		__this->____currentElement = L_23;
 		return (bool)G_B9_0;
 	}
@@ -17783,6 +17947,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Stack_1_tEEC1F6968B6388E4800894946805617A2E7EDFDA* L_1 = __this->____stack;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -17826,6 +17991,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m2E99A3B09D26AF6EDECD00
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t7C8CC805CEADA09DFAC2AC1A5D731D5EE956F6DC* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		RuleMatcher_t327CFEB02C81AA20E639DE949DCBBAB5E92FF28E* L_3 = (RuleMatcher_t327CFEB02C81AA20E639DE949DCBBAB5E92FF28E*)(&__this->____current);
@@ -17861,6 +18027,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m1D2042CEA824598C767
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t7C8CC805CEADA09DFAC2AC1A5D731D5EE956F6DC* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -17870,6 +18037,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m1D2042CEA824598C767
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t7C8CC805CEADA09DFAC2AC1A5D731D5EE956F6DC* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -17878,10 +18046,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m1D2042CEA824598C767
 	}
 	{
 		List_1_t7C8CC805CEADA09DFAC2AC1A5D731D5EE956F6DC* L_7 = V_0;
+		NullCheck(L_7);
 		RuleMatcherU5BU5D_t0135EA06151E72D04414F3EAF9420CB85EE2236C* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		RuleMatcher_t327CFEB02C81AA20E639DE949DCBBAB5E92FF28E L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		RuleMatcher_t327CFEB02C81AA20E639DE949DCBBAB5E92FF28E L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___sheet), (void*)NULL);
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
@@ -17913,6 +18083,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mDBACDC3EFB22FC3
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t7C8CC805CEADA09DFAC2AC1A5D731D5EE956F6DC* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -17926,6 +18097,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mDBACDC3EFB22FC3
 IL_0018:
 	{
 		List_1_t7C8CC805CEADA09DFAC2AC1A5D731D5EE956F6DC* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		RuleMatcher_t327CFEB02C81AA20E639DE949DCBBAB5E92FF28E* L_5 = (RuleMatcher_t327CFEB02C81AA20E639DE949DCBBAB5E92FF28E*)(&__this->____current);
@@ -17970,6 +18142,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t7C8CC805CEADA09DFAC2AC1A5D731D5EE956F6DC* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -18005,6 +18178,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t7C8CC805CEADA09DFAC2AC1A5D731D5EE956F6DC* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -18046,6 +18220,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m53DAA41F6BA15BB41C11F0
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_tA1D3D4FCA4CFF8E02845F48D747A4C704D4C9CAE* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7* L_3 = (SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7*)(&__this->____current);
@@ -18081,6 +18256,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m40D8670842DA5800C34
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_tA1D3D4FCA4CFF8E02845F48D747A4C704D4C9CAE* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -18090,6 +18266,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m40D8670842DA5800C34
 	{
 		int32_t L_4 = __this->____index;
 		List_1_tA1D3D4FCA4CFF8E02845F48D747A4C704D4C9CAE* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -18098,10 +18275,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m40D8670842DA5800C34
 	}
 	{
 		List_1_tA1D3D4FCA4CFF8E02845F48D747A4C704D4C9CAE* L_7 = V_0;
+		NullCheck(L_7);
 		SelectorMatchRecordU5BU5D_t6033C70B62D6E4C7261F40F64F75070577947A19* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___sheet), (void*)NULL);
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
@@ -18133,6 +18312,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mBCE43DA39D55F5C
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tA1D3D4FCA4CFF8E02845F48D747A4C704D4C9CAE* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -18146,6 +18326,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mBCE43DA39D55F5C
 IL_0018:
 	{
 		List_1_tA1D3D4FCA4CFF8E02845F48D747A4C704D4C9CAE* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7* L_5 = (SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7*)(&__this->____current);
@@ -18190,6 +18371,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_tA1D3D4FCA4CFF8E02845F48D747A4C704D4C9CAE* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -18225,6 +18407,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tA1D3D4FCA4CFF8E02845F48D747A4C704D4C9CAE* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -18563,6 +18746,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mFEB76670AA4E8D12245EA6
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_tD6F1685FEE5A196B3002ACC649A1DF5C65162268* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		StylePropertyName_tCBE2B561C690538C8514BF56426AC486DC35B6FF* L_3 = (StylePropertyName_tCBE2B561C690538C8514BF56426AC486DC35B6FF*)(&__this->____current);
@@ -18598,6 +18782,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m82944CA6B6616C35895
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_tD6F1685FEE5A196B3002ACC649A1DF5C65162268* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -18607,6 +18792,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m82944CA6B6616C35895
 	{
 		int32_t L_4 = __this->____index;
 		List_1_tD6F1685FEE5A196B3002ACC649A1DF5C65162268* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -18615,10 +18801,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m82944CA6B6616C35895
 	}
 	{
 		List_1_tD6F1685FEE5A196B3002ACC649A1DF5C65162268* L_7 = V_0;
+		NullCheck(L_7);
 		StylePropertyNameU5BU5D_t531626CF806E3F3D348D1F38A9109767014C35F8* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		StylePropertyName_tCBE2B561C690538C8514BF56426AC486DC35B6FF L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		StylePropertyName_tCBE2B561C690538C8514BF56426AC486DC35B6FF L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___U3CnameU3Ek__BackingField), (void*)NULL);
 		int32_t L_12 = __this->____index;
@@ -18647,6 +18835,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m6F77D680E67ED1D
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tD6F1685FEE5A196B3002ACC649A1DF5C65162268* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -18660,6 +18849,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m6F77D680E67ED1D
 IL_0018:
 	{
 		List_1_tD6F1685FEE5A196B3002ACC649A1DF5C65162268* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		StylePropertyName_tCBE2B561C690538C8514BF56426AC486DC35B6FF* L_5 = (StylePropertyName_tCBE2B561C690538C8514BF56426AC486DC35B6FF*)(&__this->____current);
@@ -18704,6 +18894,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_tD6F1685FEE5A196B3002ACC649A1DF5C65162268* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -18739,6 +18930,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tD6F1685FEE5A196B3002ACC649A1DF5C65162268* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -18780,6 +18972,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m4090B25D752A572EE063FE
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t893BC4E6EA21D89E7107414FB1199B089EB9F122* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2* L_3 = (StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2*)(&__this->____current);
@@ -18815,6 +19008,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m0577AB3DAF8906266E7
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t893BC4E6EA21D89E7107414FB1199B089EB9F122* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -18824,6 +19018,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m0577AB3DAF8906266E7
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t893BC4E6EA21D89E7107414FB1199B089EB9F122* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -18832,10 +19027,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m0577AB3DAF8906266E7
 	}
 	{
 		List_1_t893BC4E6EA21D89E7107414FB1199B089EB9F122* L_7 = V_0;
+		NullCheck(L_7);
 		StylePropertyValueU5BU5D_t4DE6509822A9A487529DC8DC8C08CB8822CE8688* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___sheet), (void*)NULL);
 		int32_t L_12 = __this->____index;
@@ -18864,6 +19061,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m58F2D75B6408C18
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t893BC4E6EA21D89E7107414FB1199B089EB9F122* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -18877,6 +19075,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m58F2D75B6408C18
 IL_0018:
 	{
 		List_1_t893BC4E6EA21D89E7107414FB1199B089EB9F122* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2* L_5 = (StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2*)(&__this->____current);
@@ -18921,6 +19120,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t893BC4E6EA21D89E7107414FB1199B089EB9F122* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -18956,6 +19156,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t893BC4E6EA21D89E7107414FB1199B089EB9F122* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -18997,6 +19198,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m1EF68D99CD7C77B46BA562
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t85FF16594D5F70EECC5855882558F8E26EF6BAFF* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		StyleSelectorPart_tEE5B8ADC7D114C7486CC8301FF96C114FF3C9470* L_3 = (StyleSelectorPart_tEE5B8ADC7D114C7486CC8301FF96C114FF3C9470*)(&__this->____current);
@@ -19032,6 +19234,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m6A369A40774C06803D4
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t85FF16594D5F70EECC5855882558F8E26EF6BAFF* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -19041,6 +19244,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m6A369A40774C06803D4
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t85FF16594D5F70EECC5855882558F8E26EF6BAFF* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -19049,10 +19253,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m6A369A40774C06803D4
 	}
 	{
 		List_1_t85FF16594D5F70EECC5855882558F8E26EF6BAFF* L_7 = V_0;
+		NullCheck(L_7);
 		StyleSelectorPartU5BU5D_tBA574FB3E75E94E52874FDB7B05B9048E8A5421B* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		StyleSelectorPart_tEE5B8ADC7D114C7486CC8301FF96C114FF3C9470 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		StyleSelectorPart_tEE5B8ADC7D114C7486CC8301FF96C114FF3C9470 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___m_Value), (void*)NULL);
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
@@ -19084,6 +19290,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mD5B185500E71F4A
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t85FF16594D5F70EECC5855882558F8E26EF6BAFF* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -19097,6 +19304,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mD5B185500E71F4A
 IL_0018:
 	{
 		List_1_t85FF16594D5F70EECC5855882558F8E26EF6BAFF* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		StyleSelectorPart_tEE5B8ADC7D114C7486CC8301FF96C114FF3C9470* L_5 = (StyleSelectorPart_tEE5B8ADC7D114C7486CC8301FF96C114FF3C9470*)(&__this->____current);
@@ -19141,6 +19349,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t85FF16594D5F70EECC5855882558F8E26EF6BAFF* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -19176,6 +19385,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t85FF16594D5F70EECC5855882558F8E26EF6BAFF* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -19217,6 +19427,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m07407C33D4BC439C583C1D
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t7EE6A5C0B2D6A0225722C4CCEFDCD7C2904D3F60* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		StyleSyntaxToken_tE4474F86F800F298F966FFDE947528453E769E0C* L_3 = (StyleSyntaxToken_tE4474F86F800F298F966FFDE947528453E769E0C*)(&__this->____current);
@@ -19252,6 +19463,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mEA06E161E6CE6891A9B
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t7EE6A5C0B2D6A0225722C4CCEFDCD7C2904D3F60* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -19261,6 +19473,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mEA06E161E6CE6891A9B
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t7EE6A5C0B2D6A0225722C4CCEFDCD7C2904D3F60* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -19269,10 +19482,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mEA06E161E6CE6891A9B
 	}
 	{
 		List_1_t7EE6A5C0B2D6A0225722C4CCEFDCD7C2904D3F60* L_7 = V_0;
+		NullCheck(L_7);
 		StyleSyntaxTokenU5BU5D_t47245051E1F0EBD45B56D9E0ED113E9586B33CD8* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		StyleSyntaxToken_tE4474F86F800F298F966FFDE947528453E769E0C L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		StyleSyntaxToken_tE4474F86F800F298F966FFDE947528453E769E0C L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___text), (void*)NULL);
 		int32_t L_12 = __this->____index;
@@ -19301,6 +19516,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mCB8BE98F8818C86
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t7EE6A5C0B2D6A0225722C4CCEFDCD7C2904D3F60* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -19314,6 +19530,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mCB8BE98F8818C86
 IL_0018:
 	{
 		List_1_t7EE6A5C0B2D6A0225722C4CCEFDCD7C2904D3F60* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		StyleSyntaxToken_tE4474F86F800F298F966FFDE947528453E769E0C* L_5 = (StyleSyntaxToken_tE4474F86F800F298F966FFDE947528453E769E0C*)(&__this->____current);
@@ -19358,6 +19575,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t7EE6A5C0B2D6A0225722C4CCEFDCD7C2904D3F60* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -19393,6 +19611,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t7EE6A5C0B2D6A0225722C4CCEFDCD7C2904D3F60* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -19434,6 +19653,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m4929055190ABAF776EDCD3
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t686B3253BF1ECA33C528F281967CD2DA263C252E* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		StyleValue_t56307594EC04E04EFBCC3220595B4AAD66FF93C5* L_3 = (StyleValue_t56307594EC04E04EFBCC3220595B4AAD66FF93C5*)(&__this->____current);
@@ -19469,6 +19689,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m382A4115E9B24554250
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t686B3253BF1ECA33C528F281967CD2DA263C252E* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -19478,6 +19699,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m382A4115E9B24554250
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t686B3253BF1ECA33C528F281967CD2DA263C252E* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -19486,10 +19708,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m382A4115E9B24554250
 	}
 	{
 		List_1_t686B3253BF1ECA33C528F281967CD2DA263C252E* L_7 = V_0;
+		NullCheck(L_7);
 		StyleValueU5BU5D_t544D1F13B44DC23CA765A18E32B7779768FDF0C8* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		StyleValue_t56307594EC04E04EFBCC3220595B4AAD66FF93C5 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		StyleValue_t56307594EC04E04EFBCC3220595B4AAD66FF93C5 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		int32_t L_12 = __this->____index;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_12, 1));
@@ -19517,6 +19741,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m017EE0A3A137223
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t686B3253BF1ECA33C528F281967CD2DA263C252E* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -19530,6 +19755,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m017EE0A3A137223
 IL_0018:
 	{
 		List_1_t686B3253BF1ECA33C528F281967CD2DA263C252E* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		StyleValue_t56307594EC04E04EFBCC3220595B4AAD66FF93C5* L_5 = (StyleValue_t56307594EC04E04EFBCC3220595B4AAD66FF93C5*)(&__this->____current);
@@ -19574,6 +19800,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t686B3253BF1ECA33C528F281967CD2DA263C252E* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -19609,6 +19836,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t686B3253BF1ECA33C528F281967CD2DA263C252E* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -19650,6 +19878,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mACB4C3503625F2470138EC
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t05E80B72E11DAF32DE5C2209E33E4AA7D99CCE45* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		StyleValueManaged_t68DFBEC1594279E4DC56634FD5092318D1E9A5F4* L_3 = (StyleValueManaged_t68DFBEC1594279E4DC56634FD5092318D1E9A5F4*)(&__this->____current);
@@ -19685,6 +19914,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mB5EDB1A39B767BF7677
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t05E80B72E11DAF32DE5C2209E33E4AA7D99CCE45* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -19694,6 +19924,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mB5EDB1A39B767BF7677
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t05E80B72E11DAF32DE5C2209E33E4AA7D99CCE45* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -19702,10 +19933,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mB5EDB1A39B767BF7677
 	}
 	{
 		List_1_t05E80B72E11DAF32DE5C2209E33E4AA7D99CCE45* L_7 = V_0;
+		NullCheck(L_7);
 		StyleValueManagedU5BU5D_tA36DD573E215D5C8EE43B4BD109BE2AA3902E1E9* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		StyleValueManaged_t68DFBEC1594279E4DC56634FD5092318D1E9A5F4 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		StyleValueManaged_t68DFBEC1594279E4DC56634FD5092318D1E9A5F4 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___value), (void*)NULL);
 		int32_t L_12 = __this->____index;
@@ -19734,6 +19967,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m36C9BC7E0026259
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t05E80B72E11DAF32DE5C2209E33E4AA7D99CCE45* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -19747,6 +19981,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m36C9BC7E0026259
 IL_0018:
 	{
 		List_1_t05E80B72E11DAF32DE5C2209E33E4AA7D99CCE45* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		StyleValueManaged_t68DFBEC1594279E4DC56634FD5092318D1E9A5F4* L_5 = (StyleValueManaged_t68DFBEC1594279E4DC56634FD5092318D1E9A5F4*)(&__this->____current);
@@ -19791,6 +20026,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t05E80B72E11DAF32DE5C2209E33E4AA7D99CCE45* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -19826,6 +20062,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t05E80B72E11DAF32DE5C2209E33E4AA7D99CCE45* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -19867,6 +20104,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m25C9969AE33038CA9BEC67
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t4EB7DA35FB6C543101A0C09A56EE4B652F4E1777* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		StyleVariable_t5D4DEC936102A13961F4F2C6214B83D6CDC56269* L_3 = (StyleVariable_t5D4DEC936102A13961F4F2C6214B83D6CDC56269*)(&__this->____current);
@@ -19902,6 +20140,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m64C24351B12EB2A1C99
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t4EB7DA35FB6C543101A0C09A56EE4B652F4E1777* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -19911,6 +20150,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m64C24351B12EB2A1C99
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t4EB7DA35FB6C543101A0C09A56EE4B652F4E1777* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -19919,10 +20159,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m64C24351B12EB2A1C99
 	}
 	{
 		List_1_t4EB7DA35FB6C543101A0C09A56EE4B652F4E1777* L_7 = V_0;
+		NullCheck(L_7);
 		StyleVariableU5BU5D_tFE786BD2C1F914C1605C072F0BB10C405C0B4D96* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		StyleVariable_t5D4DEC936102A13961F4F2C6214B83D6CDC56269 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		StyleVariable_t5D4DEC936102A13961F4F2C6214B83D6CDC56269 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___name), (void*)NULL);
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
@@ -19957,6 +20199,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m9DB9EB2916A7CB7
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t4EB7DA35FB6C543101A0C09A56EE4B652F4E1777* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -19970,6 +20213,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m9DB9EB2916A7CB7
 IL_0018:
 	{
 		List_1_t4EB7DA35FB6C543101A0C09A56EE4B652F4E1777* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		StyleVariable_t5D4DEC936102A13961F4F2C6214B83D6CDC56269* L_5 = (StyleVariable_t5D4DEC936102A13961F4F2C6214B83D6CDC56269*)(&__this->____current);
@@ -20014,6 +20258,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t4EB7DA35FB6C543101A0C09A56EE4B652F4E1777* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -20049,6 +20294,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t4EB7DA35FB6C543101A0C09A56EE4B652F4E1777* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -20089,6 +20335,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mF766BF2C1792506A694145
 		__this->____stack = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____stack), (void*)L_0);
 		Stack_1_t3B750F239246A65B0BACFB807CBA1961CA8DE0A6* L_1 = ___0_stack;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = ((int32_t)-2);
@@ -20128,6 +20375,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m69C5071BF04D929DB09
 	{
 		int32_t L_0 = __this->____version;
 		Stack_1_t3B750F239246A65B0BACFB807CBA1961CA8DE0A6* L_1 = __this->____stack;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -20150,6 +20398,7 @@ IL_001e:
 	}
 	{
 		Stack_1_t3B750F239246A65B0BACFB807CBA1961CA8DE0A6* L_5 = __this->____stack;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_subtract(L_6, 1));
 		int32_t L_7 = __this->____index;
@@ -20163,10 +20412,12 @@ IL_001e:
 	}
 	{
 		Stack_1_t3B750F239246A65B0BACFB807CBA1961CA8DE0A6* L_9 = __this->____stack;
+		NullCheck(L_9);
 		TextureIdU5BU5D_t03041DBB5C72B7E6F5F694A36DC5FEA75432188A* L_10 = L_9->____array;
 		int32_t L_11 = __this->____index;
+		NullCheck(L_10);
 		int32_t L_12 = L_11;
-		TextureId_tFF4B4AAE53408AB10B0B89CCA5F7B50CF2535E58 L_13 = (L_10)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_12));
+		TextureId_tFF4B4AAE53408AB10B0B89CCA5F7B50CF2535E58 L_13 = (L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_12));
 		__this->____currentElement = L_13;
 		G_B5_0 = G_B4_0;
 	}
@@ -20205,10 +20456,12 @@ IL_0072:
 	}
 	{
 		Stack_1_t3B750F239246A65B0BACFB807CBA1961CA8DE0A6* L_19 = __this->____stack;
+		NullCheck(L_19);
 		TextureIdU5BU5D_t03041DBB5C72B7E6F5F694A36DC5FEA75432188A* L_20 = L_19->____array;
 		int32_t L_21 = __this->____index;
+		NullCheck(L_20);
 		int32_t L_22 = L_21;
-		TextureId_tFF4B4AAE53408AB10B0B89CCA5F7B50CF2535E58 L_23 = (L_20)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_22));
+		TextureId_tFF4B4AAE53408AB10B0B89CCA5F7B50CF2535E58 L_23 = (L_20)->GetAt(static_cast<il2cpp_array_size_t>(L_22));
 		__this->____currentElement = L_23;
 		return (bool)G_B9_0;
 	}
@@ -20315,6 +20568,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Stack_1_t3B750F239246A65B0BACFB807CBA1961CA8DE0A6* L_1 = __this->____stack;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -20655,6 +20909,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m681E09CD8F9A52BAB42203
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t437B6C3879E969156A381BDC3C459CF809D39DDF* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		TimeValue_t45AE43B219493F9459363F32C79E8986B5F82E0E* L_3 = (TimeValue_t45AE43B219493F9459363F32C79E8986B5F82E0E*)(&__this->____current);
@@ -20690,6 +20945,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m5613AE6E4D5AC8AA154
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t437B6C3879E969156A381BDC3C459CF809D39DDF* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -20699,6 +20955,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m5613AE6E4D5AC8AA154
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t437B6C3879E969156A381BDC3C459CF809D39DDF* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -20707,10 +20964,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m5613AE6E4D5AC8AA154
 	}
 	{
 		List_1_t437B6C3879E969156A381BDC3C459CF809D39DDF* L_7 = V_0;
+		NullCheck(L_7);
 		TimeValueU5BU5D_t3EB79C5975D39A0E711250FD8A9547F5312746DE* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		TimeValue_t45AE43B219493F9459363F32C79E8986B5F82E0E L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		TimeValue_t45AE43B219493F9459363F32C79E8986B5F82E0E L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		int32_t L_12 = __this->____index;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_12, 1));
@@ -20738,6 +20997,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m504D94229588739
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t437B6C3879E969156A381BDC3C459CF809D39DDF* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -20751,6 +21011,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m504D94229588739
 IL_0018:
 	{
 		List_1_t437B6C3879E969156A381BDC3C459CF809D39DDF* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		TimeValue_t45AE43B219493F9459363F32C79E8986B5F82E0E* L_5 = (TimeValue_t45AE43B219493F9459363F32C79E8986B5F82E0E*)(&__this->____current);
@@ -20795,6 +21056,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t437B6C3879E969156A381BDC3C459CF809D39DDF* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -20830,6 +21092,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t437B6C3879E969156A381BDC3C459CF809D39DDF* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -21287,6 +21550,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m2CC29FCA5C8EB7237E28DA
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_tDD673E02B713760331F9D857C7B1D1C4A07194EF* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		TreeViewItemWrapper_t4475B9923345B2D51C29E1E5285A4F92FA65C839* L_3 = (TreeViewItemWrapper_t4475B9923345B2D51C29E1E5285A4F92FA65C839*)(&__this->____current);
@@ -21322,6 +21586,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m7221C25E0E6EB506015
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_tDD673E02B713760331F9D857C7B1D1C4A07194EF* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -21331,6 +21596,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m7221C25E0E6EB506015
 	{
 		int32_t L_4 = __this->____index;
 		List_1_tDD673E02B713760331F9D857C7B1D1C4A07194EF* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -21339,10 +21605,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m7221C25E0E6EB506015
 	}
 	{
 		List_1_tDD673E02B713760331F9D857C7B1D1C4A07194EF* L_7 = V_0;
+		NullCheck(L_7);
 		TreeViewItemWrapperU5BU5D_t64703F6E179A23C62A7DBA2486D76B1F7091C5AF* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		TreeViewItemWrapper_t4475B9923345B2D51C29E1E5285A4F92FA65C839 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		TreeViewItemWrapper_t4475B9923345B2D51C29E1E5285A4F92FA65C839 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&((&(((&__this->____current))->___item))->___U3CchildrenIdsU3Ek__BackingField), (void*)NULL);
 		int32_t L_12 = __this->____index;
@@ -21371,6 +21639,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m7AC36BD9E91B143
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tDD673E02B713760331F9D857C7B1D1C4A07194EF* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -21384,6 +21653,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m7AC36BD9E91B143
 IL_0018:
 	{
 		List_1_tDD673E02B713760331F9D857C7B1D1C4A07194EF* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		TreeViewItemWrapper_t4475B9923345B2D51C29E1E5285A4F92FA65C839* L_5 = (TreeViewItemWrapper_t4475B9923345B2D51C29E1E5285A4F92FA65C839*)(&__this->____current);
@@ -21428,6 +21698,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_tDD673E02B713760331F9D857C7B1D1C4A07194EF* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -21463,6 +21734,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tDD673E02B713760331F9D857C7B1D1C4A07194EF* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -21504,6 +21776,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m9214C50662B4B64B9885B1
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t67A1600A303BB89506DFD21B59687088B7E0675B* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		UICharInfo_t24C2EA0F2F3A938100C271891D9DEB015ABA5FBD* L_3 = (UICharInfo_t24C2EA0F2F3A938100C271891D9DEB015ABA5FBD*)(&__this->____current);
@@ -21539,6 +21812,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m0BD01DBAE67263F0EDE
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t67A1600A303BB89506DFD21B59687088B7E0675B* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -21548,6 +21822,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m0BD01DBAE67263F0EDE
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t67A1600A303BB89506DFD21B59687088B7E0675B* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -21556,10 +21831,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m0BD01DBAE67263F0EDE
 	}
 	{
 		List_1_t67A1600A303BB89506DFD21B59687088B7E0675B* L_7 = V_0;
+		NullCheck(L_7);
 		UICharInfoU5BU5D_t98D25C0197327978FA4E11B3518901A4839E086C* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		UICharInfo_t24C2EA0F2F3A938100C271891D9DEB015ABA5FBD L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		UICharInfo_t24C2EA0F2F3A938100C271891D9DEB015ABA5FBD L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		int32_t L_12 = __this->____index;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_12, 1));
@@ -21587,6 +21864,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m030CBBA382864E4
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t67A1600A303BB89506DFD21B59687088B7E0675B* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -21600,6 +21878,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m030CBBA382864E4
 IL_0018:
 	{
 		List_1_t67A1600A303BB89506DFD21B59687088B7E0675B* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		UICharInfo_t24C2EA0F2F3A938100C271891D9DEB015ABA5FBD* L_5 = (UICharInfo_t24C2EA0F2F3A938100C271891D9DEB015ABA5FBD*)(&__this->____current);
@@ -21644,6 +21923,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t67A1600A303BB89506DFD21B59687088B7E0675B* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -21679,6 +21959,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t67A1600A303BB89506DFD21B59687088B7E0675B* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -21720,6 +22001,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m23773DDEF337C92210CA4C
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t9209B29AC606399207E97BDCD817DEA5B6C63CA5* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		UILineInfo_tC6FF4F85BD2316FADA2148A1789B3FF0B05A6CAC* L_3 = (UILineInfo_tC6FF4F85BD2316FADA2148A1789B3FF0B05A6CAC*)(&__this->____current);
@@ -21755,6 +22037,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m6DBD494AFC9BE93C7E7
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t9209B29AC606399207E97BDCD817DEA5B6C63CA5* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -21764,6 +22047,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m6DBD494AFC9BE93C7E7
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t9209B29AC606399207E97BDCD817DEA5B6C63CA5* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -21772,10 +22056,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m6DBD494AFC9BE93C7E7
 	}
 	{
 		List_1_t9209B29AC606399207E97BDCD817DEA5B6C63CA5* L_7 = V_0;
+		NullCheck(L_7);
 		UILineInfoU5BU5D_tDD6C8909B58F997A6FB1A17F360E8DBE387204BC* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		UILineInfo_tC6FF4F85BD2316FADA2148A1789B3FF0B05A6CAC L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		UILineInfo_tC6FF4F85BD2316FADA2148A1789B3FF0B05A6CAC L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		int32_t L_12 = __this->____index;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_12, 1));
@@ -21803,6 +22089,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mAB2910BAAED27DF
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t9209B29AC606399207E97BDCD817DEA5B6C63CA5* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -21816,6 +22103,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mAB2910BAAED27DF
 IL_0018:
 	{
 		List_1_t9209B29AC606399207E97BDCD817DEA5B6C63CA5* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		UILineInfo_tC6FF4F85BD2316FADA2148A1789B3FF0B05A6CAC* L_5 = (UILineInfo_tC6FF4F85BD2316FADA2148A1789B3FF0B05A6CAC*)(&__this->____current);
@@ -21860,6 +22148,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t9209B29AC606399207E97BDCD817DEA5B6C63CA5* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -21895,6 +22184,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t9209B29AC606399207E97BDCD817DEA5B6C63CA5* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -21936,6 +22226,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m3C79907D7B785AF8AC6DBE
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t09F8990ACE8783E311B473B0090859BA9C00FC2A* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		UIVertex_tF5C663F4BBC786C9D56C28016FF66E6C6BF85207* L_3 = (UIVertex_tF5C663F4BBC786C9D56C28016FF66E6C6BF85207*)(&__this->____current);
@@ -21971,6 +22262,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m34176672C2E326BF991
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t09F8990ACE8783E311B473B0090859BA9C00FC2A* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -21980,6 +22272,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m34176672C2E326BF991
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t09F8990ACE8783E311B473B0090859BA9C00FC2A* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -21988,10 +22281,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m34176672C2E326BF991
 	}
 	{
 		List_1_t09F8990ACE8783E311B473B0090859BA9C00FC2A* L_7 = V_0;
+		NullCheck(L_7);
 		UIVertexU5BU5D_tBC532486B45D071A520751A90E819C77BA4E3D2F* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		UIVertex_tF5C663F4BBC786C9D56C28016FF66E6C6BF85207 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		UIVertex_tF5C663F4BBC786C9D56C28016FF66E6C6BF85207 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		int32_t L_12 = __this->____index;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_12, 1));
@@ -22019,6 +22314,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mCB3E6752E82900C
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t09F8990ACE8783E311B473B0090859BA9C00FC2A* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -22032,6 +22328,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mCB3E6752E82900C
 IL_0018:
 	{
 		List_1_t09F8990ACE8783E311B473B0090859BA9C00FC2A* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		UIVertex_tF5C663F4BBC786C9D56C28016FF66E6C6BF85207* L_5 = (UIVertex_tF5C663F4BBC786C9D56C28016FF66E6C6BF85207*)(&__this->____current);
@@ -22076,6 +22373,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t09F8990ACE8783E311B473B0090859BA9C00FC2A* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -22111,6 +22409,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t09F8990ACE8783E311B473B0090859BA9C00FC2A* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -22567,6 +22866,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m9F89B5A77506688ABC2B08
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____set), (void*)L_0);
 		__this->____index = 0;
 		HashSet_1_t5DD20B42149A11AEBF12A75505306E6EFC34943A* L_1 = ___0_set;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		uint32_t* L_3 = (uint32_t*)(&__this->____current);
@@ -22599,6 +22899,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m8914E282461C43F14B6
 	{
 		int32_t L_0 = __this->____version;
 		HashSet_1_t5DD20B42149A11AEBF12A75505306E6EFC34943A* L_1 = __this->____set;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -22614,9 +22915,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m8914E282461C43F14B6
 IL_001e:
 	{
 		HashSet_1_t5DD20B42149A11AEBF12A75505306E6EFC34943A* L_4 = __this->____set;
+		NullCheck(L_4);
 		SlotU5BU5D_tBF418274114DA8D3D070D784415BF0500C1960C6* L_5 = L_4->____slots;
 		int32_t L_6 = __this->____index;
-		int32_t L_7 = ((L_5)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_6)))->___hashCode;
+		NullCheck(L_5);
+		int32_t L_7 = ((L_5)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_6)))->___hashCode;
 		if ((((int32_t)L_7) < ((int32_t)0)))
 		{
 			goto IL_006d;
@@ -22624,9 +22927,11 @@ IL_001e:
 	}
 	{
 		HashSet_1_t5DD20B42149A11AEBF12A75505306E6EFC34943A* L_8 = __this->____set;
+		NullCheck(L_8);
 		SlotU5BU5D_tBF418274114DA8D3D070D784415BF0500C1960C6* L_9 = L_8->____slots;
 		int32_t L_10 = __this->____index;
-		uint32_t L_11 = ((L_9)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_10)))->___value;
+		NullCheck(L_9);
+		uint32_t L_11 = ((L_9)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_10)))->___value;
 		__this->____current = L_11;
 		int32_t L_12 = __this->____index;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_12, 1));
@@ -22643,6 +22948,7 @@ IL_007b:
 	{
 		int32_t L_14 = __this->____index;
 		HashSet_1_t5DD20B42149A11AEBF12A75505306E6EFC34943A* L_15 = __this->____set;
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____lastIndex;
 		if ((((int32_t)L_14) < ((int32_t)L_16)))
 		{
@@ -22651,6 +22957,7 @@ IL_007b:
 	}
 	{
 		HashSet_1_t5DD20B42149A11AEBF12A75505306E6EFC34943A* L_17 = __this->____set;
+		NullCheck(L_17);
 		int32_t L_18 = L_17->____lastIndex;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_18, 1));
 		uint32_t* L_19 = (uint32_t*)(&__this->____current);
@@ -22695,6 +23002,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		HashSet_1_t5DD20B42149A11AEBF12A75505306E6EFC34943A* L_2 = __this->____set;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____lastIndex;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -22732,6 +23040,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		HashSet_1_t5DD20B42149A11AEBF12A75505306E6EFC34943A* L_1 = __this->____set;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -22775,6 +23084,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m25DDA08EFA61F9AD346678
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t9B68833848E4C4D7F623C05F6B77F0449396354A* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		uint32_t* L_3 = (uint32_t*)(&__this->____current);
@@ -22810,6 +23120,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mFE05E33D2024B0ACB5D
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t9B68833848E4C4D7F623C05F6B77F0449396354A* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -22819,6 +23130,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mFE05E33D2024B0ACB5D
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t9B68833848E4C4D7F623C05F6B77F0449396354A* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -22827,10 +23139,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mFE05E33D2024B0ACB5D
 	}
 	{
 		List_1_t9B68833848E4C4D7F623C05F6B77F0449396354A* L_7 = V_0;
+		NullCheck(L_7);
 		UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		uint32_t L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		uint32_t L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		int32_t L_12 = __this->____index;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_12, 1));
@@ -22858,6 +23172,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m304B8DD3A305BBE
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t9B68833848E4C4D7F623C05F6B77F0449396354A* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -22871,6 +23186,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m304B8DD3A305BBE
 IL_0018:
 	{
 		List_1_t9B68833848E4C4D7F623C05F6B77F0449396354A* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		uint32_t* L_5 = (uint32_t*)(&__this->____current);
@@ -22915,6 +23231,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t9B68833848E4C4D7F623C05F6B77F0449396354A* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -22950,6 +23267,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t9B68833848E4C4D7F623C05F6B77F0449396354A* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -23407,6 +23725,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m2045BF7E8C40063172911C
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____current);
@@ -23442,6 +23761,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m9C3D158CB944A2244D5
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -23451,6 +23771,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m9C3D158CB944A2244D5
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -23459,10 +23780,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m9C3D158CB944A2244D5
 	}
 	{
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_7 = V_0;
+		NullCheck(L_7);
 		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		int32_t L_12 = __this->____index;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_12, 1));
@@ -23490,6 +23813,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m8C3E3CA8978BBB0
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -23503,6 +23827,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m8C3E3CA8978BBB0
 IL_0018:
 	{
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_5 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____current);
@@ -23547,6 +23872,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -23582,6 +23908,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -24336,6 +24663,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m719A771160FA0C4E0A4B38
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_tF42FEB6C3B18B7E7C8F2DE1FEBA00D2491736317* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3* L_3 = (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3*)(&__this->____current);
@@ -24371,6 +24699,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m25336A3135F3DA4465E
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_tF42FEB6C3B18B7E7C8F2DE1FEBA00D2491736317* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -24380,6 +24709,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m25336A3135F3DA4465E
 	{
 		int32_t L_4 = __this->____index;
 		List_1_tF42FEB6C3B18B7E7C8F2DE1FEBA00D2491736317* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -24388,10 +24718,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m25336A3135F3DA4465E
 	}
 	{
 		List_1_tF42FEB6C3B18B7E7C8F2DE1FEBA00D2491736317* L_7 = V_0;
+		NullCheck(L_7);
 		Vector4U5BU5D_tC0F3A7115F85007510F6D173968200CD31BCF7AD* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		int32_t L_12 = __this->____index;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_12, 1));
@@ -24419,6 +24751,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mBF75C85A7F4D9D8
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tF42FEB6C3B18B7E7C8F2DE1FEBA00D2491736317* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -24432,6 +24765,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mBF75C85A7F4D9D8
 IL_0018:
 	{
 		List_1_tF42FEB6C3B18B7E7C8F2DE1FEBA00D2491736317* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3* L_5 = (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3*)(&__this->____current);
@@ -24476,6 +24810,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_tF42FEB6C3B18B7E7C8F2DE1FEBA00D2491736317* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -24511,6 +24846,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tF42FEB6C3B18B7E7C8F2DE1FEBA00D2491736317* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -25802,6 +26138,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m62B32E8D2F70569824269D
 		il2cpp_codegen_write_instance_field_data<HashSet_1_t2E820DA94CC6D5A61CA29EBD9BE297C43D691C87*>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0), L_0);
 		il2cpp_codegen_write_instance_field_data<int32_t>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1), 0);
 		HashSet_1_t2E820DA94CC6D5A61CA29EBD9BE297C43D691C87* L_1 = ___0_set;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		il2cpp_codegen_write_instance_field_data<int32_t>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),2), L_2);
 		il2cpp_codegen_initobj((((Il2CppFullySharedGenericAny*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),3)))), SizeOf_T_t6D22409F37413B725563BF484486F55FB7202BB8);
@@ -25835,6 +26172,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m1756F06B6BC460B8EEB
 	{
 		int32_t L_0 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),2));
 		HashSet_1_t2E820DA94CC6D5A61CA29EBD9BE297C43D691C87* L_1 = *(HashSet_1_t2E820DA94CC6D5A61CA29EBD9BE297C43D691C87**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -25850,9 +26188,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m1756F06B6BC460B8EEB
 IL_001e:
 	{
 		HashSet_1_t2E820DA94CC6D5A61CA29EBD9BE297C43D691C87* L_4 = *(HashSet_1_t2E820DA94CC6D5A61CA29EBD9BE297C43D691C87**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_4);
 		SlotU5BU5D_t2B9148416634BCB8743E1F61254B305F1882FF1D* L_5 = L_4->____slots;
 		int32_t L_6 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1));
-		int32_t L_7 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(((Slot_tEC146EEEF7022C6542EBF082D658446682962BFD*)(L_5)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_6))), il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 4),0));
+		NullCheck(L_5);
+		int32_t L_7 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(((Slot_tEC146EEEF7022C6542EBF082D658446682962BFD*)(L_5)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_6))), il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 4),0));
 		if ((((int32_t)L_7) < ((int32_t)0)))
 		{
 			goto IL_006d;
@@ -25860,9 +26200,11 @@ IL_001e:
 	}
 	{
 		HashSet_1_t2E820DA94CC6D5A61CA29EBD9BE297C43D691C87* L_8 = *(HashSet_1_t2E820DA94CC6D5A61CA29EBD9BE297C43D691C87**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_8);
 		SlotU5BU5D_t2B9148416634BCB8743E1F61254B305F1882FF1D* L_9 = L_8->____slots;
 		int32_t L_10 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1));
-		il2cpp_codegen_memcpy(L_11, il2cpp_codegen_get_instance_field_data_pointer(((Slot_tEC146EEEF7022C6542EBF082D658446682962BFD*)(L_9)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_10))), il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 4),2)), SizeOf_T_t6D22409F37413B725563BF484486F55FB7202BB8);
+		NullCheck(L_9);
+		il2cpp_codegen_memcpy(L_11, il2cpp_codegen_get_instance_field_data_pointer(((Slot_tEC146EEEF7022C6542EBF082D658446682962BFD*)(L_9)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_10))), il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 4),2)), SizeOf_T_t6D22409F37413B725563BF484486F55FB7202BB8);
 		il2cpp_codegen_write_instance_field_data(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),3), L_11, SizeOf_T_t6D22409F37413B725563BF484486F55FB7202BB8);
 		int32_t L_12 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1));
 		il2cpp_codegen_write_instance_field_data<int32_t>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1), ((int32_t)il2cpp_codegen_add(L_12, 1)));
@@ -25879,6 +26221,7 @@ IL_007b:
 	{
 		int32_t L_14 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1));
 		HashSet_1_t2E820DA94CC6D5A61CA29EBD9BE297C43D691C87* L_15 = *(HashSet_1_t2E820DA94CC6D5A61CA29EBD9BE297C43D691C87**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_15);
 		int32_t L_16 = L_15->____lastIndex;
 		if ((((int32_t)L_14) < ((int32_t)L_16)))
 		{
@@ -25887,6 +26230,7 @@ IL_007b:
 	}
 	{
 		HashSet_1_t2E820DA94CC6D5A61CA29EBD9BE297C43D691C87* L_17 = *(HashSet_1_t2E820DA94CC6D5A61CA29EBD9BE297C43D691C87**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_17);
 		int32_t L_18 = L_17->____lastIndex;
 		il2cpp_codegen_write_instance_field_data<int32_t>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1), ((int32_t)il2cpp_codegen_add(L_18, 1)));
 		il2cpp_codegen_initobj((((Il2CppFullySharedGenericAny*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),3)))), SizeOf_T_t6D22409F37413B725563BF484486F55FB7202BB8);
@@ -25934,6 +26278,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1));
 		HashSet_1_t2E820DA94CC6D5A61CA29EBD9BE297C43D691C87* L_2 = *(HashSet_1_t2E820DA94CC6D5A61CA29EBD9BE297C43D691C87**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____lastIndex;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -25970,6 +26315,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),2));
 		HashSet_1_t2E820DA94CC6D5A61CA29EBD9BE297C43D691C87* L_1 = *(HashSet_1_t2E820DA94CC6D5A61CA29EBD9BE297C43D691C87**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -26011,9 +26357,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m0F98614729A5017594BCB5
 		LinkedList_1_tF459954AFF413E172A3D62178CA206041C9D1BF9* L_0 = ___0_list;
 		il2cpp_codegen_write_instance_field_data<LinkedList_1_tF459954AFF413E172A3D62178CA206041C9D1BF9*>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0), L_0);
 		LinkedList_1_tF459954AFF413E172A3D62178CA206041C9D1BF9* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->___version;
 		il2cpp_codegen_write_instance_field_data<int32_t>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),2), L_2);
 		LinkedList_1_tF459954AFF413E172A3D62178CA206041C9D1BF9* L_3 = ___0_list;
+		NullCheck(L_3);
 		LinkedListNode_1_tB885B6403BB775D7A06ED42A773BC5EB23FDE7E9* L_4 = L_3->___head;
 		il2cpp_codegen_write_instance_field_data<LinkedListNode_1_tB885B6403BB775D7A06ED42A773BC5EB23FDE7E9*>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1), L_4);
 		il2cpp_codegen_initobj((((Il2CppFullySharedGenericAny*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),3)))), SizeOf_T_t40ED5F405E4C66916984D6B18DAD11FB5460B70E);
@@ -26075,6 +26423,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),4));
 		LinkedList_1_tF459954AFF413E172A3D62178CA206041C9D1BF9* L_2 = *(LinkedList_1_tF459954AFF413E172A3D62178CA206041C9D1BF9**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_2);
 		int32_t L_3;
 		L_3 = ((  int32_t (*) (LinkedList_1_tF459954AFF413E172A3D62178CA206041C9D1BF9*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 4)))(L_2, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 4));
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
@@ -26113,6 +26462,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m4FB57970CC4FBEE295E
 	{
 		int32_t L_0 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),2));
 		LinkedList_1_tF459954AFF413E172A3D62178CA206041C9D1BF9* L_1 = *(LinkedList_1_tF459954AFF413E172A3D62178CA206041C9D1BF9**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_1);
 		int32_t L_2 = L_1->___version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -26135,6 +26485,7 @@ IL_001e:
 	}
 	{
 		LinkedList_1_tF459954AFF413E172A3D62178CA206041C9D1BF9* L_5 = *(LinkedList_1_tF459954AFF413E172A3D62178CA206041C9D1BF9**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = ((  int32_t (*) (LinkedList_1_tF459954AFF413E172A3D62178CA206041C9D1BF9*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 4)))(L_5, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 4));
 		il2cpp_codegen_write_instance_field_data<int32_t>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),4), ((int32_t)il2cpp_codegen_add(L_6, 1)));
@@ -26153,6 +26504,7 @@ IL_003b:
 		il2cpp_codegen_write_instance_field_data<LinkedListNode_1_tB885B6403BB775D7A06ED42A773BC5EB23FDE7E9*>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1), L_11);
 		LinkedListNode_1_tB885B6403BB775D7A06ED42A773BC5EB23FDE7E9* L_12 = *(LinkedListNode_1_tB885B6403BB775D7A06ED42A773BC5EB23FDE7E9**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1));
 		LinkedList_1_tF459954AFF413E172A3D62178CA206041C9D1BF9* L_13 = *(LinkedList_1_tF459954AFF413E172A3D62178CA206041C9D1BF9**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_13);
 		LinkedListNode_1_tB885B6403BB775D7A06ED42A773BC5EB23FDE7E9* L_14 = L_13->___head;
 		if ((!(((RuntimeObject*)(LinkedListNode_1_tB885B6403BB775D7A06ED42A773BC5EB23FDE7E9*)L_12) == ((RuntimeObject*)(LinkedListNode_1_tB885B6403BB775D7A06ED42A773BC5EB23FDE7E9*)L_14))))
 		{
@@ -26183,6 +26535,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),2));
 		LinkedList_1_tF459954AFF413E172A3D62178CA206041C9D1BF9* L_1 = *(LinkedList_1_tF459954AFF413E172A3D62178CA206041C9D1BF9**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_1);
 		int32_t L_2 = L_1->___version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -26199,6 +26552,7 @@ IL_001e:
 	{
 		il2cpp_codegen_initobj((((Il2CppFullySharedGenericAny*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),3)))), SizeOf_T_t40ED5F405E4C66916984D6B18DAD11FB5460B70E);
 		LinkedList_1_tF459954AFF413E172A3D62178CA206041C9D1BF9* L_4 = *(LinkedList_1_tF459954AFF413E172A3D62178CA206041C9D1BF9**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_4);
 		LinkedListNode_1_tB885B6403BB775D7A06ED42A773BC5EB23FDE7E9* L_5 = L_4->___head;
 		il2cpp_codegen_write_instance_field_data<LinkedListNode_1_tB885B6403BB775D7A06ED42A773BC5EB23FDE7E9*>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1), L_5);
 		il2cpp_codegen_write_instance_field_data<int32_t>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),4), 0);
@@ -26271,6 +26625,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m5C66A91DC68887BE203985
 		il2cpp_codegen_write_instance_field_data<List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A*>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0), L_0);
 		il2cpp_codegen_write_instance_field_data<int32_t>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1), 0);
 		List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		il2cpp_codegen_write_instance_field_data<int32_t>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),2), L_2);
 		il2cpp_codegen_initobj((((Il2CppFullySharedGenericAny*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),3)))), SizeOf_T_t010616E3077234188F9BB4FAF369F8571BC5F2E1);
@@ -26307,6 +26662,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m8D8E5E878AF0A88A535
 		V_0 = L_0;
 		int32_t L_1 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),2));
 		List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -26316,6 +26672,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m8D8E5E878AF0A88A535
 	{
 		int32_t L_4 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1));
 		List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -26324,10 +26681,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m8D8E5E878AF0A88A535
 	}
 	{
 		List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* L_7 = V_0;
+		NullCheck(L_7);
 		__Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC* L_8 = L_7->____items;
 		int32_t L_9 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1));
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		il2cpp_codegen_memcpy(L_11, (L_8)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_10)), SizeOf_T_t010616E3077234188F9BB4FAF369F8571BC5F2E1);
+		il2cpp_codegen_memcpy(L_11, (L_8)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_10)), SizeOf_T_t010616E3077234188F9BB4FAF369F8571BC5F2E1);
 		il2cpp_codegen_write_instance_field_data(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),3), L_11, SizeOf_T_t010616E3077234188F9BB4FAF369F8571BC5F2E1);
 		int32_t L_12 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1));
 		il2cpp_codegen_write_instance_field_data<int32_t>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1), ((int32_t)il2cpp_codegen_add(L_12, 1)));
@@ -26356,6 +26715,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mF1A6D7920FDC3C8
 	{
 		int32_t L_0 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),2));
 		List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* L_1 = *(List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -26369,6 +26729,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mF1A6D7920FDC3C8
 IL_0018:
 	{
 		List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* L_3 = *(List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		il2cpp_codegen_write_instance_field_data<int32_t>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1), ((int32_t)il2cpp_codegen_add(L_4, 1)));
 		il2cpp_codegen_initobj((((Il2CppFullySharedGenericAny*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),3)))), SizeOf_T_t010616E3077234188F9BB4FAF369F8571BC5F2E1);
@@ -26416,6 +26777,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1));
 		List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* L_2 = *(List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -26450,6 +26812,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),2));
 		List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* L_1 = *(List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -26490,6 +26853,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m6C59AA282C548B36E982B8
 		il2cpp_codegen_write_instance_field_data<LowLevelListWithIList_1_t80E30B23146FD62D1FB6A639EA1EBAD199B029D9*>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0), L_0);
 		il2cpp_codegen_write_instance_field_data<int32_t>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1), 0);
 		LowLevelListWithIList_1_t80E30B23146FD62D1FB6A639EA1EBAD199B029D9* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = ((LowLevelList_1_tFA10A51C575F28B96FF2E2E7FB3740E48546A1E0*)L_1)->____version;
 		il2cpp_codegen_write_instance_field_data<int32_t>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),2), L_2);
 		il2cpp_codegen_initobj((((Il2CppFullySharedGenericAny*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),3)))), SizeOf_T_tED0EB14CB913118FBDFEDD7D0C8F114A02B0A274);
@@ -26526,6 +26890,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m2F9CDD8406C6495182E
 		V_0 = L_0;
 		int32_t L_1 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),2));
 		LowLevelListWithIList_1_t80E30B23146FD62D1FB6A639EA1EBAD199B029D9* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = ((LowLevelList_1_tFA10A51C575F28B96FF2E2E7FB3740E48546A1E0*)L_2)->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -26535,6 +26900,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m2F9CDD8406C6495182E
 	{
 		int32_t L_4 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1));
 		LowLevelListWithIList_1_t80E30B23146FD62D1FB6A639EA1EBAD199B029D9* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = ((LowLevelList_1_tFA10A51C575F28B96FF2E2E7FB3740E48546A1E0*)L_5)->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -26543,10 +26909,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m2F9CDD8406C6495182E
 	}
 	{
 		LowLevelListWithIList_1_t80E30B23146FD62D1FB6A639EA1EBAD199B029D9* L_7 = V_0;
+		NullCheck(L_7);
 		__Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC* L_8 = ((LowLevelList_1_tFA10A51C575F28B96FF2E2E7FB3740E48546A1E0*)L_7)->____items;
 		int32_t L_9 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1));
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		il2cpp_codegen_memcpy(L_11, (L_8)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_10)), SizeOf_T_tED0EB14CB913118FBDFEDD7D0C8F114A02B0A274);
+		il2cpp_codegen_memcpy(L_11, (L_8)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_10)), SizeOf_T_tED0EB14CB913118FBDFEDD7D0C8F114A02B0A274);
 		il2cpp_codegen_write_instance_field_data(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),3), L_11, SizeOf_T_tED0EB14CB913118FBDFEDD7D0C8F114A02B0A274);
 		int32_t L_12 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1));
 		il2cpp_codegen_write_instance_field_data<int32_t>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1), ((int32_t)il2cpp_codegen_add(L_12, 1)));
@@ -26575,6 +26943,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mA2A9C4EFAA8131F
 	{
 		int32_t L_0 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),2));
 		LowLevelListWithIList_1_t80E30B23146FD62D1FB6A639EA1EBAD199B029D9* L_1 = *(LowLevelListWithIList_1_t80E30B23146FD62D1FB6A639EA1EBAD199B029D9**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_1);
 		int32_t L_2 = ((LowLevelList_1_tFA10A51C575F28B96FF2E2E7FB3740E48546A1E0*)L_1)->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -26590,6 +26959,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_mA2A9C4EFAA8131F
 IL_0019:
 	{
 		LowLevelListWithIList_1_t80E30B23146FD62D1FB6A639EA1EBAD199B029D9* L_4 = *(LowLevelListWithIList_1_t80E30B23146FD62D1FB6A639EA1EBAD199B029D9**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_4);
 		int32_t L_5 = ((LowLevelList_1_tFA10A51C575F28B96FF2E2E7FB3740E48546A1E0*)L_4)->____size;
 		il2cpp_codegen_write_instance_field_data<int32_t>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1), ((int32_t)il2cpp_codegen_add(L_5, 1)));
 		il2cpp_codegen_initobj((((Il2CppFullySharedGenericAny*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),3)))), SizeOf_T_tED0EB14CB913118FBDFEDD7D0C8F114A02B0A274);
@@ -26637,6 +27007,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1));
 		LowLevelListWithIList_1_t80E30B23146FD62D1FB6A639EA1EBAD199B029D9* L_2 = *(LowLevelListWithIList_1_t80E30B23146FD62D1FB6A639EA1EBAD199B029D9**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_2);
 		int32_t L_3 = ((LowLevelList_1_tFA10A51C575F28B96FF2E2E7FB3740E48546A1E0*)L_2)->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -26673,6 +27044,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),2));
 		LowLevelListWithIList_1_t80E30B23146FD62D1FB6A639EA1EBAD199B029D9* L_1 = *(LowLevelListWithIList_1_t80E30B23146FD62D1FB6A639EA1EBAD199B029D9**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_1);
 		int32_t L_2 = ((LowLevelList_1_tFA10A51C575F28B96FF2E2E7FB3740E48546A1E0*)L_1)->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -26714,6 +27086,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m8DA499B2030A9C843BE8FC
 		Queue_1_t00794C5F46E3254E713B03F949E6AB3A1AB1FD41* L_0 = ___0_q;
 		il2cpp_codegen_write_instance_field_data<Queue_1_t00794C5F46E3254E713B03F949E6AB3A1AB1FD41*>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0), L_0);
 		Queue_1_t00794C5F46E3254E713B03F949E6AB3A1AB1FD41* L_1 = ___0_q;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		il2cpp_codegen_write_instance_field_data<int32_t>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1), L_2);
 		il2cpp_codegen_write_instance_field_data<int32_t>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),2), (-1));
@@ -26754,6 +27127,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mA6D24403558EA8BFEE5
 	{
 		int32_t L_0 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1));
 		Queue_1_t00794C5F46E3254E713B03F949E6AB3A1AB1FD41* L_1 = *(Queue_1_t00794C5F46E3254E713B03F949E6AB3A1AB1FD41**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -26784,6 +27158,7 @@ IL_002a:
 		il2cpp_codegen_write_instance_field_data<int32_t>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),2), ((int32_t)il2cpp_codegen_add(L_5, 1)));
 		int32_t L_6 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),2));
 		Queue_1_t00794C5F46E3254E713B03F949E6AB3A1AB1FD41* L_7 = *(Queue_1_t00794C5F46E3254E713B03F949E6AB3A1AB1FD41**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_7);
 		int32_t L_8 = L_7->____size;
 		if ((!(((uint32_t)L_6) == ((uint32_t)L_8))))
 		{
@@ -26799,11 +27174,14 @@ IL_002a:
 IL_0061:
 	{
 		Queue_1_t00794C5F46E3254E713B03F949E6AB3A1AB1FD41* L_9 = *(Queue_1_t00794C5F46E3254E713B03F949E6AB3A1AB1FD41**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_9);
 		__Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC* L_10 = L_9->____array;
 		V_0 = L_10;
 		__Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC* L_11 = V_0;
+		NullCheck(L_11);
 		V_1 = ((int32_t)(((RuntimeArray*)L_11)->max_length));
 		Queue_1_t00794C5F46E3254E713B03F949E6AB3A1AB1FD41* L_12 = *(Queue_1_t00794C5F46E3254E713B03F949E6AB3A1AB1FD41**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_12);
 		int32_t L_13 = L_12->____head;
 		int32_t L_14 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),2));
 		V_2 = ((int32_t)il2cpp_codegen_add(L_13, L_14));
@@ -26824,8 +27202,9 @@ IL_008c:
 	{
 		__Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC* L_19 = V_0;
 		int32_t L_20 = V_2;
+		NullCheck(L_19);
 		int32_t L_21 = L_20;
-		il2cpp_codegen_memcpy(L_22, (L_19)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_21)), SizeOf_T_t0E5DDAEBBF431B9439368009CC139FC0992B409B);
+		il2cpp_codegen_memcpy(L_22, (L_19)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_21)), SizeOf_T_t0E5DDAEBBF431B9439368009CC139FC0992B409B);
 		il2cpp_codegen_write_instance_field_data(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),3), L_22, SizeOf_T_t0E5DDAEBBF431B9439368009CC139FC0992B409B);
 		return (bool)1;
 	}
@@ -26928,6 +27307,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1));
 		Queue_1_t00794C5F46E3254E713B03F949E6AB3A1AB1FD41* L_1 = *(Queue_1_t00794C5F46E3254E713B03F949E6AB3A1AB1FD41**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -26969,6 +27349,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mD65EF492693E70B41695A0
 		Stack_1_tF3E5E7101E929741300A1CF7C159A6ED9B61621A* L_0 = ___0_stack;
 		il2cpp_codegen_write_instance_field_data<Stack_1_tF3E5E7101E929741300A1CF7C159A6ED9B61621A*>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0), L_0);
 		Stack_1_tF3E5E7101E929741300A1CF7C159A6ED9B61621A* L_1 = ___0_stack;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		il2cpp_codegen_write_instance_field_data<int32_t>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1), L_2);
 		il2cpp_codegen_write_instance_field_data<int32_t>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),2), ((int32_t)-2));
@@ -27010,6 +27391,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m3347052D874561F1E18
 	{
 		int32_t L_0 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1));
 		Stack_1_tF3E5E7101E929741300A1CF7C159A6ED9B61621A* L_1 = *(Stack_1_tF3E5E7101E929741300A1CF7C159A6ED9B61621A**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -27032,6 +27414,7 @@ IL_001e:
 	}
 	{
 		Stack_1_tF3E5E7101E929741300A1CF7C159A6ED9B61621A* L_5 = *(Stack_1_tF3E5E7101E929741300A1CF7C159A6ED9B61621A**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		il2cpp_codegen_write_instance_field_data<int32_t>(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),2), ((int32_t)il2cpp_codegen_subtract(L_6, 1)));
 		int32_t L_7 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),2));
@@ -27045,10 +27428,12 @@ IL_001e:
 	}
 	{
 		Stack_1_tF3E5E7101E929741300A1CF7C159A6ED9B61621A* L_9 = *(Stack_1_tF3E5E7101E929741300A1CF7C159A6ED9B61621A**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_9);
 		__Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC* L_10 = L_9->____array;
 		int32_t L_11 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),2));
+		NullCheck(L_10);
 		int32_t L_12 = L_11;
-		il2cpp_codegen_memcpy(L_13, (L_10)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_12)), SizeOf_T_t43B3E794C887F691C76D009756D4BAD94E1898AF);
+		il2cpp_codegen_memcpy(L_13, (L_10)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_12)), SizeOf_T_t43B3E794C887F691C76D009756D4BAD94E1898AF);
 		il2cpp_codegen_write_instance_field_data(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),3), L_13, SizeOf_T_t43B3E794C887F691C76D009756D4BAD94E1898AF);
 		G_B5_0 = G_B4_0;
 	}
@@ -27087,10 +27472,12 @@ IL_0072:
 	}
 	{
 		Stack_1_tF3E5E7101E929741300A1CF7C159A6ED9B61621A* L_19 = *(Stack_1_tF3E5E7101E929741300A1CF7C159A6ED9B61621A**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_19);
 		__Il2CppFullySharedGenericTypeU5BU5D_tCAB6D060972DD49223A834B7EEFEB9FE2D003BEC* L_20 = L_19->____array;
 		int32_t L_21 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),2));
+		NullCheck(L_20);
 		int32_t L_22 = L_21;
-		il2cpp_codegen_memcpy(L_23, (L_20)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_22)), SizeOf_T_t43B3E794C887F691C76D009756D4BAD94E1898AF);
+		il2cpp_codegen_memcpy(L_23, (L_20)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_22)), SizeOf_T_t43B3E794C887F691C76D009756D4BAD94E1898AF);
 		il2cpp_codegen_write_instance_field_data(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),3), L_23, SizeOf_T_t43B3E794C887F691C76D009756D4BAD94E1898AF);
 		return (bool)G_B9_0;
 	}
@@ -27199,6 +27586,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = *(int32_t*)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),1));
 		Stack_1_tF3E5E7101E929741300A1CF7C159A6ED9B61621A* L_1 = *(Stack_1_tF3E5E7101E929741300A1CF7C159A6ED9B61621A**)il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(InitializedTypeInfo(method->klass)->rgctx_data, 1),0));
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -28785,6 +29173,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m14E3BCC9341885A56233EF
 		__this->____stack = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____stack), (void*)L_0);
 		Stack_1_tB568ED1852EE70A3EECA2CD66F2AB41DDEC262FA* L_1 = ___0_stack;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = ((int32_t)-2);
@@ -28824,6 +29213,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mD57CA0CF2D55344023A
 	{
 		int32_t L_0 = __this->____version;
 		Stack_1_tB568ED1852EE70A3EECA2CD66F2AB41DDEC262FA* L_1 = __this->____stack;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -28846,6 +29236,7 @@ IL_001e:
 	}
 	{
 		Stack_1_tB568ED1852EE70A3EECA2CD66F2AB41DDEC262FA* L_5 = __this->____stack;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_subtract(L_6, 1));
 		int32_t L_7 = __this->____index;
@@ -28859,10 +29250,12 @@ IL_001e:
 	}
 	{
 		Stack_1_tB568ED1852EE70A3EECA2CD66F2AB41DDEC262FA* L_9 = __this->____stack;
+		NullCheck(L_9);
 		MatchContextU5BU5D_t49C4E5DA5C1F9B06B211BE6F94AC6BD4D0ABCAE5* L_10 = L_9->____array;
 		int32_t L_11 = __this->____index;
+		NullCheck(L_10);
 		int32_t L_12 = L_11;
-		MatchContext_t04110FFA271D89A23BC1918BE657634A7DC06253 L_13 = (L_10)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_12));
+		MatchContext_t04110FFA271D89A23BC1918BE657634A7DC06253 L_13 = (L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_12));
 		__this->____currentElement = L_13;
 		G_B5_0 = G_B4_0;
 	}
@@ -28901,10 +29294,12 @@ IL_0072:
 	}
 	{
 		Stack_1_tB568ED1852EE70A3EECA2CD66F2AB41DDEC262FA* L_19 = __this->____stack;
+		NullCheck(L_19);
 		MatchContextU5BU5D_t49C4E5DA5C1F9B06B211BE6F94AC6BD4D0ABCAE5* L_20 = L_19->____array;
 		int32_t L_21 = __this->____index;
+		NullCheck(L_20);
 		int32_t L_22 = L_21;
-		MatchContext_t04110FFA271D89A23BC1918BE657634A7DC06253 L_23 = (L_20)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_22));
+		MatchContext_t04110FFA271D89A23BC1918BE657634A7DC06253 L_23 = (L_20)->GetAt(static_cast<il2cpp_array_size_t>(L_22));
 		__this->____currentElement = L_23;
 		return (bool)G_B9_0;
 	}
@@ -29011,6 +29406,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Stack_1_tB568ED1852EE70A3EECA2CD66F2AB41DDEC262FA* L_1 = __this->____stack;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -29054,6 +29450,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mCAD56839187542C3B25E2C
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_tB663AF9B0DBD0D685E595C4B50CF1535137C768A* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		OrderBlock_t62FD6F6544F34B5298DEF2F77AAE446F269B7837* L_3 = (OrderBlock_t62FD6F6544F34B5298DEF2F77AAE446F269B7837*)(&__this->____current);
@@ -29089,6 +29486,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m051D711FE933A70DB64
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_tB663AF9B0DBD0D685E595C4B50CF1535137C768A* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -29098,6 +29496,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m051D711FE933A70DB64
 	{
 		int32_t L_4 = __this->____index;
 		List_1_tB663AF9B0DBD0D685E595C4B50CF1535137C768A* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -29106,10 +29505,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m051D711FE933A70DB64
 	}
 	{
 		List_1_tB663AF9B0DBD0D685E595C4B50CF1535137C768A* L_7 = V_0;
+		NullCheck(L_7);
 		OrderBlockU5BU5D_tD67C39FB212889AFAAB991BE1AE144ED8D35EE88* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		OrderBlock_t62FD6F6544F34B5298DEF2F77AAE446F269B7837 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		OrderBlock_t62FD6F6544F34B5298DEF2F77AAE446F269B7837 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___callback), (void*)NULL);
 		int32_t L_12 = __this->____index;
@@ -29138,6 +29539,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m6451ABA24B61766
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tB663AF9B0DBD0D685E595C4B50CF1535137C768A* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -29151,6 +29553,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m6451ABA24B61766
 IL_0018:
 	{
 		List_1_tB663AF9B0DBD0D685E595C4B50CF1535137C768A* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		OrderBlock_t62FD6F6544F34B5298DEF2F77AAE446F269B7837* L_5 = (OrderBlock_t62FD6F6544F34B5298DEF2F77AAE446F269B7837*)(&__this->____current);
@@ -29195,6 +29598,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_tB663AF9B0DBD0D685E595C4B50CF1535137C768A* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -29230,6 +29634,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tB663AF9B0DBD0D685E595C4B50CF1535137C768A* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -29271,6 +29676,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m33215C200DDCD57F77EFB9
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t3FD5514751EB43E4AB1C145E04BA259B6CD6C74E* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		Page_t04FE552A388BF55B12C8868E19589136957E00A5* L_3 = (Page_t04FE552A388BF55B12C8868E19589136957E00A5*)(&__this->____current);
@@ -29306,6 +29712,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m7318E2F3887B67D39C1
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t3FD5514751EB43E4AB1C145E04BA259B6CD6C74E* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -29315,6 +29722,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m7318E2F3887B67D39C1
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t3FD5514751EB43E4AB1C145E04BA259B6CD6C74E* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -29323,10 +29731,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m7318E2F3887B67D39C1
 	}
 	{
 		List_1_t3FD5514751EB43E4AB1C145E04BA259B6CD6C74E* L_7 = V_0;
+		NullCheck(L_7);
 		PageU5BU5D_tFCE8198B6D8AF479FBA546791B9CF3DD8A2D75C9* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		Page_t04FE552A388BF55B12C8868E19589136957E00A5 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		Page_t04FE552A388BF55B12C8868E19589136957E00A5 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		int32_t L_12 = __this->____index;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_12, 1));
@@ -29354,6 +29764,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m088534282BE0908
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t3FD5514751EB43E4AB1C145E04BA259B6CD6C74E* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -29367,6 +29778,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m088534282BE0908
 IL_0018:
 	{
 		List_1_t3FD5514751EB43E4AB1C145E04BA259B6CD6C74E* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		Page_t04FE552A388BF55B12C8868E19589136957E00A5* L_5 = (Page_t04FE552A388BF55B12C8868E19589136957E00A5*)(&__this->____current);
@@ -29411,6 +29823,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t3FD5514751EB43E4AB1C145E04BA259B6CD6C74E* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -29446,6 +29859,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t3FD5514751EB43E4AB1C145E04BA259B6CD6C74E* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -29486,6 +29900,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mA289AC608581803432D7E2
 		__this->____stack = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____stack), (void*)L_0);
 		Stack_1_t19851BEF370D35BCE2A6C3848C5148B09113067C* L_1 = ___0_stack;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = ((int32_t)-2);
@@ -29525,6 +29940,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mF5A15CA1ECECAFDFD1F
 	{
 		int32_t L_0 = __this->____version;
 		Stack_1_t19851BEF370D35BCE2A6C3848C5148B09113067C* L_1 = __this->____stack;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -29547,6 +29963,7 @@ IL_001e:
 	}
 	{
 		Stack_1_t19851BEF370D35BCE2A6C3848C5148B09113067C* L_5 = __this->____stack;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_subtract(L_6, 1));
 		int32_t L_7 = __this->____index;
@@ -29560,10 +29977,12 @@ IL_001e:
 	}
 	{
 		Stack_1_t19851BEF370D35BCE2A6C3848C5148B09113067C* L_9 = __this->____stack;
+		NullCheck(L_9);
 		DispatchContextU5BU5D_t23932F8BEADFC827A9CA5636867F6721AD971757* L_10 = L_9->____array;
 		int32_t L_11 = __this->____index;
+		NullCheck(L_10);
 		int32_t L_12 = L_11;
-		DispatchContext_tFA37790A5FF30508B0146B79E4FF1880EB82E455 L_13 = (L_10)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_12));
+		DispatchContext_tFA37790A5FF30508B0146B79E4FF1880EB82E455 L_13 = (L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_12));
 		__this->____currentElement = L_13;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____currentElement))->___m_Queue), (void*)NULL);
 		G_B5_0 = G_B4_0;
@@ -29603,10 +30022,12 @@ IL_0072:
 	}
 	{
 		Stack_1_t19851BEF370D35BCE2A6C3848C5148B09113067C* L_19 = __this->____stack;
+		NullCheck(L_19);
 		DispatchContextU5BU5D_t23932F8BEADFC827A9CA5636867F6721AD971757* L_20 = L_19->____array;
 		int32_t L_21 = __this->____index;
+		NullCheck(L_20);
 		int32_t L_22 = L_21;
-		DispatchContext_tFA37790A5FF30508B0146B79E4FF1880EB82E455 L_23 = (L_20)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_22));
+		DispatchContext_tFA37790A5FF30508B0146B79E4FF1880EB82E455 L_23 = (L_20)->GetAt(static_cast<il2cpp_array_size_t>(L_22));
 		__this->____currentElement = L_23;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____currentElement))->___m_Queue), (void*)NULL);
 		return (bool)G_B9_0;
@@ -29714,6 +30135,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Stack_1_t19851BEF370D35BCE2A6C3848C5148B09113067C* L_1 = __this->____stack;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -29756,6 +30178,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mEDD7119A358C62419FF8F0
 		__this->____q = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____q), (void*)L_0);
 		Queue_1_t488F4FFC87B785BACAAF18A6B2E9307E5451DF68* L_1 = ___0_q;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = (-1);
@@ -29795,6 +30218,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mBFBEBA5DFF91431F3F4
 	{
 		int32_t L_0 = __this->____version;
 		Queue_1_t488F4FFC87B785BACAAF18A6B2E9307E5451DF68* L_1 = __this->____q;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -29825,6 +30249,7 @@ IL_002a:
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_5, 1));
 		int32_t L_6 = __this->____index;
 		Queue_1_t488F4FFC87B785BACAAF18A6B2E9307E5451DF68* L_7 = __this->____q;
+		NullCheck(L_7);
 		int32_t L_8 = L_7->____size;
 		if ((!(((uint32_t)L_6) == ((uint32_t)L_8))))
 		{
@@ -29841,11 +30266,14 @@ IL_002a:
 IL_0061:
 	{
 		Queue_1_t488F4FFC87B785BACAAF18A6B2E9307E5451DF68* L_10 = __this->____q;
+		NullCheck(L_10);
 		EventRecordU5BU5D_tB7CC04280192D9B2B4980F107F93ABBBE4E4DCA8* L_11 = L_10->____array;
 		V_0 = L_11;
 		EventRecordU5BU5D_tB7CC04280192D9B2B4980F107F93ABBBE4E4DCA8* L_12 = V_0;
+		NullCheck(L_12);
 		V_1 = ((int32_t)(((RuntimeArray*)L_12)->max_length));
 		Queue_1_t488F4FFC87B785BACAAF18A6B2E9307E5451DF68* L_13 = __this->____q;
+		NullCheck(L_13);
 		int32_t L_14 = L_13->____head;
 		int32_t L_15 = __this->____index;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_14, L_15));
@@ -29866,8 +30294,9 @@ IL_008c:
 	{
 		EventRecordU5BU5D_tB7CC04280192D9B2B4980F107F93ABBBE4E4DCA8* L_20 = V_0;
 		int32_t L_21 = V_2;
+		NullCheck(L_20);
 		int32_t L_22 = L_21;
-		EventRecord_tEC2901C48A23F5AFE20A9E8D4F05F3799EA62BF2 L_23 = (L_20)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_22));
+		EventRecord_tEC2901C48A23F5AFE20A9E8D4F05F3799EA62BF2 L_23 = (L_20)->GetAt(static_cast<il2cpp_array_size_t>(L_22));
 		__this->____currentElement = L_23;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____currentElement))->___m_Event), (void*)NULL);
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
@@ -29971,6 +30400,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Queue_1_t488F4FFC87B785BACAAF18A6B2E9307E5451DF68* L_1 = __this->____q;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -30014,6 +30444,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m92D21A60B4B4D3FB31D23E
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t1E327CB749CA1F2F2DA41B2D4DFF57FD6BE0FF66* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		FocusedElement_t1EE083A1C5276213C533A38C6B5DC02E9DE5CBEF* L_3 = (FocusedElement_t1EE083A1C5276213C533A38C6B5DC02E9DE5CBEF*)(&__this->____current);
@@ -30049,6 +30480,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m2A06FB8CD851A83B6FA
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t1E327CB749CA1F2F2DA41B2D4DFF57FD6BE0FF66* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -30058,6 +30490,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m2A06FB8CD851A83B6FA
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t1E327CB749CA1F2F2DA41B2D4DFF57FD6BE0FF66* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -30066,10 +30499,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m2A06FB8CD851A83B6FA
 	}
 	{
 		List_1_t1E327CB749CA1F2F2DA41B2D4DFF57FD6BE0FF66* L_7 = V_0;
+		NullCheck(L_7);
 		FocusedElementU5BU5D_tE2EC8928994D7E368EC55BC3876976AAED693E58* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		FocusedElement_t1EE083A1C5276213C533A38C6B5DC02E9DE5CBEF L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		FocusedElement_t1EE083A1C5276213C533A38C6B5DC02E9DE5CBEF L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___m_SubTreeRoot), (void*)NULL);
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
@@ -30101,6 +30536,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m42F46664FC57D02
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t1E327CB749CA1F2F2DA41B2D4DFF57FD6BE0FF66* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -30114,6 +30550,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m42F46664FC57D02
 IL_0018:
 	{
 		List_1_t1E327CB749CA1F2F2DA41B2D4DFF57FD6BE0FF66* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		FocusedElement_t1EE083A1C5276213C533A38C6B5DC02E9DE5CBEF* L_5 = (FocusedElement_t1EE083A1C5276213C533A38C6B5DC02E9DE5CBEF*)(&__this->____current);
@@ -30158,6 +30595,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t1E327CB749CA1F2F2DA41B2D4DFF57FD6BE0FF66* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -30193,6 +30631,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t1E327CB749CA1F2F2DA41B2D4DFF57FD6BE0FF66* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -30234,6 +30673,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m28AD71B8BB6284A2906232
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t8E88137DBF3559DC2CF17853F82E9C24C134B291* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		SortedColumnState_t24958C451ECBAA5C6C868EA4881A27E45DEEA1AA* L_3 = (SortedColumnState_t24958C451ECBAA5C6C868EA4881A27E45DEEA1AA*)(&__this->____current);
@@ -30269,6 +30709,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mBEC356EEA463068A6F6
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t8E88137DBF3559DC2CF17853F82E9C24C134B291* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -30278,6 +30719,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mBEC356EEA463068A6F6
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t8E88137DBF3559DC2CF17853F82E9C24C134B291* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -30286,10 +30728,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mBEC356EEA463068A6F6
 	}
 	{
 		List_1_t8E88137DBF3559DC2CF17853F82E9C24C134B291* L_7 = V_0;
+		NullCheck(L_7);
 		SortedColumnStateU5BU5D_tD76039072018E258494F81C8D50F35EAC97118E6* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		SortedColumnState_t24958C451ECBAA5C6C868EA4881A27E45DEEA1AA L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		SortedColumnState_t24958C451ECBAA5C6C868EA4881A27E45DEEA1AA L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___columnDesc), (void*)NULL);
 		int32_t L_12 = __this->____index;
@@ -30318,6 +30762,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m35358DFC815C512
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t8E88137DBF3559DC2CF17853F82E9C24C134B291* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -30331,6 +30776,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m35358DFC815C512
 IL_0018:
 	{
 		List_1_t8E88137DBF3559DC2CF17853F82E9C24C134B291* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		SortedColumnState_t24958C451ECBAA5C6C868EA4881A27E45DEEA1AA* L_5 = (SortedColumnState_t24958C451ECBAA5C6C868EA4881A27E45DEEA1AA*)(&__this->____current);
@@ -30375,6 +30821,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t8E88137DBF3559DC2CF17853F82E9C24C134B291* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -30410,6 +30857,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t8E88137DBF3559DC2CF17853F82E9C24C134B291* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -30451,6 +30899,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m159144864209387AA18DEA
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_tDB6FA8EDA7A26227B5CA100203EF7BAFA0FDBDDF* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		SingleRange_tB50C1C2B62BDC445BDBA41FD3CDC77A45A211BBC* L_3 = (SingleRange_tB50C1C2B62BDC445BDBA41FD3CDC77A45A211BBC*)(&__this->____current);
@@ -30486,6 +30935,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mFD293690ABD5A13C6F2
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_tDB6FA8EDA7A26227B5CA100203EF7BAFA0FDBDDF* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -30495,6 +30945,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mFD293690ABD5A13C6F2
 	{
 		int32_t L_4 = __this->____index;
 		List_1_tDB6FA8EDA7A26227B5CA100203EF7BAFA0FDBDDF* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -30503,10 +30954,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mFD293690ABD5A13C6F2
 	}
 	{
 		List_1_tDB6FA8EDA7A26227B5CA100203EF7BAFA0FDBDDF* L_7 = V_0;
+		NullCheck(L_7);
 		SingleRangeU5BU5D_t9F938F2249733D85C4F97842A125778D69A843D6* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		SingleRange_tB50C1C2B62BDC445BDBA41FD3CDC77A45A211BBC L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		SingleRange_tB50C1C2B62BDC445BDBA41FD3CDC77A45A211BBC L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		int32_t L_12 = __this->____index;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_12, 1));
@@ -30534,6 +30987,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m5A165A59BCAC483
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tDB6FA8EDA7A26227B5CA100203EF7BAFA0FDBDDF* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -30547,6 +31001,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m5A165A59BCAC483
 IL_0018:
 	{
 		List_1_tDB6FA8EDA7A26227B5CA100203EF7BAFA0FDBDDF* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		SingleRange_tB50C1C2B62BDC445BDBA41FD3CDC77A45A211BBC* L_5 = (SingleRange_tB50C1C2B62BDC445BDBA41FD3CDC77A45A211BBC*)(&__this->____current);
@@ -30591,6 +31046,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_tDB6FA8EDA7A26227B5CA100203EF7BAFA0FDBDDF* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -30626,6 +31082,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tDB6FA8EDA7A26227B5CA100203EF7BAFA0FDBDDF* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -30667,6 +31124,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mE479DEDD234610FC12442D
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_tAF3B3F03351330B5C2EA012DB4C7E417DC6551AB* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		RenderNodeData_t7527D1643CC280CE2B2E40AB9F5154615B7A99AE* L_3 = (RenderNodeData_t7527D1643CC280CE2B2E40AB9F5154615B7A99AE*)(&__this->____current);
@@ -30702,6 +31160,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m6931196EE3215F82405
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_tAF3B3F03351330B5C2EA012DB4C7E417DC6551AB* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -30711,6 +31170,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m6931196EE3215F82405
 	{
 		int32_t L_4 = __this->____index;
 		List_1_tAF3B3F03351330B5C2EA012DB4C7E417DC6551AB* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -30719,10 +31179,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m6931196EE3215F82405
 	}
 	{
 		List_1_tAF3B3F03351330B5C2EA012DB4C7E417DC6551AB* L_7 = V_0;
+		NullCheck(L_7);
 		RenderNodeDataU5BU5D_t73A42A22EC1354DE8A25C10A2E408E1DA7C41B7E* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		RenderNodeData_t7527D1643CC280CE2B2E40AB9F5154615B7A99AE L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		RenderNodeData_t7527D1643CC280CE2B2E40AB9F5154615B7A99AE L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___standardMaterial), (void*)NULL);
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
@@ -30769,6 +31231,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m83B62E2B3DB4656
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tAF3B3F03351330B5C2EA012DB4C7E417DC6551AB* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -30782,6 +31245,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m83B62E2B3DB4656
 IL_0018:
 	{
 		List_1_tAF3B3F03351330B5C2EA012DB4C7E417DC6551AB* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		RenderNodeData_t7527D1643CC280CE2B2E40AB9F5154615B7A99AE* L_5 = (RenderNodeData_t7527D1643CC280CE2B2E40AB9F5154615B7A99AE*)(&__this->____current);
@@ -30826,6 +31290,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_tAF3B3F03351330B5C2EA012DB4C7E417DC6551AB* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -30861,6 +31326,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tAF3B3F03351330B5C2EA012DB4C7E417DC6551AB* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -30902,6 +31368,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m5DACB3692FAC138B1BCE83
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t75F32F8B26A8DE99110935551964E286930C7D5F* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		TransformData_t1EB326D4F0A7D2FABB34DAB3D379349B5F623646* L_3 = (TransformData_t1EB326D4F0A7D2FABB34DAB3D379349B5F623646*)(&__this->____current);
@@ -30937,6 +31404,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mF1DAE5AB60EA53385FA
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t75F32F8B26A8DE99110935551964E286930C7D5F* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -30946,6 +31414,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mF1DAE5AB60EA53385FA
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t75F32F8B26A8DE99110935551964E286930C7D5F* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -30954,10 +31423,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mF1DAE5AB60EA53385FA
 	}
 	{
 		List_1_t75F32F8B26A8DE99110935551964E286930C7D5F* L_7 = V_0;
+		NullCheck(L_7);
 		TransformDataU5BU5D_t9C6552848CAA1DCDD99EC5141171F72E5E8FA322* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		TransformData_t1EB326D4F0A7D2FABB34DAB3D379349B5F623646 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		TransformData_t1EB326D4F0A7D2FABB34DAB3D379349B5F623646 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___fullName), (void*)NULL);
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
@@ -30989,6 +31460,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m7403C518D9D0516
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t75F32F8B26A8DE99110935551964E286930C7D5F* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -31002,6 +31474,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m7403C518D9D0516
 IL_0018:
 	{
 		List_1_t75F32F8B26A8DE99110935551964E286930C7D5F* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		TransformData_t1EB326D4F0A7D2FABB34DAB3D379349B5F623646* L_5 = (TransformData_t1EB326D4F0A7D2FABB34DAB3D379349B5F623646*)(&__this->____current);
@@ -31046,6 +31519,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t75F32F8B26A8DE99110935551964E286930C7D5F* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -31081,6 +31555,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t75F32F8B26A8DE99110935551964E286930C7D5F* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -31121,6 +31596,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m8FA0DC5330DC0EC4CE868E
 		__this->____stack = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____stack), (void*)L_0);
 		Stack_1_t0B236E77382B6037C04F4090B3C6259495694C1C* L_1 = ___0_stack;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		__this->____index = ((int32_t)-2);
@@ -31160,6 +31636,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mAA1EFB68CB4CFF933A9
 	{
 		int32_t L_0 = __this->____version;
 		Stack_1_t0B236E77382B6037C04F4090B3C6259495694C1C* L_1 = __this->____stack;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -31182,6 +31659,7 @@ IL_001e:
 	}
 	{
 		Stack_1_t0B236E77382B6037C04F4090B3C6259495694C1C* L_5 = __this->____stack;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_subtract(L_6, 1));
 		int32_t L_7 = __this->____index;
@@ -31195,10 +31673,12 @@ IL_001e:
 	}
 	{
 		Stack_1_t0B236E77382B6037C04F4090B3C6259495694C1C* L_9 = __this->____stack;
+		NullCheck(L_9);
 		ResolveContextU5BU5D_tA44F71F5EFF2CE305C748D326687E840F314B3FB* L_10 = L_9->____array;
 		int32_t L_11 = __this->____index;
+		NullCheck(L_10);
 		int32_t L_12 = L_11;
-		ResolveContext_tEF37DBA22D641E4FE1568C5EBE1605A98D86C992 L_13 = (L_10)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_12));
+		ResolveContext_tEF37DBA22D641E4FE1568C5EBE1605A98D86C992 L_13 = (L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_12));
 		__this->____currentElement = L_13;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____currentElement))->___sheet), (void*)NULL);
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
@@ -31241,10 +31721,12 @@ IL_0072:
 	}
 	{
 		Stack_1_t0B236E77382B6037C04F4090B3C6259495694C1C* L_19 = __this->____stack;
+		NullCheck(L_19);
 		ResolveContextU5BU5D_tA44F71F5EFF2CE305C748D326687E840F314B3FB* L_20 = L_19->____array;
 		int32_t L_21 = __this->____index;
+		NullCheck(L_20);
 		int32_t L_22 = L_21;
-		ResolveContext_tEF37DBA22D641E4FE1568C5EBE1605A98D86C992 L_23 = (L_20)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_22));
+		ResolveContext_tEF37DBA22D641E4FE1568C5EBE1605A98D86C992 L_23 = (L_20)->GetAt(static_cast<il2cpp_array_size_t>(L_22));
 		__this->____currentElement = L_23;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____currentElement))->___sheet), (void*)NULL);
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
@@ -31355,6 +31837,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		Stack_1_t0B236E77382B6037C04F4090B3C6259495694C1C* L_1 = __this->____stack;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -31398,6 +31881,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_m54310B8B97CD9605936F5C
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_t70EE7982F45810D4B024CF720D910E67974A3094* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		AttributeOverride_t58F1DF22E69714D48ECBEEAD266D443A858BADEF* L_3 = (AttributeOverride_t58F1DF22E69714D48ECBEEAD266D443A858BADEF*)(&__this->____current);
@@ -31433,6 +31917,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mB4D1AEC778DD0ECDFB7
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_t70EE7982F45810D4B024CF720D910E67974A3094* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -31442,6 +31927,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mB4D1AEC778DD0ECDFB7
 	{
 		int32_t L_4 = __this->____index;
 		List_1_t70EE7982F45810D4B024CF720D910E67974A3094* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -31450,10 +31936,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mB4D1AEC778DD0ECDFB7
 	}
 	{
 		List_1_t70EE7982F45810D4B024CF720D910E67974A3094* L_7 = V_0;
+		NullCheck(L_7);
 		AttributeOverrideU5BU5D_t4D2E0B93EF3A1A1EB58AC1F48E6CFE20A0EA27E8* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		AttributeOverride_t58F1DF22E69714D48ECBEEAD266D443A858BADEF L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		AttributeOverride_t58F1DF22E69714D48ECBEEAD266D443A858BADEF L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___m_ElementName), (void*)NULL);
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
@@ -31488,6 +31976,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m81CC46B180142D9
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t70EE7982F45810D4B024CF720D910E67974A3094* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -31501,6 +31990,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m81CC46B180142D9
 IL_0018:
 	{
 		List_1_t70EE7982F45810D4B024CF720D910E67974A3094* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		AttributeOverride_t58F1DF22E69714D48ECBEEAD266D443A858BADEF* L_5 = (AttributeOverride_t58F1DF22E69714D48ECBEEAD266D443A858BADEF*)(&__this->____current);
@@ -31545,6 +32035,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_t70EE7982F45810D4B024CF720D910E67974A3094* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -31580,6 +32071,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_t70EE7982F45810D4B024CF720D910E67974A3094* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -31621,6 +32113,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator__ctor_mFD1F12D051DB25224C417D
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____list), (void*)L_0);
 		__this->____index = 0;
 		List_1_tA1547550E5FBA50050B20DA74245C38434654EE8* L_1 = ___0_list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		__this->____version = L_2;
 		FontReferenceMap_t1C0CECF3F0F650BE4A881A50A25EFB26965E7831* L_3 = (FontReferenceMap_t1C0CECF3F0F650BE4A881A50A25EFB26965E7831*)(&__this->____current);
@@ -31656,6 +32149,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m09E1D99B7CB14F2D039
 		V_0 = L_0;
 		int32_t L_1 = __this->____version;
 		List_1_tA1547550E5FBA50050B20DA74245C38434654EE8* L_2 = V_0;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____version;
 		if ((!(((uint32_t)L_1) == ((uint32_t)L_3))))
 		{
@@ -31665,6 +32159,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m09E1D99B7CB14F2D039
 	{
 		int32_t L_4 = __this->____index;
 		List_1_tA1547550E5FBA50050B20DA74245C38434654EE8* L_5 = V_0;
+		NullCheck(L_5);
 		int32_t L_6 = L_5->____size;
 		if ((!(((uint32_t)L_4) < ((uint32_t)L_6))))
 		{
@@ -31673,10 +32168,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m09E1D99B7CB14F2D039
 	}
 	{
 		List_1_tA1547550E5FBA50050B20DA74245C38434654EE8* L_7 = V_0;
+		NullCheck(L_7);
 		FontReferenceMapU5BU5D_tFA470305A1935D0EBE0F74758328811439915118* L_8 = L_7->____items;
 		int32_t L_9 = __this->____index;
+		NullCheck(L_8);
 		int32_t L_10 = L_9;
-		FontReferenceMap_t1C0CECF3F0F650BE4A881A50A25EFB26965E7831 L_11 = (L_8)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(L_10));
+		FontReferenceMap_t1C0CECF3F0F650BE4A881A50A25EFB26965E7831 L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		__this->____current = L_11;
 		Il2CppCodeGenWriteBarrier((void**)&(((&__this->____current))->___font), (void*)NULL);
 		#if IL2CPP_ENABLE_STRICT_WRITE_BARRIERS
@@ -31708,6 +32205,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m0192C041297DC14
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tA1547550E5FBA50050B20DA74245C38434654EE8* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{
@@ -31721,6 +32219,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNextRare_m0192C041297DC14
 IL_0018:
 	{
 		List_1_tA1547550E5FBA50050B20DA74245C38434654EE8* L_3 = __this->____list;
+		NullCheck(L_3);
 		int32_t L_4 = L_3->____size;
 		__this->____index = ((int32_t)il2cpp_codegen_add(L_4, 1));
 		FontReferenceMap_t1C0CECF3F0F650BE4A881A50A25EFB26965E7831* L_5 = (FontReferenceMap_t1C0CECF3F0F650BE4A881A50A25EFB26965E7831*)(&__this->____current);
@@ -31765,6 +32264,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_System_Collections_
 	{
 		int32_t L_1 = __this->____index;
 		List_1_tA1547550E5FBA50050B20DA74245C38434654EE8* L_2 = __this->____list;
+		NullCheck(L_2);
 		int32_t L_3 = L_2->____size;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)il2cpp_codegen_add(L_3, 1))))))
 		{
@@ -31800,6 +32300,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_System_Collections_IEnumerato
 	{
 		int32_t L_0 = __this->____version;
 		List_1_tA1547550E5FBA50050B20DA74245C38434654EE8* L_1 = __this->____list;
+		NullCheck(L_1);
 		int32_t L_2 = L_1->____version;
 		if ((((int32_t)L_0) == ((int32_t)L_2)))
 		{

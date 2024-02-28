@@ -14218,6 +14218,7 @@ IL_001f:
 IL_0042:
 	{
 		RuntimeObject* L_8 = ___0_item;
+		NullCheck((V_2));
 		bool L_9;
 		L_9 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(0, (V_2), L_8);
 		if (!L_9)

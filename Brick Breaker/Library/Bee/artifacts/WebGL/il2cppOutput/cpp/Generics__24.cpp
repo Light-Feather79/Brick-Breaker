@@ -12141,6 +12141,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m3A6C5FB20
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -12210,9 +12211,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		int16_t L_8;
 		L_8 = Array_InternalArray__get_Item_TisInt16_tB8EF286A9C33492FA6E6D6E67320BE93E794A175_m8A659E1C48B569ECCAE2AD0349429A67E01A7207(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -12310,6 +12313,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m8304743EC
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -12379,9 +12383,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		int32_t L_8;
 		L_8 = Array_InternalArray__get_Item_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m8DBAE86B694052C1B7FCC1F9464EDD3BB1550450(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -12479,6 +12485,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m60CB733A2
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -12548,9 +12555,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		int32_t L_8;
 		L_8 = Array_InternalArray__get_Item_TisInt32Enum_tCBAC8BA2BFF3A845FA599F303093BBBA374B6F0C_m73E1F5F12E7C364032EF3B83294842DCDACC3D11(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -12648,6 +12657,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mC05472989
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -12717,9 +12727,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		int64_t L_8;
 		L_8 = Array_InternalArray__get_Item_TisInt64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_m60533342512088BBD49E018B56079C62051D2FB5(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -12817,6 +12829,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mB588E70CA
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -12886,9 +12899,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		intptr_t L_8;
 		L_8 = Array_InternalArray__get_Item_TisIntPtr_t_m2925A21BEFDFB25720B5CF48922BB380CC0B1035(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -12986,6 +13001,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mA8F4310C8
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -13055,9 +13071,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		InternalCodePageDataItem_t6B4913D6507B26FFAE0B805874644D3DBE78F316 L_8;
 		L_8 = Array_InternalArray__get_Item_TisInternalCodePageDataItem_t6B4913D6507B26FFAE0B805874644D3DBE78F316_m504288D7C3E6E15F6ABDC815184708D433C338BD(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -13155,6 +13173,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mF88D35B17
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -13224,9 +13243,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		InternalEncodingDataItem_t1D6DA6BCE8389C12ECC229A644D2CA45A86C06EB L_8;
 		L_8 = Array_InternalArray__get_Item_TisInternalEncodingDataItem_t1D6DA6BCE8389C12ECC229A644D2CA45A86C06EB_m14B51EFE1DCB5BF96B4D60DA3B85DA58C035E23D(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -13324,6 +13345,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mA5B5A7802
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -13393,9 +13415,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		JobHandle_t5DF5F99902FED3C801A81C05205CEA6CE039EF08 L_8;
 		L_8 = Array_InternalArray__get_Item_TisJobHandle_t5DF5F99902FED3C801A81C05205CEA6CE039EF08_m8ACE97D7F5A02728B85F7F3CA00B19C3FA103215(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -13493,6 +13517,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m09EBC5DDC
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -13562,9 +13587,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		Keyframe_tB9C67DCBFE10C0AE9C52CB5C66E944255C9254F0 L_8;
 		L_8 = Array_InternalArray__get_Item_TisKeyframe_tB9C67DCBFE10C0AE9C52CB5C66E944255C9254F0_m9DC9C61315F751C8F6695E25F45BBC08935E721B(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -13662,6 +13689,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m5EA119F35
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -13731,9 +13759,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 L_8;
 		L_8 = Array_InternalArray__get_Item_TisLength_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256_m7AE1BEE3CECBEA77EFB0BA059F54670F3003620A(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -13831,6 +13861,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mDAE892DAF
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -13900,9 +13931,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		LigatureSubstitutionRecord_t8660DC6B1D65C655D698216F72BFB3C85DDCAB94 L_8;
 		L_8 = Array_InternalArray__get_Item_TisLigatureSubstitutionRecord_t8660DC6B1D65C655D698216F72BFB3C85DDCAB94_m1C71C4818BFBF8C9D7790FB00044E2D607717E73(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -14000,6 +14033,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m3D258B8AD
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -14069,9 +14103,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21 L_8;
 		L_8 = Array_InternalArray__get_Item_TisLightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21_m21CD85E7473B915856400A7800AF00737A3D13C5(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -14169,6 +14205,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mB90FD20F3
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -14238,9 +14275,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		LineInfo_t2BBD461B330C46ACA45596A8E72FEA4172F88CF5 L_8;
 		L_8 = Array_InternalArray__get_Item_TisLineInfo_t2BBD461B330C46ACA45596A8E72FEA4172F88CF5_mB80E161B29AD88E784C25C43CB2FBF5D955EF6CF(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -14338,6 +14377,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m3030FD9BE
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -14407,9 +14447,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		LinkInfo_tE85DDAFDFBDA635E6405C88EE4FD5941A9243DD8 L_8;
 		L_8 = Array_InternalArray__get_Item_TisLinkInfo_tE85DDAFDFBDA635E6405C88EE4FD5941A9243DD8_m6377C2932E7B384C8141D9C6F4F3DF3051191164(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -14507,6 +14549,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m0D1DC7E22
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -14576,9 +14619,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		ManipulatorActivationFilter_t866A0295DA75EA271B30BDC1F9EEA2C4FDEB1A81 L_8;
 		L_8 = Array_InternalArray__get_Item_TisManipulatorActivationFilter_t866A0295DA75EA271B30BDC1F9EEA2C4FDEB1A81_mF2BD925EE0AB118F4A2BF2EA7BC5BD530527EB43(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -14676,6 +14721,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m5F1451668
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -14745,9 +14791,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		MarkToBaseAdjustmentRecord_t4BE0F5A88932146F70A2B521176BDA91A20D8607 L_8;
 		L_8 = Array_InternalArray__get_Item_TisMarkToBaseAdjustmentRecord_t4BE0F5A88932146F70A2B521176BDA91A20D8607_mAF6BDE1C2BE9F2078C9E92FB46C4BF334167F3C3(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -14845,6 +14893,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mDFE053BE1
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -14914,9 +14963,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		MarkToMarkAdjustmentRecord_tD53618A3728435D5C904857DAC644EE27640807C L_8;
 		L_8 = Array_InternalArray__get_Item_TisMarkToMarkAdjustmentRecord_tD53618A3728435D5C904857DAC644EE27640807C_m5513C000674269BC694030D47336114ED4E5303E(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -15014,6 +15065,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m914C37DE4
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -15083,9 +15135,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		MaterialReference_tFD98FFFBBDF168028E637446C6676507186F4D0B L_8;
 		L_8 = Array_InternalArray__get_Item_TisMaterialReference_tFD98FFFBBDF168028E637446C6676507186F4D0B_m60564F0E4DA26417D1B2B6729DF779FDFB0F330E(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -15183,6 +15237,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m8B4FCBCF4
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -15252,9 +15307,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		MaterialReference_t86DB0799D5C82869D4FF0A4F59624AED6910FD26 L_8;
 		L_8 = Array_InternalArray__get_Item_TisMaterialReference_t86DB0799D5C82869D4FF0A4F59624AED6910FD26_m9F3F292CF6C53C8D110FF29C56748A479A575690(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -15352,6 +15409,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m74F83DD55
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -15421,9 +15479,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_8;
 		L_8 = Array_InternalArray__get_Item_TisMatrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6_m615B3960D51740AD45136A476CBDCE35FD9C21D3(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -15521,6 +15581,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mD79ECE25C
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -15590,9 +15651,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		MeshInfo_tE55C4A8846CC2C399CCC3FE989476D987B86AB2F L_8;
 		L_8 = Array_InternalArray__get_Item_TisMeshInfo_tE55C4A8846CC2C399CCC3FE989476D987B86AB2F_m94249A4D5C8FBE70D13D87569E0C06E22153295E(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -15690,6 +15753,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m1383CB54D
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -15759,9 +15823,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		ModifiableContactPair_t8D3CA3E20AF1718A5421A6098D633DDA67399960 L_8;
 		L_8 = Array_InternalArray__get_Item_TisModifiableContactPair_t8D3CA3E20AF1718A5421A6098D633DDA67399960_mC262FAC7704E1518D2B96F969AB1F5AD8D246EFD(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -15859,6 +15925,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m39C5B7593
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -15928,9 +15995,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		MultipleSubstitutionRecord_t668A640AFADBD46E3D4EC3A8417D0A02764DF87B L_8;
 		L_8 = Array_InternalArray__get_Item_TisMultipleSubstitutionRecord_t668A640AFADBD46E3D4EC3A8417D0A02764DF87B_m301D8D589572A9E51376CE2463501CD8E6E57A66(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -16028,6 +16097,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mE55373C96
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -16097,9 +16167,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		Navigation_t4D2E201D65749CF4E104E8AC1232CF1D6F14795C L_8;
 		L_8 = Array_InternalArray__get_Item_TisNavigation_t4D2E201D65749CF4E104E8AC1232CF1D6F14795C_m3A76BFC2047C4A1AF5F42F535CDE2B415F9FF9CF(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -16197,6 +16269,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mD29D64DB3
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -16266,9 +16339,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		NudgeJobData_tC303DCF7D6A8683AA414D05AA13CB6FAD4BB4022 L_8;
 		L_8 = Array_InternalArray__get_Item_TisNudgeJobData_tC303DCF7D6A8683AA414D05AA13CB6FAD4BB4022_m153F9940BC6867CE145187A567CD729784BFF4BF(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -16366,6 +16441,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m0236FA94C
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -16435,9 +16511,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		RuntimeObject* L_8;
 		L_8 = Array_InternalArray__get_Item_TisRuntimeObject_m8CD3480A8F0A58E697355042CA2893C0E0309033(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -16533,6 +16611,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mE20756D66
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -16602,9 +16681,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		PageInfo_tFFF6B289E9A37E4D69353B32F941421180DA5909 L_8;
 		L_8 = Array_InternalArray__get_Item_TisPageInfo_tFFF6B289E9A37E4D69353B32F941421180DA5909_mFE019FEC77974C9DEE69E5727537C00DB31C078B(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -16702,6 +16783,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m3EFB73A29
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -16771,9 +16853,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		ParameterModifier_t75F1AF13B2AD5EDBD3A3579FD337D0A66E3FF510 L_8;
 		L_8 = Array_InternalArray__get_Item_TisParameterModifier_t75F1AF13B2AD5EDBD3A3579FD337D0A66E3FF510_m36F19D7993877B1805F0030D2F745DBAA13F529B(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -16871,6 +16955,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mF5C57B356
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -16940,9 +17025,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		PerSkinJobData_t12269B9BCDB1CA26111CF0EC8C1410DEB10863A0 L_8;
 		L_8 = Array_InternalArray__get_Item_TisPerSkinJobData_t12269B9BCDB1CA26111CF0EC8C1410DEB10863A0_m3B7F7991336E3FAFB8B1F1BC5D694F0E68FAFD66(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -17040,6 +17127,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m6EF6D786D
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -17109,9 +17197,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		Plane_tB7D8CC6F7AACF5F3AA483AF005C1102A8577BC0C L_8;
 		L_8 = Array_InternalArray__get_Item_TisPlane_tB7D8CC6F7AACF5F3AA483AF005C1102A8577BC0C_m494A22347D2E9AC268464F75D2A2615A3BF193FB(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -17209,6 +17299,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m8DCB1FB79
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -17278,9 +17369,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		PlayableBinding_tB68B3BAC47F4F4C559640472174D5BEF93CB6AB4 L_8;
 		L_8 = Array_InternalArray__get_Item_TisPlayableBinding_tB68B3BAC47F4F4C559640472174D5BEF93CB6AB4_mB080CB3D635E8BC8578D9605EF36216EF2D802C0(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -17378,6 +17471,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mA730365E9
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -17447,9 +17541,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F L_8;
 		L_8 = Array_InternalArray__get_Item_TisPlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F_m5895E1A4C350F3C56CB7AC693F4C65865B855BD1(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -17547,6 +17643,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m629073719
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -17616,9 +17713,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		PositionTangentVertex_t2A3AA7C428755E24BA9ECCBD89F67D0828D6555C L_8;
 		L_8 = Array_InternalArray__get_Item_TisPositionTangentVertex_t2A3AA7C428755E24BA9ECCBD89F67D0828D6555C_mD6AC80ED098840F1D932B04A803F4B07A99CECF1(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -17716,6 +17815,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m0CAD212D0
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -17785,9 +17885,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		PositionVertex_tE2E9C13E829C47759FB1722B0548D2D8925C4D12 L_8;
 		L_8 = Array_InternalArray__get_Item_TisPositionVertex_tE2E9C13E829C47759FB1722B0548D2D8925C4D12_m775A49EB6D7D0237DC9BE930286406327EB53A58(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -17885,6 +17987,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m954FE9318
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -17954,9 +18057,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_8;
 		L_8 = Array_InternalArray__get_Item_TisQuaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_m93D0BC077F38EF5AB9817BA183DACE9E8975F489(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -18054,6 +18159,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m3E212BF9D
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -18123,9 +18229,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 L_8;
 		L_8 = Array_InternalArray__get_Item_TisRaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5_mA9497843ADECF4DEB6B602E75D6281348A5165D4(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -18223,6 +18331,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mBDDFAB737
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -18292,9 +18401,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		RaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA L_8;
 		L_8 = Array_InternalArray__get_Item_TisRaycastHit2D_t3EAAA06E6603C6BC61AC1291DD881C5C1E23BDFA_m30B90586C754E21C73E8B41F2D2B5089CC028929(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -18392,6 +18503,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mC1B53B892
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -18461,9 +18573,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023 L_8;
 		L_8 = Array_InternalArray__get_Item_TisRaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023_mEADF14669996E69B1AF8FABAB44E71A792F47E25(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -18561,6 +18675,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m3B9E8A8E7
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -18630,9 +18745,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_8;
 		L_8 = Array_InternalArray__get_Item_TisRect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D_mCECFB8DF7F124F7EC73A57DDA87A142F40749DA3(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -18730,6 +18847,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mBF486208F
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -18799,9 +18917,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		RectInt_t1744D10E1063135DA9D574F95205B98DAC600CB8 L_8;
 		L_8 = Array_InternalArray__get_Item_TisRectInt_t1744D10E1063135DA9D574F95205B98DAC600CB8_m53A783D219483B833EAE8580C78150B222D5523C(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -18899,6 +19019,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m33C626BD7
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -18968,9 +19089,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		RenderInstancedDataLayout_t06AF33510AC89DBD09A3A161FF809EDFAB30EC7A L_8;
 		L_8 = Array_InternalArray__get_Item_TisRenderInstancedDataLayout_t06AF33510AC89DBD09A3A161FF809EDFAB30EC7A_m2950C441FC476C9B08BA1FB32A107ED401319283(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -19068,6 +19191,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m5266676F4
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -19137,9 +19261,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		ResourceLocator_t84F68A0DD2AA185761938E49BBE9B2C46A47E122 L_8;
 		L_8 = Array_InternalArray__get_Item_TisResourceLocator_t84F68A0DD2AA185761938E49BBE9B2C46A47E122_mF2F4EC7F0A423CAAC885D53DF824F77368F106A1(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -19237,6 +19363,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mA22D4D5C7
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -19306,9 +19433,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		RichTextTagAttribute_t1BB51A8FD6C14746D177D8E84E281A4FD4A720E0 L_8;
 		L_8 = Array_InternalArray__get_Item_TisRichTextTagAttribute_t1BB51A8FD6C14746D177D8E84E281A4FD4A720E0_m74B05374E9023F9C1753E2FF19ABAC9BE7A170B7(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -19406,6 +19535,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mD0AD2886B
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -19475,9 +19605,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		RichTextTagAttribute_t0600951F833208392F1D8EE3E6A58AD5C797F9DA L_8;
 		L_8 = Array_InternalArray__get_Item_TisRichTextTagAttribute_t0600951F833208392F1D8EE3E6A58AD5C797F9DA_m13E752B662FACC7BCD693276949E211A600F8BF2(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -19575,6 +19707,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mF5DBA1D60
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -19644,9 +19777,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7 L_8;
 		L_8 = Array_InternalArray__get_Item_TisRotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7_m822D38293F3CD2831B847952A7CDDABDD05A2989(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -19744,6 +19879,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m9B6C40E4B
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -19813,9 +19949,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		RuleMatcher_t327CFEB02C81AA20E639DE949DCBBAB5E92FF28E L_8;
 		L_8 = Array_InternalArray__get_Item_TisRuleMatcher_t327CFEB02C81AA20E639DE949DCBBAB5E92FF28E_mDB522F254E26950A9150E4710B491A4E3DA87ED3(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -19913,6 +20051,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m106018749
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -19982,9 +20121,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		int8_t L_8;
 		L_8 = Array_InternalArray__get_Item_TisSByte_tFEFFEF5D2FEBF5207950AE6FAC150FC53B668DB5_m6DF782C3306C4A12BB7296210B4ECD8CF51C6E1C(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -20082,6 +20223,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mCCB731A75
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -20151,9 +20293,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		int8_t L_8;
 		L_8 = Array_InternalArray__get_Item_TisSByteEnum_t0782AA0EFC5D1042A39675F37D7DD7C098781DD9_m2BC24F7D2612BBFA57750EA342C36740321A5C5F(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -20251,6 +20395,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m314BB1A0D
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -20320,9 +20465,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		ScalableImage_t64F0F6F75D1099EF5D595E70CA1A2A7B9914E80F L_8;
 		L_8 = Array_InternalArray__get_Item_TisScalableImage_t64F0F6F75D1099EF5D595E70CA1A2A7B9914E80F_m8E9364C8316D75BBE52E94EE4F86C24E3EDAD118(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -20420,6 +20567,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mBAAE621D9
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -20489,9 +20637,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7 L_8;
 		L_8 = Array_InternalArray__get_Item_TisScale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7_m506EF777801A8981C8194638B5F2762870A6EA24(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -20589,6 +20739,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mCB92D2B62
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -20658,9 +20809,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		SelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7 L_8;
 		L_8 = Array_InternalArray__get_Item_TisSelectorMatchRecord_t1E93CDB54312CFB4A67768BB25ABB9AFB31BC5D7_mEA839407F3FB23885F37C5137B1DE8BFEE12B1D6(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -20758,6 +20911,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m5FE0FA775
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -20827,9 +20981,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		float L_8;
 		L_8 = Array_InternalArray__get_Item_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_m0A6AB4BFA48975995A0CBFC663F425F71078E3A5(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -20927,6 +21083,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mECC7F33BF
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -20996,9 +21153,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		SpriteBone_t92E0FF1412CC4B6A5FC71895699E35FB3EF75044 L_8;
 		L_8 = Array_InternalArray__get_Item_TisSpriteBone_t92E0FF1412CC4B6A5FC71895699E35FB3EF75044_mA1F0754D377991932AA2949E7AA427F53FA83D5E(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -21096,6 +21255,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m3E32E78DD
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -21165,9 +21325,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		SpriteSkinData_tAF363C091096E80EF5A98430D5738204C2CEF4A4 L_8;
 		L_8 = Array_InternalArray__get_Item_TisSpriteSkinData_tAF363C091096E80EF5A98430D5738204C2CEF4A4_mF1FE75A9B0AA9946B0AF5D7927865B14D1FBDBBF(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -21265,6 +21427,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m24A06642F
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -21334,9 +21497,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		SpriteState_tC8199570BE6337FB5C49347C97892B4222E5AACD L_8;
 		L_8 = Array_InternalArray__get_Item_TisSpriteState_tC8199570BE6337FB5C49347C97892B4222E5AACD_m9D987DC1B73DE41D020020FEAD9FCE346A2F9C48(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -21434,6 +21599,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m92CC29850
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -21503,9 +21669,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		StylePropertyName_tCBE2B561C690538C8514BF56426AC486DC35B6FF L_8;
 		L_8 = Array_InternalArray__get_Item_TisStylePropertyName_tCBE2B561C690538C8514BF56426AC486DC35B6FF_m358B4B06F26690426958DDEDC5D1D4A59C540C54(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -21603,6 +21771,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m939C95217
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -21672,9 +21841,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		StylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2 L_8;
 		L_8 = Array_InternalArray__get_Item_TisStylePropertyValue_tED32F617FABE99611B213BFCF9D1D909E7F141C2_m74EF4A4BC9B81BFC3DF18E344F99663D2AE919E2(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -21772,6 +21943,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mE9AE554D4
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -21841,9 +22013,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		StyleSelectorPart_tEE5B8ADC7D114C7486CC8301FF96C114FF3C9470 L_8;
 		L_8 = Array_InternalArray__get_Item_TisStyleSelectorPart_tEE5B8ADC7D114C7486CC8301FF96C114FF3C9470_m6F75D549E053C8943B88749C9ADF6D28DA8EAC6B(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -21941,6 +22115,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mC10E82F60
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -22010,9 +22185,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		StyleSyntaxToken_tE4474F86F800F298F966FFDE947528453E769E0C L_8;
 		L_8 = Array_InternalArray__get_Item_TisStyleSyntaxToken_tE4474F86F800F298F966FFDE947528453E769E0C_m247FC47564DC19523371707BFB635C651C3AFEEF(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -22110,6 +22287,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mEBB848AB6
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -22179,9 +22357,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		StyleValue_t56307594EC04E04EFBCC3220595B4AAD66FF93C5 L_8;
 		L_8 = Array_InternalArray__get_Item_TisStyleValue_t56307594EC04E04EFBCC3220595B4AAD66FF93C5_mED26A3545410153C9F6743D849CECEC6FB08FC09(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -22279,6 +22459,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m183AA38E8
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -22348,9 +22529,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		StyleValueHandle_t5831643AAA7AD8C5C43A4498C5E0A2545F78227D L_8;
 		L_8 = Array_InternalArray__get_Item_TisStyleValueHandle_t5831643AAA7AD8C5C43A4498C5E0A2545F78227D_m0AFA7B20C49F26191CAB807321925EECFA2F342F(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -22448,6 +22631,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mDA8BC03D5
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -22517,9 +22701,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		StyleValueManaged_t68DFBEC1594279E4DC56634FD5092318D1E9A5F4 L_8;
 		L_8 = Array_InternalArray__get_Item_TisStyleValueManaged_t68DFBEC1594279E4DC56634FD5092318D1E9A5F4_mE5EC2D01E1C2DFAE21E6FCE9C570DA23104448F3(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -22617,6 +22803,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m66270EE80
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -22686,9 +22873,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		StyleVariable_t5D4DEC936102A13961F4F2C6214B83D6CDC56269 L_8;
 		L_8 = Array_InternalArray__get_Item_TisStyleVariable_t5D4DEC936102A13961F4F2C6214B83D6CDC56269_m3E542D92FDDF2FE3C3BBC2203987BE86ED776E41(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -22786,6 +22975,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mB10F00910
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -22855,9 +23045,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		TMP_CharacterInfo_t8B8FF32D6AACE251F2E7835AA5BC6608D535D9F8 L_8;
 		L_8 = Array_InternalArray__get_Item_TisTMP_CharacterInfo_t8B8FF32D6AACE251F2E7835AA5BC6608D535D9F8_mF96CC4BE7AF30CCCB5BFC8D9F932F81784962453(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -22955,6 +23147,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mF16A9147B
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -23024,9 +23217,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		TMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E L_8;
 		L_8 = Array_InternalArray__get_Item_TisTMP_FontWeightPair_t2835DA6BF1309AC6C817ECF878232CCF9DDB703E_m5DBFE1C09D0AF3DFCED71BAA71E601987F2EA91F(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -23124,6 +23319,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mE3BC63049
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -23193,9 +23389,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		TMP_LineInfo_tB75C1965B58DB7B3A046C8CA55AD6AB92B6B17B3 L_8;
 		L_8 = Array_InternalArray__get_Item_TisTMP_LineInfo_tB75C1965B58DB7B3A046C8CA55AD6AB92B6B17B3_mB06584D539D90CA90AFF8642F6077D0D9862B2FB(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -23293,6 +23491,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mD69E32759
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -23362,9 +23561,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		TMP_LinkInfo_t9DC08E8BF8C5E8094AFF8C9FB3C251AF88B92DA6 L_8;
 		L_8 = Array_InternalArray__get_Item_TisTMP_LinkInfo_t9DC08E8BF8C5E8094AFF8C9FB3C251AF88B92DA6_m905BDA786CB2B8401FFB4C5F1DA318258EEF5AEE(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -23462,6 +23663,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m49FB76570
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -23531,9 +23733,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		TMP_MeshInfo_t320C52212E9D672EBB5F5C18C3E0700AA33DD76B L_8;
 		L_8 = Array_InternalArray__get_Item_TisTMP_MeshInfo_t320C52212E9D672EBB5F5C18C3E0700AA33DD76B_mFB14B1F148B7B7788AC2F18FEC437FC95B4C43B5(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -23631,6 +23835,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m119EF9FC9
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -23700,9 +23905,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		TMP_PageInfo_t062E56948480FAB066C168E14DC79CC83CC369B4 L_8;
 		L_8 = Array_InternalArray__get_Item_TisTMP_PageInfo_t062E56948480FAB066C168E14DC79CC83CC369B4_mE284D11DA0E2A94CBFA7834BE6719E0BF6EA26AC(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -23800,6 +24007,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mF29ED96DC
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -23869,9 +24077,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		TMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983 L_8;
 		L_8 = Array_InternalArray__get_Item_TisTMP_WordInfo_t825112AF0B76E4461F9C7DD336A02CC6A090A983_m68497CD5C3D32228A49ED1797DE0AC8919BD0EB2(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -23969,6 +24179,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m228D662EB
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -24038,9 +24249,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		TextElementInfo_tDD7A12E319505510E0B350E342BD55F32AB5F976 L_8;
 		L_8 = Array_InternalArray__get_Item_TisTextElementInfo_tDD7A12E319505510E0B350E342BD55F32AB5F976_mB245AF5412797A786763A7934C63362B06549969(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -24138,6 +24351,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m05B945CE1
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -24207,9 +24421,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		TextProcessingElement_tDCD1EAF9D54829E796F4F9726D63B205344C7698 L_8;
 		L_8 = Array_InternalArray__get_Item_TisTextProcessingElement_tDCD1EAF9D54829E796F4F9726D63B205344C7698_m20D6D29D69BFC4DF42C9BB9043415072FDFE07F5(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -24307,6 +24523,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m31B79A189
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -24376,9 +24593,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05 L_8;
 		L_8 = Array_InternalArray__get_Item_TisTextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05_mDE8ACC8AC850922C1F5EB9E74D16B48A4EB5A019(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -24476,6 +24695,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m64F64D8A2
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -24545,9 +24765,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		TextureId_tFF4B4AAE53408AB10B0B89CCA5F7B50CF2535E58 L_8;
 		L_8 = Array_InternalArray__get_Item_TisTextureId_tFF4B4AAE53408AB10B0B89CCA5F7B50CF2535E58_m1C1993CA0FCE18DACA4FD9414FEC14AB9FEEDDC8(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -24645,6 +24867,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mC3EA20737
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -24714,9 +24937,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		TileData_tFB814629D010ABD175127C0BE96FD96EA606E00F L_8;
 		L_8 = Array_InternalArray__get_Item_TisTileData_tFB814629D010ABD175127C0BE96FD96EA606E00F_m7F29A7FBEFF609827DA390BE940BCDC009561D9D(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -24814,6 +25039,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mC1B717391
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -24883,9 +25109,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A L_8;
 		L_8 = Array_InternalArray__get_Item_TisTimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A_mE16B9CB372B48631F8BB3BB031037839278B5FBE(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -24983,6 +25211,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m46B86893C
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -25052,9 +25281,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		TimeValue_t45AE43B219493F9459363F32C79E8986B5F82E0E L_8;
 		L_8 = Array_InternalArray__get_Item_TisTimeValue_t45AE43B219493F9459363F32C79E8986B5F82E0E_mD7EA709DEB63E0BA20B798D40018AB6FCB58FBD9(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -25152,6 +25383,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m79C10160C
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -25221,9 +25453,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		Transform3x4_t9F79FC0112A00D3FFD7AFAD2D10AD22DF929052F L_8;
 		L_8 = Array_InternalArray__get_Item_TisTransform3x4_t9F79FC0112A00D3FFD7AFAD2D10AD22DF929052F_mC657110E3566331FDA0C02D5B99412B87DB61F09(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -25321,6 +25555,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mAB34B7055
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -25390,9 +25625,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502 L_8;
 		L_8 = Array_InternalArray__get_Item_TisTransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502_mFB347F13DD6DD7501EE887F5082B5678606D8D83(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -25490,6 +25727,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m55760F69B
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -25559,9 +25797,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E L_8;
 		L_8 = Array_InternalArray__get_Item_TisTranslate_t494F6E802F8A640D67819C9D26BE62DED1218A8E_m3295F7827F7F13F8089BB3450BA0CD367CA44490(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -25659,6 +25899,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m3EAD897C6
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -25728,9 +25969,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		TreeItem_t6B0F84E487FB869A51E1DA4987183127271F4F90 L_8;
 		L_8 = Array_InternalArray__get_Item_TisTreeItem_t6B0F84E487FB869A51E1DA4987183127271F4F90_m2964A4A304E07A396464ECB4EB2D5571A83A21A0(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -25828,6 +26071,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mFC2E176FA
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -25897,9 +26141,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		TreeViewItemWrapper_t4475B9923345B2D51C29E1E5285A4F92FA65C839 L_8;
 		L_8 = Array_InternalArray__get_Item_TisTreeViewItemWrapper_t4475B9923345B2D51C29E1E5285A4F92FA65C839_mDB475D8F8DC6D0074ED2B85FC464BFAADEACED69(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -25997,6 +26243,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mC94015FAC
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -26066,9 +26313,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		UICharInfo_t24C2EA0F2F3A938100C271891D9DEB015ABA5FBD L_8;
 		L_8 = Array_InternalArray__get_Item_TisUICharInfo_t24C2EA0F2F3A938100C271891D9DEB015ABA5FBD_mDD94F33CA889882B2B092FE7C24A7169B5084788(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -26166,6 +26415,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mD0BBCA56C
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -26235,9 +26485,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		UILineInfo_tC6FF4F85BD2316FADA2148A1789B3FF0B05A6CAC L_8;
 		L_8 = Array_InternalArray__get_Item_TisUILineInfo_tC6FF4F85BD2316FADA2148A1789B3FF0B05A6CAC_m80BC714378E625A099EFBFE581FC3365D970187A(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -26335,6 +26587,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m511CE71F9
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -26404,9 +26657,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		UIVertex_tF5C663F4BBC786C9D56C28016FF66E6C6BF85207 L_8;
 		L_8 = Array_InternalArray__get_Item_TisUIVertex_tF5C663F4BBC786C9D56C28016FF66E6C6BF85207_mBF57AA7685EDA35CD6E58346350A50E23CBEFE34(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -26504,6 +26759,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m58BB34E21
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -26573,9 +26829,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		uint16_t L_8;
 		L_8 = Array_InternalArray__get_Item_TisUInt16_tF4C148C876015C212FD72652D0B6ED8CC247A455_m394F69BA1AC6EDC2C61719E0447B655C29484B34(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -26673,6 +26931,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m164DC94EB
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -26742,9 +27001,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		uint16_t L_8;
 		L_8 = Array_InternalArray__get_Item_TisUInt16Enum_t481D129F5FAE551E8684190D640F0FAEFB237CF8_m90049A5A5A4896935F340F827B1FD0DB014FD7D9(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -26842,6 +27103,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mB7DF1EADB
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -26911,9 +27173,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		uint32_t L_8;
 		L_8 = Array_InternalArray__get_Item_TisUInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_mCD349F1A257685592B0DE023F9C71FD2EDBDDB05(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -27011,6 +27275,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m63FB65AD2
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -27080,9 +27345,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		uint64_t L_8;
 		L_8 = Array_InternalArray__get_Item_TisUInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_m72E26F6729CC307DE5705B8DB60BE7348AFAC16C(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -27180,6 +27447,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m38DA18134
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -27249,9 +27517,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_8;
 		L_8 = Array_InternalArray__get_Item_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m906B0C6C28B045FC425E01A009877ED9891003C3(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -27349,6 +27619,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mF4569B204
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -27418,9 +27689,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A L_8;
 		L_8 = Array_InternalArray__get_Item_TisVector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE6A_m26E21AFD1939B398C6E29771FA6698C15838221F(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -27518,6 +27791,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m832C6685D
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -27587,9 +27861,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
 		L_8 = Array_InternalArray__get_Item_TisVector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_m52A4B87820FA9464FD1BB3DE41A152A080EB6F90(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -27687,6 +27963,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mA1F7EED6A
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -27756,9 +28033,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376 L_8;
 		L_8 = Array_InternalArray__get_Item_TisVector3Int_t65CB06F557251D18A37BD71F3655BA836A357376_mAF052EEC9E12C092AAA04DCAF72EF3625B00208F(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -27856,6 +28135,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mFA6827AFC
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -27925,9 +28205,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 L_8;
 		L_8 = Array_InternalArray__get_Item_TisVector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_m566A591FED501A8B1007446C1C5942EF6C7FE35B(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -28025,6 +28307,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m51F20970F
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -28094,9 +28377,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		VectorImageVertex_t9D42377517CC059BD40E2A626ECEBE0C94CA0948 L_8;
 		L_8 = Array_InternalArray__get_Item_TisVectorImageVertex_t9D42377517CC059BD40E2A626ECEBE0C94CA0948_m3F272871028916C93E282CDC6B662E11A3B7FB03(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -28194,6 +28479,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m333F19569
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -28263,9 +28549,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		Vertex_t016AC68A2E6C62576E65412BEC71544AFC01AFC7 L_8;
 		L_8 = Array_InternalArray__get_Item_TisVertex_t016AC68A2E6C62576E65412BEC71544AFC01AFC7_mF802C21BB645C5383E5D0887237F693F5D023AC7(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -28363,6 +28651,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m9E30A7265
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -28432,9 +28721,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		VertexAttributeDescriptor_tD4231FBF57335465D16308D2A18E8E83D36BFA76 L_8;
 		L_8 = Array_InternalArray__get_Item_TisVertexAttributeDescriptor_tD4231FBF57335465D16308D2A18E8E83D36BFA76_m29F98937D3420E0995F302ADCDA0E41F819BFF8C(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -28532,6 +28823,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m4BDB0D529
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -28601,9 +28893,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		WordInfo_tA466206097891A5A2590896EE164AFC406EB060D L_8;
 		L_8 = Array_InternalArray__get_Item_TisWordInfo_tA466206097891A5A2590896EE164AFC406EB060D_m3D2378488671A34099801301AAEF275B73713BDC(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -28701,6 +28995,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m9C8ACADD9
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -28770,9 +29065,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		WordWrapState_t80F67D8CAA9B1A0A3D5266521E23A9F3100EDD0A L_8;
 		L_8 = Array_InternalArray__get_Item_TisWordWrapState_t80F67D8CAA9B1A0A3D5266521E23A9F3100EDD0A_mFC778788DECC4E34A654B75EF5327D836067FFED(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -28870,6 +29167,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m34B516046
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -28939,9 +29237,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		WordWrapState_tD71131CF008362DB9562FB9794AE9D9225D8F123 L_8;
 		L_8 = Array_InternalArray__get_Item_TisWordWrapState_tD71131CF008362DB9562FB9794AE9D9225D8F123_mAD411D794DE4A9B173F2E08B1B223CB2138FFAB6(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -29039,6 +29339,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m0DF22C0F5
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -29110,9 +29411,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		InvokerActionInvoker2< int32_t, Il2CppFullySharedGenericAny* >::Invoke(il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1), L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), (Il2CppFullySharedGenericAny*)L_8);
 		il2cpp_codegen_memcpy(il2cppRetVal, L_8, SizeOf_T_tA690C2E7874BF1612EF672C39B5C029ADE153DFA);
 		return;
@@ -29209,6 +29512,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m3459D0F56
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -29278,9 +29582,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_8;
 		L_8 = Array_InternalArray__get_Item_Tisfloat3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E_mB2B49048CD0BFCE0B0F8825AFAF62AC2850AE1E4(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -29378,6 +29684,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mD89292284
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -29447,9 +29754,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		float4_t89D9A294E7A79BD81BFBDD18654508532958555E L_8;
 		L_8 = Array_InternalArray__get_Item_Tisfloat4_t89D9A294E7A79BD81BFBDD18654508532958555E_m4FC13638A4D33B6E9D68CFE28B226AC5EFBD0096(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -29547,6 +29856,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mC7C4CC881
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -29616,9 +29926,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		float4x4_t7EDD16F7F57DC7F61A6302535F7C19FB97915DF2 L_8;
 		L_8 = Array_InternalArray__get_Item_Tisfloat4x4_t7EDD16F7F57DC7F61A6302535F7C19FB97915DF2_m942FC1CDE516474D8CD24E77D5D9D5F07CF6542D(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -29716,6 +30028,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mED160BEC2
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -29785,9 +30098,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A L_8;
 		L_8 = Array_InternalArray__get_Item_Tisint2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A_m93BEF6932F97A5B05CCABA140F7DA9E972C4DBD6(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -29885,6 +30200,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m088A44321
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -29954,9 +30270,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		MatchContext_t04110FFA271D89A23BC1918BE657634A7DC06253 L_8;
 		L_8 = Array_InternalArray__get_Item_TisMatchContext_t04110FFA271D89A23BC1918BE657634A7DC06253_mE56FB819F55CDECC7FD02D710F141A866FC73138(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -30054,6 +30372,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m89512AE02
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -30123,9 +30442,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		OrderBlock_t62FD6F6544F34B5298DEF2F77AAE446F269B7837 L_8;
 		L_8 = Array_InternalArray__get_Item_TisOrderBlock_t62FD6F6544F34B5298DEF2F77AAE446F269B7837_mED45FED464EB455DE518215C488181CCB4DD318F(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -30223,6 +30544,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mE11860FBA
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -30292,9 +30614,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		Page_t04FE552A388BF55B12C8868E19589136957E00A5 L_8;
 		L_8 = Array_InternalArray__get_Item_TisPage_t04FE552A388BF55B12C8868E19589136957E00A5_m788DF4F4C752A0CF52C512C53DC134C004FFEBD7(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -30392,6 +30716,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m2928F05A2
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -30461,9 +30786,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		TableRange_tD242F3D62C818E84B6903C18A6CE33399672B497 L_8;
 		L_8 = Array_InternalArray__get_Item_TisTableRange_tD242F3D62C818E84B6903C18A6CE33399672B497_m472DBAC3764677ACF31D96007C6B632DE9460375(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -30561,6 +30888,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mA0D34B426
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -30630,9 +30958,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		DispatchContext_tFA37790A5FF30508B0146B79E4FF1880EB82E455 L_8;
 		L_8 = Array_InternalArray__get_Item_TisDispatchContext_tFA37790A5FF30508B0146B79E4FF1880EB82E455_m8BB7595766B18A56C918F7926495D1130FC8C400(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -30730,6 +31060,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mB497F1A05
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -30799,9 +31130,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		EventRecord_tEC2901C48A23F5AFE20A9E8D4F05F3799EA62BF2 L_8;
 		L_8 = Array_InternalArray__get_Item_TisEventRecord_tEC2901C48A23F5AFE20A9E8D4F05F3799EA62BF2_m6E9838AA2E5BE6AA077C6BF61C31A503B14E28D5(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -30899,6 +31232,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m63510166D
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -30968,9 +31302,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		DefaultEventInterests_tF62D361FCDFA26C0E0A55ECCD8C20A64B3F2D8F0 L_8;
 		L_8 = Array_InternalArray__get_Item_TisDefaultEventInterests_tF62D361FCDFA26C0E0A55ECCD8C20A64B3F2D8F0_mA3CCBBBFC7BD322FA8E91D79E0860F5F9EBFEE11(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -31068,6 +31404,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mAEA719164
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -31137,9 +31474,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		FocusedElement_t1EE083A1C5276213C533A38C6B5DC02E9DE5CBEF L_8;
 		L_8 = Array_InternalArray__get_Item_TisFocusedElement_t1EE083A1C5276213C533A38C6B5DC02E9DE5CBEF_m90A40435EAC7EC8551CD9AF7115D4D1E63B47D94(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -31237,6 +31576,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m74F5ADA0D
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -31306,9 +31646,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		bucket_t3217998B0CD54EA2DEDD93DEF8556E72602C7D4E L_8;
 		L_8 = Array_InternalArray__get_Item_Tisbucket_t3217998B0CD54EA2DEDD93DEF8556E72602C7D4E_m997801734518638ADBC3B40FC893044F80EE7EF4(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -31406,6 +31748,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m7D814F11D
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -31475,9 +31818,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		HebrewValue_tC21FD2DC21D49A9CC5EBCB7895A9431A5DF0801C L_8;
 		L_8 = Array_InternalArray__get_Item_TisHebrewValue_tC21FD2DC21D49A9CC5EBCB7895A9431A5DF0801C_mC473D01D3B3EFBC6E1855A519667735915AA3A58(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -31575,6 +31920,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mDDE15AE33
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -31644,9 +31990,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		SortedColumnState_t24958C451ECBAA5C6C868EA4881A27E45DEEA1AA L_8;
 		L_8 = Array_InternalArray__get_Item_TisSortedColumnState_t24958C451ECBAA5C6C868EA4881A27E45DEEA1AA_m5779DF9D5F225D78EAEC0A48064C1047C802A639(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -31744,6 +32092,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mFBCC91CD5
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -31813,9 +32162,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		FormatParam_t76A31D70C9964751A9AAFD4CE6951437E6C1CD8E L_8;
 		L_8 = Array_InternalArray__get_Item_TisFormatParam_t76A31D70C9964751A9AAFD4CE6951437E6C1CD8E_m5E1C517116398CF931D1448B6A35950FBDBA0611(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -31913,6 +32264,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m12E9F9BC6
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -31982,9 +32334,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		PointerLocation_t4E582463D283A22822997C2841D5E1A30D16FCF6 L_8;
 		L_8 = Array_InternalArray__get_Item_TisPointerLocation_t4E582463D283A22822997C2841D5E1A30D16FCF6_mFAEF0B2E12B4527CACF875168A6F699B5296BE6B(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -32082,6 +32436,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mDCC4078A2
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -32151,9 +32506,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		CachedCodeEntryKey_t8A54BDD6E52145D17DB1A2EB0CE0B4D4CB112F31 L_8;
 		L_8 = Array_InternalArray__get_Item_TisCachedCodeEntryKey_t8A54BDD6E52145D17DB1A2EB0CE0B4D4CB112F31_mC13896CD10D1A3DF212AFF36B276BA65B07BCA70(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -32251,6 +32608,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mF29CDE2C8
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -32320,9 +32678,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		LowerCaseMapping_t3E26F9E4ED2CCDA7404B4E4C123B0175FF5F8FF1 L_8;
 		L_8 = Array_InternalArray__get_Item_TisLowerCaseMapping_t3E26F9E4ED2CCDA7404B4E4C123B0175FF5F8FF1_mBDD3592CE7C0B4843D4093284902EF378453E8A1(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -32420,6 +32780,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m8E17EE7BC
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -32489,9 +32850,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		SingleRange_tB50C1C2B62BDC445BDBA41FD3CDC77A45A211BBC L_8;
 		L_8 = Array_InternalArray__get_Item_TisSingleRange_tB50C1C2B62BDC445BDBA41FD3CDC77A45A211BBC_mCB193C74C980AD040119AA41A54B4DD3D7E4FAE6(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -32589,6 +32952,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m3644F87E0
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -32658,9 +33022,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		RenderNodeData_t7527D1643CC280CE2B2E40AB9F5154615B7A99AE L_8;
 		L_8 = Array_InternalArray__get_Item_TisRenderNodeData_t7527D1643CC280CE2B2E40AB9F5154615B7A99AE_m482A7C6CAFA0F4B32C072C9274F88A38F7D7FD32(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -32758,6 +33124,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m9D28D46D7
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -32827,9 +33194,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		HitInfo_t34AF939575E1C059D581AB7ED8F039BCFFC70314 L_8;
 		L_8 = Array_InternalArray__get_Item_TisHitInfo_t34AF939575E1C059D581AB7ED8F039BCFFC70314_mFFEBB849B1A210E96EED4AA98A5A12684165EA31(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -32927,6 +33296,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m503B418C8
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -32996,9 +33366,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		CategoryEntrySprite_t921E1B4FF6D1C2E396E4012894CED7DE39892074 L_8;
 		L_8 = Array_InternalArray__get_Item_TisCategoryEntrySprite_t921E1B4FF6D1C2E396E4012894CED7DE39892074_mF088B5569FA6B2A2B4E5340917B28EFBDE86AB76(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -33096,6 +33468,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m7AA892266
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -33165,9 +33538,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		TransformData_t1EB326D4F0A7D2FABB34DAB3D379349B5F623646 L_8;
 		L_8 = Array_InternalArray__get_Item_TisTransformData_t1EB326D4F0A7D2FABB34DAB3D379349B5F623646_m82991FBA2B3BB79ACB344B7AC2ED63D1C3FE45A1(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -33265,6 +33640,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m253337C6A
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -33334,9 +33710,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		PseudoStateData_tE5B3EBF682E8DE88E9325F44841D5B95FEB6F3A8 L_8;
 		L_8 = Array_InternalArray__get_Item_TisPseudoStateData_tE5B3EBF682E8DE88E9325F44841D5B95FEB6F3A8_mF526EE27ACB76A1FD6BAEE8FCABBB044B30EEB41(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -33434,6 +33812,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m42595299B
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -33503,9 +33882,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		ElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814 L_8;
 		L_8 = Array_InternalArray__get_Item_TisElementPropertyPair_t4CBC92D2F951A9EB378EBFB6713B7566B0FA6814_m303E4B2D51FD4B9F3EE465BAE848121F756884FC(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -33603,6 +33984,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mB4948ADE3
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -33672,9 +34054,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		ImportStruct_t8CE0AC0405305E6E27224A07CF153167E99C98B1 L_8;
 		L_8 = Array_InternalArray__get_Item_TisImportStruct_t8CE0AC0405305E6E27224A07CF153167E99C98B1_m3B68BD4FB2B36BD61DEEE1A3B2BF3E956AC3E3B3(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -33772,6 +34156,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mA8361650A
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -33841,9 +34226,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		SheetHandleKey_tD6F2FE5B26CB5B86F18F74C8D47B5FA63D77B574 L_8;
 		L_8 = Array_InternalArray__get_Item_TisSheetHandleKey_tD6F2FE5B26CB5B86F18F74C8D47B5FA63D77B574_m0C48F2DC4348CD6977D436525F03BC50BA4DFC92(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -33941,6 +34328,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mCDBA2B8A7
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -34010,9 +34398,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		ResolveContext_tEF37DBA22D641E4FE1568C5EBE1605A98D86C992 L_8;
 		L_8 = Array_InternalArray__get_Item_TisResolveContext_tEF37DBA22D641E4FE1568C5EBE1605A98D86C992_mBBA78EF0E25CD02C6007C3D0294D7F3066C92265(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -34110,6 +34500,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mBE4CE5472
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -34179,9 +34570,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		UnicodeChar_tB86B7DE9203E1D985B08268AF1964DECB8A5F722 L_8;
 		L_8 = Array_InternalArray__get_Item_TisUnicodeChar_tB86B7DE9203E1D985B08268AF1964DECB8A5F722_m57D8E454308D7953E2BA485F3FF34FA9A337618D(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -34279,6 +34672,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m33A4DB95D
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -34348,9 +34742,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		AttributeOverride_t58F1DF22E69714D48ECBEEAD266D443A858BADEF L_8;
 		L_8 = Array_InternalArray__get_Item_TisAttributeOverride_t58F1DF22E69714D48ECBEEAD266D443A858BADEF_m7DD60807CAA4A76621AAB5517B0109A666A3604E(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -34448,6 +34844,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mA72B55F71
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -34517,9 +34914,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		FontAssetRef_t7B8E634754BC5683F1E6601D7CD0061285A28FF3 L_8;
 		L_8 = Array_InternalArray__get_Item_TisFontAssetRef_t7B8E634754BC5683F1E6601D7CD0061285A28FF3_mC5640A5B9111BC68403CB32FC8E7B24B2EA2B350(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -34617,6 +35016,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mFDE845E67
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -34686,9 +35086,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		FontReferenceMap_t1C0CECF3F0F650BE4A881A50A25EFB26965E7831 L_8;
 		L_8 = Array_InternalArray__get_Item_TisFontReferenceMap_t1C0CECF3F0F650BE4A881A50A25EFB26965E7831_m61EC69BBD22547ED13FE040E3E336D084A4C5420(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -34786,6 +35188,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mB9F50099D
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -34855,9 +35258,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		BlitInfo_t6D4C0580BBEF65F5EAD39FB6DBC85F360CF6A357 L_8;
 		L_8 = Array_InternalArray__get_Item_TisBlitInfo_t6D4C0580BBEF65F5EAD39FB6DBC85F360CF6A357_m1F46990B4922965C1721D5E7A139E3FA764329AB(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -34955,6 +35360,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m27A3F1BEC
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -35024,9 +35430,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		Frame_tE254B3BDA010B9114EF1F470C177342FAF3E8FFD L_8;
 		L_8 = Array_InternalArray__get_Item_TisFrame_tE254B3BDA010B9114EF1F470C177342FAF3E8FFD_m675F02A68BE88E90482C64F447B21BE0D7E23A4E(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -35124,6 +35532,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m3B729C522
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -35193,9 +35602,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		TextureInfo_t581C305A0444F786E0E7405054714685BE3A5A5B L_8;
 		L_8 = Array_InternalArray__get_Item_TisTextureInfo_t581C305A0444F786E0E7405054714685BE3A5A5B_mE2BC7FCAD8297BECA7F7F813338E2279E15141D7(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -35293,6 +35704,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m1FF096FC8
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -35362,9 +35774,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C L_8;
 		L_8 = Array_InternalArray__get_Item_TisSyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_m8F169E9B5FA2E4A22DCCF934F486DDFE9A78B6ED(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -35462,6 +35876,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m21B399355
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -35531,9 +35946,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		TZifType_t3ACBE0BB45077721E9D8DAF1414503F7990621D4 L_8;
 		L_8 = Array_InternalArray__get_Item_TisTZifType_t3ACBE0BB45077721E9D8DAF1414503F7990621D4_m05C767190DE76797DC3A71DBAE6F37F7122884DD(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -35631,6 +36048,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mB4EBC37B7
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -35700,9 +36118,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		Entry_tB8765CA56422E2C92887314844384843688DCB9F L_8;
 		L_8 = Array_InternalArray__get_Item_TisEntry_tB8765CA56422E2C92887314844384843688DCB9F_m8D2AA7E7AF5999DD9F55E7FD0F46814EA5EBFFE2(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -35800,6 +36220,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m5179ACFAF
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -35869,9 +36290,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		RepeatRectUV_t9DEBA876B6627ACC6496B9BC609EB953E3593935 L_8;
 		L_8 = Array_InternalArray__get_Item_TisRepeatRectUV_t9DEBA876B6627ACC6496B9BC609EB953E3593935_m4F1484C5709A72ADB423FC1DB9C5213D9EDA5697(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -35969,6 +36392,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m45E1FAB70
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -36038,9 +36462,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		AllocToFree_tC46982856CB8220A92BB724F5FB75CCCD09C67D8 L_8;
 		L_8 = Array_InternalArray__get_Item_TisAllocToFree_tC46982856CB8220A92BB724F5FB75CCCD09C67D8_m17C4B8539ABF7B2640934781809C91CF24E391B2(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -36138,6 +36564,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m8F1F58881
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -36207,9 +36634,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		AllocToUpdate_tD0221D0ABC5378DDE5AAB1DAA219C337E562B512 L_8;
 		L_8 = Array_InternalArray__get_Item_TisAllocToUpdate_tD0221D0ABC5378DDE5AAB1DAA219C337E562B512_m6811A2F4F8719D2B93A3047D12628D542E2A46BB(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -36307,6 +36736,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mFF86EFCEB
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -36376,9 +36806,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		DeviceToFree_tF2AD2D5F5C1936F25516AEF0736CF4BCA1B3052B L_8;
 		L_8 = Array_InternalArray__get_Item_TisDeviceToFree_tF2AD2D5F5C1936F25516AEF0736CF4BCA1B3052B_m1FE89705AEBE443349F3AEF6960C6800FFFC0A78(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -36476,6 +36908,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m0E75BAF29
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -36545,9 +36978,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		DateMapping_tD71D0AF5C7C6CB4F9517C292B1B61D7AF7CFCCFD L_8;
 		L_8 = Array_InternalArray__get_Item_TisDateMapping_tD71D0AF5C7C6CB4F9517C292B1B61D7AF7CFCCFD_m4E0A34E2EAAC5463441FA8CF7893A6C827D00A5A(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -36645,6 +37080,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m264E71DF9
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -36714,9 +37150,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		WorkRequest_t8AF542F2E248D9234341817CDB5F76C27D348B44 L_8;
 		L_8 = Array_InternalArray__get_Item_TisWorkRequest_t8AF542F2E248D9234341817CDB5F76C27D348B44_mFCA3CB90146CAC5F3C2F2577B2461EFF7F0861D2(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -36814,6 +37252,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m44C162EEF
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -36883,9 +37322,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		AssetEntry_tEB6FC90E5BB63DCA4FF932F2D64595339A28806D L_8;
 		L_8 = Array_InternalArray__get_Item_TisAssetEntry_tEB6FC90E5BB63DCA4FF932F2D64595339A28806D_mB4FFFE872F4CB44223D250B32E79DD425932B575(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -36983,6 +37424,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m4C81A4B47
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -37052,9 +37494,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		SlotDefinition_t2E39E965BBE5A336DD1B93A115DD01044D1A66F8 L_8;
 		L_8 = Array_InternalArray__get_Item_TisSlotDefinition_t2E39E965BBE5A336DD1B93A115DD01044D1A66F8_mEB2498771ADAA85A33149B96DCED7C026F14F4FF(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -37152,6 +37596,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m21CEB3682
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -37221,9 +37666,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		SlotUsageEntry_t73A628038C799E4FD44436E093EC19D2B9EA1B76 L_8;
 		L_8 = Array_InternalArray__get_Item_TisSlotUsageEntry_t73A628038C799E4FD44436E093EC19D2B9EA1B76_mA89079CB3CD05D91CA5D288B9565E9B4DD299807(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -37321,6 +37768,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_m81793449E
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -37390,9 +37838,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		UsingEntry_t0454AD34026FDFD1733CE07BD4AE807B0FBCE484 L_8;
 		L_8 = Array_InternalArray__get_Item_TisUsingEntry_t0454AD34026FDFD1733CE07BD4AE807B0FBCE484_mDE98F3EDD30849D8CCF604D5FC5564AA96166037(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;
@@ -37490,6 +37940,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternalEnumerator_1_MoveNext_mAC4B6A0A8
 	}
 	{
 		RuntimeArray* L_1 = __this->___array;
+		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_1, NULL);
 		__this->___idx = L_2;
@@ -37559,9 +38010,11 @@ IL_0029:
 	{
 		RuntimeArray* L_4 = __this->___array;
 		RuntimeArray* L_5 = __this->___array;
+		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Array_get_Length_m361285FB7CF44045DC369834D1CD01F72F94EF57(L_5, NULL);
 		int32_t L_7 = __this->___idx;
+		NullCheck(L_4);
 		UxmlObjectEntry_t1E72E4EBFDF4A1D3B8017BC882A5BAC71BE19E02 L_8;
 		L_8 = Array_InternalArray__get_Item_TisUxmlObjectEntry_t1E72E4EBFDF4A1D3B8017BC882A5BAC71BE19E02_m610088E55B484D13AB34EBF7BD304E40694E463E(L_4, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_6, 1)), L_7)), il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
 		return L_8;

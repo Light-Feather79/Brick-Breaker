@@ -595,8 +595,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* PhysicsScene2D_ToString_mACA22EF575
 		int32_t L_2 = __this->___m_Handle;
 		int32_t L_3 = L_2;
 		RuntimeObject* L_4 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_3);
+		NullCheck(L_1);
 		ArrayElementTypeCheck (L_1, L_4);
-		(L_1)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_4);
+		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_4);
 		String_t* L_5;
 		L_5 = UnityString_Format_m98A0629641086A1BE20BBF7F4EADDE3FE3877D85(_stringLiteral21ACE806CE655297BC379B3AD17E97F0A68B6AEC, L_1, NULL);
 		V_0 = L_5;
@@ -2080,6 +2081,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651
 	{
 		Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* L_2;
 		L_2 = Collision2D_get_collider_m90FA98F6619E9F1E2EFAE8132EDB6ECA1A2C4F37(__this, NULL);
+		NullCheck(L_2);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
 		L_3 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_2, NULL);
 		G_B3_0 = L_3;
@@ -2090,6 +2092,7 @@ IL_001c:
 	{
 		Rigidbody2D_tBEBE9523CF4448544085AF46BF7E10AA499F320F* L_4;
 		L_4 = Collision2D_get_rigidbody_mD763F2D56BF538A94AD62379D22E42335A67B60D(__this, NULL);
+		NullCheck(L_4);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5;
 		L_5 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_4, NULL);
 		G_B3_0 = L_5;

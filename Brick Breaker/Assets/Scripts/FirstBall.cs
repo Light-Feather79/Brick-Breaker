@@ -11,7 +11,7 @@ public class FirstBall : MonoBehaviour
     private void Awake()
     {
 
-        _transformBall = Instantiate(GameData.Instance._ballPrefab).transform;
+        _transformBall = Instantiate(GameData.Instance.YandexData.BallPrefab).transform;
         _rbBall = _transformBall.GetComponent<Rigidbody2D>();
         _speedBall = _transformBall.GetComponent<Ball>().Speed;
     }

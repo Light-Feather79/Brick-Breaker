@@ -13,8 +13,10 @@ public class SoundSettings : MonoBehaviour
 
     private void Start()
     {
-        _musicSlider.value = GameData.Instance.MusicValue;
-        _SFXSlider.value = GameData.Instance.SFXValue;
+        _musicSlider.value = GameData.Instance.YandexData.MusicValue;
+        OnMusicVolumeChanded(GameData.Instance.YandexData.MusicValue);
+        _SFXSlider.value = GameData.Instance.YandexData.SFXValue;
+        OnSFXVolumeChanded(GameData.Instance.YandexData.SFXValue);
     }
 
     public void OnMusicVolumeChanded(float volume)

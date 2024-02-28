@@ -99,6 +99,7 @@ extern void Canvas_get_externEndRenderOverlays_m57060A5AAD1A2A1A8D5F8BA75BB4C604
 extern void Canvas_set_externEndRenderOverlays_mA48664910ECE4995245902DDE755C5C18BEF8E32 (void);
 extern void Canvas_SetExternalCanvasEnabled_m13155750F26485027E5558C86AC55579B4CD7B6B (void);
 extern void Canvas_get_worldCamera_mD2FDE13B61A5213F4E64B40008EB0A8D2D07B853 (void);
+extern void Canvas_set_worldCamera_m007F7DABDB5A3A6BFB043E3500DA82A4D936EDD4 (void);
 extern void Canvas_GetDefaultCanvasMaterial_m7A0E204A9DC6A1390692788E37DBE7D8C6B71CD2 (void);
 extern void Canvas_GetETC1SupportedCanvasMaterial_mFABE1BCF145256FC155BD038DD44784E8832FAEA (void);
 extern void Canvas_ForceUpdateCanvases_m6ECDBC5E85ADA3301BB20611753C45769F15EB51 (void);
@@ -114,7 +115,7 @@ extern void WillRenderCanvases_Invoke_m47BAAC9AD2F84BF75E0021F436A6286C09A30566 
 extern void UISystemProfilerApi_BeginSample_m6AF893A85204DA2129D9D3D75D8A6EDD329FA23E (void);
 extern void UISystemProfilerApi_EndSample_mAFBCEDF8073F3FB0E1644482D909F108DBE11F3D (void);
 extern void UISystemProfilerApi_AddMarker_mB0E292213D18AE3770165011E265A57B17FCF90B (void);
-static Il2CppMethodPointer s_methodPointers[103] = 
+static Il2CppMethodPointer s_methodPointers[104] = 
 {
 	NULL,
 	CanvasGroup_get_alpha_mBFEA193D2886B27CC53B31F90F7A1659B67ED6DF,
@@ -204,6 +205,7 @@ static Il2CppMethodPointer s_methodPointers[103] =
 	Canvas_set_externEndRenderOverlays_mA48664910ECE4995245902DDE755C5C18BEF8E32,
 	Canvas_SetExternalCanvasEnabled_m13155750F26485027E5558C86AC55579B4CD7B6B,
 	Canvas_get_worldCamera_mD2FDE13B61A5213F4E64B40008EB0A8D2D07B853,
+	Canvas_set_worldCamera_m007F7DABDB5A3A6BFB043E3500DA82A4D936EDD4,
 	Canvas_GetDefaultCanvasMaterial_m7A0E204A9DC6A1390692788E37DBE7D8C6B71CD2,
 	Canvas_GetETC1SupportedCanvasMaterial_mFABE1BCF145256FC155BD038DD44784E8832FAEA,
 	Canvas_ForceUpdateCanvases_m6ECDBC5E85ADA3301BB20611753C45769F15EB51,
@@ -220,7 +222,7 @@ static Il2CppMethodPointer s_methodPointers[103] =
 	UISystemProfilerApi_EndSample_mAFBCEDF8073F3FB0E1644482D909F108DBE11F3D,
 	UISystemProfilerApi_AddMarker_mB0E292213D18AE3770165011E265A57B17FCF90B,
 };
-static const int32_t s_InvokerIndices[103] = 
+static const int32_t s_InvokerIndices[104] = 
 {
 	0,
 	4752,
@@ -310,6 +312,7 @@ static const int32_t s_InvokerIndices[103] =
 	6985,
 	6977,
 	4711,
+	3834,
 	7098,
 	7098,
 	7132,
@@ -330,7 +333,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_UIModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_UIModule_CodeGenModule = 
 {
 	"UnityEngine.UIModule.dll",
-	103,
+	104,
 	s_methodPointers,
 	0,
 	NULL,

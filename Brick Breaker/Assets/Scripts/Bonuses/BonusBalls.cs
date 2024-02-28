@@ -8,10 +8,12 @@ public class BonusBalls : MonoBehaviour
 {
     private float _speed = 150;
     private BallPooler _ballPooler;
+    private LevelManager _levelManager;
     
     private void Awake()
     {
         _ballPooler = FindObjectOfType<BallPooler>();
+        _levelManager = FindObjectOfType<LevelManager>();
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         CircleCollider2D col = GetComponent<CircleCollider2D>();
 
@@ -31,6 +33,9 @@ public class BonusBalls : MonoBehaviour
 
     private void MultiplyBalls()
     {
+        if (_levelManager.BallCount > 350)
+            return;
+
         List<Ball> balls = FindObjectsOfType<Ball>().ToList();
 
         foreach (Ball ball in balls)

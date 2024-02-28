@@ -19,6 +19,8 @@ public class LevelManager : MonoBehaviour
     private bool _isPaused;
     private Paddle _paddle;
 
+    public int BallCount => _ballCount;
+
     private void OnEnable()
     {
         Ball.BallLifeCycle += TrackBallCount;
@@ -37,6 +39,13 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
+        FindObjectOfType<HeaderInfo>().GetComponent<Canvas>().worldCamera = Camera.main;
+
+        Enum.TryParse(SceneManager.GetActiveScene().name, out Level level);
+
+        if ((int)level % 3 == 0)
+            GameData.ShowAd();
+
         GiveCoinsToRandomBricks();
         _paddle = Instantiate(_paddlePrefab);
         Time.timeScale = 1;
@@ -63,7 +72,7 @@ public class LevelManager : MonoBehaviour
             {
                 int coinChance = UnityEngine.Random.Range(0, 100);
 
-                if (GameData.Instance.IsGameComplited && blackStartIsSet == false)
+                if (GameData.Instance.YandexData.IsGameComplited && blackStartIsSet == false)
                 {
                     bricks[i].BlackStarBonus = true;
                     blackStartIsSet = true;
@@ -124,7 +133,11 @@ public class LevelManager : MonoBehaviour
         starsEarned = _blackStar == true ? starsEarned + 1 : starsEarned;
 
         GameData.Instance.ResetLevelData(starsEarned, level);
-        _levelWinScreen.gameObject.SetActive(true);
+        
+        // if ((int)level == Enum.GetNames(typeof(Level)).Length - 1)
+        //     FindObjectOfType<Yandex>().gameObject.SetActive(true);
+        // else
+            _levelWinScreen.gameObject.SetActive(true);
     }
 
     public void LoseGame()

@@ -466,6 +466,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Canvas_set_sortingOrder();
 		Register_UnityEngine_Canvas_set_sortingOrder();
 
+		//System.Void UnityEngine.Canvas::set_worldCamera(UnityEngine.Camera)
+		void Register_UnityEngine_Canvas_set_worldCamera();
+		Register_UnityEngine_Canvas_set_worldCamera();
+
 		//UnityEngine.AdditionalCanvasShaderChannels UnityEngine.Canvas::get_additionalShaderChannels()
 		void Register_UnityEngine_Canvas_get_additionalShaderChannels();
 		Register_UnityEngine_Canvas_get_additionalShaderChannels();
@@ -1571,6 +1575,18 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_Jobs_TransformAccessArray_SetTransforms();
 
 	//End Registrations for type : UnityEngine.Jobs.TransformAccessArray
+
+	//Start Registrations for type : UnityEngine.JsonUtility
+
+		//System.Object UnityEngine.JsonUtility::FromJsonInternal(System.String,System.Object,System.Type)
+		void Register_UnityEngine_JsonUtility_FromJsonInternal();
+		Register_UnityEngine_JsonUtility_FromJsonInternal();
+
+		//System.String UnityEngine.JsonUtility::ToJsonInternal(System.Object,System.Boolean)
+		void Register_UnityEngine_JsonUtility_ToJsonInternal();
+		Register_UnityEngine_JsonUtility_ToJsonInternal();
+
+	//End Registrations for type : UnityEngine.JsonUtility
 
 	//Start Registrations for type : UnityEngine.LayerMask
 

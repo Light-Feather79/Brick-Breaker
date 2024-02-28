@@ -21526,6 +21526,7 @@ IL_001f:
 IL_003a:
 	{
 		RuntimeObject* L_6 = V_2;
+		NullCheck((___0_item));
 		bool L_7;
 		L_7 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(0, (___0_item), L_6);
 		if (!L_7)

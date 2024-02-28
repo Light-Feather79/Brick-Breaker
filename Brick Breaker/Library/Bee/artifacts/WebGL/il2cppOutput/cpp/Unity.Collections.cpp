@@ -8655,6 +8655,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AllocatorManager_allocate_block_mBEB6
 		TableEntry_t5E44AFA7857A41AC654D7F248FD36B15D7835FFE L_8 = V_0;
 		intptr_t L_9 = L_8.___state;
 		Block_tCCF620817FE305B5BF7B0FB7705B4571F976C4E3* L_10 = ___0_block;
+		NullCheck(L_7);
 		int32_t L_11;
 		L_11 = TryFunction_Invoke_mED723D46A7B0C4B590ABECE0868EA02AD94D07A2_inline(L_7, L_9, L_10, NULL);
 		return L_11;
@@ -8707,13 +8708,15 @@ IL_0045:
 		AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148 L_15;
 		L_15 = AllocatorHandle_get_Handle_m440EA9B9A4306115087775DA2AA0AC034107D0E2(L_14, NULL);
 		uint16_t L_16 = L_15.___Index;
-		V_1 = ((L_11)->GetAddressAtUnchecked(static_cast<il2cpp_array_size_t>(L_16)));
+		NullCheck(L_11);
+		V_1 = ((L_11)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_16)));
 		int32_t* L_17 = ___1_error;
 		TryFunction_tC277E17D1D6AD4EF20C1FC1D8F91A559208AA5CA** L_18 = V_1;
 		TryFunction_tC277E17D1D6AD4EF20C1FC1D8F91A559208AA5CA* L_19 = *((TryFunction_tC277E17D1D6AD4EF20C1FC1D8F91A559208AA5CA**)L_18);
 		TableEntry_t5E44AFA7857A41AC654D7F248FD36B15D7835FFE L_20 = V_0;
 		intptr_t L_21 = L_20.___state;
 		Block_tCCF620817FE305B5BF7B0FB7705B4571F976C4E3* L_22 = ___0_block;
+		NullCheck(L_19);
 		int32_t L_23;
 		L_23 = TryFunction_Invoke_mED723D46A7B0C4B590ABECE0868EA02AD94D07A2_inline(L_19, L_21, L_22, NULL);
 		*((int32_t*)L_17) = (int32_t)L_23;
@@ -12998,6 +13001,7 @@ uint64_t Hash64Long_0000071FU24PostfixBurstDelegate_Invoke_mB1FCE8DBF4535F3C5D93
 }
 uint64_t Hash64Long_0000071FU24PostfixBurstDelegate_Invoke_mB1FCE8DBF4535F3C5D93A516C53DE351E2EB7EAE_OpenInst(Hash64Long_0000071FU24PostfixBurstDelegate_tAFFFD862200972D45B81F5803E2F182B4AC91DAA* __this, uint8_t* ___0_input, uint8_t* ___1_dest, int64_t ___2_length, uint8_t* ___3_secret, const RuntimeMethod* method)
 {
+	NullCheck(___0_input);
 	typedef uint64_t (*FunctionPointerType) (uint8_t*, uint8_t*, int64_t, uint8_t*, const RuntimeMethod*);
 	return ((FunctionPointerType)__this->___method_ptr)(___0_input, ___1_dest, ___2_length, ___3_secret, method);
 }
@@ -13227,6 +13231,7 @@ void Hash128Long_00000726U24PostfixBurstDelegate_Invoke_mB4681388FE466EF2E5EC0C2
 }
 void Hash128Long_00000726U24PostfixBurstDelegate_Invoke_mB4681388FE466EF2E5EC0C2B909668087FB71919_OpenInst(Hash128Long_00000726U24PostfixBurstDelegate_tDCFEBF017B234053E20733EE5D672798D4729FFD* __this, uint8_t* ___0_input, uint8_t* ___1_dest, int64_t ___2_length, uint8_t* ___3_secret, uint4_t6C69CBFAE9BF0F727D52B68779D4A3F0DBA8D5C9* ___4_result, const RuntimeMethod* method)
 {
+	NullCheck(___0_input);
 	typedef void (*FunctionPointerType) (uint8_t*, uint8_t*, int64_t, uint8_t*, uint4_t6C69CBFAE9BF0F727D52B68779D4A3F0DBA8D5C9*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___method_ptr)(___0_input, ___1_dest, ___2_length, ___3_secret, ___4_result, method);
 }
@@ -13480,6 +13485,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnsafeHashMapData_DeallocateHashMap_mB18
 	}
 	{
 		UnsafeHashMapData_t82AA009E447306C927002C4EED80392BD8D8E5B4* L_0 = ___0_data;
+		NullCheck(L_0);
 		uint8_t* L_1 = L_0->___values;
 		AllocatorHandle_t3CA09720B1F89F91A8DDBA95E74C28A1EC3E3148 L_2 = ___1_allocator;
 		Unmanaged_Free_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_m1C432B8FDFC847D68ECC57BF4C911BA784284271(L_1, L_2, Unmanaged_Free_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_m1C432B8FDFC847D68ECC57BF4C911BA784284271_RuntimeMethod_var);
@@ -13497,6 +13503,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UnsafeHashMapData_GetCount_m9E897C501
 	int32_t V_3 = 0;
 	{
 		UnsafeHashMapData_t82AA009E447306C927002C4EED80392BD8D8E5B4* L_0 = ___0_data;
+		NullCheck(L_0);
 		int32_t L_1 = L_0->___allocatedIndexLength;
 		if ((((int32_t)L_1) > ((int32_t)0)))
 		{
@@ -13510,6 +13517,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UnsafeHashMapData_GetCount_m9E897C501
 IL_000b:
 	{
 		UnsafeHashMapData_t82AA009E447306C927002C4EED80392BD8D8E5B4* L_2 = ___0_data;
+		NullCheck(L_2);
 		uint8_t* L_3 = L_2->___next;
 		V_0 = (int32_t*)L_3;
 		V_1 = 0;
@@ -13520,6 +13528,7 @@ IL_000b:
 IL_0018:
 	{
 		UnsafeHashMapData_t82AA009E447306C927002C4EED80392BD8D8E5B4* L_4 = ___0_data;
+		NullCheck(L_4);
 		U3CfirstFreeTLSU3Ee__FixedBuffer_tB5D033343517E3E37219A27C7757D645091EFF11* L_5 = (U3CfirstFreeTLSU3Ee__FixedBuffer_tB5D033343517E3E37219A27C7757D645091EFF11*)(&L_4->___firstFreeTLS);
 		int32_t* L_6 = (int32_t*)(&L_5->___FixedElementField);
 		int32_t L_7 = V_2;
@@ -13561,8 +13570,10 @@ IL_0043:
 	}
 	{
 		UnsafeHashMapData_t82AA009E447306C927002C4EED80392BD8D8E5B4* L_16 = ___0_data;
+		NullCheck(L_16);
 		int32_t L_17 = L_16->___keyCapacity;
 		UnsafeHashMapData_t82AA009E447306C927002C4EED80392BD8D8E5B4* L_18 = ___0_data;
+		NullCheck(L_18);
 		int32_t L_19 = L_18->___allocatedIndexLength;
 		int32_t L_20;
 		L_20 = math_min_m02D43DF516544C279AF660EA4731449C82991849_inline(L_17, L_19, NULL);

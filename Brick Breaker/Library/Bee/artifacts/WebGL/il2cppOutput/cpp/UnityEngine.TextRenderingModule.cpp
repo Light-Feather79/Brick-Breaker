@@ -1263,6 +1263,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TextGenerationSettings_tBB6E86AC0B348D19158D6
 	{
 		TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3 L_3 = ___0_settings;
 		Font_tC95270EA3198038970422D78B74A7F2E218A96B6* L_4 = L_3.___font;
+		NullCheck(L_4);
 		bool L_5;
 		L_5 = Font_get_dynamic_m5231258BFEAABA3B3EA6AB5D8C2FDCBC2AD1371C(L_4, NULL);
 		G_B3_0 = ((int32_t)(L_5));
@@ -1339,10 +1340,12 @@ IL_003c:
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_20 = L_19;
 		TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3 L_21 = ___0_settings;
 		Font_tC95270EA3198038970422D78B74A7F2E218A96B6* L_22 = L_21.___font;
+		NullCheck(L_22);
 		String_t* L_23;
 		L_23 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_22, NULL);
+		NullCheck(L_20);
 		ArrayElementTypeCheck (L_20, L_23);
-		(L_20)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_23);
+		(L_20)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_23);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarningFormat_mEC3E8902D2EF0D6CDC7D2643D75DF8A7A6F84713(L_18, _stringLiteral0052C2B75AF160293B7E2B988F2F9D83DCD1D4D6, L_20, NULL);
 	}
@@ -1384,10 +1387,12 @@ IL_0087:
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_34 = L_33;
 		TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3 L_35 = ___0_settings;
 		Font_tC95270EA3198038970422D78B74A7F2E218A96B6* L_36 = L_35.___font;
+		NullCheck(L_36);
 		String_t* L_37;
 		L_37 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_36, NULL);
+		NullCheck(L_34);
 		ArrayElementTypeCheck (L_34, L_37);
-		(L_34)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_37);
+		(L_34)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_37);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogWarningFormat_mEC3E8902D2EF0D6CDC7D2643D75DF8A7A6F84713(L_32, _stringLiteralC26096054589E56273AC485218FA5B65675C933E, L_34, NULL);
 	}
@@ -1547,8 +1552,9 @@ IL_0016:
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_9 = L_8;
 		TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3 L_10 = ___1_settings;
 		Font_tC95270EA3198038970422D78B74A7F2E218A96B6* L_11 = L_10.___font;
+		NullCheck(L_9);
 		ArrayElementTypeCheck (L_9, L_11);
-		(L_9)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_11);
+		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_11);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogErrorFormat_m13C2B705E2899F85833797AA48E8416052FFAD5A(L_7, _stringLiteral7EE2EC0E141890ED13D1EEC3562248EA95485987, L_9, NULL);
 	}
@@ -1569,8 +1575,9 @@ IL_003b:
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_16 = L_15;
 		TextGenerationSettings_tBB6E86AC0B348D19158D6721BE790865B04993F3 L_17 = ___1_settings;
 		Font_tC95270EA3198038970422D78B74A7F2E218A96B6* L_18 = L_17.___font;
+		NullCheck(L_16);
 		ArrayElementTypeCheck (L_16, L_18);
-		(L_16)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_18);
+		(L_16)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_18);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogErrorFormat_m13C2B705E2899F85833797AA48E8416052FFAD5A(L_14, _stringLiteralEEEF4964BE1943E118BB297F57BDB9955C6DA372, L_16, NULL);
 	}
@@ -2255,12 +2262,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Font_InvokeTextureRebuilt_Internal_m874D
 IL_000c:
 	{
 		Font_tC95270EA3198038970422D78B74A7F2E218A96B6* L_2 = ___0_font;
+		NullCheck(G_B2_0);
 		Action_1_Invoke_mF7CAC85021DFCE6516FAD20C0421A1AF389A3D3E_inline(G_B2_0, L_2, NULL);
 	}
 
 IL_0013:
 	{
 		Font_tC95270EA3198038970422D78B74A7F2E218A96B6* L_3 = ___0_font;
+		NullCheck(L_3);
 		FontTextureRebuildCallback_t76D5E172DF8AA57E67763D453AAC40F0961D09B1* L_4 = L_3->___m_FontTextureRebuildCallback;
 		FontTextureRebuildCallback_t76D5E172DF8AA57E67763D453AAC40F0961D09B1* L_5 = L_4;
 		if (L_5)
@@ -2276,6 +2285,7 @@ IL_0013:
 
 IL_001f:
 	{
+		NullCheck(G_B5_0);
 		FontTextureRebuildCallback_Invoke_m8B52C3F4823ADBB80062209E6BA2B33202AE958D_inline(G_B5_0, NULL);
 	}
 

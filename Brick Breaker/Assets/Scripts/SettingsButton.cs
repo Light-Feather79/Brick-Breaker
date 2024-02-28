@@ -36,6 +36,8 @@ public class SettingsButton : MonoBehaviour
 
     public void ContinueAfterAd()
     {
+        GameData.ShowRewardedAd();
+        
         FindObjectOfType<LevelManager>().ResetPuddle();
         GameData.Instance.AddBonusCoins();
         FindObjectOfType<LevelGameOverScreen>().gameObject.SetActive(false);

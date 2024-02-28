@@ -15,7 +15,9 @@ public class HeaderInfo : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _storyProgressText;
     [SerializeField] private Image _progressBarFilled;
 
-    private void Awake()
+    private bool _isFirstFrame;
+
+    private void Start()
     {
         if (s_instance != null)
             Destroy(gameObject);
@@ -36,13 +38,22 @@ public class HeaderInfo : MonoBehaviour
         GameData.Instance.DataChanged -= UpdateUI;
     }
 
+    private void Update()
+    {
+        if (_isFirstFrame == false)
+        {
+            _isFirstFrame = true;
+            UpdateUI();
+        }
+    }
+
     private void UpdateUI()
     {
-        _blackStarText.text = GameData.Instance.BlackStars.ToString();
-        _coinText.text = GameData.Instance.Coins.ToString();
-        _scoreText.text = "Score\n" + GameData.Instance.Score;
-        _storyProgressText.text = "Story progress: " + GameData.Instance.StoryProgress + "%";
-        _progressBarFilled.fillAmount = GameData.Instance.StoryProgress / 100f;
+        _blackStarText.text = GameData.Instance.YandexData.BlackStars.ToString();
+        _coinText.text = GameData.Instance.YandexData.Coins.ToString();
+        _scoreText.text = "Score\n" + GameData.Instance.YandexData.Score;
+        _storyProgressText.text = "Story progress: " + GameData.Instance.YandexData.StoryProgressPercent + "%";
+        _progressBarFilled.fillAmount = GameData.Instance.YandexData.StoryProgressPercent / 100f;
     }
 }
 

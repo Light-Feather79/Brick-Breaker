@@ -11,7 +11,7 @@ public class Ball : MonoBehaviour
     [SerializeField] private float _speed = 6f;
     [SerializeField] private float _rotation = 5f;
 
-    private float _borderToModify = .3f;
+    private float _borderToModify = .5f;
     private Rigidbody2D _rb;
     private AudioSource _audioSource;
     private Transform _transform;

@@ -3,23 +3,23 @@ using System.Collections.Generic;
 
 public class BallPooler : MonoBehaviour
 {
-    [SerializeField] private int _poolSize = 20;
     [SerializeField] private int _currentPoolSize = 20;
 
-    private Queue<Ball> s_ballPool;
+    private Queue<Ball> _ballPool;
     private Ball _ballPrefab;
 
     void Awake()
     {
-        _ballPrefab = GameData.Instance._ballPrefab;
+        _ballPrefab = GameData.Instance.YandexData.BallPrefab;
 
-        s_ballPool = new Queue<Ball>();
+        _ballPool = new Queue<Ball>();
+        int poolSize = _currentPoolSize;
         Queue<Ball> ballPool = new Queue<Ball>();
 
-        for (int i = 0; i < _poolSize; i++)
+        for (int i = 0; i < poolSize; i++)
             ballPool.Enqueue(Pull());
 
-        for (int i = 0; i < _poolSize; i++)
+        for (int i = 0; i < poolSize; i++)
             Push(ballPool.Dequeue());
     }
 
@@ -27,14 +27,14 @@ public class BallPooler : MonoBehaviour
     {
         _currentPoolSize--;
 
-        if (s_ballPool.Count == 0)
+        if (_ballPool.Count == 0)
         {
             Ball newBall = Instantiate(_ballPrefab);
             newBall.gameObject.SetActive(true);
             return newBall;
         }
 
-        Ball ball = s_ballPool.Dequeue();
+        Ball ball = _ballPool.Dequeue();
         ball.gameObject.SetActive(true);
         return ball;
     }
@@ -42,7 +42,7 @@ public class BallPooler : MonoBehaviour
     public void Push(Ball ball)
     {
         ball.gameObject.SetActive(false);
-        s_ballPool.Enqueue(ball);
+        _ballPool.Enqueue(ball);
         _currentPoolSize++;
     }
 }
